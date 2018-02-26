@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Bluish capsule</title>
-    <link>https://gabrieleteotino.github.io/categories/</link>
+    <link>https://www.teosoft.it/categories/</link>
     <description>Recent content in Categories on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://gabrieleteotino.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.teosoft.it/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dev</title>
-      <link>https://gabrieleteotino.github.io/categories/dev/</link>
+      <link>https://www.teosoft.it/categories/dev/</link>
       <pubDate>Wed, 21 Feb 2018 15:33:36 +0100</pubDate>
       
-      <guid>https://gabrieleteotino.github.io/categories/dev/</guid>
+      <guid>https://www.teosoft.it/categories/dev/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://gabrieleteotino.github.io/categories/development/</link>
+      <link>https://www.teosoft.it/categories/development/</link>
       <pubDate>Fri, 23 Feb 2018 14:35:04 +0100</pubDate>
       
-      <guid>https://gabrieleteotino.github.io/categories/development/</guid>
+      <guid>https://www.teosoft.it/categories/development/</guid>
       <description></description>
     </item>
     

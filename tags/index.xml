@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Bluish capsule</title>
-    <link>https://gabrieleteotino.github.io/tags/</link>
+    <link>https://www.teosoft.it/tags/</link>
     <description>Recent content in Tags on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Feb 2018 14:35:04 +0100</lastBuildDate>
     
-	<atom:link href="https://gabrieleteotino.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.teosoft.it/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Atom</title>
-      <link>https://gabrieleteotino.github.io/tags/atom/</link>
+      <link>https://www.teosoft.it/tags/atom/</link>
       <pubDate>Fri, 23 Feb 2018 14:35:04 +0100</pubDate>
       
-      <guid>https://gabrieleteotino.github.io/tags/atom/</guid>
+      <guid>https://www.teosoft.it/tags/atom/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C#</title>
-      <link>https://gabrieleteotino.github.io/tags/c#/</link>
+      <link>https://www.teosoft.it/tags/c#/</link>
       <pubDate>Wed, 21 Feb 2018 15:33:36 +0100</pubDate>
       
-      <guid>https://gabrieleteotino.github.io/tags/c#/</guid>
+      <guid>https://www.teosoft.it/tags/c#/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>https://gabrieleteotino.github.io/tags/github/</link>
+      <link>https://www.teosoft.it/tags/github/</link>
       <pubDate>Fri, 23 Feb 2018 14:35:04 +0100</pubDate>
       
-      <guid>https://gabrieleteotino.github.io/tags/github/</guid>
+      <guid>https://www.teosoft.it/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://gabrieleteotino.github.io/tags/hugo/</link>
+      <link>https://www.teosoft.it/tags/hugo/</link>
       <pubDate>Fri, 23 Feb 2018 14:35:04 +0100</pubDate>
       
-      <guid>https://gabrieleteotino.github.io/tags/hugo/</guid>
+      <guid>https://www.teosoft.it/tags/hugo/</guid>
       <description></description>
     </item>
     
