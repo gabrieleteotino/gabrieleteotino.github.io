@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bluish capsule</title>
-    <link>https://gabrieleteotino.github.io/</link>
-    <description>Recent content on Bluish capsule</description>
+    <title>Github on Bluish capsule</title>
+    <link>https://gabrieleteotino.github.io/tags/github/</link>
+    <description>Recent content in Github on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Feb 2018 11:14:20 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 23 Feb 2018 14:35:04 +0100</lastBuildDate>
     
-	<atom:link href="https://gabrieleteotino.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gabrieleteotino.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About me</title>
-      <link>https://gabrieleteotino.github.io/page/about/</link>
-      <pubDate>Mon, 26 Feb 2018 11:14:20 +0100</pubDate>
-      
-      <guid>https://gabrieleteotino.github.io/page/about/</guid>
-      <description>My name is Gabriele Teotino.</description>
-    </item>
     
     <item>
       <title>Configure a site using Hugo - part 2</title>
@@ -55,27 +46,6 @@ sudo dpkg -i hugo_0.36.1_Linux-64bit.deb Test if everithing works
 hugo version Atom Plugins Nice autocomplete for hugo shortodes language-hugo
 For example typing youtube and hitting tab the following snippet will be generated:
 \{\{&amp;lt; youtube id class=&amp;#34;&amp;#34; &amp;gt;\}\} Some key combination for common Hugo activities atom-hugo</description>
-    </item>
-    
-    <item>
-      <title>Meccanici description</title>
-      <link>https://gabrieleteotino.github.io/project/meccanici/meccanici_description/</link>
-      <pubDate>Wed, 21 Feb 2018 15:33:36 +0100</pubDate>
-      
-      <guid>https://gabrieleteotino.github.io/project/meccanici/meccanici_description/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://gabrieleteotino.github.io/post/2018-02-21-hello-world/</link>
-      <pubDate>Wed, 21 Feb 2018 11:57:38 +0100</pubDate>
-      
-      <guid>https://gabrieleteotino.github.io/post/2018-02-21-hello-world/</guid>
-      <description>Hello, World! Some nice features of the Hugo Markdown rederer.
-Incomplete Markdown Cheatsheet Emphasis Markdown in Hugo support all the standard stuff like bold and italic.
-Lists Ordered  item item  subitem   Unordered  item item  subitem subitem   Extensions It also have some useful extension like tables&amp;hellip;
-   col1 col2 col3     text text text   text text text   text text text   text text text    &amp;hellip;and syntax highlight</description>
     </item>
     
   </channel>

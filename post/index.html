@@ -182,6 +182,121 @@
         <div class="posts-list">
           
             <article class="post-preview">
+              <a href="https://gabrieleteotino.github.io/post/2018-02-23-hugo-configure-a-site-part-2/">
+                <h2 class="post-title">Configure a site using Hugo - part 2</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Creating the bluish capsule using Hugo, Atom and Github
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on February 23, 2018
+              </p>
+              <div class="post-entry">
+                
+                  Structure We are going to create the following folders one for each area of the site.
+ /content/page - static pages like About and so on /content/post - a section with articles and turorials /content/project - will contain a subfolder for each project /content/review - review of products bough online from amazon, aliexpress, &hellip; /content/note - small snippets of stuff like links to a nice library or an interesting article  Create an index page for each section of the site.
+                  <a href="https://gabrieleteotino.github.io/post/2018-02-23-hugo-configure-a-site-part-2/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://gabrieleteotino.github.io//tags/hugo/">hugo</a>&nbsp;
+                  
+                    #<a href="https://gabrieleteotino.github.io//tags/atom/">atom</a>&nbsp;
+                  
+                    #<a href="https://gabrieleteotino.github.io//tags/github/">github</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://gabrieleteotino.github.io/post/2018-02-23-ssh-keys-for-github/">
+                <h2 class="post-title">SSH Keys for Github</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    How to authenticate to github using SSH keys
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on February 23, 2018
+              </p>
+              <div class="post-entry">
+                
+                  <p>The complete instruction on <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Github</a></p>
+
+<p>Create a key in the default location without any passphrase (or add one if you like). Then add it to the ssh-agent.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;gabriele@teosoft.it&#34;</span>
+ssh-add ~/.ssh/id_rsa</code></pre></div>
+<p>Copy the key into the clipboard</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cat ~/.ssh/id_rsa.pub</code></pre></div>
+<p>Go into your profile and select <a href="https://github.com/settings/keys">SSH and GPG keys</a>, click <strong>Add SSH key</strong>, add a description and paste the key.</p>
+
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://gabrieleteotino.github.io//tags/github/">github</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://gabrieleteotino.github.io/post/2018-02-21-hugo-configure-a-site-part-1/">
+                <h2 class="post-title">Configure a site using Hugo - part 1</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Creating the bluish capsule using Hugo, Atom and Github
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on February 21, 2018
+              </p>
+              <div class="post-entry">
+                
+                  Using Hugo for this website A step by step description on how the bluish capsule was born.
+Installing Hugo Detailed instructions are available at the official Hugo site
+Download the deb package from Hugo Releases
+sudo dpkg -i hugo_0.36.1_Linux-64bit.deb Test if everithing works
+hugo version Atom Plugins Nice autocomplete for hugo shortodes language-hugo
+For example typing youtube and hitting tab the following snippet will be generated:
+\{\{&lt; youtube id class=&#34;&#34; &gt;\}\} Some key combination for common Hugo activities atom-hugo
+                  <a href="https://gabrieleteotino.github.io/post/2018-02-21-hugo-configure-a-site-part-1/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://gabrieleteotino.github.io//tags/hugo/">hugo</a>&nbsp;
+                  
+                    #<a href="https://gabrieleteotino.github.io//tags/atom/">atom</a>&nbsp;
+                  
+                    #<a href="https://gabrieleteotino.github.io//tags/github/">github</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="https://gabrieleteotino.github.io/post/2018-02-21-hello-world/">
                 <h2 class="post-title">Hello World</h2>
 

@@ -5,31 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Hello World</title>
-  <meta property="og:title" content="Hello World" />
-  <meta name="twitter:title" content="Hello World" />
-  <meta name="description" content="Hello, World! Some nice features of the Hugo Markdown rederer.
-Incomplete Markdown Cheatsheet Emphasis Markdown in Hugo support all the standard stuff like bold and italic.
-Lists Ordered  item item  subitem   Unordered  item item  subitem subitem   Extensions It also have some useful extension like tables&hellip;
-   col1 col2 col3     text text text   text text text   text text text   text text text    &hellip;and syntax highlight">
-  <meta property="og:description" content="Hello, World! Some nice features of the Hugo Markdown rederer.
-Incomplete Markdown Cheatsheet Emphasis Markdown in Hugo support all the standard stuff like bold and italic.
-Lists Ordered  item item  subitem   Unordered  item item  subitem subitem   Extensions It also have some useful extension like tables&hellip;
-   col1 col2 col3     text text text   text text text   text text text   text text text    &hellip;and syntax highlight">
-  <meta name="twitter:description" content="Hello, World! Some nice features of the Hugo Markdown rederer.
-Incomplete Markdown Cheatsheet Emphasis Markdown in Hugo support all the standard stuff like bold and italic.
-Lists Ordered  item item …">
+  <title>Configure a site using Hugo - part 1</title>
+  <meta property="og:title" content="Configure a site using Hugo - part 1" />
+  <meta name="twitter:title" content="Configure a site using Hugo - part 1" />
+  <meta name="description" content="Creating the bluish capsule using Hugo, Atom and Github">
+  <meta property="og:description" content="Creating the bluish capsule using Hugo, Atom and Github">
+  <meta name="twitter:description" content="Creating the bluish capsule using Hugo, Atom and Github">
   <meta name="author" content="Gabriele Teotino"/>
   <link href='https://gabrieleteotino.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://gabrieleteotino.github.io/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://gabrieleteotino.github.io/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://gabrieleteotino.github.io/post/2018-02-21-hello-world/" />
+  <meta property="og:url" content="https://gabrieleteotino.github.io/post/2018-02-21-hugo-configure-a-site-part-1/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
   <meta name="generator" content="Hugo 0.36.1" />
-  <link rel="canonical" href="https://gabrieleteotino.github.io/post/2018-02-21-hello-world/" />
+  <link rel="canonical" href="https://gabrieleteotino.github.io/post/2018-02-21-hugo-configure-a-site-part-1/" />
   <link rel="alternate" href="https://gabrieleteotino.github.io/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -179,7 +171,11 @@ Lists Ordered  item item …">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Hello World</h1>
+              <h1>Configure a site using Hugo - part 1</h1>
+                
+                  
+                    <h2 class="post-subheading">Creating the bluish capsule using Hugo, Atom and Github</h2>
+                  
                 
                 
                   <span class="post-meta">
@@ -189,7 +185,7 @@ Lists Ordered  item item …">
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 1 minutes (81 words)
+  <i class="fa fa-clock-o"></i> 3 minutes (519 words)
   
   
 </span>
@@ -211,98 +207,124 @@ Lists Ordered  item item …">
       <article role="main" class="blog-post">
         
 
-<h1 id="hello-world">Hello, World!</h1>
+<h1 id="using-hugo-for-this-website">Using Hugo for this website</h1>
 
-<p>Some nice features of the Hugo Markdown rederer.</p>
+<p>A step by step description on how the bluish capsule was born.</p>
 
-<h2 id="incomplete-markdown-cheatsheet">Incomplete Markdown Cheatsheet</h2>
+<h2 id="installing-hugo">Installing Hugo</h2>
 
-<h3 id="emphasis">Emphasis</h3>
+<p>Detailed instructions are available at the <a href="http://gohugo.io/getting-started/installing/">official Hugo site</a></p>
 
-<p>Markdown in Hugo support all the standard stuff like <strong>bold</strong> and <em>italic</em>.</p>
+<p>Download the deb package from <a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo dpkg -i hugo_0.36.1_Linux-64bit.deb</code></pre></div>
+<p>Test if everithing works</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo version</code></pre></div>
+<h2 id="atom-plugins">Atom Plugins</h2>
 
-<h3 id="lists">Lists</h3>
+<p>Nice autocomplete for hugo shortodes <a href="https://atom.io/packages/language-hugo">language-hugo</a></p>
 
-<h4 id="ordered">Ordered</h4>
+<p>For example typing youtube and hitting tab the following snippet will be generated:</p>
+<div class="highlight"><pre class="chroma">\{\{&lt; youtube id class=&#34;&#34; &gt;\}\}</pre></div>
+<p>Some key combination for common Hugo activities <a href="https://atom.io/packages/atom-hugo">atom-hugo</a></p>
 
-<ol>
-<li>item</li>
-<li>item
+<p>For example CTRL+SUPER+N will create a new content item.</p>
 
-<ul>
-<li>subitem</li>
-</ul></li>
-</ol>
+<h2 id="initialize-hugo-website">Initialize Hugo website</h2>
 
-<h4 id="unordered">Unordered</h4>
+<p>Hugo will create a new site with the basic site structure.
+Then we initialize git and add a theme as a <a href="https://git-scm.com/docs/git-submodule">git submodule</a>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo new site bluish-capsule
+<span class="nb">cd</span> bluish-capsule
+git init
+git submodule add https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo</code></pre></div>
+<p>Other themes are available at <a href="https://themes.gohugo.io/">Hugo themes</a></p>
 
-<ul>
-<li>item</li>
-<li>item
+<h2 id="configure-the-beautifulhugo-theme">Configure the beautifulhugo theme</h2>
 
-<ul>
-<li>subitem</li>
-<li>subitem</li>
-</ul></li>
-</ul>
+<p>Each theme has a sligtly different configuration.
+Inside the theme folder there is a theme.toml and inside the folder exampleSite there is another theme.toml with some advanced configuration.</p>
 
-<h2 id="extensions">Extensions</h2>
+<p>Here is the configuration needed for the first run.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;https://gabrieleteotino.github.io/&#34;</span>
+<span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en-us&#34;</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Bluish capsule&#34;</span>
+<span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;beautifulhugo&#34;</span>
 
-<p>It also have some useful extension like tables&hellip;</p>
+<span class="nx">metaDataFormat</span> <span class="p">=</span> <span class="s2">&#34;yaml&#34;</span>
 
-<table>
-<thead>
-<tr>
-<th>col1</th>
-<th>col2</th>
-<th>col3</th>
-</tr>
-</thead>
+<span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="nx">subtitle</span> <span class="p">=</span> <span class="s2">&#34;Some inspirational quote here&#34;</span>
+  <span class="nx">logo</span> <span class="p">=</span> <span class="s2">&#34;img/avatar-icon.png&#34;</span>
+  <span class="nx">favicon</span> <span class="p">=</span> <span class="s2">&#34;img/favicon.ico&#34;</span>
+  <span class="nx">dateFormat</span> <span class="p">=</span> <span class="s2">&#34;January 2, 2006&#34;</span>
+  <span class="nx">commit</span> <span class="p">=</span> <span class="kc">false</span>
+  <span class="nx">rss</span> <span class="p">=</span> <span class="kc">true</span>
+  <span class="nx">comments</span> <span class="p">=</span> <span class="kc">false</span>
+  <span class="nx">readingTime</span> <span class="p">=</span> <span class="kc">true</span>
+  <span class="nx">useHLJS</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="c">#  gcse = &#34;012345678901234567890:abcdefghijk&#34; # Get your code from google.com/cse. Make sure to go to &#34;Look and Feel&#34; and change Layout to &#34;Full Width&#34; and Theme to &#34;Classic&#34;</span>
 
-<tbody>
-<tr>
-<td>text</td>
-<td>text</td>
-<td>text</td>
-</tr>
+<span class="p">[</span><span class="nx">author</span><span class="p">]</span>
+  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Gabriele Teotino&#34;</span>
+  <span class="nx">website</span> <span class="p">=</span> <span class="s2">&#34;http://www.teosoft.it&#34;</span>
+  <span class="nx">github</span> <span class="p">=</span> <span class="s2">&#34;gabrieleteotino&#34;</span>
+  <span class="nx">stackoverflow</span> <span class="p">=</span> <span class="s2">&#34;users/2085504/deramko&#34;</span></code></pre></div>
+<h2 id="add-a-post-and-test-the-site">Add a post and test the site</h2>
 
-<tr>
-<td>text</td>
-<td>text</td>
-<td>text</td>
-</tr>
+<p>Add a new post using the command line.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo new post/hello-world.md</code></pre></div>
+<p>Start the development server. The <strong>-D</strong> tells Hugo to pubblish draft pages.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo server -D</code></pre></div>
+<p>Now open the borwser and got the <a href="http://localhost:1313">home page</a> and the <a href="http://localhost:1313/posts/hello-world/">Hello World</a>.</p>
 
-<tr>
-<td>text</td>
-<td>text</td>
-<td>text</td>
-</tr>
+<p>Write some content inside hello-world.md.
+The live reload should immediatly show the new text.</p>
 
-<tr>
-<td>text</td>
-<td>text</td>
-<td>text</td>
-</tr>
-</tbody>
-</table>
+<p>Change the <em>front matter</em> draft to false, making the file ready for publishing.</p>
 
-<p>&hellip;and syntax highlight</p>
-<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="c1">// c#
-</span><span class="c1"></span><span class="n">function</span> <span class="kt">bool</span> <span class="n">foo</span><span class="p">()</span>
-<span class="p">{</span>
-  <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// javascript
-</span><span class="c1"></span><span class="kd">function</span> <span class="nx">test</span><span class="p">()</span> <span class="p">{</span>
- <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;look ma’, no spaces&#34;</span><span class="p">);</span>
-<span class="p">}</span></code></pre></div>
+<h2 id="github-repository">Github repository</h2>
+
+<p>Be sure to have your private keys configured for Github. See <a href="2018-02-23-SSH-keys-for-github">here</a> for the configuration.</p>
+
+<p>The following steps are taken from <a href="https://github.com/whipperstacker/blog/blob/master/content/post/deploying-a-hugo-site-to-github-pages.md">whipperstacker instructions</a></p>
+
+<p>Create a new repository in Github named bluish-capsule. Add a description, select public and don&rsquo;t create any readme, gitignore and license.</p>
+
+<p>Stop Hugo if it is running, in the terminal goto the root folder of the site.
+Confirm it is already initialize with</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git status</code></pre></div>
+<p>Add the new remote origin</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git remote add origin git@github.com:gabrieleteotino/bluish-capsule.git</code></pre></div>
+<p>Create a new repository for Github Pages named <strong>gabrieleteotino.github.io</strong>, add a description. This time check <strong>Initialize this repository with a README</strong> leaving no gitignore and no license.</p>
+
+<p><strong>Optional</strong> Delete the <code>public/</code> directory with <code>rm -r public/</code>.</p>
+
+<p>Add the &ldquo;pages&rdquo; repo as a submodlule</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git submodule add git@github.com:gabrieleteotino/gabrieleteotino.github.io.git public</code></pre></div>
+<p>It is time to stage all the changes and commit to the local git.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git add .
+git commit -m <span class="s2">&#34;Initial setup&#34;</span>
+git push -u origin master</code></pre></div>
+<h2 id="create-content">Create content</h2>
+
+<p>Create the content in public folder</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo -t <span class="s2">&#34;beautifulhugo&#34;</span>
+<span class="nb">cd</span> public/
+git add .
+git commit -m <span class="s2">&#34;Generate site&#34;</span>
+git push origin master</code></pre></div>
       </article>
 
       
         <ul class="pager blog-pager">
           
+            <li class="previous">
+              <a href="https://gabrieleteotino.github.io/post/2018-02-21-hello-world/" data-toggle="tooltip" data-placement="top" title="Hello World">&larr; Previous Post</a>
+            </li>
+          
           
             <li class="next">
-              <a href="https://gabrieleteotino.github.io/post/2018-02-21-hugo-configure-a-site-part-1/" data-toggle="tooltip" data-placement="top" title="Configure a site using Hugo - part 1">Next Post &rarr;</a>
+              <a href="https://gabrieleteotino.github.io/post/2018-02-23-ssh-keys-for-github/" data-toggle="tooltip" data-placement="top" title="SSH Keys for Github">Next Post &rarr;</a>
             </li>
           
         </ul>
