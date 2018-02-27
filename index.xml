@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bluish capsule</title>
-    <link>https://www.teosoft.it/</link>
+    <link>http://www.teosoft.it/</link>
     <description>Recent content on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Feb 2018 11:14:20 +0100</lastBuildDate>
     
-	<atom:link href="https://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About me</title>
-      <link>https://www.teosoft.it/page/about/</link>
+      <link>http://www.teosoft.it/page/about/</link>
       <pubDate>Mon, 26 Feb 2018 11:14:20 +0100</pubDate>
       
-      <guid>https://www.teosoft.it/page/about/</guid>
+      <guid>http://www.teosoft.it/page/about/</guid>
       <description>My name is Gabriele Teotino.</description>
     </item>
     
     <item>
       <title>Configure a site using Hugo - part 2</title>
-      <link>https://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</link>
+      <link>http://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</link>
       <pubDate>Fri, 23 Feb 2018 14:35:04 +0100</pubDate>
       
-      <guid>https://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</guid>
+      <guid>http://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</guid>
       <description>Structure We are going to create the following folders one for each area of the site.
  /content/page - static pages like About and so on /content/post - a section with articles and turorials /content/project - will contain a subfolder for each project /content/review - review of products bough online from amazon, aliexpress, &amp;hellip; /content/note - small snippets of stuff like links to a nice library or an interesting article  Create an index page for each section of the site.</description>
     </item>
     
     <item>
       <title>SSH Keys for Github</title>
-      <link>https://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</link>
+      <link>http://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</link>
       <pubDate>Fri, 23 Feb 2018 11:13:18 +0100</pubDate>
       
-      <guid>https://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</guid>
+      <guid>http://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</guid>
       <description>The complete instruction on Github
 Create a key in the default location without any passphrase (or add one if you like). Then add it to the ssh-agent.
 ssh-keygen -t rsa -b 4096 -C &amp;#34;gabriele@teosoft.it&amp;#34; ssh-add ~/.ssh/id_rsa Copy the key into the clipboard
@@ -44,10 +44,10 @@ cat ~/.ssh/id_rsa.pub Go into your profile and select SSH and GPG keys, click Ad
     
     <item>
       <title>Configure a site using Hugo - part 1</title>
-      <link>https://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</link>
+      <link>http://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</link>
       <pubDate>Wed, 21 Feb 2018 18:15:33 +0100</pubDate>
       
-      <guid>https://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</guid>
+      <guid>http://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</guid>
       <description>Using Hugo for this website A step by step description on how the bluish capsule was born.
 Installing Hugo Detailed instructions are available at the official Hugo site
 Download the deb package from Hugo Releases
@@ -59,19 +59,19 @@ For example typing youtube and hitting tab the following snippet will be generat
     
     <item>
       <title>Meccanici description</title>
-      <link>https://www.teosoft.it/project/meccanici/meccanici_description/</link>
+      <link>http://www.teosoft.it/project/meccanici/meccanici_description/</link>
       <pubDate>Wed, 21 Feb 2018 15:33:36 +0100</pubDate>
       
-      <guid>https://www.teosoft.it/project/meccanici/meccanici_description/</guid>
+      <guid>http://www.teosoft.it/project/meccanici/meccanici_description/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>https://www.teosoft.it/post/2018-02-21-hello-world/</link>
+      <link>http://www.teosoft.it/post/2018-02-21-hello-world/</link>
       <pubDate>Wed, 21 Feb 2018 11:57:38 +0100</pubDate>
       
-      <guid>https://www.teosoft.it/post/2018-02-21-hello-world/</guid>
+      <guid>http://www.teosoft.it/post/2018-02-21-hello-world/</guid>
       <description>Hello, World! Some nice features of the Hugo Markdown rederer.
 Incomplete Markdown Cheatsheet Emphasis Markdown in Hugo support all the standard stuff like bold and italic.
 Lists Ordered  item item  subitem   Unordered  item item  subitem subitem   Extensions It also have some useful extension like tables&amp;hellip;

@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Bluish capsule</title>
-    <link>https://www.teosoft.it/note/</link>
+    <link>http://www.teosoft.it/note/</link>
     <description>Recent content in Notes on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Feb 2018 11:12:33 +0100</lastBuildDate>
     
-	<atom:link href="https://www.teosoft.it/note/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.teosoft.it/note/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
