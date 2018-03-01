@@ -6,10 +6,41 @@
     <description>Recent content on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Feb 2018 11:14:20 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 01 Mar 2018 12:50:13 +0100</lastBuildDate>
     
 	<atom:link href="http://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bonus Paranoia</title>
+      <link>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</link>
+      <pubDate>Thu, 01 Mar 2018 12:50:13 +0100</pubDate>
+      
+      <guid>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re feeling especially paranoid there are various things you could do to reduce logging on linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ansible</title>
+      <link>http://www.teosoft.it/note/2018-02-28-ansible/</link>
+      <pubDate>Wed, 28 Feb 2018 15:27:34 +0100</pubDate>
+      
+      <guid>http://www.teosoft.it/note/2018-02-28-ansible/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.ansible.com&#34;&gt;Ansible&lt;/a&gt; is a tool to deploy and manage devops.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Personal Vpn with Algo on Azure</title>
+      <link>http://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</link>
+      <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
+      
+      <guid>http://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s create a VPN server on Azure (other cloud providers are supported).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>About me</title>

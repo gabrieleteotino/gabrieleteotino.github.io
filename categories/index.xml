@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Cloud</title>
+      <link>http://www.teosoft.it/categories/cloud/</link>
+      <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
+      
+      <guid>http://www.teosoft.it/categories/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Dev</title>
       <link>http://www.teosoft.it/categories/dev/</link>
       <pubDate>Wed, 21 Feb 2018 15:33:36 +0100</pubDate>
@@ -22,9 +31,18 @@
     <item>
       <title>Development</title>
       <link>http://www.teosoft.it/categories/development/</link>
-      <pubDate>Fri, 23 Feb 2018 14:35:04 +0100</pubDate>
+      <pubDate>Wed, 28 Feb 2018 15:27:34 +0100</pubDate>
       
       <guid>http://www.teosoft.it/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Networking</title>
+      <link>http://www.teosoft.it/categories/networking/</link>
+      <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
+      
+      <guid>http://www.teosoft.it/categories/networking/</guid>
       <description></description>
     </item>
     

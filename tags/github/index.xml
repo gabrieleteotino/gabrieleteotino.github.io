@@ -6,10 +6,21 @@
     <description>Recent content in Github on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Feb 2018 14:35:04 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 28 Feb 2018 11:51:41 +0100</lastBuildDate>
     
 	<atom:link href="http://www.teosoft.it/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Personal Vpn with Algo on Azure</title>
+      <link>http://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</link>
+      <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
+      
+      <guid>http://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s create a VPN server on Azure (other cloud providers are supported).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Configure a site using Hugo - part 2</title>

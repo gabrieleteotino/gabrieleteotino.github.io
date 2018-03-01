@@ -11,5 +11,25 @@
 	<atom:link href="http://www.teosoft.it/note/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Bonus Paranoia</title>
+      <link>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</link>
+      <pubDate>Thu, 01 Mar 2018 12:50:13 +0100</pubDate>
+      
+      <guid>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re feeling especially paranoid there are various things you could do to reduce logging on linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ansible</title>
+      <link>http://www.teosoft.it/note/2018-02-28-ansible/</link>
+      <pubDate>Wed, 28 Feb 2018 15:27:34 +0100</pubDate>
+      
+      <guid>http://www.teosoft.it/note/2018-02-28-ansible/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.ansible.com&#34;&gt;Ansible&lt;/a&gt; is a tool to deploy and manage devops.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

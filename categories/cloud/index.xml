@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on Bluish capsule</title>
+    <link>http://www.teosoft.it/categories/cloud/</link>
+    <description>Recent content in Cloud on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Feb 2018 11:51:41 +0100</lastBuildDate>
+    
+	<atom:link href="http://www.teosoft.it/categories/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Personal Vpn with Algo on Azure</title>
+      <link>http://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</link>
+      <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
+      
+      <guid>http://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s create a VPN server on Azure (other cloud providers are supported).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
