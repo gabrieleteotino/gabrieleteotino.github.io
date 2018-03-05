@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.teosoft.it/post/2018-03-02-hello-page-bundle/</loc>
+    <lastmod>2018-03-02T13:13:49+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</loc>
     <lastmod>2018-03-01T12:50:13+01:00</lastmod>
   </url>
@@ -86,7 +91,7 @@
   
   <url>
     <loc>http://www.teosoft.it/</loc>
-    <lastmod>2018-03-01T12:50:13+01:00</lastmod>
+    <lastmod>2018-03-02T13:13:49+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -133,7 +138,7 @@
   
   <url>
     <loc>http://www.teosoft.it/tags/hugo/</loc>
-    <lastmod>2018-02-23T14:35:04+01:00</lastmod>
+    <lastmod>2018-03-02T13:13:49+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -176,6 +181,12 @@
   <url>
     <loc>http://www.teosoft.it/tags/vpn/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.teosoft.it/categories/webdev/</loc>
+    <lastmod>2018-03-02T13:13:49+01:00</lastmod>
     <priority>0</priority>
   </url>
   

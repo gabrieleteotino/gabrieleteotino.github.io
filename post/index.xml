@@ -12,6 +12,19 @@
     
     
     <item>
+      <title>Hello Page Bundle</title>
+      <link>http://www.teosoft.it/post/2018-03-02-hello-page-bundle/</link>
+      <pubDate>Fri, 02 Mar 2018 13:13:49 +0100</pubDate>
+      
+      <guid>http://www.teosoft.it/post/2018-03-02-hello-page-bundle/</guid>
+      <description>&lt;h2 id=&#34;hello-page-bundle&#34;&gt;Hello Page Bundle&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/content-management/organization/#page-bundles&#34;&gt;Hugo documentation&lt;/a&gt; have a nice example on how to structure images and other resources in a page bundle.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Personal Vpn with Algo on Azure</title>
       <link>http://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</link>
       <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>

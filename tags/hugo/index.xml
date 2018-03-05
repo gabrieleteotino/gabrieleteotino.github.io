@@ -6,10 +6,23 @@
     <description>Recent content in Hugo on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Feb 2018 14:35:04 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Mar 2018 13:13:49 +0100</lastBuildDate>
     
 	<atom:link href="http://www.teosoft.it/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hello Page Bundle</title>
+      <link>http://www.teosoft.it/post/2018-03-02-hello-page-bundle/</link>
+      <pubDate>Fri, 02 Mar 2018 13:13:49 +0100</pubDate>
+      
+      <guid>http://www.teosoft.it/post/2018-03-02-hello-page-bundle/</guid>
+      <description>&lt;h2 id=&#34;hello-page-bundle&#34;&gt;Hello Page Bundle&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/content-management/organization/#page-bundles&#34;&gt;Hugo documentation&lt;/a&gt; have a nice example on how to structure images and other resources in a page bundle.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Configure a site using Hugo - part 2</title>
