@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devops on Bluish capsule</title>
-    <link>http://www.teosoft.it/tags/devops/</link>
+    <link>https://www.teosoft.it/tags/devops/</link>
     <description>Recent content in Devops on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Feb 2018 15:27:34 +0100</lastBuildDate>
     
-	<atom:link href="http://www.teosoft.it/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.teosoft.it/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ansible</title>
-      <link>http://www.teosoft.it/note/2018-02-28-ansible/</link>
+      <link>https://www.teosoft.it/note/2018-02-28-ansible/</link>
       <pubDate>Wed, 28 Feb 2018 15:27:34 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/note/2018-02-28-ansible/</guid>
+      <guid>https://www.teosoft.it/note/2018-02-28-ansible/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.ansible.com&#34;&gt;Ansible&lt;/a&gt; is a tool to deploy and manage devops.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

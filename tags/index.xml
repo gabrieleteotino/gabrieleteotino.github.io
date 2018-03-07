@@ -2,102 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Bluish capsule</title>
-    <link>http://www.teosoft.it/tags/</link>
+    <link>https://www.teosoft.it/tags/</link>
     <description>Recent content in Tags on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Feb 2018 14:35:04 +0100</lastBuildDate>
     
-	<atom:link href="http://www.teosoft.it/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.teosoft.it/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Atom</title>
-      <link>http://www.teosoft.it/tags/atom/</link>
+      <link>https://www.teosoft.it/tags/atom/</link>
       <pubDate>Fri, 23 Feb 2018 14:35:04 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/tags/atom/</guid>
+      <guid>https://www.teosoft.it/tags/atom/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Azure</title>
-      <link>http://www.teosoft.it/tags/azure/</link>
+      <link>https://www.teosoft.it/tags/azure/</link>
       <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/tags/azure/</guid>
+      <guid>https://www.teosoft.it/tags/azure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C#</title>
-      <link>http://www.teosoft.it/tags/c#/</link>
+      <link>https://www.teosoft.it/tags/c#/</link>
       <pubDate>Wed, 21 Feb 2018 15:33:36 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/tags/c#/</guid>
+      <guid>https://www.teosoft.it/tags/c#/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Devops</title>
-      <link>http://www.teosoft.it/tags/devops/</link>
+      <link>https://www.teosoft.it/tags/devops/</link>
       <pubDate>Wed, 28 Feb 2018 15:27:34 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/tags/devops/</guid>
+      <guid>https://www.teosoft.it/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>http://www.teosoft.it/tags/github/</link>
+      <link>https://www.teosoft.it/tags/github/</link>
       <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/tags/github/</guid>
+      <guid>https://www.teosoft.it/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>http://www.teosoft.it/tags/hugo/</link>
-      <pubDate>Fri, 02 Mar 2018 13:13:49 +0100</pubDate>
+      <link>https://www.teosoft.it/tags/hugo/</link>
+      <pubDate>Mon, 05 Mar 2018 14:33:07 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/tags/hugo/</guid>
+      <guid>https://www.teosoft.it/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://www.teosoft.it/tags/linux/</link>
+      <link>https://www.teosoft.it/tags/linux/</link>
       <pubDate>Thu, 01 Mar 2018 12:50:13 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/tags/linux/</guid>
+      <guid>https://www.teosoft.it/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Privacy</title>
-      <link>http://www.teosoft.it/tags/privacy/</link>
+      <link>https://www.teosoft.it/tags/privacy/</link>
       <pubDate>Thu, 01 Mar 2018 12:50:13 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/tags/privacy/</guid>
+      <guid>https://www.teosoft.it/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>http://www.teosoft.it/tags/python/</link>
+      <link>https://www.teosoft.it/tags/python/</link>
       <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/tags/python/</guid>
+      <guid>https://www.teosoft.it/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vpn</title>
-      <link>http://www.teosoft.it/tags/vpn/</link>
+      <link>https://www.teosoft.it/tags/vpn/</link>
       <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/tags/vpn/</guid>
+      <guid>https://www.teosoft.it/tags/vpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://www.teosoft.it/tags/web/</link>
+      <pubDate>Mon, 05 Mar 2018 13:15:08 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/web/</guid>
       <description></description>
     </item>
     

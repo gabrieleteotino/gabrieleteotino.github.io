@@ -3,190 +3,220 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.teosoft.it/post/2018-03-02-hello-page-bundle/</loc>
+    <loc>https://www.teosoft.it/note/2018-03-05-hugo-shortcuts/</loc>
+    <lastmod>2018-03-05T14:33:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/note/2018-03-05-current-dns-tophost/</loc>
+    <lastmod>2018-03-05T13:15:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/post/2018-03-02-hello-page-bundle/</loc>
     <lastmod>2018-03-02T13:13:49+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</loc>
+    <loc>https://www.teosoft.it/note/2018-03-01-bonus-paranoia/</loc>
     <lastmod>2018-03-01T12:50:13+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/note/2018-02-28-ansible/</loc>
+    <loc>https://www.teosoft.it/note/2018-02-28-ansible/</loc>
     <lastmod>2018-02-28T15:27:34+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</loc>
+    <loc>https://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/page/about/</loc>
+    <loc>https://www.teosoft.it/page/about/</loc>
     <lastmod>2018-02-26T11:14:20+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/note/</loc>
+    <loc>https://www.teosoft.it/note/</loc>
     <lastmod>2018-02-26T11:12:33+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/review/</loc>
+    <loc>https://www.teosoft.it/review/</loc>
     <lastmod>2018-02-26T11:12:20+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/post/</loc>
+    <loc>https://www.teosoft.it/post/</loc>
     <lastmod>2018-02-26T11:11:31+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</loc>
+    <loc>https://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</loc>
     <lastmod>2018-02-23T14:35:04+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</loc>
+    <loc>https://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</loc>
     <lastmod>2018-02-23T11:13:18+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</loc>
+    <loc>https://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</loc>
     <lastmod>2018-02-21T18:15:33+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/project/</loc>
+    <loc>https://www.teosoft.it/project/</loc>
     <lastmod>2018-02-21T15:35:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/project/meccanici/meccanici_description/</loc>
+    <loc>https://www.teosoft.it/project/meccanici/meccanici_description/</loc>
     <lastmod>2018-02-21T15:33:36+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/project/meccanici/</loc>
+    <loc>https://www.teosoft.it/project/meccanici/</loc>
     <lastmod>2018-02-21T15:30:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/post/2018-02-21-hello-world/</loc>
+    <loc>https://www.teosoft.it/post/2018-02-21-hello-world/</loc>
     <lastmod>2018-02-21T11:57:38+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/tags/atom/</loc>
+    <loc>https://www.teosoft.it/project/abandoned/friend-tracker-for-facebook/</loc>
+    <lastmod>2014-08-21T00:49:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/abandoned/big-stopwatch/</loc>
+    <lastmod>2014-07-10T02:54:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/note/ovh/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/atom/</loc>
     <lastmod>2018-02-23T14:35:04+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/tags/azure/</loc>
+    <loc>https://www.teosoft.it/tags/azure/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/</loc>
-    <lastmod>2018-03-02T13:13:49+01:00</lastmod>
+    <loc>https://www.teosoft.it/</loc>
+    <lastmod>2018-03-05T14:33:07+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/tags/c#/</loc>
+    <loc>https://www.teosoft.it/tags/c#/</loc>
     <lastmod>2018-02-21T15:33:36+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/categories/</loc>
+    <loc>https://www.teosoft.it/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/categories/cloud/</loc>
+    <loc>https://www.teosoft.it/categories/cloud/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/categories/dev/</loc>
+    <loc>https://www.teosoft.it/categories/dev/</loc>
     <lastmod>2018-02-21T15:33:36+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/categories/development/</loc>
+    <loc>https://www.teosoft.it/categories/development/</loc>
     <lastmod>2018-02-28T15:27:34+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/tags/devops/</loc>
+    <loc>https://www.teosoft.it/tags/devops/</loc>
     <lastmod>2018-02-28T15:27:34+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/tags/github/</loc>
+    <loc>https://www.teosoft.it/tags/github/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/tags/hugo/</loc>
-    <lastmod>2018-03-02T13:13:49+01:00</lastmod>
+    <loc>https://www.teosoft.it/tags/hugo/</loc>
+    <lastmod>2018-03-05T14:33:07+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/tags/linux/</loc>
+    <loc>https://www.teosoft.it/tags/linux/</loc>
     <lastmod>2018-03-01T12:50:13+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/categories/networking/</loc>
+    <loc>https://www.teosoft.it/categories/networking/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/page/</loc>
+    <loc>https://www.teosoft.it/page/</loc>
     <lastmod>2018-02-26T11:14:20+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/tags/privacy/</loc>
+    <loc>https://www.teosoft.it/tags/privacy/</loc>
     <lastmod>2018-03-01T12:50:13+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/tags/python/</loc>
+    <loc>https://www.teosoft.it/tags/python/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/tags/</loc>
+    <loc>https://www.teosoft.it/tags/</loc>
     <lastmod>2018-02-23T14:35:04+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/tags/vpn/</loc>
+    <loc>https://www.teosoft.it/tags/vpn/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.teosoft.it/categories/webdev/</loc>
-    <lastmod>2018-03-02T13:13:49+01:00</lastmod>
+    <loc>https://www.teosoft.it/tags/web/</loc>
+    <lastmod>2018-03-05T13:15:08+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/categories/webdev/</loc>
+    <lastmod>2018-03-05T14:33:07+01:00</lastmod>
     <priority>0</priority>
   </url>
   

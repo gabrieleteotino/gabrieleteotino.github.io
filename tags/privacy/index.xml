@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Privacy on Bluish capsule</title>
-    <link>http://www.teosoft.it/tags/privacy/</link>
+    <link>https://www.teosoft.it/tags/privacy/</link>
     <description>Recent content in Privacy on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Mar 2018 12:50:13 +0100</lastBuildDate>
     
-	<atom:link href="http://www.teosoft.it/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.teosoft.it/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bonus Paranoia</title>
-      <link>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</link>
+      <link>https://www.teosoft.it/note/2018-03-01-bonus-paranoia/</link>
       <pubDate>Thu, 01 Mar 2018 12:50:13 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</guid>
+      <guid>https://www.teosoft.it/note/2018-03-01-bonus-paranoia/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re feeling especially paranoid there are various things you could do to reduce logging on linux.&lt;/p&gt;</description>
     </item>
     

@@ -2,14 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Bluish capsule</title>
-    <link>http://www.teosoft.it/project/</link>
+    <link>https://www.teosoft.it/project/</link>
     <description>Recent content in Projects on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Feb 2018 15:35:00 +0100</lastBuildDate>
     
-	<atom:link href="http://www.teosoft.it/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.teosoft.it/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Friend Tracker for Facebook</title>
+      <link>https://www.teosoft.it/project/abandoned/friend-tracker-for-facebook/</link>
+      <pubDate>Thu, 21 Aug 2014 00:49:47 +0000</pubDate>
+      
+      <guid>https://www.teosoft.it/project/abandoned/friend-tracker-for-facebook/</guid>
+      <description>This project is discontinued and not available on the play store
+Keep track of your friend list from Facebook.
+With Friend Tracker for Facebook you can see your new friends and track who unfriended you.
+ No username and no password! Just open the app and tap allow on the popup (first time only). You are ready to go. Drag down to refresh. Background download of your friend list. You can come back after a few days and your statistics will be updated, no need to open the app daily.</description>
+    </item>
+    
+    <item>
+      <title>Big Stopwatch</title>
+      <link>https://www.teosoft.it/project/abandoned/big-stopwatch/</link>
+      <pubDate>Thu, 10 Jul 2014 02:54:05 +0000</pubDate>
+      
+      <guid>https://www.teosoft.it/project/abandoned/big-stopwatch/</guid>
+      <description>This project is discontinued and not available on the play store
+A fully featured stopwatch with big buttons.
+When you are taking times you can focus on the thing you are timing and don&amp;rsquo;t look at the buttons on the screen.
+You can easily switch from left to right handed mode.
+Each session is automatically recorded, so you can&amp;rsquo;t accidentally loose data.
+For each session you can view the total time, the best lap, the average lap and a detailed list of the laps.</description>
+    </item>
     
   </channel>
 </rss>

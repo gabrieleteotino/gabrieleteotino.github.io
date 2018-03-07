@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/web/</link>
+    <description>Recent content in Web on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Mar 2018 13:15:08 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Current DNS Tophost</title>
+      <link>https://www.teosoft.it/note/2018-03-05-current-dns-tophost/</link>
+      <pubDate>Mon, 05 Mar 2018 13:15:08 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-05-current-dns-tophost/</guid>
+      <description>Current values    Nome Tipo Valore     @ TXT v=spf1 include:_spf.th.seeweb.it ?all   @ A 217.64.195.207   ftp CNAME w-10.th.seeweb.it   www CNAME gabrieleteotino.github.io   sql CNAME m-10.th.seeweb.it   mail CNAME ghs.google.com   old CNAME w-10.th.seeweb.it    
+   Tipo Priorità Valore     MX 1 ASPMX.L.GOOGLE.COM.   MX 2 ALT1.ASPMX.L.GOOGLE.COM   MX 5 ALT2.</description>
+    </item>
+    
+  </channel>
+</rss>

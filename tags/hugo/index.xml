@@ -2,44 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Bluish capsule</title>
-    <link>http://www.teosoft.it/tags/hugo/</link>
+    <link>https://www.teosoft.it/tags/hugo/</link>
     <description>Recent content in Hugo on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Mar 2018 13:13:49 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 05 Mar 2018 14:33:07 +0100</lastBuildDate>
     
-	<atom:link href="http://www.teosoft.it/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.teosoft.it/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Hugo Shortcuts</title>
+      <link>https://www.teosoft.it/note/2018-03-05-hugo-shortcuts/</link>
+      <pubDate>Mon, 05 Mar 2018 14:33:07 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-05-hugo-shortcuts/</guid>
+      <description>&lt;p&gt;Some useful commands for Hugo.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Hello Page Bundle</title>
-      <link>http://www.teosoft.it/post/2018-03-02-hello-page-bundle/</link>
+      <link>https://www.teosoft.it/post/2018-03-02-hello-page-bundle/</link>
       <pubDate>Fri, 02 Mar 2018 13:13:49 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/post/2018-03-02-hello-page-bundle/</guid>
-      <description>&lt;h2 id=&#34;hello-page-bundle&#34;&gt;Hello Page Bundle&lt;/h2&gt;
-
-&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/content-management/organization/#page-bundles&#34;&gt;Hugo documentation&lt;/a&gt; have a nice example on how to structure images and other resources in a page bundle.&lt;/p&gt;
+      <guid>https://www.teosoft.it/post/2018-03-02-hello-page-bundle/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/content-management/organization/#page-bundles&#34;&gt;Hugo documentation&lt;/a&gt; have a nice example on how to structure images and other resources in a page bundle.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Configure a site using Hugo - part 2</title>
-      <link>http://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</link>
+      <link>https://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</link>
       <pubDate>Fri, 23 Feb 2018 14:35:04 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</guid>
+      <guid>https://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</guid>
       <description>Structure We are going to create the following folders one for each area of the site.
  /content/page - static pages like About and so on /content/post - a section with articles and turorials /content/project - will contain a subfolder for each project /content/review - review of products bough online from amazon, aliexpress, &amp;hellip; /content/note - small snippets of stuff like links to a nice library or an interesting article  Create an index page for each section of the site.</description>
     </item>
     
     <item>
       <title>Configure a site using Hugo - part 1</title>
-      <link>http://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</link>
+      <link>https://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</link>
       <pubDate>Wed, 21 Feb 2018 18:15:33 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</guid>
+      <guid>https://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</guid>
       <description>Using Hugo for this website A step by step description on how the bluish capsule was born.
 Installing Hugo Detailed instructions are available at the official Hugo site
 Download the deb package from Hugo Releases

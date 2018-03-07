@@ -2,43 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bluish capsule</title>
-    <link>http://www.teosoft.it/</link>
+    <link>https://www.teosoft.it/</link>
     <description>Recent content on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Mar 2018 13:13:49 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 05 Mar 2018 14:33:07 +0100</lastBuildDate>
     
-	<atom:link href="http://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Hugo Shortcuts</title>
+      <link>https://www.teosoft.it/note/2018-03-05-hugo-shortcuts/</link>
+      <pubDate>Mon, 05 Mar 2018 14:33:07 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-05-hugo-shortcuts/</guid>
+      <description>&lt;p&gt;Some useful commands for Hugo.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Current DNS Tophost</title>
+      <link>https://www.teosoft.it/note/2018-03-05-current-dns-tophost/</link>
+      <pubDate>Mon, 05 Mar 2018 13:15:08 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-05-current-dns-tophost/</guid>
+      <description>Current values    Nome Tipo Valore     @ TXT v=spf1 include:_spf.th.seeweb.it ?all   @ A 217.64.195.207   ftp CNAME w-10.th.seeweb.it   www CNAME gabrieleteotino.github.io   sql CNAME m-10.th.seeweb.it   mail CNAME ghs.google.com   old CNAME w-10.th.seeweb.it    
+   Tipo Priorità Valore     MX 1 ASPMX.L.GOOGLE.COM.   MX 2 ALT1.ASPMX.L.GOOGLE.COM   MX 5 ALT2.</description>
+    </item>
+    
+    <item>
       <title>Hello Page Bundle</title>
-      <link>http://www.teosoft.it/post/2018-03-02-hello-page-bundle/</link>
+      <link>https://www.teosoft.it/post/2018-03-02-hello-page-bundle/</link>
       <pubDate>Fri, 02 Mar 2018 13:13:49 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/post/2018-03-02-hello-page-bundle/</guid>
-      <description>&lt;h2 id=&#34;hello-page-bundle&#34;&gt;Hello Page Bundle&lt;/h2&gt;
-
-&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/content-management/organization/#page-bundles&#34;&gt;Hugo documentation&lt;/a&gt; have a nice example on how to structure images and other resources in a page bundle.&lt;/p&gt;
+      <guid>https://www.teosoft.it/post/2018-03-02-hello-page-bundle/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/content-management/organization/#page-bundles&#34;&gt;Hugo documentation&lt;/a&gt; have a nice example on how to structure images and other resources in a page bundle.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Bonus Paranoia</title>
-      <link>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</link>
+      <link>https://www.teosoft.it/note/2018-03-01-bonus-paranoia/</link>
       <pubDate>Thu, 01 Mar 2018 12:50:13 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</guid>
+      <guid>https://www.teosoft.it/note/2018-03-01-bonus-paranoia/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re feeling especially paranoid there are various things you could do to reduce logging on linux.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Ansible</title>
-      <link>http://www.teosoft.it/note/2018-02-28-ansible/</link>
+      <link>https://www.teosoft.it/note/2018-02-28-ansible/</link>
       <pubDate>Wed, 28 Feb 2018 15:27:34 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/note/2018-02-28-ansible/</guid>
+      <guid>https://www.teosoft.it/note/2018-02-28-ansible/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.ansible.com&#34;&gt;Ansible&lt;/a&gt; is a tool to deploy and manage devops.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -46,10 +65,10 @@
     
     <item>
       <title>Personal Vpn with Algo on Azure</title>
-      <link>http://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</link>
+      <link>https://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</link>
       <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</guid>
+      <guid>https://www.teosoft.it/post/2018-02-28-personal-vpn-with-algo-on-azure/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s create a VPN server on Azure (other cloud providers are supported).&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -57,29 +76,29 @@
     
     <item>
       <title>About me</title>
-      <link>http://www.teosoft.it/page/about/</link>
+      <link>https://www.teosoft.it/page/about/</link>
       <pubDate>Mon, 26 Feb 2018 11:14:20 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/page/about/</guid>
+      <guid>https://www.teosoft.it/page/about/</guid>
       <description>My name is Gabriele Teotino.</description>
     </item>
     
     <item>
       <title>Configure a site using Hugo - part 2</title>
-      <link>http://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</link>
+      <link>https://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</link>
       <pubDate>Fri, 23 Feb 2018 14:35:04 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</guid>
+      <guid>https://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/</guid>
       <description>Structure We are going to create the following folders one for each area of the site.
  /content/page - static pages like About and so on /content/post - a section with articles and turorials /content/project - will contain a subfolder for each project /content/review - review of products bough online from amazon, aliexpress, &amp;hellip; /content/note - small snippets of stuff like links to a nice library or an interesting article  Create an index page for each section of the site.</description>
     </item>
     
     <item>
       <title>SSH Keys for Github</title>
-      <link>http://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</link>
+      <link>https://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</link>
       <pubDate>Fri, 23 Feb 2018 11:13:18 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</guid>
+      <guid>https://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</guid>
       <description>The complete instruction on Github
 Create a key in the default location without any passphrase (or add one if you like). Then add it to the ssh-agent.
 ssh-keygen -t rsa -b 4096 -C &amp;#34;gabriele@teosoft.it&amp;#34; ssh-add ~/.ssh/id_rsa Copy the key into the clipboard
@@ -88,10 +107,10 @@ cat ~/.ssh/id_rsa.pub Go into your profile and select SSH and GPG keys, click Ad
     
     <item>
       <title>Configure a site using Hugo - part 1</title>
-      <link>http://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</link>
+      <link>https://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</link>
       <pubDate>Wed, 21 Feb 2018 18:15:33 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</guid>
+      <guid>https://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/</guid>
       <description>Using Hugo for this website A step by step description on how the bluish capsule was born.
 Installing Hugo Detailed instructions are available at the official Hugo site
 Download the deb package from Hugo Releases
@@ -103,23 +122,58 @@ For example typing youtube and hitting tab the following snippet will be generat
     
     <item>
       <title>Meccanici description</title>
-      <link>http://www.teosoft.it/project/meccanici/meccanici_description/</link>
+      <link>https://www.teosoft.it/project/meccanici/meccanici_description/</link>
       <pubDate>Wed, 21 Feb 2018 15:33:36 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/project/meccanici/meccanici_description/</guid>
+      <guid>https://www.teosoft.it/project/meccanici/meccanici_description/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>http://www.teosoft.it/post/2018-02-21-hello-world/</link>
+      <link>https://www.teosoft.it/post/2018-02-21-hello-world/</link>
       <pubDate>Wed, 21 Feb 2018 11:57:38 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/post/2018-02-21-hello-world/</guid>
+      <guid>https://www.teosoft.it/post/2018-02-21-hello-world/</guid>
       <description>Hello, World! Some nice features of the Hugo Markdown rederer.
 Incomplete Markdown Cheatsheet Emphasis Markdown in Hugo support all the standard stuff like bold and italic.
 Lists Ordered  item item  subitem   Unordered  item item  subitem subitem   Extensions It also have some useful extension like tables&amp;hellip;
    col1 col2 col3     text text text   text text text   text text text   text text text    &amp;hellip;and syntax highlight</description>
+    </item>
+    
+    <item>
+      <title>Friend Tracker for Facebook</title>
+      <link>https://www.teosoft.it/project/abandoned/friend-tracker-for-facebook/</link>
+      <pubDate>Thu, 21 Aug 2014 00:49:47 +0000</pubDate>
+      
+      <guid>https://www.teosoft.it/project/abandoned/friend-tracker-for-facebook/</guid>
+      <description>This project is discontinued and not available on the play store
+Keep track of your friend list from Facebook.
+With Friend Tracker for Facebook you can see your new friends and track who unfriended you.
+ No username and no password! Just open the app and tap allow on the popup (first time only). You are ready to go. Drag down to refresh. Background download of your friend list. You can come back after a few days and your statistics will be updated, no need to open the app daily.</description>
+    </item>
+    
+    <item>
+      <title>Big Stopwatch</title>
+      <link>https://www.teosoft.it/project/abandoned/big-stopwatch/</link>
+      <pubDate>Thu, 10 Jul 2014 02:54:05 +0000</pubDate>
+      
+      <guid>https://www.teosoft.it/project/abandoned/big-stopwatch/</guid>
+      <description>This project is discontinued and not available on the play store
+A fully featured stopwatch with big buttons.
+When you are taking times you can focus on the thing you are timing and don&amp;rsquo;t look at the buttons on the screen.
+You can easily switch from left to right handed mode.
+Each session is automatically recorded, so you can&amp;rsquo;t accidentally loose data.
+For each session you can view the total time, the best lap, the average lap and a detailed list of the laps.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.teosoft.it/note/ovh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.teosoft.it/note/ovh/</guid>
+      <description>Rimosso teosoft.it to a server (IPv4 - A) 94.23.64.5</description>
     </item>
     
   </channel>

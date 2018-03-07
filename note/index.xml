@@ -2,33 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Bluish capsule</title>
-    <link>http://www.teosoft.it/note/</link>
+    <link>https://www.teosoft.it/note/</link>
     <description>Recent content in Notes on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Feb 2018 11:12:33 +0100</lastBuildDate>
     
-	<atom:link href="http://www.teosoft.it/note/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.teosoft.it/note/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Hugo Shortcuts</title>
+      <link>https://www.teosoft.it/note/2018-03-05-hugo-shortcuts/</link>
+      <pubDate>Mon, 05 Mar 2018 14:33:07 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-05-hugo-shortcuts/</guid>
+      <description>&lt;p&gt;Some useful commands for Hugo.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Current DNS Tophost</title>
+      <link>https://www.teosoft.it/note/2018-03-05-current-dns-tophost/</link>
+      <pubDate>Mon, 05 Mar 2018 13:15:08 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-05-current-dns-tophost/</guid>
+      <description>Current values    Nome Tipo Valore     @ TXT v=spf1 include:_spf.th.seeweb.it ?all   @ A 217.64.195.207   ftp CNAME w-10.th.seeweb.it   www CNAME gabrieleteotino.github.io   sql CNAME m-10.th.seeweb.it   mail CNAME ghs.google.com   old CNAME w-10.th.seeweb.it    
+   Tipo Priorità Valore     MX 1 ASPMX.L.GOOGLE.COM.   MX 2 ALT1.ASPMX.L.GOOGLE.COM   MX 5 ALT2.</description>
+    </item>
+    
+    <item>
       <title>Bonus Paranoia</title>
-      <link>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</link>
+      <link>https://www.teosoft.it/note/2018-03-01-bonus-paranoia/</link>
       <pubDate>Thu, 01 Mar 2018 12:50:13 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/note/2018-03-01-bonus-paranoia/</guid>
+      <guid>https://www.teosoft.it/note/2018-03-01-bonus-paranoia/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re feeling especially paranoid there are various things you could do to reduce logging on linux.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Ansible</title>
-      <link>http://www.teosoft.it/note/2018-02-28-ansible/</link>
+      <link>https://www.teosoft.it/note/2018-02-28-ansible/</link>
       <pubDate>Wed, 28 Feb 2018 15:27:34 +0100</pubDate>
       
-      <guid>http://www.teosoft.it/note/2018-02-28-ansible/</guid>
+      <guid>https://www.teosoft.it/note/2018-02-28-ansible/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.ansible.com&#34;&gt;Ansible&lt;/a&gt; is a tool to deploy and manage devops.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.teosoft.it/note/ovh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.teosoft.it/note/ovh/</guid>
+      <description>Rimosso teosoft.it to a server (IPv4 - A) 94.23.64.5</description>
     </item>
     
   </channel>
