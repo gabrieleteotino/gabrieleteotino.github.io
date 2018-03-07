@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/post/2018-02-26-hugo-configure-a-site-part-3/</loc>
+    <lastmod>2018-02-26T11:41:09+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/page/about/</loc>
     <lastmod>2018-02-26T11:14:20+01:00</lastmod>
   </url>
@@ -103,7 +108,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/atom/</loc>
-    <lastmod>2018-02-23T14:35:04+01:00</lastmod>
+    <lastmod>2018-02-26T11:41:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -198,7 +203,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/</loc>
-    <lastmod>2018-02-23T14:35:04+01:00</lastmod>
+    <lastmod>2018-02-26T11:41:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   
