@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/post/2018-03-01-migrate-wordpress-to-hugo/</loc>
+    <lastmod>2018-03-01T16:59:51+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/note/2018-03-01-bonus-paranoia/</loc>
     <lastmod>2018-03-01T12:50:13+01:00</lastmod>
   </url>
@@ -222,6 +227,12 @@
   <url>
     <loc>https://www.teosoft.it/categories/webdev/</loc>
     <lastmod>2018-03-05T14:33:07+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/wordpress/</loc>
+    <lastmod>2018-03-01T16:59:51+01:00</lastmod>
     <priority>0</priority>
   </url>
   

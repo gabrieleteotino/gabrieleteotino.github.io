@@ -44,6 +44,18 @@
     </item>
     
     <item>
+      <title>Migrate Wordpress to Hugo</title>
+      <link>https://www.teosoft.it/post/2018-03-01-migrate-wordpress-to-hugo/</link>
+      <pubDate>Thu, 01 Mar 2018 16:59:51 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-03-01-migrate-wordpress-to-hugo/</guid>
+      <description>Jekyll Exporter (github page) is a plugin that will export everything from WordPress to Jekyll.
+There is also WordPress to Hugo Exporter but I choose the one for jekyll because the plugin is already available in the WordPress plugins.
+A good amount of work is still needed to fix the results so I didn&amp;rsquo;t bother.
+ Change wordpress site URL The old site url is not available. I created a new CNAME in the DNS.</description>
+    </item>
+    
+    <item>
       <title>Bonus Paranoia</title>
       <link>https://www.teosoft.it/note/2018-03-01-bonus-paranoia/</link>
       <pubDate>Thu, 01 Mar 2018 12:50:13 +0100</pubDate>
