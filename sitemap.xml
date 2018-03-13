@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/post/2018-03-12-hugo-on-kindle-fire-hd/</loc>
+    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/note/2018-03-05-hugo-shortcuts/</loc>
     <lastmod>2018-03-05T14:33:07+01:00</lastmod>
   </url>
@@ -112,6 +117,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/android/</loc>
+    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/atom/</loc>
     <lastmod>2018-02-26T11:41:09+01:00</lastmod>
     <priority>0</priority>
@@ -125,7 +136,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-03-05T14:33:07+01:00</lastmod>
+    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -172,7 +183,13 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/hugo/</loc>
-    <lastmod>2018-03-05T14:33:07+01:00</lastmod>
+    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/kindle-fire-hd/</loc>
+    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -208,7 +225,13 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/</loc>
-    <lastmod>2018-02-26T11:41:09+01:00</lastmod>
+    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/termux/</loc>
+    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -226,7 +249,7 @@
   
   <url>
     <loc>https://www.teosoft.it/categories/webdev/</loc>
-    <lastmod>2018-03-05T14:33:07+01:00</lastmod>
+    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
