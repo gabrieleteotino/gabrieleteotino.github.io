@@ -5,23 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Hugo on Kindle Fire Hd</title>
-  <meta property="og:title" content="Hugo on Kindle Fire Hd" />
-  <meta name="twitter:title" content="Hugo on Kindle Fire Hd" />
-  <meta name="description" content="Using termux on a Kindle Fire HD to manage a hugo site">
-  <meta property="og:description" content="Using termux on a Kindle Fire HD to manage a hugo site">
-  <meta name="twitter:description" content="Using termux on a Kindle Fire HD to manage a hugo site">
+  <title>Netcore 2.1 Preview on Debian</title>
+  <meta property="og:title" content="Netcore 2.1 Preview on Debian" />
+  <meta name="twitter:title" content="Netcore 2.1 Preview on Debian" />
+  <meta name="description" content="Installing and testing .netcore 2.1.0 on Debian Strecth">
+  <meta property="og:description" content="Installing and testing .netcore 2.1.0 on Debian Strecth">
+  <meta name="twitter:description" content="Installing and testing .netcore 2.1.0 on Debian Strecth">
   <meta name="author" content="Gabriele Teotino"/>
   <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://www.teosoft.it/post/2018-03-12-hugo-on-kindle-fire-hd/" />
+  <meta property="og:url" content="https://www.teosoft.it/post/2018-03-13-netcore-2.1-preview-on-debian/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
   <meta name="generator" content="Hugo 0.36.1" />
-  <link rel="canonical" href="https://www.teosoft.it/post/2018-03-12-hugo-on-kindle-fire-hd/" />
+  <link rel="canonical" href="https://www.teosoft.it/post/2018-03-13-netcore-2.1-preview-on-debian/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -201,21 +201,21 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Hugo on Kindle Fire Hd</h1>
+              <h1>Netcore 2.1 Preview on Debian</h1>
                 
                   
-                    <h2 class="post-subheading">Using termux on a Kindle Fire HD to manage a hugo site</h2>
+                    <h2 class="post-subheading">Installing and testing .netcore 2.1.0 on Debian Strecth</h2>
                   
                 
                 
                   <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on March 12, 2018
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on March 13, 2018
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 3 minutes (495 words)
+  <i class="fa fa-clock-o"></i> 3 minutes (486 words)
   
   
 </span>
@@ -235,124 +235,140 @@ ga('send', 'pageview');
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>On a Kindle Fire HD we are going to install everything we need to update our hugo site.</p>
-
-<h2 id="install-termux">Install termux</h2>
-
-<blockquote>
-<p><a href="https://termux.com/">Termux</a> is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required. A minimal base system is installed automatically - additional packages are available using the APT package manager.</p>
-</blockquote>
+        <p>Installation of netcore 2.1.0 preview on debian. Creation of a simple WebApi. Packing and installing the api as service using nginx.</p>
 
 <p></p>
 
-<p>It is available on the <a href="https://play.google.com/store/apps/details?id=com.termux">Play Store</a> and on <a href="https://f-droid.org/repository/browse/?fdid=com.termux">F-Droid</a>.</p>
+<h2 id="disk-usage">Disk usage</h2>
 
-<p>Install and start the application.</p>
+<p>Installing and running the sdk will use about 1.5Gb of disk space in /usr/share/dotnet.</p>
 
-<h3 id="tips">Tips</h3>
+<h2 id="installation">Installation</h2>
 
-<ul>
-<li>Keep pressed <code>Volume-Up</code> plus <code>q</code> on the keyboard to activate a special row on the keyboard.</li>
-<li>Keep pressed <code>Volume-Up</code> plus <code>w</code> to emulate the Up arrow key</li>
-</ul>
+<p>Followin the steps from the <a href="https://www.microsoft.com/net/download/linux-package-manager/debian9/sdk-2.1.300-preview1">offical guide</a>.</p>
 
-<h2 id="install-git">Install git</h2>
+<p>Install system components</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get update
+sudo apt-get install curl libunwind8 gettext apt-transport-https</code></pre></div>
+<p>Register the trusted Microsoft Product key</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">curl https://packages.microsoft.com/keys/microsoft.asc <span class="p">|</span> gpg --dearmor &gt; microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg</code></pre></div>
+<p>Register the Microsoft Product feed</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo sh -c <span class="s1">&#39;echo &#34;deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-stretch-prod stretch main&#34; &gt; /etc/apt/sources.list.d/dotnetdev.list&#39;</span></code></pre></div>
+<p>Install .NET SDK</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install dotnet-sdk-2.1.300-preview1-008174</code></pre></div>
+<h2 id="first-application">First application</h2>
 
-<p>Update the packages</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">apt update
-apt upgrade</code></pre></div>
-<p>Install git and OpenSSH</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">apt install git
-apt install openssh</code></pre></div>
-<h2 id="external-storage">External storage</h2>
+<p>On the first run dotnet will initialize some stuff for nuget, telemetry and so on. It needs sudo privileges.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo dotnet new console -o myApp</code></pre></div>
+<p>From now on it is poosible to run without sudo (probably there is a shorter way of doing the initialization).</p>
 
-<p>Termux store the HOME folder in the application sandbox which is only accessible to the app itself. This is good: only a phone root user can access your private configuration file like ssh keys.</p>
+<p>Remove the application (it has root permission) and recreate it</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo rm -r myApp/
+dotnet new console -o myApp
+<span class="nb">cd</span> myApp
+<span class="c1"># download missing nuget packages
+</span><span class="c1"></span>dotnet restore
+<span class="c1"># start the application
+</span><span class="c1"></span>dotnet run</code></pre></div>
+<p>It should print a nice &lsquo;Hello World!&rsquo;</p>
 
-<p>To be able to edit our website from an external application we have to mount an external storage inside our HOME folder.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">termux-setup-storage
-<span class="nb">cd</span> storage
-ls -la</code></pre></div>
-<p>We see that the command have setup for us a few symlinks to the most used folders: <code>dcim</code>, <code>downloads</code>, <code>movies</code>, <code>music</code>, <code>pictures</code>, <code>shared</code>.</p>
+<h2 id="webapi-application">WebApi application</h2>
 
-<h2 id="github-ssh-keys">Github ssh keys</h2>
+<p>Let&rsquo;s test a simple WebApi.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> ~
+dotnet new webapi -o myWebApi
+<span class="nb">cd</span> myWebApi
+dotnet run</code></pre></div>
+<p>Now with the browser navigate to <a href="https://localhost:5001/api/values">https://localhost:5001/api/values</a> and the response should be <code>[&quot;value1&quot;,&quot;value2&quot;]</code></p>
 
-<h3 id="generate-keys">Generate keys</h3>
+<p>Or with the terminal</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">curl -i https://localhost:5001/api/values -k</code></pre></div>
+<p>Now we remove the requirement for https to simplify the nginx configuration.
+In the file <code>startup.cs</code> comment out the https redirection</p>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="p">//</span> <span class="nc">app</span><span class="p">.</span><span class="n">UseHttpsRedirection</span><span class="p">();</span></code></pre></div>
+<p>Try again without ssl</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">dotnet run
+curl -i http://localhost:5000/api/values</code></pre></div>
+<h2 id="webapi-pubblication-on-nginx">WebApi pubblication on Nginx</h2>
 
-<p>Similar to the process specified in this <a href="/post/2018-02-23-ssh-keys-for-github/">article</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;gabriele@teosoft.it&#34;</span>
-<span class="nb">eval</span> <span class="s2">&#34;</span><span class="k">$(</span>ssh-agent -s<span class="k">)</span><span class="s2">&#34;</span>
-ssh-add ~/.ssh/id_rsa</code></pre></div>
-<p>Now we need something to copy the value of the generated key to the clipboard.</p>
+<p>Install Nginx</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt install nginx
+sudo service nginx start</code></pre></div>
+<p>Configure Nginx by editing <code>/etc/nginx/sites-available/default</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo atom /etc/nginx/sites-available/default</code></pre></div>
+<p>Add the following configuration to set nginx as a proxy to dotnet.</p>
+<div class="highlight"><pre class="chroma">server {
+    listen 80;
+    location / {
+        proxy_pass http://localhost:5000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection keep-alive;
+        proxy_set_header Host $http_host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}</pre></div>
+<p>Test the configuration validity</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo nginx -t</code></pre></div>
+<p>Now let&rsquo;s try a run. At this point the application is still running from a terminal.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo service nginx restart
+dotnet run
+curl -i http://localhost:80/api/values</code></pre></div>
+<h2 id="packing-and-running-the-dotnet-application">Packing and running the dotnet application</h2>
 
-<h3 id="termux-api">Termux:API</h3>
+<h3 id="executable-folder">Executable folder</h3>
 
-<p>Install Termux:API from <a href="https://play.google.com/store/apps/details?id=com.termux.api">Play Store</a> or <a href="https://f-droid.org/packages/com.termux.api/">F-Droid</a></p>
+<p>Create a folder to store the dotnet applications and a folder for the WebApi</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo mkdir /var/aspnetcore
+sudo mkdir /var/aspnetcore/myWebApi
+sudo chown -R www-data:www-data /var/aspnetcore
+sudo chown www-data:www-data /var/aspnetcore/myWebApi</code></pre></div>
+<p>Copy the files</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> ~/myWebApi/
+dotnet publish -c Production
+sudo cp -r ./bin/Production/netcoreapp2.1/publish/* /var/aspnetcore/myWebApi/
+sudo chown -R www-data:www-data /var/aspnetcore/myWebApi/*</code></pre></div>
+<h3 id="system-service">System service</h3>
 
-<p>Now enable the api support inside termux</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">apt install termux-api</code></pre></div>
-<h3 id="activate-github-key">Activate Github key</h3>
+<p>Configure a new systemd service for kestrel</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo atom /etc/systemd/system/kestrel-helloapi.service</code></pre></div>
+<p>Paste the foollowing:</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">Unit</span><span class="p">]</span>
+<span class="nx">Description</span><span class="p">=</span><span class="nx">Example</span> <span class="nx">netcore</span> <span class="mf">2.1</span><span class="p">.</span><span class="mi">0</span> <span class="nx">Web</span> <span class="nx">API</span> <span class="nx">App</span>
 
-<p>Copy the ssh public key value to the clipboard</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cat ./.ssh/id_rsa.pub <span class="p">|</span> termux-clipboard-set</code></pre></div>
-<p>Open a browser and log in to GitHub.</p>
+<span class="p">[</span><span class="nx">Service</span><span class="p">]</span>
+<span class="nx">WorkingDirectory</span><span class="p">=</span><span class="err">/</span><span class="nx">var</span><span class="err">/</span><span class="nx">aspnetcore</span><span class="err">/</span><span class="nx">myWebApi</span>
+<span class="nx">ExecStart</span><span class="p">=</span><span class="err">/</span><span class="nx">usr</span><span class="err">/</span><span class="nx">bin</span><span class="err">/</span><span class="nx">dotnet</span> <span class="err">/</span><span class="nx">var</span><span class="err">/</span><span class="nx">aspnetcore</span><span class="err">/</span><span class="nx">myWebApi</span><span class="err">/</span><span class="nx">myWebApi</span><span class="p">.</span><span class="nx">dll</span>
+<span class="nx">Restart</span><span class="p">=</span><span class="nx">always</span>
+<span class="nx">RestartSec</span><span class="p">=</span><span class="mi">10</span>  <span class="c"># Restart service after 10 seconds if dotnet service crashes</span>
+<span class="nx">SyslogIdentifier</span><span class="p">=</span><span class="nx">dotnet</span><span class="err">-</span><span class="nx">example</span>
+<span class="nx">User</span><span class="p">=</span><span class="nx">www</span><span class="err">-</span><span class="nx">data</span>
+<span class="nx">Environment</span><span class="p">=</span><span class="nx">ASPNETCORE_ENVIRONMENT</span><span class="p">=</span><span class="nx">Production</span>
+<span class="nx">Environment</span><span class="p">=</span><span class="nx">DOTNET_PRINT_TELEMETRY_MESSAGE</span><span class="p">=</span><span class="kc">false</span>
 
-<p>Go into your profile and select <a href="https://github.com/settings/keys">SSH and GPG keys</a>, click <strong>Add SSH key</strong>, add a description and paste the key.</p>
+<span class="p">[</span><span class="nx">Install</span><span class="p">]</span>
+<span class="nx">WantedBy</span><span class="p">=</span><span class="nx">multi</span><span class="err">-</span><span class="nx">user</span><span class="p">.</span><span class="nx">target</span></code></pre></div>
+<p>Save the file and enable the service.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">systemctl <span class="nb">enable</span> kestrel-helloapi.service</code></pre></div>
+<p>Manage the status of the service</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo service kestrel-helloapi status
+sudo service kestrel-helloapi restart</code></pre></div>
+<h3 id="go">GO</h3>
 
-<h2 id="clone-the-repository">Clone the repository</h2>
-
-<p>The repository will be cloned in the shared folder. This way it will be possible for other application to edit the content files.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> storage/shared
-git clone --recurse-submodules -j8 git@github.com:gabrieleteotino/bluish-capsule.git
-<span class="nb">cd</span> bluish-capsule
-ls -la</code></pre></div>
-<h2 id="install-hugo">Install hugo</h2>
-
-<p>We will install a prebuilt release (it is also possible to build from the sources).</p>
-
-<p>Go to the <a href="https://github.com/gohugoio/hugo/releases">hugo releases</a> and find the url for the linux-ARM.tar.gz</p>
-
-<p>Note: the deb package is in <em>armhf</em> and is not installable because my system support only arm.</p>
-
-<p>Note: wget is not available with apt in Termux.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># install wget
-</span><span class="c1"></span>pkg install wget
-<span class="c1"># move back to home
-</span><span class="c1"></span><span class="nb">cd</span>
-<span class="c1"># download the file
-</span><span class="c1"></span>wget https://github.com/gohugoio/hugo/releases/download/v0.37.1/hugo_0.37.1_Linux-ARM.tar.gz
-<span class="c1"># extract
-</span><span class="c1"></span>tar xzf hugo_0.37.1_Linux-ARM.tar.gz</code></pre></div>
-<p>Install the binary into a personal <code>bin</code> folder. Easy to manage and upgrade.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">mkdir -p ~/bin
-<span class="nb">cd</span> ~
-mv hugo ~/bin/hugo
-<span class="nb">cd</span> ~/bin
-./hugo version</code></pre></div>
-<p>Add bin path</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">vim ~/.bash_profile</code></pre></div>
-<p>Add the following line
-<code>export PATH=$PATH:$HOME/bin</code></p>
-
-<p>Open a new terminal session ( or <code>. ~/.bash_profile</code>) and test</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">which hugo
-hugo version</code></pre></div>
-<h2 id="run-the-site">Run the site</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> ~/storage/shared/bluish-capsule
-hugo server -D</code></pre></div>
-<p>This page was edited and published from my kindle. A bit painful but doable.</p>
+<p>Test that all is ok</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">curl -i http://localhost:80/api/values</code></pre></div>
       </article>
 
       
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://www.teosoft.it/post/2018-03-02-hello-page-bundle/" data-toggle="tooltip" data-placement="top" title="Hello Page Bundle">&larr; Previous Post</a>
+              <a href="https://www.teosoft.it/post/2018-03-12-hugo-on-kindle-fire-hd/" data-toggle="tooltip" data-placement="top" title="Hugo on Kindle Fire Hd">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://www.teosoft.it/post/2018-03-13-netcore-2.1-preview-on-debian/" data-toggle="tooltip" data-placement="top" title="Netcore 2.1 Preview on Debian">Next Post &rarr;</a>
-            </li>
           
         </ul>
       

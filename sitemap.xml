@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/note/2018-03-13-remove-libreoffice/</loc>
+    <lastmod>2018-03-13T11:37:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/post/2018-03-13-netcore-2.1-preview-on-debian/</loc>
+    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/post/2018-03-12-hugo-on-kindle-fire-hd/</loc>
     <lastmod>2018-03-12T13:43:50+01:00</lastmod>
   </url>
@@ -136,13 +146,13 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
+    <lastmod>2018-03-13T11:37:55+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.teosoft.it/tags/c#/</loc>
-    <lastmod>2018-02-21T15:33:36+01:00</lastmod>
+    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -158,6 +168,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/debian/</loc>
+    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/categories/dev/</loc>
     <lastmod>2018-02-21T15:33:36+01:00</lastmod>
     <priority>0</priority>
@@ -165,13 +181,19 @@
   
   <url>
     <loc>https://www.teosoft.it/categories/development/</loc>
-    <lastmod>2018-02-28T15:27:34+01:00</lastmod>
+    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.teosoft.it/tags/devops/</loc>
     <lastmod>2018-02-28T15:27:34+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/categories/devops/</loc>
+    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -188,6 +210,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/kestrel/</loc>
+    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/kindle-fire-hd/</loc>
     <lastmod>2018-03-12T13:43:50+01:00</lastmod>
     <priority>0</priority>
@@ -195,13 +223,25 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/linux/</loc>
-    <lastmod>2018-03-01T12:50:13+01:00</lastmod>
+    <lastmod>2018-03-13T11:37:55+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/netcore/</loc>
+    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.teosoft.it/categories/networking/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/nginx/</loc>
+    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -220,6 +260,18 @@
   <url>
     <loc>https://www.teosoft.it/tags/python/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/strecth/</loc>
+    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/categories/sysop/</loc>
+    <lastmod>2018-03-13T11:37:55+01:00</lastmod>
     <priority>0</priority>
   </url>
   
