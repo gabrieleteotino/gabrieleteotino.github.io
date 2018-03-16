@@ -6,10 +6,25 @@
     <description>Recent content on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Mar 2018 14:54:48 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 16 Mar 2018 11:56:32 +0100</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ncdu: du with a nice interface</title>
+      <link>https://www.teosoft.it/note/2018-03-16-ncdu-du-with-a-nice-interface/</link>
+      <pubDate>Fri, 16 Mar 2018 11:56:32 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-16-ncdu-du-with-a-nice-interface/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://dev.yorhel.nl/ncdu&#34;&gt;ncdu&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Ncdu is a disk usage analyzer with an ncurses interface. It is designed to find space hogs on a remote server where you don&amp;rsquo;t have an entire graphical setup available, but it is a useful tool even on regular desktop systems. Ncdu aims to be fast, simple and easy to use, and should be able to run in any minimal POSIX-like environment with ncurses installed.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>View and extract content from msi</title>

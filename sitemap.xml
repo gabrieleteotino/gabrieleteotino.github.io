@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/note/2018-03-16-ncdu-du-with-a-nice-interface/</loc>
+    <lastmod>2018-03-16T11:56:32+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/note/2018-03-15-view-and-extract-content-from-msi/</loc>
     <lastmod>2018-03-15T14:54:48+01:00</lastmod>
   </url>
@@ -151,7 +156,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-03-15T14:54:48+01:00</lastmod>
+    <lastmod>2018-03-16T11:56:32+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -228,7 +233,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/linux/</loc>
-    <lastmod>2018-03-13T11:37:55+01:00</lastmod>
+    <lastmod>2018-03-16T11:56:32+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -313,6 +318,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/tools/</loc>
     <lastmod>2018-03-15T14:54:48+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/categories/tools/</loc>
+    <lastmod>2018-03-16T11:56:32+01:00</lastmod>
     <priority>0</priority>
   </url>
   
