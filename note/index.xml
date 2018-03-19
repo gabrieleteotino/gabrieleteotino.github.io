@@ -12,6 +12,44 @@
     
     
     <item>
+      <title>ncdu: du with a nice interface</title>
+      <link>https://www.teosoft.it/note/2018-03-16-ncdu-du-with-a-nice-interface/</link>
+      <pubDate>Fri, 16 Mar 2018 11:56:32 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-16-ncdu-du-with-a-nice-interface/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://dev.yorhel.nl/ncdu&#34;&gt;ncdu&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Ncdu is a disk usage analyzer with an ncurses interface. It is designed to find space hogs on a remote server where you don&amp;rsquo;t have an entire graphical setup available, but it is a useful tool even on regular desktop systems. Ncdu aims to be fast, simple and easy to use, and should be able to run in any minimal POSIX-like environment with ncurses installed.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>View and extract content from msi</title>
+      <link>https://www.teosoft.it/note/2018-03-15-view-and-extract-content-from-msi/</link>
+      <pubDate>Thu, 15 Mar 2018 14:54:48 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-15-view-and-extract-content-from-msi/</guid>
+      <description>Less MSIérables
+From their site
+ A tool to view and extract the contents of an Windows Installer (.msi) file.
+ It just works. No installation required.
+Browse all the contents of the msi file, extract single files, view tables. Usable from a nice simple GUI or from the command line.</description>
+    </item>
+    
+    <item>
+      <title>Remove LibreOffice</title>
+      <link>https://www.teosoft.it/note/2018-03-13-remove-libreoffice/</link>
+      <pubDate>Tue, 13 Mar 2018 11:37:55 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-13-remove-libreoffice/</guid>
+      <description>To free up some space I removed LibreOffice and obtained about 720M of space.
+sudo apt-get remove --purge libreoffice* sudo apt-get clean sudo apt-get autoremove</description>
+    </item>
+    
+    <item>
       <title>Hugo Shortcuts</title>
       <link>https://www.teosoft.it/note/2018-03-05-hugo-shortcuts/</link>
       <pubDate>Mon, 05 Mar 2018 14:33:07 +0100</pubDate>

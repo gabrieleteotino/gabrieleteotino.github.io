@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/tools/</link>
+    <description>Recent content in Tools on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Mar 2018 14:54:48 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>View and extract content from msi</title>
+      <link>https://www.teosoft.it/note/2018-03-15-view-and-extract-content-from-msi/</link>
+      <pubDate>Thu, 15 Mar 2018 14:54:48 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-15-view-and-extract-content-from-msi/</guid>
+      <description>Less MSIérables
+From their site
+ A tool to view and extract the contents of an Windows Installer (.msi) file.
+ It just works. No installation required.
+Browse all the contents of the msi file, extract single files, view tables. Usable from a nice simple GUI or from the command line.</description>
+    </item>
+    
+  </channel>
+</rss>

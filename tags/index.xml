@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Feb 2018 11:41:09 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 12 Mar 2018 13:43:50 +0100</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android</title>
+      <link>https://www.teosoft.it/tags/android/</link>
+      <pubDate>Mon, 12 Mar 2018 13:43:50 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/android/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Atom</title>
@@ -32,9 +41,18 @@
     <item>
       <title>C#</title>
       <link>https://www.teosoft.it/tags/c#/</link>
-      <pubDate>Wed, 21 Feb 2018 15:33:36 +0100</pubDate>
+      <pubDate>Tue, 13 Mar 2018 10:46:21 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/c#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Debian</title>
+      <link>https://www.teosoft.it/tags/debian/</link>
+      <pubDate>Mon, 19 Mar 2018 09:40:14 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/debian/</guid>
       <description></description>
     </item>
     
@@ -44,6 +62,15 @@
       <pubDate>Wed, 28 Feb 2018 15:27:34 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Encryption</title>
+      <link>https://www.teosoft.it/tags/encryption/</link>
+      <pubDate>Mon, 19 Mar 2018 09:40:14 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/encryption/</guid>
       <description></description>
     </item>
     
@@ -59,18 +86,81 @@
     <item>
       <title>Hugo</title>
       <link>https://www.teosoft.it/tags/hugo/</link>
-      <pubDate>Mon, 05 Mar 2018 14:33:07 +0100</pubDate>
+      <pubDate>Mon, 12 Mar 2018 13:43:50 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Kestrel</title>
+      <link>https://www.teosoft.it/tags/kestrel/</link>
+      <pubDate>Tue, 13 Mar 2018 10:46:21 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/kestrel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kindle Fire Hd</title>
+      <link>https://www.teosoft.it/tags/kindle-fire-hd/</link>
+      <pubDate>Mon, 12 Mar 2018 13:43:50 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/kindle-fire-hd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>https://www.teosoft.it/tags/linux/</link>
-      <pubDate>Thu, 01 Mar 2018 12:50:13 +0100</pubDate>
+      <pubDate>Fri, 16 Mar 2018 11:56:32 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Luks</title>
+      <link>https://www.teosoft.it/tags/luks/</link>
+      <pubDate>Mon, 19 Mar 2018 09:40:14 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/luks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Msi</title>
+      <link>https://www.teosoft.it/tags/msi/</link>
+      <pubDate>Thu, 15 Mar 2018 14:54:48 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/msi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Netcore</title>
+      <link>https://www.teosoft.it/tags/netcore/</link>
+      <pubDate>Tue, 13 Mar 2018 10:46:21 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/netcore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>https://www.teosoft.it/tags/nginx/</link>
+      <pubDate>Tue, 13 Mar 2018 10:46:21 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opensource</title>
+      <link>https://www.teosoft.it/tags/opensource/</link>
+      <pubDate>Thu, 15 Mar 2018 14:54:48 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/opensource/</guid>
       <description></description>
     </item>
     
@@ -89,6 +179,51 @@
       <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://www.teosoft.it/tags/security/</link>
+      <pubDate>Mon, 19 Mar 2018 09:40:14 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Strecth</title>
+      <link>https://www.teosoft.it/tags/strecth/</link>
+      <pubDate>Tue, 13 Mar 2018 10:46:21 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/strecth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Termux</title>
+      <link>https://www.teosoft.it/tags/termux/</link>
+      <pubDate>Mon, 12 Mar 2018 13:43:50 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/termux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://www.teosoft.it/tags/tools/</link>
+      <pubDate>Thu, 15 Mar 2018 14:54:48 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualbox</title>
+      <link>https://www.teosoft.it/tags/virtualbox/</link>
+      <pubDate>Mon, 19 Mar 2018 09:40:14 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/virtualbox/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/android/</link>
+    <description>Recent content in Android on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Mar 2018 13:43:50 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo on Kindle Fire Hd</title>
+      <link>https://www.teosoft.it/post/2018-03-12-hugo-on-kindle-fire-hd/</link>
+      <pubDate>Mon, 12 Mar 2018 13:43:50 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-03-12-hugo-on-kindle-fire-hd/</guid>
+      <description>&lt;p&gt;On a Kindle Fire HD we are going to install everything we need to update our hugo site.&lt;/p&gt;
+
+&lt;h2 id=&#34;install-termux&#34;&gt;Install termux&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://termux.com/&#34;&gt;Termux&lt;/a&gt; is an Android terminal emulator and Linux environment app that works directly with no rooting or setup required. A minimal base system is installed automatically - additional packages are available using the APT package manager.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
