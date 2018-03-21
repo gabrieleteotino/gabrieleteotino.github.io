@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C# on Bluish capsule</title>
-    <link>https://www.teosoft.it/tags/c#/</link>
-    <description>Recent content in C# on Bluish capsule</description>
+    <title>Postgresql on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/postgresql/</link>
+    <description>Recent content in Postgresql on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Mar 2018 13:06:00 +0100</lastBuildDate>
     
-	<atom:link href="https://www.teosoft.it/tags/c#/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.teosoft.it/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,26 +20,6 @@
       <description>Install and configure postgresql sudo apt install postgresql-9.6 ... Creating new cluster 9.6/main ... config /etc/postgresql/9.6/main data /var/lib/postgresql/9.6/main locale en_US.UTF-8 socket /var/run/postgresql port 5432 ... Test if the database is working
 sudo su - postgres postgres$ psql psql (9.6.4) Type &amp;#34;help&amp;#34; for help. postgres=# \q exit Create two users in postgresql: one equal to the current interactive user for pgAdmin3 the other for marten.
 sudo -u postgres -i # this must be same as the current interactive user createuser --interactive zap Shall the new role be a superuser?</description>
-    </item>
-    
-    <item>
-      <title>Netcore 2.1 Preview on Debian</title>
-      <link>https://www.teosoft.it/post/2018-03-13-netcore-2.1-preview-on-debian/</link>
-      <pubDate>Tue, 13 Mar 2018 10:46:21 +0100</pubDate>
-      
-      <guid>https://www.teosoft.it/post/2018-03-13-netcore-2.1-preview-on-debian/</guid>
-      <description>&lt;p&gt;Installation of netcore 2.1.0 preview on debian. Creation of a simple WebApi. Packing and installing the api as service using nginx.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Meccanici description</title>
-      <link>https://www.teosoft.it/project/meccanici/meccanici_description/</link>
-      <pubDate>Wed, 21 Feb 2018 15:33:36 +0100</pubDate>
-      
-      <guid>https://www.teosoft.it/project/meccanici/meccanici_description/</guid>
-      <description></description>
     </item>
     
   </channel>

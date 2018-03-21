@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>.Net Core Marten and Postgres</title>
+      <link>https://www.teosoft.it/post/2018-03-20-netcore-marten-and-postgres-part-1/</link>
+      <pubDate>Tue, 20 Mar 2018 13:06:00 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-03-20-netcore-marten-and-postgres-part-1/</guid>
+      <description>Install and configure postgresql sudo apt install postgresql-9.6 ... Creating new cluster 9.6/main ... config /etc/postgresql/9.6/main data /var/lib/postgresql/9.6/main locale en_US.UTF-8 socket /var/run/postgresql port 5432 ... Test if the database is working
+sudo su - postgres postgres$ psql psql (9.6.4) Type &amp;#34;help&amp;#34; for help. postgres=# \q exit Create two users in postgresql: one equal to the current interactive user for pgAdmin3 the other for marten.
+sudo -u postgres -i # this must be same as the current interactive user createuser --interactive zap Shall the new role be a superuser?</description>
+    </item>
+    
+    <item>
       <title>Expand VirtualBox Debian encrypted disk</title>
       <link>https://www.teosoft.it/post/2018-03-19-expand-virtualbox-debian-encrypted-disk/</link>
       <pubDate>Mon, 19 Mar 2018 09:40:14 +0100</pubDate>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/post/2018-03-20-netcore-marten-and-postgres-part-1/</loc>
+    <lastmod>2018-03-20T13:06:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/post/2018-03-19-expand-virtualbox-debian-encrypted-disk/</loc>
     <lastmod>2018-03-19T09:40:14+01:00</lastmod>
   </url>
@@ -161,13 +166,13 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-03-19T09:40:14+01:00</lastmod>
+    <lastmod>2018-03-20T13:06:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.teosoft.it/tags/c#/</loc>
-    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
+    <lastmod>2018-03-20T13:06:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -196,7 +201,7 @@
   
   <url>
     <loc>https://www.teosoft.it/categories/development/</loc>
-    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
+    <lastmod>2018-03-20T13:06:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -268,7 +273,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/netcore/</loc>
-    <lastmod>2018-03-13T10:46:21+01:00</lastmod>
+    <lastmod>2018-03-20T13:06:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -293,6 +298,12 @@
   <url>
     <loc>https://www.teosoft.it/page/</loc>
     <lastmod>2018-02-26T11:14:20+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/postgresql/</loc>
+    <lastmod>2018-03-20T13:06:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   

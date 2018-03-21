@@ -6,10 +6,21 @@
     <description>Recent content in Netcore on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Mar 2018 10:46:21 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 20 Mar 2018 13:06:00 +0100</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/netcore/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>.Net Core Marten and Postgres</title>
+      <link>https://www.teosoft.it/post/2018-03-20-netcore-marten-and-postgres-part-1/</link>
+      <pubDate>Tue, 20 Mar 2018 13:06:00 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-03-20-netcore-marten-and-postgres-part-1/</guid>
+      <description>Install and configure postgresql sudo apt install postgresql-9.6 ... Creating new cluster 9.6/main ... config /etc/postgresql/9.6/main data /var/lib/postgresql/9.6/main locale en_US.UTF-8 socket /var/run/postgresql port 5432 ... Test if the database is working
+sudo su - postgres postgres$ psql psql (9.6.4) Type &amp;#34;help&amp;#34; for help. postgres=# \q exit Create two users in postgresql: one equal to the current interactive user for pgAdmin3 the other for marten.
+sudo -u postgres -i # this must be same as the current interactive user createuser --interactive zap Shall the new role be a superuser?</description>
+    </item>
     
     <item>
       <title>Netcore 2.1 Preview on Debian</title>

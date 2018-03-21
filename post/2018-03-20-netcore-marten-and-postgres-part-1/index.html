@@ -5,23 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Expand VirtualBox Debian encrypted disk</title>
-  <meta property="og:title" content="Expand VirtualBox Debian encrypted disk" />
-  <meta name="twitter:title" content="Expand VirtualBox Debian encrypted disk" />
-  <meta name="description" content="Expand a luks encrypted root partition in a Debian Stretch Virtualbox machine.">
-  <meta property="og:description" content="Expand a luks encrypted root partition in a Debian Stretch Virtualbox machine.">
-  <meta name="twitter:description" content="Expand a luks encrypted root partition in a Debian Stretch Virtualbox machine.">
+  <title>.Net Core Marten and Postgres</title>
+  <meta property="og:title" content=".Net Core Marten and Postgres" />
+  <meta name="twitter:title" content=".Net Core Marten and Postgres" />
+  <meta name="description" content="Install and configure postgresql sudo apt install postgresql-9.6 ... Creating new cluster 9.6/main ... config /etc/postgresql/9.6/main data /var/lib/postgresql/9.6/main locale en_US.UTF-8 socket /var/run/postgresql port 5432 ... Test if the database is working
+sudo su - postgres postgres$ psql psql (9.6.4) Type &#34;help&#34; for help. postgres=# \q exit Create two users in postgresql: one equal to the current interactive user for pgAdmin3 the other for marten.
+sudo -u postgres -i # this must be same as the current interactive user createuser --interactive zap Shall the new role be a superuser?">
+  <meta property="og:description" content="Install and configure postgresql sudo apt install postgresql-9.6 ... Creating new cluster 9.6/main ... config /etc/postgresql/9.6/main data /var/lib/postgresql/9.6/main locale en_US.UTF-8 socket /var/run/postgresql port 5432 ... Test if the database is working
+sudo su - postgres postgres$ psql psql (9.6.4) Type &#34;help&#34; for help. postgres=# \q exit Create two users in postgresql: one equal to the current interactive user for pgAdmin3 the other for marten.
+sudo -u postgres -i # this must be same as the current interactive user createuser --interactive zap Shall the new role be a superuser?">
+  <meta name="twitter:description" content="Install and configure postgresql sudo apt install postgresql-9.6 ... Creating new cluster 9.6/main ... config /etc/postgresql/9.6/main data /var/lib/postgresql/9.6/main locale en_US.UTF-8 socket …">
   <meta name="author" content="Gabriele Teotino"/>
   <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://www.teosoft.it/post/2018-03-19-expand-virtualbox-debian-encrypted-disk/" />
+  <meta property="og:url" content="https://www.teosoft.it/post/2018-03-20-netcore-marten-and-postgres-part-1/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
   <meta name="generator" content="Hugo 0.36.1" />
-  <link rel="canonical" href="https://www.teosoft.it/post/2018-03-19-expand-virtualbox-debian-encrypted-disk/" />
+  <link rel="canonical" href="https://www.teosoft.it/post/2018-03-20-netcore-marten-and-postgres-part-1/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -201,21 +205,17 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Expand VirtualBox Debian encrypted disk</h1>
-                
-                  
-                    <h2 class="post-subheading">Expand a luks encrypted root partition in a Debian Stretch Virtualbox machine.</h2>
-                  
+              <h1>.Net Core Marten and Postgres</h1>
                 
                 
                   <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on March 19, 2018
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on March 20, 2018
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 2 minutes (294 words)
+  <i class="fa fa-clock-o"></i> 2 minutes (360 words)
   
   
 </span>
@@ -235,125 +235,109 @@ ga('send', 'pageview');
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>I have a VirtualBox machine with full disk encryption. The space for the root partition is almost finished.</p>
+        
 
-<p></p>
+<h2 id="install-and-configure-postgresql">Install and configure postgresql</h2>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt install postgresql-9.6
+  ...
+  Creating new cluster <span class="m">9</span>.6/main ...
+    config /etc/postgresql/9.6/main
+    data   /var/lib/postgresql/9.6/main
+    locale en_US.UTF-8
+    socket /var/run/postgresql
+    port   <span class="m">5432</span>
+  ...</code></pre></div>
+<p>Test if the database is working</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo su - postgres
+postgres$ psql
+  psql <span class="o">(</span><span class="m">9</span>.6.4<span class="o">)</span>
+  Type <span class="s2">&#34;help&#34;</span> <span class="k">for</span> help.
+<span class="nv">postgres</span><span class="o">=</span><span class="c1"># \q
+</span><span class="c1"></span>exit</code></pre></div>
+<p>Create two users in postgresql: one equal to the current interactive user for pgAdmin3 the other for marten.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo -u postgres -i
+<span class="c1"># this must be same as the current interactive user
+</span><span class="c1"></span>createuser --interactive zap
+  Shall the new role be a superuser? <span class="o">(</span>y/n<span class="o">)</span> y
+<span class="c1"># for this user we set a password
+</span><span class="c1"></span>createuser --interactive marten_user -P
+  Enter password <span class="k">for</span> new role:
+  Enter it again:
+  Shall the new role be a superuser? <span class="o">(</span>y/n<span class="o">)</span> y</code></pre></div>
+<p>Install pgAdmin III</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt install pgadmin3</code></pre></div>
+<p>Launch from <em>Application</em> -&gt; <em>Development</em> -&gt; <em>pgAdmin III</em></p>
 
-<h2 id="expand-virtualbox-vdi-size">Expand VirtualBox vdi size</h2>
+<p>To connect to local leave the host empty, use your current interactive user and leave the password blank.</p>
 
-<p>Remove all snapshots or clone the machine.
-Make a backup copy.</p>
+<p><img src="screenshot_connect_pgadmin3.png" alt="Connect to Postgresql dialog" /></p>
 
-<h3 id="expand-from-command-line">Expand from command line</h3>
+<p>To create a new database rigth click on <em>Databases</em> -&gt; <em>New Database&hellip;</em>, name the new database <em>marten_db</em>, set <em>marten_user</em> as the <em>Owner</em> and click ok.</p>
 
-<p>The command to resize the disk is</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">VBoxManage modifymedium &lt;absolute path to file&gt; --resize &lt;size in MB&gt;</code></pre></div>
-<p>If VBoxManage is not in PATH add the full path</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="s2">&#34;C:\Program Files\Oracle\VirtualBox\VBoxManage&#34;</span> modifymedium disk <span class="s2">&#34;D:\VirtualBox VMs\DebianBP Zap\DebianBP Zap.vdi&#34;</span> --resize <span class="m">40000</span></code></pre></div>
-<h3 id="expand-from-virtualbox-gui">Expand from VirtualBox GUI</h3>
+<h2 id="net-core-application">.net core Application</h2>
 
-<ul>
-<li>Open the application</li>
-<li>File -&gt; Virtual Media Manager</li>
-<li>Click on Properties</li>
-<li>Select the disk</li>
-<li>Select the new size</li>
-<li>Click Apply</li>
-</ul>
+<p>Create a command line Application</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">dotnet new console -o martenApp
+<span class="nb">cd</span> martenApp/
+<span class="c1"># add Marten fron NuGet
+</span><span class="c1"></span>dotnet add package Marten
+<span class="c1"># test
+</span><span class="c1"></span>dotnet run</code></pre></div>
+<p>Create a folder <code>Models</code> and add a class <code>User.cs</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
 
-<p><img src="virtualbox-resize-disk.png" alt="VirtualBox resize disk" /></p>
+<span class="k">namespace</span> <span class="nn">Models</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">User</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="n">Guid</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">public</span> <span class="kt">string</span> <span class="n">FirstName</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">public</span> <span class="kt">string</span> <span class="n">LastName</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">public</span> <span class="kt">bool</span> <span class="n">Internal</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">public</span> <span class="kt">string</span> <span class="n">UserName</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Modify the <code>Main</code> method of <code>Program.cs</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="na">[]</span> <span class="n">args</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">store</span> <span class="p">=</span> <span class="n">DocumentStore</span>
+        <span class="p">.</span><span class="n">For</span><span class="p">(</span><span class="s">&#34;host=localhost;database=marten_db;password=marten_password;username=marten_user&#34;</span><span class="p">);</span>
 
-<h2 id="live-cd">Live CD</h2>
+    <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">session</span> <span class="p">=</span> <span class="nc">store</span><span class="p">.</span><span class="n">LightweightSession</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="kt">var</span> <span class="n">user</span> <span class="p">=</span> <span class="k">new</span> <span class="n">User</span> <span class="p">{</span> <span class="n">FirstName</span> <span class="p">=</span> <span class="s">&#34;Han&#34;</span><span class="p">,</span> <span class="n">LastName</span> <span class="p">=</span> <span class="s">&#34;Solo&#34;</span> <span class="p">};</span>
+        <span class="nc">session</span><span class="p">.</span><span class="n">Store</span><span class="p">(</span><span class="n">user</span><span class="p">);</span>
 
-<ul>
-<li>Download <a href="http://www.system-rescue-cd.org/Download/">System rescue cd</a></li>
-<li>Attach the image to the virtual machine</li>
-<li>Boot</li>
-<li>Choose &ldquo;start the graphical environment&rdquo;</li>
-</ul>
+        <span class="nc">session</span><span class="p">.</span><span class="n">SaveChanges</span><span class="p">();</span>
+        <span class="nc">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;User saved&#34;</span><span class="p">);</span>
+    <span class="p">}</span>
 
-<p><img src="systemrescuecd-boot-options.png" alt="graphical environment" /></p>
+    <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">session</span> <span class="p">=</span> <span class="nc">store</span><span class="p">.</span><span class="n">OpenSession</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="kt">var</span> <span class="n">existingUser</span> <span class="p">=</span> <span class="n">session</span>
+            <span class="p">.</span><span class="n">Query</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;()</span>
+            <span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="nc">x</span><span class="p">.</span><span class="n">FirstName</span> <span class="p">==</span> <span class="s">&#34;Han&#34;</span> <span class="p">&amp;&amp;</span> <span class="nc">x</span><span class="p">.</span><span class="n">LastName</span> <span class="p">==</span> <span class="s">&#34;Solo&#34;</span><span class="p">)</span>
+            <span class="p">.</span><span class="n">Single</span><span class="p">();</span>
+        <span class="nc">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Found {existingUser.FirstName} {existingUser.LastName}&#34;</span><span class="p">);</span>
+    <span class="p">}</span>
 
-<ul>
-<li>Keymap for italian keyboard is 21</li>
-</ul>
+    <span class="nc">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Done!&#34;</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>Running the application this program will create a table and some functions for the <em>User</em> class, add a row and load it back.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">dotnet run</code></pre></div>
+<p>Note the four functions and the table <em>mt_doc_user</em></p>
 
-<h2 id="resize">Resize</h2>
+<p><img src="screenshot-marten-tables-pgadmin3.png" alt="Marten generated tables" /></p>
 
-<p>Original steps from <a href="https://unix.stackexchange.com/a/322631">stackexchange</a></p>
-
-<p>Actual partitioning of sda is</p>
-
-<ul>
-<li>1 256MB primary boot</li>
-<li>2 32GB extended
-
-<ul>
-<li>5 32GB logical</li>
-</ul></li>
-</ul>
-
-<p>Modified steps for my partition layout</p>
-
-<ol>
-<li><p>open the encrypted volume</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cryptsetup luksOpen /dev/sda5 crypt-volume</code></pre></div></li>
-
-<li><p>extend the partition</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">parted /dev/sda
-resizepart <span class="m">2</span> <span class="m">100</span>%
-resizepart <span class="m">5</span> <span class="m">100</span>%
-quit</code></pre></div></li>
-
-<li><p>stop using the VG</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># display attributes of volume groups, the name zap-bp-vg is from the &#34;VG Name&#34;
-</span><span class="c1"></span>vgdisplay
-<span class="c1"># deactivate the VG
-</span><span class="c1"></span>vgchange -a n zap-bp-vg</code></pre></div></li>
-
-<li><p>close the encrypted volume</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cryptsetup luksClose crypt-volume</code></pre></div></li>
-
-<li><p>open it again</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cryptsetup luksOpen /dev/sda5 crypt-volume</code></pre></div></li>
-
-<li><p>resize the LUKS volume to the available space</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cryptsetup resize crypt-volume</code></pre></div></li>
-
-<li><p>Activate the VG</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">vgchange -a y zap-bp-vg</code></pre></div></li>
-
-<li><p>Resize the PV</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">pvresize /dev/mapper/crypt-volume</code></pre></div></li>
-
-<li><p>Resize the LV for / to 100% of the free space</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># display attributes of a logical volume, the name /dev/zap-bp-vg/root is from the &#34;LV Path&#34;
-</span><span class="c1"></span>lvdisplay
-lvresize -l+100%FREE /dev/zap-bp-vg/root</code></pre></div></li>
-
-<li><p>check the fs</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># find the volume path
-</span><span class="c1"></span>ls /dev/mapper/
-e2fsck -f /dev/mapper/zap--bg--vg-root</code></pre></div></li>
-
-<li><p>resize the filesystem (automatically uses 100% free space)</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">resize2fs /dev/mapper/zap--bg--vg-root</code></pre></div></li>
-</ol>
-
-<p>Reboot and remove the <em>System rescue cd</em> image.</p>
       </article>
 
       
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://www.teosoft.it/post/2018-03-13-netcore-2.1-preview-on-debian/" data-toggle="tooltip" data-placement="top" title="Netcore 2.1 Preview on Debian">&larr; Previous Post</a>
+              <a href="https://www.teosoft.it/post/2018-03-19-expand-virtualbox-debian-encrypted-disk/" data-toggle="tooltip" data-placement="top" title="Expand VirtualBox Debian encrypted disk">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://www.teosoft.it/post/2018-03-20-netcore-marten-and-postgres-part-1/" data-toggle="tooltip" data-placement="top" title=".Net Core Marten and Postgres">Next Post &rarr;</a>
-            </li>
           
         </ul>
       
