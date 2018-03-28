@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Snap and Firefox</title>
+      <link>https://www.teosoft.it/note/2018-03-28-snapcraft-and-firefox/</link>
+      <pubDate>Wed, 28 Mar 2018 14:43:13 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-03-28-snapcraft-and-firefox/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://snapcraft.io/&#34;&gt;Snapcraft&lt;/a&gt; is a tool to install containerized software packages.&lt;/p&gt;
+
+&lt;p&gt;Now Firefox is available!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>ncdu: du with a nice interface</title>
       <link>https://www.teosoft.it/note/2018-03-16-ncdu-du-with-a-nice-interface/</link>
       <pubDate>Fri, 16 Mar 2018 11:56:32 +0100</pubDate>

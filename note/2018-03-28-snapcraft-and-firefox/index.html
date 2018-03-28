@@ -5,21 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Linux</title>
-  <meta property="og:title" content="Linux" />
-  <meta name="twitter:title" content="Linux" />
+  <title>Snap and Firefox</title>
+  <meta property="og:title" content="Snap and Firefox" />
+  <meta name="twitter:title" content="Snap and Firefox" />
+  <meta name="description" content="Snapcraft is a tool to install containerized software packages.
+
+Now Firefox is available!">
+  <meta property="og:description" content="Snapcraft is a tool to install containerized software packages.
+
+Now Firefox is available!">
+  <meta name="twitter:description" content="Snapcraft is a tool to install containerized software packages.
+
+Now Firefox is available!">
   <meta name="author" content="Gabriele Teotino"/>
   <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://www.teosoft.it/tags/linux/" />
+  <meta property="og:url" content="https://www.teosoft.it/note/2018-03-28-snapcraft-and-firefox/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
   <meta name="generator" content="Hugo 0.36.1" />
-  <link rel="canonical" href="https://www.teosoft.it/tags/linux/" />
-  <link rel="alternate" href="https://www.teosoft.it/tags/linux/index.xml" type="application/rss+xml" title="Bluish capsule">
+  <link rel="canonical" href="https://www.teosoft.it/note/2018-03-28-snapcraft-and-firefox/" />
+  <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -181,14 +190,26 @@ ga('send', 'pageview');
 
 
     
+  
+  
+  
+
+
+
+
+  
+
   <header class="header-section ">
+    
     <div class="intro-header no-img">
+      
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
-              <h1>#Linux</h1>
-              <hr class="small">
+            <div class="note-heading">
+              <h1>Snap and Firefox</h1>
+                
+                
             </div>
           </div>
         </div>
@@ -196,185 +217,47 @@ ga('send', 'pageview');
     </div>
   </header>
 
+
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="posts-list">
-          
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/note/2018-03-28-snapcraft-and-firefox/">
-                <h2 class="post-title">Snap and Firefox</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on March 28, 2018
-              </p>
-              <div class="post-entry">
-                
-                  <p><a href="https://snapcraft.io/">Snapcraft</a> is a tool to install containerized software packages.</p>
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p><a href="https://snapcraft.io/">Snapcraft</a> is a tool to install containerized software packages.</p>
 
 <p>Now Firefox is available!</p>
-                  <a href="https://www.teosoft.it/note/2018-03-28-snapcraft-and-firefox/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/linux/">linux</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/debian/">debian</a>&nbsp;
-                  
-                </span>
-              
+<p>
+Installing Firefox (finally not ESR) in Debian</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt install snapd
+sudo snap install firefox
+snap run firefox</code></pre></div>
+<p>A few small problems</p>
 
-            </article>
+<ul>
+<li>about 100Mb more space required</li>
+<li>unable to use themes</li>
+<li>other users report problems with netflix (amazon prime video works)</li>
+</ul>
+      </article>
+
+      
+        <ul class="pager blog-pager">
           
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/note/2018-03-16-ncdu-du-with-a-nice-interface/">
-                <h2 class="post-title">ncdu: du with a nice interface</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on March 16, 2018
-              </p>
-              <div class="post-entry">
-                
-                  <p><a href="https://dev.yorhel.nl/ncdu">ncdu</a></p>
-
-<blockquote>
-<p>Ncdu is a disk usage analyzer with an ncurses interface. It is designed to find space hogs on a remote server where you don&rsquo;t have an entire graphical setup available, but it is a useful tool even on regular desktop systems. Ncdu aims to be fast, simple and easy to use, and should be able to run in any minimal POSIX-like environment with ncurses installed.</p>
-</blockquote>
-
-<p></p>
-                  <a href="https://www.teosoft.it/note/2018-03-16-ncdu-du-with-a-nice-interface/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/linux/">linux</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
+            <li class="previous">
+              <a href="https://www.teosoft.it/note/2018-03-16-ncdu-du-with-a-nice-interface/" data-toggle="tooltip" data-placement="top" title="ncdu: du with a nice interface">&larr; Previous Post</a>
+            </li>
           
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/note/2018-03-13-remove-libreoffice/">
-                <h2 class="post-title">Remove LibreOffice</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on March 13, 2018
-              </p>
-              <div class="post-entry">
-                
-                  <p>To free up some space I removed LibreOffice and obtained about 720M of space.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get remove --purge libreoffice*
-sudo apt-get clean
-sudo apt-get autoremove</code></pre></div>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/linux/">linux</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
           
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/post/2018-03-13-netcore-2.1-preview-on-debian/">
-                <h2 class="post-title">Netcore 2.1 Preview on Debian</h2>
+        </ul>
+      
 
-                
-                  <h3 class="post-subtitle">
-                    Installing and testing .netcore 2.1.0 on Debian Strecth
-                  </h3>
-                
-              </a>
 
-              <p class="post-meta">
-                Posted on March 13, 2018
-              </p>
-              <div class="post-entry">
-                
-                  <p>Installation of netcore 2.1.0 preview on debian. Creation of a simple WebApi. Packing and installing the api as service using nginx.</p>
+      
 
-<p></p>
-                  <a href="https://www.teosoft.it/post/2018-03-13-netcore-2.1-preview-on-debian/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/c/">c#</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/netcore/">netcore</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/linux/">linux</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/debian/">debian</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/strecth/">strecth</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/kestrel/">kestrel</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/nginx/">nginx</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/note/2018-03-01-bonus-paranoia/">
-                <h2 class="post-title">Bonus Paranoia</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on March 1, 2018
-              </p>
-              <div class="post-entry">
-                
-                  <p>If you&rsquo;re feeling especially paranoid there are various things you could do to reduce logging on linux.</p>
-                  <a href="https://www.teosoft.it/note/2018-03-01-bonus-paranoia/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/linux/">linux</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/privacy/">privacy</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
-        </div>
-        
-      </div>
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
@@ -401,7 +284,7 @@ sudo apt-get autoremove</code></pre></div>
           
           <li>
             
-            <a href="https://www.teosoft.it/tags/linux/index.xml" title="RSS">
+            <a href="https://www.teosoft.it/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
