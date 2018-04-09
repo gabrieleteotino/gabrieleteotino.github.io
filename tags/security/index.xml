@@ -6,10 +6,45 @@
     <description>Recent content in Security on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Mar 2018 09:40:14 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 06 Apr 2018 11:40:03 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Magento and Docker Compose on OVH Vps</title>
+      <link>https://www.teosoft.it/post/2018-04-06-magento-and-docker-compose-on-ovh-vps/</link>
+      <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-04-06-magento-and-docker-compose-on-ovh-vps/</guid>
+      <description>&lt;p&gt;Compose defines and runs multi-container Docker applications.&lt;/p&gt;
+
+&lt;p&gt;Using a single yaml file it is possible to run multiple docker containers for complex applications. For example one contaner for the web app, one for the database and one for redis, all with a single command.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firewall on OVH Vps server</title>
+      <link>https://www.teosoft.it/post/2018-03-30-firewall-on-ovh-vps/</link>
+      <pubDate>Fri, 30 Mar 2018 10:55:51 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-03-30-firewall-on-ovh-vps/</guid>
+      <description>&lt;p&gt;Installing and configuring the &lt;a href=&#34;https://wiki.debian.org/Uncomplicated%20Firewall%20%28ufw%29&#34;&gt;Uncomplicated Firewall&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setup Docker on a OVH Vps server</title>
+      <link>https://www.teosoft.it/post/2018-03-23-setup-docker-on-ovh-vps-server/</link>
+      <pubDate>Fri, 23 Mar 2018 11:20:51 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-03-23-setup-docker-on-ovh-vps-server/</guid>
+      <description>&lt;p&gt;I have a brand new VPS server from OVH with Debian Stretch. Let&amp;rsquo;s configure it with some basic security and Docker. The server will be used as a test machine for my experiments. This machine is &lt;strong&gt;not&lt;/strong&gt; for production.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Expand VirtualBox Debian encrypted disk</title>

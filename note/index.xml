@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Curl</title>
+      <link>https://www.teosoft.it/note/2018-04-06-curl/</link>
+      <pubDate>Fri, 06 Apr 2018 12:05:10 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-04-06-curl/</guid>
+      <description># save to file curl url -o filename # pipe to a command curl url | danger # -L follows redirect curl -L url -o filename</description>
+    </item>
+    
+    <item>
       <title>Snap and Firefox</title>
       <link>https://www.teosoft.it/note/2018-03-28-snapcraft-and-firefox/</link>
       <pubDate>Wed, 28 Mar 2018 14:43:13 +0200</pubDate>

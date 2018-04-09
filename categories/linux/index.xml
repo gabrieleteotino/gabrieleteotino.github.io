@@ -6,10 +6,31 @@
     <description>Recent content in Linux on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Mar 2018 09:40:14 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 29 Mar 2018 15:34:35 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux tmux</title>
+      <link>https://www.teosoft.it/post/2018-03-29-linux-tmux/</link>
+      <pubDate>Thu, 29 Mar 2018 15:34:35 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-03-29-linux-tmux/</guid>
+      <description>&lt;p&gt;Install and run&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt install tmux&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux screen</title>
+      <link>https://www.teosoft.it/post/2018-03-29-linux-screen/</link>
+      <pubDate>Thu, 29 Mar 2018 11:04:15 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-03-29-linux-screen/</guid>
+      <description>&lt;p&gt;Install and run&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;apt install screen
+screen&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>Expand VirtualBox Debian encrypted disk</title>

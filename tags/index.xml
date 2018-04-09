@@ -48,9 +48,18 @@
     </item>
     
     <item>
+      <title>Cloud</title>
+      <link>https://www.teosoft.it/tags/cloud/</link>
+      <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Debian</title>
       <link>https://www.teosoft.it/tags/debian/</link>
-      <pubDate>Wed, 28 Mar 2018 14:43:13 +0200</pubDate>
+      <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/debian/</guid>
       <description></description>
@@ -62,6 +71,15 @@
       <pubDate>Wed, 28 Feb 2018 15:27:34 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://www.teosoft.it/tags/docker/</link>
+      <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/docker/</guid>
       <description></description>
     </item>
     
@@ -113,7 +131,7 @@
     <item>
       <title>Linux</title>
       <link>https://www.teosoft.it/tags/linux/</link>
-      <pubDate>Wed, 28 Mar 2018 14:43:13 +0200</pubDate>
+      <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/linux/</guid>
       <description></description>
@@ -165,6 +183,15 @@
     </item>
     
     <item>
+      <title>Portainer</title>
+      <link>https://www.teosoft.it/tags/portainer/</link>
+      <pubDate>Wed, 04 Apr 2018 11:25:23 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/portainer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Postgresql</title>
       <link>https://www.teosoft.it/tags/postgresql/</link>
       <pubDate>Tue, 20 Mar 2018 13:06:00 +0100</pubDate>
@@ -194,7 +221,7 @@
     <item>
       <title>Security</title>
       <link>https://www.teosoft.it/tags/security/</link>
-      <pubDate>Mon, 19 Mar 2018 09:40:14 +0100</pubDate>
+      <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/security/</guid>
       <description></description>
@@ -221,9 +248,18 @@
     <item>
       <title>Tools</title>
       <link>https://www.teosoft.it/tags/tools/</link>
-      <pubDate>Thu, 15 Mar 2018 14:54:48 +0100</pubDate>
+      <pubDate>Thu, 29 Mar 2018 15:34:35 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ufw</title>
+      <link>https://www.teosoft.it/tags/ufw/</link>
+      <pubDate>Fri, 30 Mar 2018 10:55:51 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/ufw/</guid>
       <description></description>
     </item>
     
