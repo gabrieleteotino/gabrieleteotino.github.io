@@ -33,14 +33,5 @@ sudo -u postgres -i # this must be same as the current interactive user createus
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title>Meccanici description</title>
-      <link>https://www.teosoft.it/project/meccanici/meccanici_description/</link>
-      <pubDate>Wed, 21 Feb 2018 15:33:36 +0100</pubDate>
-      
-      <guid>https://www.teosoft.it/project/meccanici/meccanici_description/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

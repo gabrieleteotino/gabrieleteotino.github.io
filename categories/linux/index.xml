@@ -6,10 +6,27 @@
     <description>Recent content in Linux on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Mar 2018 15:34:35 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 16 Apr 2018 10:58:23 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Arch Linux on Jumper Ezbook 3s</title>
+      <link>https://www.teosoft.it/post/2018-04-16-arch-linux-on-jumper-ezbook-3s/</link>
+      <pubDate>Mon, 16 Apr 2018 10:58:23 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-04-16-arch-linux-on-jumper-ezbook-3s/</guid>
+      <description>&lt;p&gt;I bought a cheap laptop from china: &lt;a href=&#34;https://www.banggood.com/Jumper-EZBOOK-3S-14_1-Inch-Laptop-Windows-10-Intel-Apollo-Lake-N3450-6GB-RAM-256GB-SSD-Storage-1080P-p-1184739.html?p=8V05105282880201607F&#34;&gt;Ezbook 3S&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It features a nice 14&amp;rdquo; display, a slow but usable Intel Apollo Lake N3450, 6Gb of ram and a 256Gb SSD.&lt;/p&gt;
+
+&lt;p&gt;I want to try Arch Linux on an external usb drive, just to make a few test before committing to the full wipe of Windows 10 Home. Reports from other users says that wifi is working with an alternate driver but no bluetooth. Other periferals should work just fine.&lt;/p&gt;
+
+&lt;p&gt;I also tried to install on a SD card but rEFInd is not able to detect the card controller.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Linux tmux</title>
