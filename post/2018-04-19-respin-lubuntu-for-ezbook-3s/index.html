@@ -5,23 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Arch Linux on Jumper Ezbook 3s</title>
-  <meta property="og:title" content="Arch Linux on Jumper Ezbook 3s" />
-  <meta name="twitter:title" content="Arch Linux on Jumper Ezbook 3s" />
-  <meta name="description" content="Installing archlinux on a sdcard to test linux stability on this cheap notebok">
-  <meta property="og:description" content="Installing archlinux on a sdcard to test linux stability on this cheap notebok">
-  <meta name="twitter:description" content="Installing archlinux on a sdcard to test linux stability on this cheap notebok">
+  <title>Respin Lubuntu for Ezbook 3s</title>
+  <meta property="og:title" content="Respin Lubuntu for Ezbook 3s" />
+  <meta name="twitter:title" content="Respin Lubuntu for Ezbook 3s" />
+  <meta name="description" content="Isorepin is a script that can customize an ISO to be able to boot on apollo lake systems.">
+  <meta property="og:description" content="Isorepin is a script that can customize an ISO to be able to boot on apollo lake systems.">
+  <meta name="twitter:description" content="Isorepin is a script that can customize an ISO to be able to boot on apollo lake systems.">
   <meta name="author" content="Gabriele Teotino"/>
   <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://www.teosoft.it/post/2018-04-16-arch-linux-on-jumper-ezbook-3s/" />
+  <meta property="og:url" content="https://www.teosoft.it/post/2018-04-19-respin-lubuntu-for-ezbook-3s/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
   <meta name="generator" content="Hugo 0.36.1" />
-  <link rel="canonical" href="https://www.teosoft.it/post/2018-04-16-arch-linux-on-jumper-ezbook-3s/" />
+  <link rel="canonical" href="https://www.teosoft.it/post/2018-04-19-respin-lubuntu-for-ezbook-3s/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -201,21 +201,21 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Arch Linux on Jumper Ezbook 3s</h1>
+              <h1>Respin Lubuntu for Ezbook 3s</h1>
                 
                   
-                    <h2 class="post-subheading">Installing archlinux on a sdcard to test linux stability on this cheap notebok</h2>
+                    <h2 class="post-subheading">Isorepin is a script that can customize an ISO to be able to boot on apollo lake systems.</h2>
                   
                 
                 
                   <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on April 16, 2018
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on April 19, 2018
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 3 minutes (561 words)
+  <i class="fa fa-clock-o"></i> 1 minutes (83 words)
   
   
 </span>
@@ -237,162 +237,33 @@ ga('send', 'pageview');
       <article role="main" class="blog-post">
         <p>I bought a cheap laptop from china: <a href="https://www.banggood.com/Jumper-EZBOOK-3S-14_1-Inch-Laptop-Windows-10-Intel-Apollo-Lake-N3450-6GB-RAM-256GB-SSD-Storage-1080P-p-1184739.html?p=8V05105282880201607F">Ezbook 3S</a>.</p>
 
-<p>It features a nice 14&rdquo; display, a slow but usable Intel Apollo Lake N3450, 6Gb of ram and a 256Gb SSD.</p>
-
-<p>I want to try Arch Linux on an external usb drive, just to make a few test before committing to the full wipe of Windows 10 Home. Reports from other users says that wifi is working with an alternate driver but no bluetooth. Other periferals should work just fine.</p>
-
-<p>I also tried to install on a SD card but rEFInd is not able to detect the card controller.</p>
+<p>To boot Lubuntu a bit of trickery has to be done on the iso image.</p>
 
 <p></p>
 
-<h1 id="preparation">Preparation</h1>
+<p>Official <a href="http://www.linuxium.com.au/how-tos/creatingpersonalizedubuntumintanddebianisosforintelminipcs">IsoRespin instructions</a>.</p>
 
-<h2 id="windows-reset">Windows reset</h2>
+<p>Download <a href="https://goo.gl/ZnUd6H">isorespin.sh</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> ~/Downloads/
+chmod +x isorespin.sh
+<span class="c1"># Official dependency list
+</span><span class="c1">#sudo apt -y install bc curl losetup ip isoinfo mkdosfs mksquashfs rsync
+</span><span class="c1">#sudo apt -y install unsquashfs unzip wget xargs xorriso
+</span><span class="c1"></span>
+sudo apt -y install xorriso
 
-<p>I made a full reset from the control panel.</p>
-
-<p>To prevent filesystem corruption disable fast shutdown. Open and administrative cmd.</p>
-<div class="highlight"><pre class="chroma">powercfg /h off</pre></div>
-<h2 id="refind">rEFInd</h2>
-
-<p><a href="http://www.rodsbooks.com/refind/getting.html">Download rEFInd</a>
-Extract the zip</p>
-
-<p>Follow the manual <a href="http://www.rodsbooks.com/refind/installing.html#windows">installation guide</a></p>
-
-<p>Open and administrative cmd.</p>
-<div class="highlight"><pre class="chroma">mountvol S: /S</pre></div>
-<p>Change into the main rEFInd package directory</p>
-<div class="highlight"><pre class="chroma">xcopy /E refind S:\EFI\refind\
-S:
-cd EFI\refind
-rename refind.conf-sample refind.conf
-bcdedit /set &#34;{bootmgr}&#34; path \EFI\refind\refind_x64.efi
-bcdedit /set &#34;{bootmgr}&#34; description &#34;rEFInd&#34;</pre></div>
-<h1 id="arch">Arch</h1>
-
-<h2 id="wifi-connection">Wifi connection</h2>
-
-<p>The network driver is bugged. To make it work it is necessary to unload and reload after every connection. Sometimes it&rsquo;s necessary to unload and load a few times.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">rmmod rtl8xxxu
-modprobe rtl8xxxu</code></pre></div>
-<h3 id="connection-with-wifi-menu">Connection with <code>wifi-menu</code></h3>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">wifi-menu
-<span class="c1"># Select a network, insert a password and create a profile
-</span><span class="c1"># A profile file will be created in /etc/netctl/profilename
-</span><span class="c1"></span>netctl start profilename</code></pre></div>
-<h3 id="connection-with-wpa-supplicant">Connection with <code>wpa_supplicant</code></h3>
-
-<p>Find an access point</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ip link <span class="nb">set</span> wlp0s21f0u7i2 up
-iw dev wlp0s21f0u7i2 scan <span class="p">|</span> less</code></pre></div>
-<p>Test configuration generation for wpa</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">wpa_passphrase MYSSID passphrase</code></pre></div>
-<p>Connect</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">wpa_supplicant -B -i wlp0s21f0u7i2 -c &lt;<span class="o">(</span>wpa_passphrase MYSSID passphrase<span class="o">)</span></code></pre></div>
-<h3 id="ip-and-test">Ip and test</h3>
-
-<p>Obtain a new address and test the connection</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">dhcpcd wlp0s21f0u7i2
-ping www.archlinux.org</code></pre></div>
-<h2 id="partitioning">Partitioning</h2>
-
-<p>Find the block device to use</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">lsblk</code></pre></div>
-<p>Create an EFI partition of 550Mb and ext partition</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">gdisk /dev/sdc
-n 550M ef00
-n all space <span class="m">8300</span>
-w
-<span class="c1"># format
-</span><span class="c1"></span>mkfs.vfat /dev/sdc1
-mkfs.ext4 /dev/sdc2
-<span class="c1"># view the result
-</span><span class="c1"></span>lsblk -f</code></pre></div>
-<p>mount</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">mount /dev/sdc2 /mnt
-mount /dev/sdc1 /mnt/boot</code></pre></div>
-<h2 id="mirror-list">Mirror list</h2>
-
-<p>Use Alt+arrow to switch to a new console</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">elinks https://www.archlinux.org/mirrorlist/</code></pre></div>
-<p>Check the country and select generate list</p>
-
-<p>Alt-f -&gt; Save as -&gt; ./mirrorlist</p>
-
-<p>Update the mirror list</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Make a backup of the original file
-</span><span class="c1"></span>mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.old
-<span class="c1"># Move the new mirrror list
-</span><span class="c1"></span>mv ./mirrorlist /etc/pacman.d/mirrorlist
-<span class="c1"># Edit the file and uncomment the preferred mirror
-</span><span class="c1"></span>nano /etc/pacman.d/mirrorlist</code></pre></div>
-<h2 id="setup-base-packages">Setup base packages</h2>
-
-<p>This is a bit long, about 20 minutes</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">pacstrap /mnt base</code></pre></div>
-<h1 id="configure-the-system">Configure the system</h1>
-
-<p>Generate a new fstab</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code></pre></div>
-<p>Chroot in the new environment</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">arch-chroot /mnt</code></pre></div>
-<p>Change timezione</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ln -sf /usr/share/zoneinfo/Europe/Rome /etc/localtime
-hwclock --systohc</code></pre></div>
-<p>Uncomment en_US.UTF-8 UTF-8</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">nano /etc/locale.gen
-locale-gen</code></pre></div>
-<p>Create a new configuration file and set the LANG variable</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">nano /etc/locale.conf
-<span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8</code></pre></div>
-<p>The keyboard layout is ok with the default.</p>
-
-<p>Create a hostname file</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">echo</span> sunzi &gt; /etc/hostname</code></pre></div>
-<p>Add the hostname &ldquo;sunzi&rdquo; to hosts</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">nano /etc/hosts
-<span class="m">127</span>.0.0.1	localhost
-::1		localhost
-<span class="m">127</span>.0.1.1	sunzi.localdomain	sunzi</code></pre></div>
-<h2 id="network-configuration">Network configuration</h2>
-
-<p>Install the packages for wireless configuration</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">pacman -S iw
-pacman -S wpa_supplicant
-<span class="c1"># needed for wifi-menu
-</span><span class="c1"></span>pacman -S dialog</code></pre></div>
-<h1 id="final-steps">Final steps</h1>
-
-<h2 id="set-the-root-password">Set the root password</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">passwd</code></pre></div>
-<h2 id="boot-loader">Boot loader</h2>
-
-<p>We install GRUB on the Usb drive instead of the SSD. rEFInd will automatically add GRUB to the boot menu.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">pacman -S grub
-pacman -S efibootmgr
-grub-install --target<span class="o">=</span>x86_64-efi --efi-directory<span class="o">=</span>/boot --bootloader-id<span class="o">=</span>arch_grub
-grub-mkconfig -o /boot/grub/grub.cfg</code></pre></div>
-<h2 id="reboot">Reboot</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">umount /dev/sdc1
-umount /dev/sdc2
-reboot</code></pre></div>
-<h2 id="say-thanks">Say thanks</h2>
-
-<p>Make a donation to rodsmith for the work done on rEFInd.</p>
+<span class="c1"># Respin the iso with apollo support
+</span><span class="c1"></span>./isorespin.sh -i /home/zap/Downloads/xubuntu-17.10.1-desktop-amd64.iso --apollo</code></pre></div>
+<p>Wrote the image using Rufus in iso mode.</p>
       </article>
 
       
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://www.teosoft.it/post/2018-04-06-magento-and-docker-compose-on-ovh-vps/" data-toggle="tooltip" data-placement="top" title="Magento and Docker Compose on OVH Vps">&larr; Previous Post</a>
+              <a href="https://www.teosoft.it/post/2018-04-16-arch-linux-on-jumper-ezbook-3s/" data-toggle="tooltip" data-placement="top" title="Arch Linux on Jumper Ezbook 3s">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://www.teosoft.it/post/2018-04-19-respin-lubuntu-for-ezbook-3s/" data-toggle="tooltip" data-placement="top" title="Respin Lubuntu for Ezbook 3s">Next Post &rarr;</a>
-            </li>
           
         </ul>
       
