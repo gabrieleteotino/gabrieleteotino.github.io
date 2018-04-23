@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.teosoft.it/post/2018-04-19-respin-lubuntu-for-ezbook-3s/</loc>
+    <loc>https://www.teosoft.it/post/2018-04-23-installing-lubuntu-on-ezbook-s3/</loc>
+    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/post/2018-04-19-respin-xubuntu-for-ezbook-3s/</loc>
     <lastmod>2018-04-19T16:50:37+02:00</lastmod>
   </url>
   
@@ -219,13 +224,13 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/banggood/</loc>
-    <lastmod>2018-04-19T16:50:37+02:00</lastmod>
+    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-04-19T16:50:37+02:00</lastmod>
+    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -241,14 +246,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/cloud/</loc>
-    <lastmod>2018-02-28T11:51:41+01:00</lastmod>
+    <loc>https://www.teosoft.it/tags/cloud/</loc>
+    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/cloud/</loc>
-    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
+    <loc>https://www.teosoft.it/categories/cloud/</loc>
+    <lastmod>2018-02-28T11:51:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -265,14 +270,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/devops/</loc>
-    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
+    <loc>https://www.teosoft.it/tags/devops/</loc>
+    <lastmod>2018-02-28T15:27:34+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/devops/</loc>
-    <lastmod>2018-02-28T15:27:34+01:00</lastmod>
+    <loc>https://www.teosoft.it/categories/devops/</loc>
+    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -290,7 +295,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/ezbook/</loc>
-    <lastmod>2018-04-19T16:50:37+02:00</lastmod>
+    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -308,7 +313,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/jumper/</loc>
-    <lastmod>2018-04-19T16:50:37+02:00</lastmod>
+    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -325,14 +330,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/linux/</loc>
-    <lastmod>2018-04-19T16:50:37+02:00</lastmod>
+    <loc>https://www.teosoft.it/tags/linux/</loc>
+    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/linux/</loc>
-    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
+    <loc>https://www.teosoft.it/categories/linux/</loc>
+    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -445,20 +450,20 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/tools/</loc>
-    <lastmod>2018-03-28T14:43:13+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.teosoft.it/tags/tools/</loc>
     <lastmod>2018-03-29T15:34:35+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/categories/tools/</loc>
+    <lastmod>2018-03-28T14:43:13+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/ubuntu/</loc>
-    <lastmod>2018-04-19T16:50:37+02:00</lastmod>
+    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -500,7 +505,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/xubuntu/</loc>
-    <lastmod>2018-04-19T16:50:37+02:00</lastmod>
+    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   
