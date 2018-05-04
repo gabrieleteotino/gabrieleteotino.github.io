@@ -6,10 +6,45 @@
     <description>Recent content on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Apr 2018 11:24:30 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 04 May 2018 10:43:42 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Svg to multisize ico</title>
+      <link>https://www.teosoft.it/post/2018-05-04-svg-to-multisize-ico/</link>
+      <pubDate>Fri, 04 May 2018 10:43:42 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-04-svg-to-multisize-ico/</guid>
+      <description>&lt;p&gt;I want to use the logo of github desktop for a folder. To do so I need to create a ico from the &lt;a href=&#34;https://desktop.github.com/images/desktop-icon.svg&#34;&gt;svg file&lt;/a&gt; downloaded from &lt;a href=&#34;https://desktop.github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The standard icon sizes used by windows explorer are&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Extra large icons 256x256&lt;/li&gt;
+&lt;li&gt;Large icons 96x96&lt;/li&gt;
+&lt;li&gt;Medium icons and Tiles 48x48&lt;/li&gt;
+&lt;li&gt;Content 32x32&lt;/li&gt;
+&lt;li&gt;Small icons, List and Details 16x16&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But windows uses only 16x16, 32x32, 48x48 and 256x256.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multiple SSH Keys</title>
+      <link>https://www.teosoft.it/post/2018-05-02-multiple-ssh-keys/</link>
+      <pubDate>Wed, 02 May 2018 15:34:57 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-02-multiple-ssh-keys/</guid>
+      <description>After generating a new key for my Visual Studio Online code repository I have to tell git which key to use for each connection.
+Create a file in ~/.ssh/config
+Add the following content
+# Uncomment to enable debugging. # Levels are: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3. # LogLevel DEBUG Host vs-ssh.visualstudio.com IdentityFile ~/.ssh/id_rsa_visualstudio Host github.com IdentityFile ~/.ssh/id_rsa_github # tell ssh-agent to not try keys Host * IdentitiesOnly yes</description>
+    </item>
     
     <item>
       <title>Installing Xubuntu on Ezbook S3</title>

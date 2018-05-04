@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ssh on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/ssh/</link>
+    <description>Recent content in Ssh on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 May 2018 15:34:57 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Multiple SSH Keys</title>
+      <link>https://www.teosoft.it/post/2018-05-02-multiple-ssh-keys/</link>
+      <pubDate>Wed, 02 May 2018 15:34:57 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-02-multiple-ssh-keys/</guid>
+      <description>After generating a new key for my Visual Studio Online code repository I have to tell git which key to use for each connection.
+Create a file in ~/.ssh/config
+Add the following content
+# Uncomment to enable debugging. # Levels are: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3. # LogLevel DEBUG Host vs-ssh.visualstudio.com IdentityFile ~/.ssh/id_rsa_visualstudio Host github.com IdentityFile ~/.ssh/id_rsa_github # tell ssh-agent to not try keys Host * IdentitiesOnly yes</description>
+    </item>
+    
+    <item>
+      <title>SSH Keys for Github</title>
+      <link>https://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</link>
+      <pubDate>Fri, 23 Feb 2018 11:13:18 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/</guid>
+      <description>The complete instruction on Github
+Create a key in the default location without any passphrase (or add one if you like). Then add it to the ssh-agent.
+ssh-keygen -t rsa -b 4096 -C &amp;#34;gabriele@teosoft.it&amp;#34; ssh-add ~/.ssh/id_rsa Copy the key into the clipboard
+cat ~/.ssh/id_rsa.pub Go into your profile and select SSH and GPG keys, click Add SSH key, add a description and paste the key.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,22 @@
     <description>Recent content in Github on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Feb 2018 11:51:41 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 02 May 2018 15:34:57 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Multiple SSH Keys</title>
+      <link>https://www.teosoft.it/post/2018-05-02-multiple-ssh-keys/</link>
+      <pubDate>Wed, 02 May 2018 15:34:57 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-02-multiple-ssh-keys/</guid>
+      <description>After generating a new key for my Visual Studio Online code repository I have to tell git which key to use for each connection.
+Create a file in ~/.ssh/config
+Add the following content
+# Uncomment to enable debugging. # Levels are: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3. # LogLevel DEBUG Host vs-ssh.visualstudio.com IdentityFile ~/.ssh/id_rsa_visualstudio Host github.com IdentityFile ~/.ssh/id_rsa_github # tell ssh-agent to not try keys Host * IdentitiesOnly yes</description>
+    </item>
     
     <item>
       <title>Personal Vpn with Algo on Azure</title>

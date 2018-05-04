@@ -212,6 +212,80 @@ ga('send', 'pageview');
         <div class="posts-list">
           
             <article class="post-preview">
+              <a href="https://www.teosoft.it/post/2018-03-23-setup-docker-on-ovh-vps-server/">
+                <h2 class="post-title">Setup Docker on a OVH Vps server</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Basic setup of a vps server from OVH to be used as a development machine with Docker
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on March 23, 2018
+              </p>
+              <div class="post-entry">
+                
+                  <p>I have a brand new VPS server from OVH with Debian Stretch. Let&rsquo;s configure it with some basic security and Docker. The server will be used as a test machine for my experiments. This machine is <strong>not</strong> for production.</p>
+
+<p></p>
+                  <a href="https://www.teosoft.it/post/2018-03-23-setup-docker-on-ovh-vps-server/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://www.teosoft.it//tags/cloud/">cloud</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/linux/">linux</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/debian/">debian</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/security/">security</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/docker/">docker</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://www.teosoft.it/post/2018-03-20-netcore-marten-and-postgres-part-1/">
+                <h2 class="post-title">.Net Core Marten and Postgres</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on March 20, 2018
+              </p>
+              <div class="post-entry">
+                
+                  Install and configure postgresql sudo apt install postgresql-9.6 ... Creating new cluster 9.6/main ... config /etc/postgresql/9.6/main data /var/lib/postgresql/9.6/main locale en_US.UTF-8 socket /var/run/postgresql port 5432 ... Test if the database is working
+sudo su - postgres postgres$ psql psql (9.6.4) Type &#34;help&#34; for help. postgres=# \q exit Create two users in postgresql: one equal to the current interactive user for pgAdmin3 the other for marten.
+sudo -u postgres -i # this must be same as the current interactive user createuser --interactive zap Shall the new role be a superuser?
+                  <a href="https://www.teosoft.it/post/2018-03-20-netcore-marten-and-postgres-part-1/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://www.teosoft.it//tags/postgresql/">postgresql</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/c/">c#</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/netcore/">netcore</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="https://www.teosoft.it/post/2018-03-19-expand-virtualbox-debian-encrypted-disk/">
                 <h2 class="post-title">Expand VirtualBox Debian encrypted disk</h2>
 
@@ -503,85 +577,6 @@ Go to the repository containing the site and move to the Settings panel. gabriel
                   Structure We are going to create the following folders one for each area of the site.
  /content/page - static pages like About and so on /content/post - a section with articles and turorials /content/project - will contain a subfolder for each project /content/review - review of products bough online from amazon, aliexpress, &hellip; /content/note - small snippets of stuff like links to a nice library or an interesting article  Create an index page for each section of the site.
                   <a href="https://www.teosoft.it/post/2018-02-23-hugo-configure-a-site-part-2/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/hugo/">hugo</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/atom/">atom</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/github/">github</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/">
-                <h2 class="post-title">SSH Keys for Github</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    How to authenticate to github using SSH keys
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on February 23, 2018
-              </p>
-              <div class="post-entry">
-                
-                  <p>The complete instruction on <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Github</a></p>
-
-<p>Create a key in the default location without any passphrase (or add one if you like). Then add it to the ssh-agent.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;gabriele@teosoft.it&#34;</span>
-ssh-add ~/.ssh/id_rsa</code></pre></div>
-<p>Copy the key into the clipboard</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cat ~/.ssh/id_rsa.pub</code></pre></div>
-<p>Go into your profile and select <a href="https://github.com/settings/keys">SSH and GPG keys</a>, click <strong>Add SSH key</strong>, add a description and paste the key.</p>
-
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/github/">github</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/">
-                <h2 class="post-title">Configure a site using Hugo - part 1</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Creating the bluish capsule using Hugo, Atom and Github
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on February 21, 2018
-              </p>
-              <div class="post-entry">
-                
-                  Using Hugo for this website A step by step description on how the bluish capsule was born.
-Installing Hugo Detailed instructions are available at the official Hugo site
-Download the deb package from Hugo Releases
-sudo dpkg -i hugo_0.36.1_Linux-64bit.deb Test if everithing works
-hugo version Atom Plugins Nice autocomplete for hugo shortodes language-hugo
-For example typing youtube and hitting tab the following snippet will be generated:
-\{\{&lt; youtube id class=&#34;&#34; &gt;\}\} Some key combination for common Hugo activities atom-hugo
-                  <a href="https://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/" class="post-read-more">[Read More]</a>
                 
               </div>
 

@@ -5,24 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Installing Xubuntu on Ezbook S3</title>
-  <meta property="og:title" content="Installing Xubuntu on Ezbook S3" />
-  <meta name="twitter:title" content="Installing Xubuntu on Ezbook S3" />
-  <meta name="description" content="After a few experiments I decided to make full disk xubuntu installation.">
-  <meta property="og:description" content="After a few experiments I decided to make full disk xubuntu installation.">
-  <meta name="twitter:description" content="After a few experiments I decided to make full disk xubuntu installation.">
+  <title>Ssh</title>
+  <meta property="og:title" content="Ssh" />
+  <meta name="twitter:title" content="Ssh" />
   <meta name="author" content="Gabriele Teotino"/>
   <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://www.teosoft.it/post/2018-04-23-installing-xubuntu-on-ezbook-s3/" />
+  <meta property="og:url" content="https://www.teosoft.it/tags/ssh/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
   <meta name="generator" content="Hugo 0.36.1" />
-  <link rel="canonical" href="https://www.teosoft.it/post/2018-04-23-installing-xubuntu-on-ezbook-s3/" />
-  <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
+  <link rel="canonical" href="https://www.teosoft.it/tags/ssh/" />
+  <link rel="alternate" href="https://www.teosoft.it/tags/ssh/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -184,44 +181,14 @@ ga('send', 'pageview');
 
 
     
-  
-  
-  
-
-
-
-
-  
-
   <header class="header-section ">
-    
     <div class="intro-header no-img">
-      
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="post-heading">
-              <h1>Installing Xubuntu on Ezbook S3</h1>
-                
-                  
-                    <h2 class="post-subheading">After a few experiments I decided to make full disk xubuntu installation.</h2>
-                  
-                
-                
-                  <span class="post-meta">
-  
-  
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on April 23, 2018
-  
-  
-  &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 1 minutes (195 words)
-  
-  
-</span>
-
-
-                
+            <div class="page-heading">
+              <h1>#Ssh</h1>
+              <hr class="small">
             </div>
           </div>
         </div>
@@ -229,81 +196,109 @@ ga('send', 'pageview');
     </div>
   </header>
 
-
     
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-        <p>I bought a cheap laptop from china: <a href="https://www.banggood.com/Jumper-EZBOOK-3S-14_1-Inch-Laptop-Windows-10-Intel-Apollo-Lake-N3450-6GB-RAM-256GB-SSD-Storage-1080P-p-1184739.html?p=8V05105282880201607F">Ezbook 3S</a>.</p>
-
-<p>After a few tests with live linux and a few installation on external devices I decided to wipe windows and use Xubuntu.</p>
-
-<p></p>
-
-<p>I started with a <a href="2018-04-19-respin-xubuntu-for-ezbook-3s">respin iso</a>.</p>
-
-<p>I made a full disk installation with full disk encryption and LVM.</p>
-
-<p>Reboot</p>
-
-<p>Change the DPI to 110 in Settings -&gt; Appearance -&gt; Fonts.
-Change the default xfce theme in Settings -&gt; Window Manager -&gt; Style to Numix</p>
-
-<p>Install the updates and reboot.</p>
-
-<p>There is also a kernel upgrade so it will take a bit</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt update <span class="o">&amp;&amp;</span> sudo apt get upgrade</code></pre></div>
-<p>Reboot</p>
-
-<p>Download <a href="https://github.com/lwfinger/rtl8723bu">lwfinger wifi driver</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt install git build-essential
-mkdir drivers
-<span class="nb">cd</span> drivers
-git clone https://github.com/lwfinger/rtl8723bu.git
-<span class="nb">cd</span> rtl8723bu
-<span class="c1"># Remove concurrent mode
-</span><span class="c1"></span>nano Makefile
-<span class="c1"># Find and comment this line: EXTRA_CFLAGS += -DCONFIG_CONCURRENT_MODE
-</span><span class="c1"></span>CTRL+x
-make
-sudo make install
-sudo modprobe -v 8723bu
-<span class="c1"># blacklist the old driver
-</span><span class="c1"></span>nano /etc/modprobe.d/blacklist.conf
-<span class="c1"># Add the following two lines at the end of the file
-</span><span class="c1"># Driver replaced by 8723bu by lwfinger
-</span><span class="c1"></span>blacklist rtl8xxxu
-CTRL+x
-<span class="c1"># Reload the new driver
-</span><span class="c1"></span>sudo rmmod 8723bu
-sudo modprobe -v 8723bu
-<span class="c1"># Check that the correct driver is in use
-</span><span class="c1"></span>usb-devices</code></pre></div>
-<p>Reboot</p>
-      </article>
-
-      
-        <ul class="pager blog-pager">
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
           
-            <li class="previous">
-              <a href="https://www.teosoft.it/post/2018-04-19-respin-xubuntu-for-ezbook-3s/" data-toggle="tooltip" data-placement="top" title="Respin Xubuntu for Ezbook 3s">&larr; Previous Post</a>
-            </li>
-          
-          
-            <li class="next">
-              <a href="https://www.teosoft.it/post/2018-05-02-multiple-ssh-keys/" data-toggle="tooltip" data-placement="top" title="Multiple SSH Keys">Next Post &rarr;</a>
-            </li>
-          
-        </ul>
-      
+            <article class="post-preview">
+              <a href="https://www.teosoft.it/post/2018-05-02-multiple-ssh-keys/">
+                <h2 class="post-title">Multiple SSH Keys</h2>
 
+                
+                  <h3 class="post-subtitle">
+                    Managing multiple SSH keys for Github and Visual Studio Online
+                  </h3>
+                
+              </a>
 
-      
+              <p class="post-meta">
+                Posted on May 2, 2018
+              </p>
+              <div class="post-entry">
+                
+                  <p>After generating a new key for my Visual Studio Online code repository I have to tell git which key to use for each connection.</p>
 
+<p>Create a file in <code>~/.ssh/config</code></p>
+
+<p>Add the following content</p>
+<div class="highlight"><pre class="chroma"># Uncomment to enable debugging.
+# Levels are: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3.
+# LogLevel DEBUG
+
+Host vs-ssh.visualstudio.com
+    IdentityFile ~/.ssh/id_rsa_visualstudio
+
+Host github.com
+    IdentityFile ~/.ssh/id_rsa_github
+
+# tell ssh-agent to not try keys
+Host *
+    IdentitiesOnly yes</pre></div>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://www.teosoft.it//tags/ssh/">ssh</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/github/">github</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/visual-studio-online/">visual studio online</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/">
+                <h2 class="post-title">SSH Keys for Github</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    How to authenticate to github using SSH keys
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on February 23, 2018
+              </p>
+              <div class="post-entry">
+                
+                  <p>The complete instruction on <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Github</a></p>
+
+<p>Create a key in the default location without any passphrase (or add one if you like). Then add it to the ssh-agent.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;gabriele@teosoft.it&#34;</span>
+ssh-add ~/.ssh/id_rsa</code></pre></div>
+<p>Copy the key into the clipboard</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cat ~/.ssh/id_rsa.pub</code></pre></div>
+<p>Go into your profile and select <a href="https://github.com/settings/keys">SSH and GPG keys</a>, click <strong>Add SSH key</strong>, add a description and paste the key.</p>
+
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://www.teosoft.it//tags/ssh/">ssh</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/github/">github</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+        </div>
+        
+      </div>
     </div>
   </div>
-</div>
 
     <footer>
   <div class="container">
@@ -330,7 +325,7 @@ sudo modprobe -v 8723bu
           
           <li>
             
-            <a href="https://www.teosoft.it/index.xml" title="RSS">
+            <a href="https://www.teosoft.it/tags/ssh/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
