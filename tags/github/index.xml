@@ -6,10 +6,23 @@
     <description>Recent content in Github on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 May 2018 15:34:57 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 07 May 2018 15:15:56 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Create a GitHub repo from a local git</title>
+      <link>https://www.teosoft.it/post/2018-05-07-create-a-github-repo-from-a-local-git/</link>
+      <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-07-create-a-github-repo-from-a-local-git/</guid>
+      <description>&lt;p&gt;This is &lt;strong&gt;not&lt;/strong&gt; the best way to add a local project to github. It is just &lt;strong&gt;a way&lt;/strong&gt; that works using &lt;em&gt;Visual Studio&lt;/em&gt; and &lt;em&gt;GitHub Desktop&lt;/em&gt; with a small manual intervention.&lt;/p&gt;
+
+&lt;p&gt;A shorter path is possible by letting &lt;em&gt;GitHub Desktop&lt;/em&gt; create the repository.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Multiple SSH Keys</title>

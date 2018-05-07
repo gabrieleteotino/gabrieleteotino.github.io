@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/post/2018-05-07-create-a-github-repo-from-a-local-git/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/post/2018-05-04-svg-to-multisize-ico/</loc>
     <lastmod>2018-05-04T10:43:42+02:00</lastmod>
   </url>
@@ -240,7 +245,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-05-04T10:43:42+02:00</lastmod>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -270,6 +275,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/debian/</loc>
     <lastmod>2018-04-06T11:40:03+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/categories/dev/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -316,8 +327,20 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/git/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/github/</loc>
-    <lastmod>2018-05-02T15:34:57+02:00</lastmod>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/github-desktop/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
     <priority>0</priority>
   </url>
   
