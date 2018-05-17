@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/note/2018-05-17-web-essentials-for-visual-studio/</loc>
+    <lastmod>2018-05-17T11:18:53+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/post/2018-05-07-create-a-github-repo-from-a-local-git/</loc>
     <lastmod>2018-05-07T15:15:56+02:00</lastmod>
   </url>
@@ -245,7 +250,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <lastmod>2018-05-17T11:18:53+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -275,6 +280,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/debian/</loc>
     <lastmod>2018-04-06T11:40:03+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/dev/</loc>
+    <lastmod>2018-05-17T11:18:53+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -526,7 +537,7 @@
   
   <url>
     <loc>https://www.teosoft.it/categories/tools/</loc>
-    <lastmod>2018-03-28T14:43:13+02:00</lastmod>
+    <lastmod>2018-05-17T11:18:53+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -551,6 +562,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/visual-studio-online/</loc>
     <lastmod>2018-05-02T15:34:57+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/visualstudio/</loc>
+    <lastmod>2018-05-17T11:18:53+02:00</lastmod>
     <priority>0</priority>
   </url>
   

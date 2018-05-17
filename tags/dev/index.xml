@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/dev/</link>
+    <description>Recent content in Dev on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 May 2018 11:18:53 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Web Essentials for Visual Studio</title>
+      <link>https://www.teosoft.it/note/2018-05-17-web-essentials-for-visual-studio/</link>
+      <pubDate>Thu, 17 May 2018 11:18:53 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-05-17-web-essentials-for-visual-studio/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://vswebessentials.com/&#34;&gt;Web Essentials for Visual Studio&lt;/a&gt; is fantastic collection of plugins for visual studio. The name is right: it is essential to have.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
