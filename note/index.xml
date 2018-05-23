@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Duplicator a Wordpress plugin for site migration</title>
+      <link>https://www.teosoft.it/note/2018-05-23-duplicator-a-wordpress-plugin-for-site-migration/</link>
+      <pubDate>Wed, 23 May 2018 18:05:59 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-05-23-duplicator-a-wordpress-plugin-for-site-migration/</guid>
+      <description>Wordpress migration to a new host and a new domain is tricky!
+To move a problematic site I used Duplicator a plugin that did all the heavy lifting of changing the configuration settings, fix the db serialized strings, apply some legacy conversion to the queries and other stuff.
+Without the plugin a manual migration was almost impossible.
+Kudos to the authors.</description>
+    </item>
+    
+    <item>
       <title>Web Essentials for Visual Studio</title>
       <link>https://www.teosoft.it/note/2018-05-17-web-essentials-for-visual-studio/</link>
       <pubDate>Thu, 17 May 2018 11:18:53 +0200</pubDate>
