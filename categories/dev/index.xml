@@ -6,10 +6,32 @@
     <description>Recent content in Dev on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 May 2018 15:15:56 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 28 May 2018 19:17:51 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/categories/dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install nodejs using nvm</title>
+      <link>https://www.teosoft.it/post/2018-05-28-install-nodejs-using-nvm/</link>
+      <pubDate>Mon, 28 May 2018 19:17:51 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-28-install-nodejs-using-nvm/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/creationix/nvm&#34;&gt;Node Version Manager&lt;/a&gt; is Simple bash script to manage multiple active node.js versions.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Code Plugins</title>
+      <link>https://www.teosoft.it/post/2018-05-28-visual-studio-code-plugins/</link>
+      <pubDate>Mon, 28 May 2018 15:15:52 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-28-visual-studio-code-plugins/</guid>
+      <description>&lt;p&gt;Various plugins for visual studio code, useful for developing in c# and Angular.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Create a GitHub repo from a local git</title>

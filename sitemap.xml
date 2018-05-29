@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/post/2018-05-28-install-nodejs-using-nvm/</loc>
+    <lastmod>2018-05-28T19:17:51+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/post/2018-05-28-visual-studio-code-plugins/</loc>
+    <lastmod>2018-05-28T15:15:52+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/note/2018-05-23-duplicator-a-wordpress-plugin-for-site-migration/</loc>
     <lastmod>2018-05-23T18:05:59+02:00</lastmod>
   </url>
@@ -14,6 +24,11 @@
   
   <url>
     <loc>https://www.teosoft.it/post/2018-05-07-create-a-github-repo-from-a-local-git/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/post/2018-05-11-data-analysis-with-scikit-learn-and-pandas/</loc>
     <lastmod>2018-05-07T15:15:56+02:00</lastmod>
   </url>
   
@@ -218,6 +233,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/anaconda/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/android/</loc>
     <lastmod>2018-03-12T13:43:50+01:00</lastmod>
     <priority>0</priority>
@@ -255,7 +276,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-05-23T18:05:59+02:00</lastmod>
+    <lastmod>2018-05-28T19:17:51+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -283,6 +304,18 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/conda/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/categories/datascience/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/debian/</loc>
     <lastmod>2018-04-06T11:40:03+02:00</lastmod>
     <priority>0</priority>
@@ -296,7 +329,7 @@
   
   <url>
     <loc>https://www.teosoft.it/categories/dev/</loc>
-    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <lastmod>2018-05-28T19:17:51+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -410,7 +443,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/linux/</loc>
-    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
+    <lastmod>2018-05-28T19:17:51+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -451,6 +484,30 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/node/</loc>
+    <lastmod>2018-05-28T19:17:51+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/nodejs/</loc>
+    <lastmod>2018-05-28T19:17:51+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/numpy/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/nvm/</loc>
+    <lastmod>2018-05-28T19:17:51+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/opensource/</loc>
     <lastmod>2018-03-15T14:54:48+01:00</lastmod>
     <priority>0</priority>
@@ -463,8 +520,14 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/pandas/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/plugin/</loc>
-    <lastmod>2018-05-23T18:05:59+02:00</lastmod>
+    <lastmod>2018-05-28T15:15:52+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -499,6 +562,18 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/scikit/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/scikit-learn/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/security/</loc>
     <lastmod>2018-04-06T11:40:03+02:00</lastmod>
     <priority>0</priority>
@@ -523,6 +598,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/svm/</loc>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/categories/sysop/</loc>
     <lastmod>2018-03-13T11:37:55+01:00</lastmod>
     <priority>0</priority>
@@ -530,7 +611,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/</loc>
-    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
+    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -554,7 +635,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/ubuntu/</loc>
-    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
+    <lastmod>2018-05-28T19:17:51+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -579,6 +660,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/visualstudio/</loc>
     <lastmod>2018-05-17T11:18:53+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/visualstudiocode/</loc>
+    <lastmod>2018-05-28T15:15:52+02:00</lastmod>
     <priority>0</priority>
   </url>
   

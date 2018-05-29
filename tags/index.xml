@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Mar 2018 13:43:50 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 07 May 2018 15:15:56 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Anaconda</title>
+      <link>https://www.teosoft.it/tags/anaconda/</link>
+      <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/anaconda/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Android</title>
@@ -80,6 +89,15 @@
       <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conda</title>
+      <link>https://www.teosoft.it/tags/conda/</link>
+      <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/conda/</guid>
       <description></description>
     </item>
     
@@ -239,7 +257,7 @@
     <item>
       <title>Linux</title>
       <link>https://www.teosoft.it/tags/linux/</link>
-      <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
+      <pubDate>Mon, 28 May 2018 19:17:51 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/linux/</guid>
       <description></description>
@@ -282,6 +300,42 @@
     </item>
     
     <item>
+      <title>Node</title>
+      <link>https://www.teosoft.it/tags/node/</link>
+      <pubDate>Mon, 28 May 2018 19:17:51 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nodejs</title>
+      <link>https://www.teosoft.it/tags/nodejs/</link>
+      <pubDate>Mon, 28 May 2018 19:17:51 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Numpy</title>
+      <link>https://www.teosoft.it/tags/numpy/</link>
+      <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/numpy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nvm</title>
+      <link>https://www.teosoft.it/tags/nvm/</link>
+      <pubDate>Mon, 28 May 2018 19:17:51 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/nvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Opensource</title>
       <link>https://www.teosoft.it/tags/opensource/</link>
       <pubDate>Thu, 15 Mar 2018 14:54:48 +0100</pubDate>
@@ -291,9 +345,18 @@
     </item>
     
     <item>
+      <title>Pandas</title>
+      <link>https://www.teosoft.it/tags/pandas/</link>
+      <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/pandas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Plugin</title>
       <link>https://www.teosoft.it/tags/plugin/</link>
-      <pubDate>Wed, 23 May 2018 18:05:59 +0200</pubDate>
+      <pubDate>Mon, 28 May 2018 15:15:52 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/plugin/</guid>
       <description></description>
@@ -345,6 +408,24 @@
     </item>
     
     <item>
+      <title>Scikit</title>
+      <link>https://www.teosoft.it/tags/scikit/</link>
+      <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/scikit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scikit Learn</title>
+      <link>https://www.teosoft.it/tags/scikit-learn/</link>
+      <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/scikit-learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Security</title>
       <link>https://www.teosoft.it/tags/security/</link>
       <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
@@ -372,6 +453,15 @@
     </item>
     
     <item>
+      <title>Svm</title>
+      <link>https://www.teosoft.it/tags/svm/</link>
+      <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/svm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Termux</title>
       <link>https://www.teosoft.it/tags/termux/</link>
       <pubDate>Mon, 12 Mar 2018 13:43:50 +0100</pubDate>
@@ -392,7 +482,7 @@
     <item>
       <title>Ubuntu</title>
       <link>https://www.teosoft.it/tags/ubuntu/</link>
-      <pubDate>Mon, 23 Apr 2018 11:24:30 +0200</pubDate>
+      <pubDate>Mon, 28 May 2018 19:17:51 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/ubuntu/</guid>
       <description></description>
@@ -431,6 +521,15 @@
       <pubDate>Thu, 17 May 2018 11:18:53 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/visualstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualstudiocode</title>
+      <link>https://www.teosoft.it/tags/visualstudiocode/</link>
+      <pubDate>Mon, 28 May 2018 15:15:52 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/visualstudiocode/</guid>
       <description></description>
     </item>
     

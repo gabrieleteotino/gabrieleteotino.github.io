@@ -12,6 +12,28 @@
     
     
     <item>
+      <title>Install nodejs using nvm</title>
+      <link>https://www.teosoft.it/post/2018-05-28-install-nodejs-using-nvm/</link>
+      <pubDate>Mon, 28 May 2018 19:17:51 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-28-install-nodejs-using-nvm/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/creationix/nvm&#34;&gt;Node Version Manager&lt;/a&gt; is Simple bash script to manage multiple active node.js versions.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Code Plugins</title>
+      <link>https://www.teosoft.it/post/2018-05-28-visual-studio-code-plugins/</link>
+      <pubDate>Mon, 28 May 2018 15:15:52 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-28-visual-studio-code-plugins/</guid>
+      <description>&lt;p&gt;Various plugins for visual studio code, useful for developing in c# and Angular.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Create a GitHub repo from a local git</title>
       <link>https://www.teosoft.it/post/2018-05-07-create-a-github-repo-from-a-local-git/</link>
       <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
@@ -22,6 +44,19 @@
 &lt;p&gt;A shorter path is possible by letting &lt;em&gt;GitHub Desktop&lt;/em&gt; create the repository.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data analysis with scikit learn and pandas</title>
+      <link>https://www.teosoft.it/post/2018-05-11-data-analysis-with-scikit-learn-and-pandas/</link>
+      <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-11-data-analysis-with-scikit-learn-and-pandas/</guid>
+      <description>Download Miniconda 64bit version with python 3.6.
+Installation Install Miniconda using the current user (no sudo)
+cd ~/Downloads/ bash Miniconda3-latest-Linux-x86_64.sh # reload env (or restart terminal) source ~/.bashrc This toolset is my only use for anaconda, so everithing is installed in the default environment.
+Install all the tools.
+# this will also install numpy conda install scikit-learn conda install ipython conda install matplotlib # this will also install pandas conda install seaborn conda install jupyter Workspace Create a folder for notebooks and data files, then start ipython.</description>
     </item>
     
     <item>

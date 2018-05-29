@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pandas on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/pandas/</link>
+    <description>Recent content in Pandas on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 May 2018 15:15:56 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data analysis with scikit learn and pandas</title>
+      <link>https://www.teosoft.it/post/2018-05-11-data-analysis-with-scikit-learn-and-pandas/</link>
+      <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-11-data-analysis-with-scikit-learn-and-pandas/</guid>
+      <description>Download Miniconda 64bit version with python 3.6.
+Installation Install Miniconda using the current user (no sudo)
+cd ~/Downloads/ bash Miniconda3-latest-Linux-x86_64.sh # reload env (or restart terminal) source ~/.bashrc This toolset is my only use for anaconda, so everithing is installed in the default environment.
+Install all the tools.
+# this will also install numpy conda install scikit-learn conda install ipython conda install matplotlib # this will also install pandas conda install seaborn conda install jupyter Workspace Create a folder for notebooks and data files, then start ipython.</description>
+    </item>
+    
+  </channel>
+</rss>

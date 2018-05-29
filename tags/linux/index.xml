@@ -6,10 +6,21 @@
     <description>Recent content in Linux on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Apr 2018 11:40:03 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 28 May 2018 19:17:51 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install nodejs using nvm</title>
+      <link>https://www.teosoft.it/post/2018-05-28-install-nodejs-using-nvm/</link>
+      <pubDate>Mon, 28 May 2018 19:17:51 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-28-install-nodejs-using-nvm/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/creationix/nvm&#34;&gt;Node Version Manager&lt;/a&gt; is Simple bash script to manage multiple active node.js versions.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Magento and Docker Compose on OVH Vps</title>

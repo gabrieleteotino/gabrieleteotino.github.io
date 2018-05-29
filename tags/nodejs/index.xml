@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nodejs on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/nodejs/</link>
+    <description>Recent content in Nodejs on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 May 2018 19:17:51 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install nodejs using nvm</title>
+      <link>https://www.teosoft.it/post/2018-05-28-install-nodejs-using-nvm/</link>
+      <pubDate>Mon, 28 May 2018 19:17:51 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-28-install-nodejs-using-nvm/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/creationix/nvm&#34;&gt;Node Version Manager&lt;/a&gt; is Simple bash script to manage multiple active node.js versions.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
