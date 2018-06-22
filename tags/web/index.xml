@@ -6,10 +6,27 @@
     <description>Recent content in Web on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Mar 2018 13:15:08 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 30 May 2018 11:06:11 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/web/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Postman API IDE</title>
+      <link>https://www.teosoft.it/note/2018-05-30-postman-api-ide/</link>
+      <pubDate>Wed, 30 May 2018 11:06:11 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-05-30-postman-api-ide/</guid>
+      <description>&lt;p&gt;Postman is the most complete toolchain for API development&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The most-used REST client worldwide&lt;/li&gt;
+&lt;li&gt;Designed from the ground up to support the API developer&lt;/li&gt;
+&lt;li&gt;Intuitive user interface to send requests, save responses, add tests, and create workflows&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Current DNS Tophost</title>

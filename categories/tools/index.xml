@@ -6,10 +6,49 @@
     <description>Recent content in Tools on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 May 2018 11:18:53 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 22 Jun 2018 14:52:12 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/categories/tools/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pingendo bootstrap IDE</title>
+      <link>https://www.teosoft.it/note/2018-06-22-pingendo-bootstrap-ide/</link>
+      <pubDate>Fri, 22 Jun 2018 14:52:12 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-06-22-pingendo-bootstrap-ide/</guid>
+      <description>&lt;p&gt;Pingendo features a super simple drag and drop interface, with a rich library of prebuilt elements that lets you create web pages with ease.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Db Browser for Sqlite</title>
+      <link>https://www.teosoft.it/note/2018-05-31-db-browser-for-sqlite/</link>
+      <pubDate>Thu, 31 May 2018 15:39:04 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-05-31-db-browser-for-sqlite/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://sqlitebrowser.org/&#34;&gt;DB Browser for SQLite&lt;/a&gt; is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Postman API IDE</title>
+      <link>https://www.teosoft.it/note/2018-05-30-postman-api-ide/</link>
+      <pubDate>Wed, 30 May 2018 11:06:11 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-05-30-postman-api-ide/</guid>
+      <description>&lt;p&gt;Postman is the most complete toolchain for API development&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The most-used REST client worldwide&lt;/li&gt;
+&lt;li&gt;Designed from the ground up to support the API developer&lt;/li&gt;
+&lt;li&gt;Intuitive user interface to send requests, save responses, add tests, and create workflows&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Web Essentials for Visual Studio</title>

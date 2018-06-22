@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Api on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/api/</link>
+    <description>Recent content in Api on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 May 2018 11:06:11 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Postman API IDE</title>
+      <link>https://www.teosoft.it/note/2018-05-30-postman-api-ide/</link>
+      <pubDate>Wed, 30 May 2018 11:06:11 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-05-30-postman-api-ide/</guid>
+      <description>&lt;p&gt;Postman is the most complete toolchain for API development&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The most-used REST client worldwide&lt;/li&gt;
+&lt;li&gt;Designed from the ground up to support the API developer&lt;/li&gt;
+&lt;li&gt;Intuitive user interface to send requests, save responses, add tests, and create workflows&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

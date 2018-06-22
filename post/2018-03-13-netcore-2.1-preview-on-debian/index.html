@@ -127,6 +127,8 @@ ga('send', 'pageview');
                 
                   <a href="/project/meccanici">Meccanici</a>
                 
+                  <a href="/project/datingapp">DatingApp</a>
+                
               </div>
             </li>
           
@@ -343,7 +345,8 @@ sudo chown -R www-data:www-data /var/aspnetcore/myWebApi/*</code></pre></div>
 <span class="nx">WorkingDirectory</span><span class="p">=</span><span class="err">/</span><span class="nx">var</span><span class="err">/</span><span class="nx">aspnetcore</span><span class="err">/</span><span class="nx">myWebApi</span>
 <span class="nx">ExecStart</span><span class="p">=</span><span class="err">/</span><span class="nx">usr</span><span class="err">/</span><span class="nx">bin</span><span class="err">/</span><span class="nx">dotnet</span> <span class="err">/</span><span class="nx">var</span><span class="err">/</span><span class="nx">aspnetcore</span><span class="err">/</span><span class="nx">myWebApi</span><span class="err">/</span><span class="nx">myWebApi</span><span class="p">.</span><span class="nx">dll</span>
 <span class="nx">Restart</span><span class="p">=</span><span class="nx">always</span>
-<span class="nx">RestartSec</span><span class="p">=</span><span class="mi">10</span>  <span class="c"># Restart service after 10 seconds if dotnet service crashes</span>
+<span class="c"># Restart service after 10 seconds if dotnet service crashes</span>
+<span class="nx">RestartSec</span><span class="p">=</span><span class="mi">10</span>
 <span class="nx">SyslogIdentifier</span><span class="p">=</span><span class="nx">dotnet</span><span class="err">-</span><span class="nx">example</span>
 <span class="nx">User</span><span class="p">=</span><span class="nx">www</span><span class="err">-</span><span class="nx">data</span>
 <span class="nx">Environment</span><span class="p">=</span><span class="nx">ASPNETCORE_ENVIRONMENT</span><span class="p">=</span><span class="nx">Production</span>

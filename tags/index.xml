@@ -30,6 +30,24 @@
     </item>
     
     <item>
+      <title>Angular</title>
+      <link>https://www.teosoft.it/tags/angular/</link>
+      <pubDate>Wed, 30 May 2018 11:51:42 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/angular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Api</title>
+      <link>https://www.teosoft.it/tags/api/</link>
+      <pubDate>Wed, 30 May 2018 11:06:11 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Arch</title>
       <link>https://www.teosoft.it/tags/arch/</link>
       <pubDate>Mon, 16 Apr 2018 10:58:23 +0200</pubDate>
@@ -75,9 +93,18 @@
     </item>
     
     <item>
+      <title>Bootstrap</title>
+      <link>https://www.teosoft.it/tags/bootstrap/</link>
+      <pubDate>Fri, 22 Jun 2018 14:52:12 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>C#</title>
       <link>https://www.teosoft.it/tags/c#/</link>
-      <pubDate>Tue, 20 Mar 2018 13:06:00 +0100</pubDate>
+      <pubDate>Wed, 30 May 2018 11:51:42 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/c#/</guid>
       <description></description>
@@ -98,6 +125,15 @@
       <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/conda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Db</title>
+      <link>https://www.teosoft.it/tags/db/</link>
+      <pubDate>Thu, 31 May 2018 15:39:04 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/db/</guid>
       <description></description>
     </item>
     
@@ -284,7 +320,7 @@
     <item>
       <title>Netcore</title>
       <link>https://www.teosoft.it/tags/netcore/</link>
-      <pubDate>Tue, 20 Mar 2018 13:06:00 +0100</pubDate>
+      <pubDate>Wed, 30 May 2018 11:51:42 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/netcore/</guid>
       <description></description>
@@ -408,6 +444,15 @@
     </item>
     
     <item>
+      <title>Rest</title>
+      <link>https://www.teosoft.it/tags/rest/</link>
+      <pubDate>Wed, 30 May 2018 11:06:11 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/rest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Scikit</title>
       <link>https://www.teosoft.it/tags/scikit/</link>
       <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
@@ -431,6 +476,15 @@
       <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sqlite</title>
+      <link>https://www.teosoft.it/tags/sqlite/</link>
+      <pubDate>Thu, 31 May 2018 15:39:04 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/sqlite/</guid>
       <description></description>
     </item>
     
@@ -485,6 +539,15 @@
       <pubDate>Mon, 28 May 2018 19:17:51 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Udemy</title>
+      <link>https://www.teosoft.it/tags/udemy/</link>
+      <pubDate>Wed, 30 May 2018 11:51:42 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/udemy/</guid>
       <description></description>
     </item>
     
@@ -545,9 +608,27 @@
     <item>
       <title>Web</title>
       <link>https://www.teosoft.it/tags/web/</link>
-      <pubDate>Mon, 05 Mar 2018 13:15:08 +0100</pubDate>
+      <pubDate>Wed, 30 May 2018 11:06:11 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webapi</title>
+      <link>https://www.teosoft.it/tags/webapi/</link>
+      <pubDate>Wed, 30 May 2018 11:51:42 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/webapi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webdev</title>
+      <link>https://www.teosoft.it/tags/webdev/</link>
+      <pubDate>Fri, 22 Jun 2018 14:52:12 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/webdev/</guid>
       <description></description>
     </item>
     
