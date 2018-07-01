@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ef on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/ef/</link>
+    <description>Recent content in Ef on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Jun 2018 14:02:03 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/ef/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>User Model</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/1-user-model/</link>
+      <pubDate>Fri, 08 Jun 2018 14:02:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/1-user-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webapi skeleton</title>
+      <link>https://www.teosoft.it/project/datingapp/2-skeleton/2-webapi-skeleton/</link>
+      <pubDate>Tue, 29 May 2018 16:49:07 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/2-skeleton/2-webapi-skeleton/</guid>
+      <description>&lt;p&gt;A skeleton webapi that loads data from a sqlite database.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

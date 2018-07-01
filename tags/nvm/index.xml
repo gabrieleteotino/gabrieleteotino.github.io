@@ -6,10 +6,21 @@
     <description>Recent content in Nvm on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 May 2018 19:17:51 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 30 May 2018 21:55:24 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/nvm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Installations</title>
+      <link>https://www.teosoft.it/project/datingapp/1-preparation/1-installations/</link>
+      <pubDate>Wed, 30 May 2018 21:55:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/1-preparation/1-installations/</guid>
+      <description>&lt;p&gt;Installation of all the basic tools.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Install nodejs using nvm</title>

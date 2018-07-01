@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skeleton on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/2-skeleton/</link>
+    <description>Recent content in Skeleton on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 May 2018 21:57:16 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/2-skeleton/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Angular</title>
+      <link>https://www.teosoft.it/project/datingapp/2-skeleton/3-angular/</link>
+      <pubDate>Wed, 30 May 2018 22:03:22 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/2-skeleton/3-angular/</guid>
+      <description>&lt;p&gt;A skeleton spa that loads data from the webapi&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://www.teosoft.it/project/datingapp/2-skeleton/1-github/</link>
+      <pubDate>Wed, 30 May 2018 22:03:13 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/2-skeleton/1-github/</guid>
+      <description>&lt;p&gt;I will use a single repository for either the Angular SPA and the c# Web API.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webapi skeleton</title>
+      <link>https://www.teosoft.it/project/datingapp/2-skeleton/2-webapi-skeleton/</link>
+      <pubDate>Tue, 29 May 2018 16:49:07 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/2-skeleton/2-webapi-skeleton/</guid>
+      <description>&lt;p&gt;A skeleton webapi that loads data from a sqlite database.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -23,6 +23,19 @@
     </item>
     
     <item>
+      <title>Compress pdf file with linux</title>
+      <link>https://www.teosoft.it/note/2018-06-21-compress-pdf-with-linux/</link>
+      <pubDate>Thu, 21 Jun 2018 11:00:27 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-06-21-compress-pdf-with-linux/</guid>
+      <description>&lt;p&gt;A pdf file with a lot of scanned images can be a very large file.&lt;/p&gt;
+
+&lt;p&gt;I reduced a file from 307MB to 68MB with limited quality loss.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Db Browser for Sqlite</title>
       <link>https://www.teosoft.it/note/2018-05-31-db-browser-for-sqlite/</link>
       <pubDate>Thu, 31 May 2018 15:39:04 +0200</pubDate>

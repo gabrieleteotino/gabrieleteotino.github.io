@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cors on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/cors/</link>
+    <description>Recent content in Cors on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 May 2018 16:49:07 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/cors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Webapi skeleton</title>
+      <link>https://www.teosoft.it/project/datingapp/2-skeleton/2-webapi-skeleton/</link>
+      <pubDate>Tue, 29 May 2018 16:49:07 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/2-skeleton/2-webapi-skeleton/</guid>
+      <description>&lt;p&gt;A skeleton webapi that loads data from a sqlite database.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

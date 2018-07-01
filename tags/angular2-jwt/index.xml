@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular2 Jwt on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/angular2-jwt/</link>
+    <description>Recent content in Angular2 Jwt on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jun 2018 14:55:17 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/angular2-jwt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Angular JWT</title>
+      <link>https://www.teosoft.it/project/datingapp/6-third-party-components/2-angular-jwt/</link>
+      <pubDate>Sun, 17 Jun 2018 14:55:17 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/2-angular-jwt/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

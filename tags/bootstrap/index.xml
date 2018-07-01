@@ -22,5 +22,32 @@
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Bootstrap NGX</title>
+      <link>https://www.teosoft.it/project/datingapp/6-third-party-components/3-bootstrap-ngx/</link>
+      <pubDate>Sun, 17 Jun 2018 18:57:19 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/3-bootstrap-ngx/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Auth service</title>
+      <link>https://www.teosoft.it/project/datingapp/4-client-authentication/2-auth-service/</link>
+      <pubDate>Thu, 14 Jun 2018 14:48:18 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/4-client-authentication/2-auth-service/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Navigation and Login form</title>
+      <link>https://www.teosoft.it/project/datingapp/4-client-authentication/1-navigation-and-login-form/</link>
+      <pubDate>Wed, 13 Jun 2018 15:01:33 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/4-client-authentication/1-navigation-and-login-form/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

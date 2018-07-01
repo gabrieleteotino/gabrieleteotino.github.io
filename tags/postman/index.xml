@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Postman on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/postman/</link>
+    <description>Recent content in Postman on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Jun 2018 17:41:05 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/postman/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Authentication Middleware</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/6-authentication-middleware/</link>
+      <pubDate>Tue, 12 Jun 2018 17:41:05 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/6-authentication-middleware/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Controller</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/3-controller/</link>
+      <pubDate>Tue, 12 Jun 2018 11:26:48 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/3-controller/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installations</title>
+      <link>https://www.teosoft.it/project/datingapp/1-preparation/1-installations/</link>
+      <pubDate>Wed, 30 May 2018 21:55:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/1-preparation/1-installations/</guid>
+      <description>&lt;p&gt;Installation of all the basic tools.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

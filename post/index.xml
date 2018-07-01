@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Restore xubuntu initramfs</title>
+      <link>https://www.teosoft.it/post/2018-06-10-restore-xubuntu-initramfs/</link>
+      <pubDate>Sun, 10 Jun 2018 19:20:57 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-06-10-restore-xubuntu-initramfs/</guid>
+      <description>&lt;p&gt;For some reason my boot stopped after unlocking my luks encrypted drive.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Install nodejs using nvm</title>
       <link>https://www.teosoft.it/post/2018-05-28-install-nodejs-using-nvm/</link>
       <pubDate>Mon, 28 May 2018 19:17:51 +0200</pubDate>

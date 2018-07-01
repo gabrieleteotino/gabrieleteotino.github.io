@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ghostscript on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/ghostscript/</link>
+    <description>Recent content in Ghostscript on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Jun 2018 11:00:27 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/ghostscript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compress pdf file with linux</title>
+      <link>https://www.teosoft.it/note/2018-06-21-compress-pdf-with-linux/</link>
+      <pubDate>Thu, 21 Jun 2018 11:00:27 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-06-21-compress-pdf-with-linux/</guid>
+      <description>&lt;p&gt;A pdf file with a lot of scanned images can be a very large file.&lt;/p&gt;
+
+&lt;p&gt;I reduced a file from 307MB to 68MB with limited quality loss.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

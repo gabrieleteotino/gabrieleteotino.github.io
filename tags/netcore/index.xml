@@ -6,10 +6,103 @@
     <description>Recent content in Netcore on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 May 2018 11:51:42 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 15 Jun 2018 10:59:57 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/netcore/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Api error middleware</title>
+      <link>https://www.teosoft.it/project/datingapp/5-error-handling/1-api-error-middleware/</link>
+      <pubDate>Fri, 15 Jun 2018 10:59:57 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/5-error-handling/1-api-error-middleware/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Authentication Middleware</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/6-authentication-middleware/</link>
+      <pubDate>Tue, 12 Jun 2018 17:41:05 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/6-authentication-middleware/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Token</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/5-token/</link>
+      <pubDate>Tue, 12 Jun 2018 15:18:19 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/5-token/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Validation</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/4-validation/</link>
+      <pubDate>Tue, 12 Jun 2018 14:37:11 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/4-validation/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Controller</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/3-controller/</link>
+      <pubDate>Tue, 12 Jun 2018 11:26:48 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/3-controller/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Repository</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/2-repository/</link>
+      <pubDate>Fri, 08 Jun 2018 14:55:37 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/2-repository/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User Model</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/1-user-model/</link>
+      <pubDate>Fri, 08 Jun 2018 14:02:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/1-user-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Skeleton</title>
+      <link>https://www.teosoft.it/project/datingapp/2-skeleton/</link>
+      <pubDate>Wed, 30 May 2018 21:57:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/2-skeleton/</guid>
+      <description>Create a simple skeleton with minimal components to test all the basic pieces:
+ a github repository a simple webapi that loads dummy data from a Sqlite database a simple angular SPA that loads data from the webapi  </description>
+    </item>
+    
+    <item>
+      <title>Installations</title>
+      <link>https://www.teosoft.it/project/datingapp/1-preparation/1-installations/</link>
+      <pubDate>Wed, 30 May 2018 21:55:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/1-preparation/1-installations/</guid>
+      <description>&lt;p&gt;Installation of all the basic tools.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Preparation</title>
+      <link>https://www.teosoft.it/project/datingapp/1-preparation/</link>
+      <pubDate>Wed, 30 May 2018 21:54:02 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/1-preparation/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>DatingApp</title>
@@ -19,8 +112,19 @@
       <guid>https://www.teosoft.it/project/datingapp/</guid>
       <description>DatingApp is a SPA dating application written in Angular 5 with a webapi backend made in C# using .net core 2.1.
 The application is my opinionated version of this Udemy course
-The course used a previous version of .net core I fixed everything to use 2.1.0-rc1-final.
- Preparation Skeleton Securing Client authentication Error handling Upgrading and Debugger Third party components Routing Extending the API Building the UI  </description>
+The course used a previous version of .net core I fixed everything to use 2.1.0-rc1-final. After chapter 5 I also gained enough confidence with Angular to update it to version 6.
+ Preparation Skeleton Securing Client authentication Error handling Third party components Routing Extending the API Building the UI Updating users  </description>
+    </item>
+    
+    <item>
+      <title>Webapi skeleton</title>
+      <link>https://www.teosoft.it/project/datingapp/2-skeleton/2-webapi-skeleton/</link>
+      <pubDate>Tue, 29 May 2018 16:49:07 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/2-skeleton/2-webapi-skeleton/</guid>
+      <description>&lt;p&gt;A skeleton webapi that loads data from a sqlite database.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alertifyjs on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/alertifyjs/</link>
+    <description>Recent content in Alertifyjs on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Jun 2018 16:13:54 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/alertifyjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alertifyjs</title>
+      <link>https://www.teosoft.it/project/datingapp/6-third-party-components/1-alertifyjs/</link>
+      <pubDate>Sat, 16 Jun 2018 16:13:54 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/1-alertifyjs/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
