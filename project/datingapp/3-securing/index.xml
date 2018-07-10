@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skeleton on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/3-securing/</link>
+    <description>Recent content in Skeleton on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Jun 2018 13:08:36 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/3-securing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Authentication Middleware</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/6-authentication-middleware/</link>
+      <pubDate>Tue, 12 Jun 2018 17:41:05 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/6-authentication-middleware/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Token</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/5-token/</link>
+      <pubDate>Tue, 12 Jun 2018 15:18:19 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/5-token/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Validation</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/4-validation/</link>
+      <pubDate>Tue, 12 Jun 2018 14:37:11 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/4-validation/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Controller</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/3-controller/</link>
+      <pubDate>Tue, 12 Jun 2018 11:26:48 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/3-controller/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Repository</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/2-repository/</link>
+      <pubDate>Fri, 08 Jun 2018 14:55:37 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/2-repository/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User Model</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/1-user-model/</link>
+      <pubDate>Fri, 08 Jun 2018 14:02:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/1-user-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,37 @@
     <description>Recent content in Ef on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Jun 2018 14:02:03 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jun 2018 17:07:16 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/ef/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Persisting changes API</title>
+      <link>https://www.teosoft.it/project/datingapp/10-updating-users/3-persisting-changes-api/</link>
+      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/10-updating-users/3-persisting-changes-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Seeding data</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/2-seeding-data/</link>
+      <pubDate>Mon, 18 Jun 2018 18:08:20 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/2-seeding-data/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Extending the user model</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/1-extending-the-user-model/</link>
+      <pubDate>Mon, 18 Jun 2018 14:39:48 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/1-extending-the-user-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>User Model</title>

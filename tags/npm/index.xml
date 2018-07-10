@@ -6,10 +6,30 @@
     <description>Recent content in Npm on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Jun 2018 18:57:19 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jun 2018 21:32:41 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/npm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Photo gallery</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/5-photo-gallery/</link>
+      <pubDate>Fri, 29 Jun 2018 21:32:41 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/5-photo-gallery/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bootswatch</title>
+      <link>https://www.teosoft.it/project/datingapp/6-third-party-components/4-bootswatch/</link>
+      <pubDate>Sun, 17 Jun 2018 19:21:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/4-bootswatch/</guid>
+      <description>&lt;p&gt;Free themes for Bootstrap&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Bootstrap NGX</title>
@@ -35,6 +55,15 @@
       <pubDate>Sat, 16 Jun 2018 16:13:54 +0200</pubDate>
       
       <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/1-alertifyjs/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Upgrade to Angular 6</title>
+      <link>https://www.teosoft.it/project/datingapp/5-error-handling/4-upgrade-to-angular-6/</link>
+      <pubDate>Sat, 16 Jun 2018 13:07:13 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/5-error-handling/4-upgrade-to-angular-6/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     

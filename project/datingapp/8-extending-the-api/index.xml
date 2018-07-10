@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Extending the API on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/</link>
+    <description>Recent content in Extending the API on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Jun 2018 14:33:27 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/8-extending-the-api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>UsersController</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/4-userscontroller/</link>
+      <pubDate>Tue, 19 Jun 2018 14:22:53 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/4-userscontroller/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DatingRepository</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/3-datingrepository/</link>
+      <pubDate>Tue, 19 Jun 2018 13:55:36 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/3-datingrepository/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Seeding data</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/2-seeding-data/</link>
+      <pubDate>Mon, 18 Jun 2018 18:08:20 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/2-seeding-data/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Extending the user model</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/1-extending-the-user-model/</link>
+      <pubDate>Mon, 18 Jun 2018 14:39:48 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/1-extending-the-user-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

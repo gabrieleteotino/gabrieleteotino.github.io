@@ -6,10 +6,77 @@
     <description>Recent content on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jun 2018 14:52:12 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jun 2018 17:27:16 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Persisting changes SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/10-updating-users/4-persisting-changes-spa/</link>
+      <pubDate>Sat, 30 Jun 2018 17:27:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/10-updating-users/4-persisting-changes-spa/</guid>
+      <description>&lt;p&gt;Update the user in the client.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Persisting changes API</title>
+      <link>https://www.teosoft.it/project/datingapp/10-updating-users/3-persisting-changes-api/</link>
+      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/10-updating-users/3-persisting-changes-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CanDeactivate route guard</title>
+      <link>https://www.teosoft.it/project/datingapp/10-updating-users/2-candeactivate-route-guard/</link>
+      <pubDate>Sat, 30 Jun 2018 15:53:30 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/10-updating-users/2-candeactivate-route-guard/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Member edit</title>
+      <link>https://www.teosoft.it/project/datingapp/10-updating-users/1-member-edit/</link>
+      <pubDate>Fri, 29 Jun 2018 23:19:43 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/10-updating-users/1-member-edit/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Photo gallery</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/5-photo-gallery/</link>
+      <pubDate>Fri, 29 Jun 2018 21:32:41 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/5-photo-gallery/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Route resolvers</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/4-route-resolvers/</link>
+      <pubDate>Fri, 29 Jun 2018 18:03:31 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/4-route-resolvers/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shrink empty lines extension</title>
+      <link>https://www.teosoft.it/note/2018-06-22-shrink-empty-lines/</link>
+      <pubDate>Fri, 22 Jun 2018 15:38:00 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-06-22-shrink-empty-lines/</guid>
+      <description>&lt;p&gt;Syntactic line compression enables you to make better use of your screen&amp;rsquo;s vertical real-estate.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Pingendo bootstrap IDE</title>
@@ -23,6 +90,24 @@
     </item>
     
     <item>
+      <title>Member detail</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/3-member-detail/</link>
+      <pubDate>Fri, 22 Jun 2018 11:26:53 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/3-member-detail/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Members card</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/2-members-card/</link>
+      <pubDate>Thu, 21 Jun 2018 13:02:06 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/2-members-card/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Compress pdf file with linux</title>
       <link>https://www.teosoft.it/note/2018-06-21-compress-pdf-with-linux/</link>
       <pubDate>Thu, 21 Jun 2018 11:00:27 +0200</pubDate>
@@ -31,6 +116,91 @@
       <description>&lt;p&gt;A pdf file with a lot of scanned images can be a very large file.&lt;/p&gt;
 
 &lt;p&gt;I reduced a file from 307MB to 68MB with limited quality loss.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Types in Typescript</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/1-types-in-typescript/</link>
+      <pubDate>Tue, 19 Jun 2018 19:52:17 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/1-types-in-typescript/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UsersController</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/4-userscontroller/</link>
+      <pubDate>Tue, 19 Jun 2018 14:22:53 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/4-userscontroller/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DatingRepository</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/3-datingrepository/</link>
+      <pubDate>Tue, 19 Jun 2018 13:55:36 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/3-datingrepository/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Seeding data</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/2-seeding-data/</link>
+      <pubDate>Mon, 18 Jun 2018 18:08:20 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/2-seeding-data/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Extending the user model</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/1-extending-the-user-model/</link>
+      <pubDate>Mon, 18 Jun 2018 14:39:48 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/1-extending-the-user-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Guards</title>
+      <link>https://www.teosoft.it/project/datingapp/7-routing/3-guards/</link>
+      <pubDate>Mon, 18 Jun 2018 13:51:40 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/7-routing/3-guards/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Routing in code</title>
+      <link>https://www.teosoft.it/project/datingapp/7-routing/2-routing-in-code/</link>
+      <pubDate>Mon, 18 Jun 2018 12:57:40 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/7-routing/2-routing-in-code/</guid>
+      <description>&lt;p&gt;Feature: after the user log in he must be redirected to the &lt;em&gt;members&lt;/em&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Routing basics</title>
+      <link>https://www.teosoft.it/project/datingapp/7-routing/1-routing-basics/</link>
+      <pubDate>Mon, 18 Jun 2018 11:05:38 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/7-routing/1-routing-basics/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bootswatch</title>
+      <link>https://www.teosoft.it/project/datingapp/6-third-party-components/4-bootswatch/</link>
+      <pubDate>Sun, 17 Jun 2018 19:21:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/4-bootswatch/</guid>
+      <description>&lt;p&gt;Free themes for Bootstrap&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -68,6 +238,15 @@
       <pubDate>Sat, 16 Jun 2018 14:27:09 +0200</pubDate>
       
       <guid>https://www.teosoft.it/project/datingapp/5-error-handling/3-debug-with-chromium/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Upgrade to Angular 6</title>
+      <link>https://www.teosoft.it/project/datingapp/5-error-handling/4-upgrade-to-angular-6/</link>
+      <pubDate>Sat, 16 Jun 2018 13:07:13 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/5-error-handling/4-upgrade-to-angular-6/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     

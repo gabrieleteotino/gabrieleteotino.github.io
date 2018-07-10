@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Building the UI on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/</link>
+    <description>Recent content in Building the UI on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Jun 2018 19:11:47 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/9-building-the-ui/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Photo gallery</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/5-photo-gallery/</link>
+      <pubDate>Fri, 29 Jun 2018 21:32:41 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/5-photo-gallery/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Route resolvers</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/4-route-resolvers/</link>
+      <pubDate>Fri, 29 Jun 2018 18:03:31 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/4-route-resolvers/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Member detail</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/3-member-detail/</link>
+      <pubDate>Fri, 22 Jun 2018 11:26:53 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/3-member-detail/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Members card</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/2-members-card/</link>
+      <pubDate>Thu, 21 Jun 2018 13:02:06 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/2-members-card/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Types in Typescript</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/1-types-in-typescript/</link>
+      <pubDate>Tue, 19 Jun 2018 19:52:17 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/1-types-in-typescript/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

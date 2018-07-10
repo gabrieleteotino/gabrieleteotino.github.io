@@ -6,10 +6,103 @@
     <description>Recent content in Netcore on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Jun 2018 10:59:57 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jun 2018 17:07:16 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/netcore/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Persisting changes API</title>
+      <link>https://www.teosoft.it/project/datingapp/10-updating-users/3-persisting-changes-api/</link>
+      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/10-updating-users/3-persisting-changes-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Updating users</title>
+      <link>https://www.teosoft.it/project/datingapp/10-updating-users/</link>
+      <pubDate>Fri, 29 Jun 2018 23:12:01 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/10-updating-users/</guid>
+      <description>Give the users the ability to update their profiles.
+ Component for editing profile CanDeactivate Route Guard The @ViewChild decorator Persist the changes in the API  </description>
+    </item>
+    
+    <item>
+      <title>Building the UI</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/</link>
+      <pubDate>Tue, 19 Jun 2018 19:11:47 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/</guid>
+      <description>Build up the SPA to consume the new API and finally offer some nice features.
+ Types in Typescript Retrieving users from the API Using Bootstrap to create member cards Adding a detailed view of the users Route resolvers Adding a photo gallery  </description>
+    </item>
+    
+    <item>
+      <title>UsersController</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/4-userscontroller/</link>
+      <pubDate>Tue, 19 Jun 2018 14:22:53 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/4-userscontroller/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DatingRepository</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/3-datingrepository/</link>
+      <pubDate>Tue, 19 Jun 2018 13:55:36 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/3-datingrepository/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Seeding data</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/2-seeding-data/</link>
+      <pubDate>Mon, 18 Jun 2018 18:08:20 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/2-seeding-data/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Extending the user model</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/1-extending-the-user-model/</link>
+      <pubDate>Mon, 18 Jun 2018 14:39:48 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/1-extending-the-user-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Extending the API</title>
+      <link>https://www.teosoft.it/project/datingapp/8-extending-the-api/</link>
+      <pubDate>Mon, 18 Jun 2018 14:33:27 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/8-extending-the-api/</guid>
+      <description> Extending the User class More migrations Cascade delete Seeding data into the database New repository Using Automapper  </description>
+    </item>
+    
+    <item>
+      <title>Routing</title>
+      <link>https://www.teosoft.it/project/datingapp/7-routing/</link>
+      <pubDate>Sun, 17 Jun 2018 19:26:23 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/7-routing/</guid>
+      <description> Setup Routing Using RouterLinkActive Using Routing in code Protecting the Routes Protecting multiple Routes with a single Route Guard  </description>
+    </item>
+    
+    <item>
+      <title>Third party components</title>
+      <link>https://www.teosoft.it/project/datingapp/6-third-party-components/</link>
+      <pubDate>Sat, 16 Jun 2018 16:13:54 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/</guid>
+      <description>Install and configure the following components
+ Alertifyjs Angular JWT NGX Bootstrap Bootswatch  </description>
+    </item>
     
     <item>
       <title>Api error middleware</title>
@@ -18,6 +111,26 @@
       
       <guid>https://www.teosoft.it/project/datingapp/5-error-handling/1-api-error-middleware/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Error handling</title>
+      <link>https://www.teosoft.it/project/datingapp/5-error-handling/</link>
+      <pubDate>Fri, 15 Jun 2018 10:36:30 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/5-error-handling/</guid>
+      <description>Handle unexpected exceptions and validation errors.
+Extras
+ How to debug chromium with vscode. Upgrade to Angular 6.  </description>
+    </item>
+    
+    <item>
+      <title>Client authentication</title>
+      <link>https://www.teosoft.it/project/datingapp/4-client-authentication/</link>
+      <pubDate>Wed, 13 Jun 2018 15:00:32 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/4-client-authentication/</guid>
+      <description>Implement registration and login.</description>
     </item>
     
     <item>
@@ -72,6 +185,16 @@
       
       <guid>https://www.teosoft.it/project/datingapp/3-securing/1-user-model/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Skeleton</title>
+      <link>https://www.teosoft.it/project/datingapp/3-securing/</link>
+      <pubDate>Fri, 08 Jun 2018 13:08:36 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/3-securing/</guid>
+      <description>Implement security and user authentication
+ How we store password in the database Creating the User Model The Repository Pattern Creating the Authentication Controller Data Transfer Objects Token authentication Authentication Middleware  </description>
     </item>
     
     <item>

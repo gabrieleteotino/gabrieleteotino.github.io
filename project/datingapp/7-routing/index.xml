@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Routing on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/7-routing/</link>
+    <description>Recent content in Routing on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jun 2018 19:26:23 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/7-routing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guards</title>
+      <link>https://www.teosoft.it/project/datingapp/7-routing/3-guards/</link>
+      <pubDate>Mon, 18 Jun 2018 13:51:40 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/7-routing/3-guards/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Routing in code</title>
+      <link>https://www.teosoft.it/project/datingapp/7-routing/2-routing-in-code/</link>
+      <pubDate>Mon, 18 Jun 2018 12:57:40 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/7-routing/2-routing-in-code/</guid>
+      <description>&lt;p&gt;Feature: after the user log in he must be redirected to the &lt;em&gt;members&lt;/em&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Routing basics</title>
+      <link>https://www.teosoft.it/project/datingapp/7-routing/1-routing-basics/</link>
+      <pubDate>Mon, 18 Jun 2018 11:05:38 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/7-routing/1-routing-basics/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

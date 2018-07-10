@@ -3,13 +3,123 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/project/datingapp/10-updating-users/4-persisting-changes-spa/</loc>
+    <lastmod>2018-06-30T17:27:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/10-updating-users/3-persisting-changes-api/</loc>
+    <lastmod>2018-06-30T17:07:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/10-updating-users/2-candeactivate-route-guard/</loc>
+    <lastmod>2018-06-30T15:53:30+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/10-updating-users/1-member-edit/</loc>
+    <lastmod>2018-06-29T23:19:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/10-updating-users/</loc>
+    <lastmod>2018-06-29T23:12:01+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/9-building-the-ui/5-photo-gallery/</loc>
+    <lastmod>2018-06-29T21:32:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/9-building-the-ui/4-route-resolvers/</loc>
+    <lastmod>2018-06-29T18:03:31+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/note/2018-06-22-shrink-empty-lines/</loc>
+    <lastmod>2018-06-22T15:38:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/note/2018-06-22-pingendo-bootstrap-ide/</loc>
     <lastmod>2018-06-22T14:52:12+02:00</lastmod>
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/project/datingapp/9-building-the-ui/3-member-detail/</loc>
+    <lastmod>2018-06-22T11:26:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/9-building-the-ui/2-members-card/</loc>
+    <lastmod>2018-06-21T13:02:06+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/note/2018-06-21-compress-pdf-with-linux/</loc>
     <lastmod>2018-06-21T11:00:27+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/9-building-the-ui/1-types-in-typescript/</loc>
+    <lastmod>2018-06-19T19:52:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/9-building-the-ui/</loc>
+    <lastmod>2018-06-19T19:11:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/8-extending-the-api/4-userscontroller/</loc>
+    <lastmod>2018-06-19T14:22:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/8-extending-the-api/3-datingrepository/</loc>
+    <lastmod>2018-06-19T13:55:36+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/8-extending-the-api/2-seeding-data/</loc>
+    <lastmod>2018-06-18T18:08:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/8-extending-the-api/1-extending-the-user-model/</loc>
+    <lastmod>2018-06-18T14:39:48+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/8-extending-the-api/</loc>
+    <lastmod>2018-06-18T14:33:27+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/7-routing/3-guards/</loc>
+    <lastmod>2018-06-18T13:51:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/7-routing/2-routing-in-code/</loc>
+    <lastmod>2018-06-18T12:57:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/7-routing/1-routing-basics/</loc>
+    <lastmod>2018-06-18T11:05:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/7-routing/</loc>
+    <lastmod>2018-06-17T19:26:23+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/6-third-party-components/4-bootswatch/</loc>
+    <lastmod>2018-06-17T19:21:16+02:00</lastmod>
   </url>
   
   <url>
@@ -28,8 +138,18 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/project/datingapp/6-third-party-components/</loc>
+    <lastmod>2018-06-16T16:13:54+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/project/datingapp/5-error-handling/3-debug-with-chromium/</loc>
     <lastmod>2018-06-16T14:27:09+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/5-error-handling/4-upgrade-to-angular-6/</loc>
+    <lastmod>2018-06-16T13:07:13+02:00</lastmod>
   </url>
   
   <url>
@@ -40,6 +160,11 @@
   <url>
     <loc>https://www.teosoft.it/project/datingapp/5-error-handling/1-api-error-middleware/</loc>
     <lastmod>2018-06-15T10:59:57+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/5-error-handling/</loc>
+    <lastmod>2018-06-15T10:36:30+02:00</lastmod>
   </url>
   
   <url>
@@ -55,6 +180,11 @@
   <url>
     <loc>https://www.teosoft.it/project/datingapp/4-client-authentication/1-navigation-and-login-form/</loc>
     <lastmod>2018-06-13T15:01:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/4-client-authentication/</loc>
+    <lastmod>2018-06-13T15:00:32+02:00</lastmod>
   </url>
   
   <url>
@@ -90,6 +220,11 @@
   <url>
     <loc>https://www.teosoft.it/project/datingapp/3-securing/1-user-model/</loc>
     <lastmod>2018-06-08T14:02:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/3-securing/</loc>
+    <lastmod>2018-06-08T13:08:36+02:00</lastmod>
   </url>
   
   <url>
@@ -398,7 +533,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/angular/</loc>
-    <lastmod>2018-06-17T18:57:19+02:00</lastmod>
+    <lastmod>2018-06-30T17:27:16+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -433,6 +568,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/automapper/</loc>
+    <lastmod>2018-06-30T17:07:16+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/azure/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
     <priority>0</priority>
@@ -446,7 +587,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-06-22T14:52:12+02:00</lastmod>
+    <lastmod>2018-06-30T17:27:16+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -457,8 +598,14 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/bootswatch/</loc>
+    <lastmod>2018-06-17T19:21:16+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/c#/</loc>
-    <lastmod>2018-06-15T10:59:57+02:00</lastmod>
+    <lastmod>2018-06-30T17:07:16+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -474,14 +621,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/cloud/</loc>
-    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
+    <loc>https://www.teosoft.it/categories/cloud/</loc>
+    <lastmod>2018-02-28T11:51:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/cloud/</loc>
-    <lastmod>2018-02-28T11:51:41+01:00</lastmod>
+    <loc>https://www.teosoft.it/tags/cloud/</loc>
+    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -522,14 +669,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/dev/</loc>
-    <lastmod>2018-05-17T11:18:53+02:00</lastmod>
+    <loc>https://www.teosoft.it/categories/dev/</loc>
+    <lastmod>2018-06-30T17:27:16+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/dev/</loc>
-    <lastmod>2018-06-17T18:57:19+02:00</lastmod>
+    <loc>https://www.teosoft.it/tags/dev/</loc>
+    <lastmod>2018-05-17T11:18:53+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -540,14 +687,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/devops/</loc>
-    <lastmod>2018-02-28T15:27:34+01:00</lastmod>
+    <loc>https://www.teosoft.it/categories/devops/</loc>
+    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/devops/</loc>
-    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
+    <loc>https://www.teosoft.it/tags/devops/</loc>
+    <lastmod>2018-02-28T15:27:34+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -559,7 +706,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/ef/</loc>
-    <lastmod>2018-06-08T14:02:03+02:00</lastmod>
+    <lastmod>2018-06-30T17:07:16+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -571,7 +718,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/entityframework/</loc>
-    <lastmod>2018-06-08T14:02:03+02:00</lastmod>
+    <lastmod>2018-06-30T17:07:16+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -648,6 +795,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/json/</loc>
+    <lastmod>2018-06-18T18:08:20+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/jumper/</loc>
     <lastmod>2018-04-23T11:24:30+02:00</lastmod>
     <priority>0</priority>
@@ -655,7 +808,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/jwt/</loc>
-    <lastmod>2018-06-17T14:55:17+02:00</lastmod>
+    <lastmod>2018-06-19T19:52:17+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -672,14 +825,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/linux/</loc>
-    <lastmod>2018-05-28T19:17:51+02:00</lastmod>
+    <loc>https://www.teosoft.it/categories/linux/</loc>
+    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/linux/</loc>
-    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
+    <loc>https://www.teosoft.it/tags/linux/</loc>
+    <lastmod>2018-05-28T19:17:51+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -697,7 +850,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/netcore/</loc>
-    <lastmod>2018-06-15T10:59:57+02:00</lastmod>
+    <lastmod>2018-06-30T17:07:16+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -721,7 +874,13 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/ngx-bootstrap/</loc>
-    <lastmod>2018-06-17T18:57:19+02:00</lastmod>
+    <lastmod>2018-06-22T11:26:53+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/ngx-gallery/</loc>
+    <lastmod>2018-06-29T21:32:41+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -739,7 +898,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/npm/</loc>
-    <lastmod>2018-06-17T18:57:19+02:00</lastmod>
+    <lastmod>2018-06-29T21:32:41+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -828,6 +987,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/rxjs/</loc>
+    <lastmod>2018-06-16T13:07:13+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/scikit/</loc>
     <lastmod>2018-05-07T15:15:56+02:00</lastmod>
     <priority>0</priority>
@@ -894,14 +1059,20 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/tools/</loc>
-    <lastmod>2018-03-29T15:34:35+02:00</lastmod>
+    <loc>https://www.teosoft.it/tags/theme/</loc>
+    <lastmod>2018-06-17T19:21:16+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.teosoft.it/categories/tools/</loc>
-    <lastmod>2018-06-22T14:52:12+02:00</lastmod>
+    <lastmod>2018-06-22T15:38:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/tools/</loc>
+    <lastmod>2018-03-29T15:34:35+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -937,7 +1108,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/visualstudio/</loc>
-    <lastmod>2018-05-17T11:18:53+02:00</lastmod>
+    <lastmod>2018-06-22T15:38:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -960,32 +1131,32 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/web/</loc>
-    <lastmod>2018-05-30T11:06:11+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.teosoft.it/categories/web/</loc>
     <lastmod>2018-05-23T18:05:59+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/webapi/</loc>
-    <lastmod>2018-06-15T10:59:57+02:00</lastmod>
+    <loc>https://www.teosoft.it/tags/web/</loc>
+    <lastmod>2018-05-30T11:06:11+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/webdev/</loc>
-    <lastmod>2018-06-22T14:52:12+02:00</lastmod>
+    <loc>https://www.teosoft.it/tags/webapi/</loc>
+    <lastmod>2018-06-30T17:07:16+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.teosoft.it/categories/webdev/</loc>
     <lastmod>2018-03-12T13:43:50+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/webdev/</loc>
+    <lastmod>2018-06-22T14:52:12+02:00</lastmod>
     <priority>0</priority>
   </url>
   

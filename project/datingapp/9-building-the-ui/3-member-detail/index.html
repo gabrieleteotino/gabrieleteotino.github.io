@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Member detail</title>
+  <meta property="og:title" content="Member detail" />
+  <meta name="twitter:title" content="Member detail" />
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta name="author" content="Gabriele Teotino"/>
+  <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://www.teosoft.it/project/datingapp/9-building-the-ui/3-member-detail/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bluish capsule" />
+
+  <meta name="generator" content="Hugo 0.36.1" />
+  <link rel="canonical" href="https://www.teosoft.it/project/datingapp/9-building-the-ui/3-member-detail/" />
+  <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.teosoft.it/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://www.teosoft.it/css/highlight.min.css" /><link rel="stylesheet" href="https://www.teosoft.it/css/codeblock.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-24994854-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.teosoft.it/">Bluish capsule</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/post">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Notes" href="/note">Notes</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+              <div class="navlinks-children">
+                
+                  <a href="/project">Projects home</a>
+                
+                  <a href="/project/meccanici">Meccanici</a>
+                
+                  <a href="/project/datingapp">DatingApp</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Reviews" href="/review">Reviews</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Bluish capsule" href="https://www.teosoft.it/">
+            <img class="avatar-img" src="https://www.teosoft.it/img/avatar-icon.png" alt="Bluish capsule" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Bluish capsule</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="project-heading">
+              <h1>Member detail</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p></p>
+
+<h2 id="user-service">User service</h2>
+
+<p>Open <strong>user.service.ts</strong> and add a method to get a single <strong>User</strong>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="nx">getUser</span><span class="p">(</span><span class="nx">id</span>: <span class="kt">number</span><span class="p">)</span><span class="o">:</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">User</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">http</span>
+    <span class="p">.</span><span class="nx">get</span><span class="o">&lt;</span><span class="nx">User</span><span class="o">&gt;</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">baseUrl</span> <span class="o">+</span> <span class="nx">id</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">catchError</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">handleError</span><span class="p">));</span>
+<span class="p">}</span></code></pre></div>
+<h2 id="member-detail-component">Member detail component</h2>
+
+<p>Create a new component <strong>members/member-detail</strong>. When we create a component in a sub folder the angular extension doesn&rsquo;t add it reference, so open <strong>app.module.ts</strong> and add it.</p>
+
+<p>Add a property <strong>user</strong>, add DI in the constructor for <strong>HttpClient</strong>, <strong>AlertifyService</strong> and <strong>ActivatedRoute</strong>. Add a method <strong>loadUser</strong>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">constructor</span><span class="p">(</span>
+  <span class="kr">private</span> <span class="nx">userService</span>: <span class="kt">UserService</span><span class="p">,</span>
+  <span class="kr">private</span> <span class="nx">alertify</span>: <span class="kt">AlertifyService</span><span class="p">,</span>
+  <span class="kr">private</span> <span class="nx">route</span>: <span class="kt">ActivatedRoute</span>
+<span class="p">)</span> <span class="p">{}</span>
+
+<span class="nx">ngOnInit() {</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">loadUser</span><span class="p">(</span><span class="o">+</span><span class="k">this</span><span class="p">.</span><span class="nx">route</span><span class="p">.</span><span class="nx">snapshot</span><span class="p">.</span><span class="nx">params</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]);</span>
+<span class="p">}</span>
+
+<span class="nx">loadUser</span><span class="p">(</span><span class="nx">id</span>: <span class="kt">number</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">userService</span><span class="p">.</span><span class="nx">getUser</span><span class="p">(</span><span class="nx">id</span><span class="p">).</span><span class="nx">subscribe</span><span class="p">(</span>
+    <span class="nx">user</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">user</span> <span class="o">=</span> <span class="nx">user</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">alertify</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>Open <strong>member-detail.component.html</strong> and add a simple property binding.</p>
+<div class="highlight"><pre class="chroma">&lt;p&gt;
+  {{user?.knownAs}}
+&lt;/p&gt;</pre></div>
+<h2 id="router">Router</h2>
+
+<p>Open <strong>routes.ts</strong> and add a route with a parameter to <strong>MemberDetailComponent</strong>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="nx">children</span><span class="o">:</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;members&#39;</span><span class="p">,</span> <span class="nx">component</span>: <span class="kt">MemberListComponent</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;members/:id&#39;</span><span class="p">,</span>  <span class="nx">component</span>: <span class="kt">MemberDetailComponent</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;lists&#39;</span><span class="p">,</span> <span class="nx">component</span>: <span class="kt">ListsComponent</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;messages&#39;</span><span class="p">,</span> <span class="nx">component</span>: <span class="kt">MessagesComponent</span> <span class="p">}</span>
+<span class="p">]</span></code></pre></div>
+<h2 id="load-user-from-route">Load user from route</h2>
+
+<p>Open <strong>member-card.component.html</strong> and add a <em>a-routerlink</em></p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-responsive&#34;</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">members</span><span class="err">/&#39;,</span> <span class="na">user</span><span class="err">.</span><span class="na">id</span><span class="err">]&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fa fa-user&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">i</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span></code></pre></div>
+<h2 id="member-detail-left-column">Member detail left column</h2>
+
+<p>Open <strong>member-detail.component.html</strong> and replace all the content with a two column grid layout. In the left part we have a profile picture and some details about the user.</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p"></span><span class="p">&gt;</span>{{user?.knownAs}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-sm-4&#34;</span><span class="p"></span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;panel panel-default&#34;</span><span class="p"></span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;thumbnail profile-image&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{user?.profilePhotoUrl}}&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;{{user?.knownAs}}&#34;</span><span class="p"></span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;panel-body&#34;</span><span class="p"></span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span><span class="p"></span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">strong</span><span class="p"></span><span class="p">&gt;</span>Location:<span class="p">&lt;</span><span class="p">/</span><span class="nt">strong</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>{{user?.city}}, {{user?.country}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span><span class="p"></span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">strong</span><span class="p"></span><span class="p">&gt;</span>Age:<span class="p">&lt;</span><span class="p">/</span><span class="nt">strong</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>{{user?.age}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span><span class="p"></span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">strong</span><span class="p"></span><span class="p">&gt;</span>Last active:<span class="p">&lt;</span><span class="p">/</span><span class="nt">strong</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>{{user?.lastActive}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span><span class="p"></span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">strong</span><span class="p"></span><span class="p">&gt;</span>Member since:<span class="p">&lt;</span><span class="p">/</span><span class="nt">strong</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>{{user?.created}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;panel-footer&#34;</span><span class="p"></span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group-justified&#34;</span><span class="p"></span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group&#34;</span><span class="p"></span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p"></span><span class="p">&gt;</span>Like<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group&#34;</span><span class="p"></span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-success&#34;</span><span class="p"></span><span class="p">&gt;</span>Message<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-sm-8&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<p>Add some styles to <strong>member-detail.component.css</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">profile-image</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">85</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">85</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">panel-body</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">panel-footer</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+    <span class="k">border-top</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">btn-group-justified</span><span class="o">&gt;</span><span class="p">.</span><span class="nc">btn-group</span> <span class="p">.</span><span class="nc">btn</span> <span class="p">{</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">95</span><span class="kt">%</span>
+<span class="p">}</span></code></pre></div>
+<h2 id="member-detail-right-column">Member detail right column</h2>
+
+<p>In <strong>member-detail.component.html</strong> add into <em>col-sm-8</em> a tabbed panel using <a href="https://valor-software.com/ngx-bootstrap/#/tabs">NGX bootstrap</a>. To do so open <strong>app.module.ts</strong> and import <em>TabModule</em>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="p">...</span>
+<span class="nx">BsDropdownModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="p">(),</span>
+<span class="nx">TabsModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="p">(),</span>
+<span class="nx">RouterModule</span><span class="p">.</span><span class="nx">forRoot</span><span class="p">(</span><span class="nx">ROUTES</span><span class="p">)</span>
+<span class="p">...</span></code></pre></div>
+<p>Inside the <em>col-sm-8</em> add the markup for the tabs. Note the class <strong>members-table</strong>, we will use this class inside the global css.</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-sm-8&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;tab-panel&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tabset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;member-tabset&#34;</span><span class="p"></span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tab</span> <span class="na">heading</span><span class="o">=</span><span class="s">&#34;About {{user?.knownAs}}&#34;</span><span class="p"></span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p"></span><span class="p">&gt;</span>Description<span class="p">&lt;</span><span class="p">/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>{{user?.introduction}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p"></span><span class="p">&gt;</span>Looking for<span class="p">&lt;</span><span class="p">/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>{{user?.lookingFor}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="p">/</span><span class="nt">tab</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tab</span> <span class="na">heading</span><span class="o">=</span><span class="s">&#34;Interests&#34;</span><span class="p"></span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>{{user?.interests}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="p">/</span><span class="nt">tab</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tab</span> <span class="na">heading</span><span class="o">=</span><span class="s">&#34;Photos&#34;</span><span class="p"></span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>Photos will go here<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="p">/</span><span class="nt">tab</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tab</span> <span class="na">heading</span><span class="o">=</span><span class="s">&#34;Messages&#34;</span><span class="p"></span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>Messages will go here<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="p">/</span><span class="nt">tab</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">tabset</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<p>Open <strong>styles.css</strong> and add the styles.</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">tab-panel</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ddd</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">nav-tabs</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">.</span><span class="nc">open</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">member-tabset</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">nav-tabs</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+  <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#e5f0fc</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">member-tabset</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">nav-tabs</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">.</span><span class="nc">open</span> <span class="o">&gt;</span> <span class="nt">a</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">member-tabset</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">nav-tabs</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">:</span><span class="nd">hover</span> <span class="o">&gt;</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">background</span><span class="p">:</span> <span class="kc">none</span> <span class="cp">!important</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#333333</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">member-tabset</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">nav-tabs</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">.</span><span class="nc">open</span> <span class="o">&gt;</span> <span class="nt">a</span> <span class="o">&gt;</span> <span class="nt">i</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">member-tabset</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">nav-tabs</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">:</span><span class="nd">hover</span> <span class="o">&gt;</span> <span class="nt">a</span> <span class="o">&gt;</span> <span class="nt">i</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#a6a6a6</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">member-tabset</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">nav-tabs</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">.</span><span class="nc">open</span> <span class="p">.</span><span class="nc">dropdown-menu</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">member-tabset</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">nav-tabs</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">:</span><span class="nd">hover</span> <span class="p">.</span><span class="nc">dropdown-menu</span> <span class="p">{</span>
+  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">member-tabset</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">nav-tabs</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">.</span><span class="nc">active</span> <span class="p">{</span>
+  <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#1a242f</span><span class="p">;</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">member-tabset</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">nav-tabs</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">.</span><span class="nc">active</span> <span class="o">&gt;</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#333333</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">member-tabset</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">nav-tabs</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="p">.</span><span class="nc">active</span> <span class="o">&gt;</span> <span class="nt">a</span> <span class="o">&gt;</span> <span class="nt">i</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#404040</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">member-tabset</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">tab-content</span> <span class="p">{</span>
+  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">-3</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">border-top</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#eee</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://www.teosoft.it/project/datingapp/9-building-the-ui/2-members-card/" data-toggle="tooltip" data-placement="top" title="Members card">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://www.teosoft.it/project/datingapp/9-building-the-ui/4-route-resolvers/" data-toggle="tooltip" data-placement="top" title="Route resolvers">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/gabrieleteotino" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/2085504/deramko" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://www.teosoft.it/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://www.teosoft.it">Gabriele Teotino</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.teosoft.it/">Bluish capsule</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.teosoft.it/js/main.js"></script>
+<script src="https://www.teosoft.it/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://www.teosoft.it/js/load-photoswipe.js"></script>
+
+
+<script>
+  (function() {
+    var cx = '005185449088889757369:5o44h-2knna';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+  </body>
+</html>
+

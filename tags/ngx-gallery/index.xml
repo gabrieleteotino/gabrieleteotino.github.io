@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ngx Gallery on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/ngx-gallery/</link>
+    <description>Recent content in Ngx Gallery on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jun 2018 21:32:41 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/ngx-gallery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Photo gallery</title>
+      <link>https://www.teosoft.it/project/datingapp/9-building-the-ui/5-photo-gallery/</link>
+      <pubDate>Fri, 29 Jun 2018 21:32:41 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/9-building-the-ui/5-photo-gallery/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.40" />
+  <meta name="generator" content="Hugo 0.36.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/4-client-authentication/3-register/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -228,14 +228,14 @@ ga('send', 'pageview');
 <p>Right click on the <strong>app</strong> folder and click <em>Generate Component</em>, name it <strong>register</strong>.</p>
 
 <p>Edit <strong>home.component.html</strong> and add the basic structure for the home page.</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;text-align: center&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Find your match!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lead&#34;</span><span class="p">&gt;</span>Come on in to view your matches... All you need to do is sign up!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-center&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-lg&#34;</span><span class="p">&gt;</span>Register<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-info btn-lg&#34;</span><span class="p">&gt;</span>Learn more<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;text-align: center&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p"></span><span class="p">&gt;</span>Find your match!<span class="p">&lt;</span><span class="p">/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lead&#34;</span><span class="p"></span><span class="p">&gt;</span>Come on in to view your matches... All you need to do is sign up!<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-center&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-lg&#34;</span><span class="p"></span><span class="p">&gt;</span>Register<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-info btn-lg&#34;</span><span class="p"></span><span class="p">&gt;</span>Learn more<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <p>In <strong>app.component.html</strong> substitute the <em>h1</em> with the <strong>app-home</strong> component.</p>
 
 <p>Check that the site is working fine in the browser.</p>
@@ -260,33 +260,33 @@ ga('send', 'pageview');
 <li>to both the user input add <em>required</em>, <em>name</em> and the <em>[(ngModel)]</em> binding</li>
 <li>to the <strong>cancel</strong> button add <em>(click)=&ldquo;cancel()&rdquo;</em></li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span> <span class="err">#</span><span class="na">registerForm</span><span class="o">=</span><span class="s">&#34;ngForm&#34;</span> <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)=&#34;</span><span class="na">register</span><span class="err">()&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-center text-primary&#34;</span><span class="p">&gt;</span>Sign up<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-group&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Username&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">required</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;username&#34;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#34;</span><span class="na">model</span><span class="err">.</span><span class="na">username</span><span class="err">&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-group&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Password&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">required</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#34;</span><span class="na">model</span><span class="err">.</span><span class="na">password</span><span class="err">&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-group text-center&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#34;!</span><span class="na">registerForm</span><span class="err">.</span><span class="na">valid</span><span class="err">&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-success&#34;</span><span class="p">&gt;</span>Register<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-default&#34;</span><span class="p">&gt;</span>Cancel<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span> <span class="err">#</span><span class="na">registerForm</span><span class="o">=</span><span class="s">&#34;ngForm&#34;</span> <span class="err">(</span><span class="na">ngSubmit</span><span class="err">)=&#34;</span><span class="na">register</span><span class="err">()&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-center text-primary&#34;</span><span class="p"></span><span class="p">&gt;</span>Sign up<span class="p">&lt;</span><span class="p">/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">hr</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-group&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Username&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">required</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;username&#34;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#34;</span><span class="na">model</span><span class="err">.</span><span class="na">username</span><span class="err">&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-group&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Password&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">required</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#34;</span><span class="na">model</span><span class="err">.</span><span class="na">password</span><span class="err">&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-group text-center&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#34;!</span><span class="na">registerForm</span><span class="err">.</span><span class="na">valid</span><span class="err">&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-success&#34;</span><span class="p"></span><span class="p">&gt;</span>Register<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-default&#34;</span><span class="p"></span><span class="p">&gt;</span>Cancel<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">form</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="put-registration-in-home">Put registration in home</h2>
 
 <p>In <strong>home.component.html</strong> add a div below the <strong>app-register</strong> component. We will switch the visibility of the two divs.</p>
 
 <p>The new div use a <em>ngIf</em> on the property <strong>registerMode</strong> and the <em>register button</em> will call <strong>toggleRegister()</strong>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">...
-<span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-lg&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">toggleRegister</span><span class="err">()&#34;</span><span class="p">&gt;</span>Register<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-lg&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">toggleRegister</span><span class="err">()&#34;</span><span class="p"></span><span class="p">&gt;</span>Register<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
 ...
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;registerMode&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4 col-md-offset-4&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">app-register</span><span class="p">&gt;&lt;/</span><span class="nt">app-register</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;registerMode&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4 col-md-offset-4&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">app-register</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">app-register</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <p>In <strong>home.component.ts</strong> add a prop <strong>registerMode: bool = false</strong> and the <strong>registerToggle()</strong> function.</p>
 
 <p>Now the child component can&rsquo;t call the parent component to directly call the function.</p>
@@ -294,7 +294,7 @@ ga('send', 'pageview');
 <h2 id="passing-properties-between-components">Passing properties between components</h2>
 
 <p>A child component can have a <em>@Input()</em> decorator to a property. That prop is then accessible from the parent as an attribute of the tag.</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">app-mycomponent</span> <span class="err">[</span><span class="na">myproperty</span><span class="err">]=&#34;</span><span class="na">somevalue</span><span class="err">&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">app-mycomponent</span><span class="p">&gt;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">app-mycomponent</span> <span class="err">[</span><span class="na">myproperty</span><span class="err">]=&#34;</span><span class="na">somevalue</span><span class="err">&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">app-mycomponent</span><span class="p">&gt;</span></code></pre></div>
 <p>A child component can have an <em>@Output()</em> decorator to an <em>EventEmmitter</em> property.</p>
 
 <p>In <strong>register.component.ts</strong> add a new property <strong>cancelRegister</strong>. Then in the <strong>cancel</strong> function emit the event.</p>
@@ -307,7 +307,7 @@ ga('send', 'pageview');
 <span class="p">}</span>
 <span class="p">...</span></code></pre></div>
 <p>In <strong>home.component.html</strong> add a binding to the new event in the <strong>app-register</strong> tag and call the function <strong>cancelRegisterMode()</strong>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">app-register</span> <span class="err">(</span><span class="na">cancelRegister</span><span class="err">)=&#34;</span><span class="na">cancelRegisterMode</span><span class="err">($</span><span class="na">event</span><span class="err">)&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">app-register</span><span class="p">&gt;</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="nx">toggleRegister() {</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">app-register</span> <span class="err">(</span><span class="na">cancelRegister</span><span class="err">)=&#34;</span><span class="na">cancelRegisterMode</span><span class="err">($</span><span class="na">event</span><span class="err">)&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">app-register</span><span class="p">&gt;</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="nx">toggleRegister() {</span>
   <span class="k">this</span><span class="p">.</span><span class="nx">registerMode</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -315,7 +315,7 @@ ga('send', 'pageview');
   <span class="k">this</span><span class="p">.</span><span class="nx">registerMode</span> <span class="o">=</span> <span class="nx">registerMode</span><span class="p">;</span>
 <span class="p">}</span></code></pre></div>
 <p>And now we can add the <em>ngIf</em> to the first div of <strong>home.component.html</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;text-align: center&#34;</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;!registerMode&#34;</span><span class="p">&gt;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;text-align: center&#34;</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;!registerMode&#34;</span><span class="p"></span><span class="p">&gt;</span></code></pre></div>
 <h2 id="add-a-register-method-to-auth-service">Add a register method to auth service</h2>
 
 <p>Open <strong>auth.service.ts</strong> and refactor in a private method the first two lines of login.</p>
@@ -351,10 +351,6 @@ ga('send', 'pageview');
               <a href="https://www.teosoft.it/project/datingapp/4-client-authentication/2-auth-service/" data-toggle="tooltip" data-placement="top" title="Auth service">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://www.teosoft.it/project/datingapp/5-error-handling/1-api-error-middleware/" data-toggle="tooltip" data-placement="top" title="Api error middleware">Next Post &rarr;</a>
-            </li>
           
         </ul>
       
@@ -418,7 +414,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.40</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

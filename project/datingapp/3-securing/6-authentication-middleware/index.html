@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.40" />
+  <meta name="generator" content="Hugo 0.36.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/3-securing/6-authentication-middleware/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -235,14 +235,14 @@ ga('send', 'pageview');
 
 <p>In the <strong>AuthController</strong> constructor add a DI for <strong>IConfiguration</strong> and add a property.
 Then substitute the hard coded key JwtSecurityTokenHandler</p>
-<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="kt">var</span> <span class="n">key</span> <span class="p">=</span> <span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">_config</span><span class="p">.</span><span class="n">GetSection</span><span class="p">(</span><span class="s">&#34;AppSettings:TokenSecret&#34;</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="kt">var</span> <span class="n">key</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nc">Text</span><span class="p">.</span><span class="nc">Encoding</span><span class="p">.</span><span class="nc">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="nc">_config</span><span class="p">.</span><span class="n">GetSection</span><span class="p">(</span><span class="s">&#34;AppSettings:TokenSecret&#34;</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span></code></pre></div>
 <h2 id="configure-middleware">Configure Middleware</h2>
 
 <p>In <strong>Startup.cs</strong> add the required configuration in <strong>ConfigureServices</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="kt">var</span> <span class="n">key</span> <span class="p">=</span> <span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">Configuration</span><span class="p">.</span><span class="n">GetSection</span><span class="p">(</span><span class="s">&#34;AppSettings:TokenSecret&#34;</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span>
-<span class="n">services</span><span class="p">.</span><span class="n">AddAuthentication</span><span class="p">(</span><span class="n">JwtBearerDefaults</span><span class="p">.</span><span class="n">AuthenticationScheme</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="kt">var</span> <span class="n">key</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nc">Text</span><span class="p">.</span><span class="nc">Encoding</span><span class="p">.</span><span class="nc">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="nc">Configuration</span><span class="p">.</span><span class="n">GetSection</span><span class="p">(</span><span class="s">&#34;AppSettings:TokenSecret&#34;</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span>
+<span class="nc">services</span><span class="p">.</span><span class="n">AddAuthentication</span><span class="p">(</span><span class="nc">JwtBearerDefaults</span><span class="p">.</span><span class="n">AuthenticationScheme</span><span class="p">)</span>
   <span class="p">.</span><span class="n">AddJwtBearer</span><span class="p">(</span><span class="n">options</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="n">options</span><span class="p">.</span><span class="n">TokenValidationParameters</span> <span class="p">=</span> <span class="k">new</span> <span class="n">TokenValidationParameters</span> <span class="p">{</span>
+    <span class="nc">options</span><span class="p">.</span><span class="n">TokenValidationParameters</span> <span class="p">=</span> <span class="k">new</span> <span class="n">TokenValidationParameters</span> <span class="p">{</span>
       <span class="n">ValidateIssuerSigningKey</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
       <span class="n">IssuerSigningKey</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SymmetricSecurityKey</span><span class="p">(</span><span class="n">key</span><span class="p">),</span>
       <span class="n">ValidateIssuer</span> <span class="p">=</span> <span class="k">false</span><span class="p">,</span>
@@ -250,7 +250,7 @@ Then substitute the hard coded key JwtSecurityTokenHandler</p>
     <span class="p">};</span>
   <span class="p">});</span></code></pre></div>
 <p>In <strong>Configure</strong>, just before <strong>UseMvc</strong> add</p>
-<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">app</span><span class="p">.</span><span class="n">UseAuthentication</span><span class="p">();</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="nc">app</span><span class="p">.</span><span class="n">UseAuthentication</span><span class="p">();</span></code></pre></div>
 <h2 id="configure-controllers">Configure Controllers</h2>
 
 <p>The <strong>AuthController</strong> will be reachable without any authentication.</p>
@@ -284,10 +284,6 @@ Edit the headers for the GET <em>api/values</em> adding a <strong>Authorization<
               <a href="https://www.teosoft.it/project/datingapp/3-securing/5-token/" data-toggle="tooltip" data-placement="top" title="Token">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://www.teosoft.it/project/datingapp/4-client-authentication/1-navigation-and-login-form/" data-toggle="tooltip" data-placement="top" title="Navigation and Login form">Next Post &rarr;</a>
-            </li>
           
         </ul>
       
@@ -351,7 +347,7 @@ Edit the headers for the GET <em>api/values</em> adding a <strong>Authorization<
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.40</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

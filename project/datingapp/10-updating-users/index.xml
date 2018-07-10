@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Updating users on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/10-updating-users/</link>
+    <description>Recent content in Updating users on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jun 2018 23:12:01 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/10-updating-users/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Persisting changes SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/10-updating-users/4-persisting-changes-spa/</link>
+      <pubDate>Sat, 30 Jun 2018 17:27:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/10-updating-users/4-persisting-changes-spa/</guid>
+      <description>&lt;p&gt;Update the user in the client.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Persisting changes API</title>
+      <link>https://www.teosoft.it/project/datingapp/10-updating-users/3-persisting-changes-api/</link>
+      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/10-updating-users/3-persisting-changes-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CanDeactivate route guard</title>
+      <link>https://www.teosoft.it/project/datingapp/10-updating-users/2-candeactivate-route-guard/</link>
+      <pubDate>Sat, 30 Jun 2018 15:53:30 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/10-updating-users/2-candeactivate-route-guard/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Member edit</title>
+      <link>https://www.teosoft.it/project/datingapp/10-updating-users/1-member-edit/</link>
+      <pubDate>Fri, 29 Jun 2018 23:19:43 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/10-updating-users/1-member-edit/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

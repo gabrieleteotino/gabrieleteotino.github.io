@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Third party components on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/6-third-party-components/</link>
+    <description>Recent content in Third party components on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Jun 2018 16:13:54 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/6-third-party-components/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bootswatch</title>
+      <link>https://www.teosoft.it/project/datingapp/6-third-party-components/4-bootswatch/</link>
+      <pubDate>Sun, 17 Jun 2018 19:21:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/4-bootswatch/</guid>
+      <description>&lt;p&gt;Free themes for Bootstrap&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap NGX</title>
+      <link>https://www.teosoft.it/project/datingapp/6-third-party-components/3-bootstrap-ngx/</link>
+      <pubDate>Sun, 17 Jun 2018 18:57:19 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/3-bootstrap-ngx/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Angular JWT</title>
+      <link>https://www.teosoft.it/project/datingapp/6-third-party-components/2-angular-jwt/</link>
+      <pubDate>Sun, 17 Jun 2018 14:55:17 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/2-angular-jwt/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Alertifyjs</title>
+      <link>https://www.teosoft.it/project/datingapp/6-third-party-components/1-alertifyjs/</link>
+      <pubDate>Sat, 16 Jun 2018 16:13:54 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/1-alertifyjs/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -50,7 +50,7 @@
     <item>
       <title>Angular</title>
       <link>https://www.teosoft.it/tags/angular/</link>
-      <pubDate>Sun, 17 Jun 2018 18:57:19 +0200</pubDate>
+      <pubDate>Sat, 30 Jun 2018 17:27:16 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/angular/</guid>
       <description></description>
@@ -102,6 +102,15 @@
     </item>
     
     <item>
+      <title>Automapper</title>
+      <link>https://www.teosoft.it/tags/automapper/</link>
+      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/automapper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Azure</title>
       <link>https://www.teosoft.it/tags/azure/</link>
       <pubDate>Wed, 28 Feb 2018 11:51:41 +0100</pubDate>
@@ -129,9 +138,18 @@
     </item>
     
     <item>
+      <title>Bootswatch</title>
+      <link>https://www.teosoft.it/tags/bootswatch/</link>
+      <pubDate>Sun, 17 Jun 2018 19:21:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/bootswatch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>C#</title>
       <link>https://www.teosoft.it/tags/c#/</link>
-      <pubDate>Fri, 15 Jun 2018 10:59:57 +0200</pubDate>
+      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/c#/</guid>
       <description></description>
@@ -221,7 +239,7 @@
     <item>
       <title>Ef</title>
       <link>https://www.teosoft.it/tags/ef/</link>
-      <pubDate>Fri, 08 Jun 2018 14:02:03 +0200</pubDate>
+      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/ef/</guid>
       <description></description>
@@ -239,7 +257,7 @@
     <item>
       <title>Entityframework</title>
       <link>https://www.teosoft.it/tags/entityframework/</link>
-      <pubDate>Fri, 08 Jun 2018 14:02:03 +0200</pubDate>
+      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/entityframework/</guid>
       <description></description>
@@ -345,6 +363,15 @@
     </item>
     
     <item>
+      <title>Json</title>
+      <link>https://www.teosoft.it/tags/json/</link>
+      <pubDate>Mon, 18 Jun 2018 18:08:20 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Jumper</title>
       <link>https://www.teosoft.it/tags/jumper/</link>
       <pubDate>Mon, 23 Apr 2018 11:24:30 +0200</pubDate>
@@ -356,7 +383,7 @@
     <item>
       <title>Jwt</title>
       <link>https://www.teosoft.it/tags/jwt/</link>
-      <pubDate>Sun, 17 Jun 2018 14:55:17 +0200</pubDate>
+      <pubDate>Tue, 19 Jun 2018 19:52:17 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/jwt/</guid>
       <description></description>
@@ -410,7 +437,7 @@
     <item>
       <title>Netcore</title>
       <link>https://www.teosoft.it/tags/netcore/</link>
-      <pubDate>Fri, 15 Jun 2018 10:59:57 +0200</pubDate>
+      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/netcore/</guid>
       <description></description>
@@ -437,9 +464,18 @@
     <item>
       <title>Ngx Bootstrap</title>
       <link>https://www.teosoft.it/tags/ngx-bootstrap/</link>
-      <pubDate>Sun, 17 Jun 2018 18:57:19 +0200</pubDate>
+      <pubDate>Fri, 22 Jun 2018 11:26:53 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/ngx-bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ngx Gallery</title>
+      <link>https://www.teosoft.it/tags/ngx-gallery/</link>
+      <pubDate>Fri, 29 Jun 2018 21:32:41 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/ngx-gallery/</guid>
       <description></description>
     </item>
     
@@ -464,7 +500,7 @@
     <item>
       <title>Npm</title>
       <link>https://www.teosoft.it/tags/npm/</link>
-      <pubDate>Sun, 17 Jun 2018 18:57:19 +0200</pubDate>
+      <pubDate>Fri, 29 Jun 2018 21:32:41 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/npm/</guid>
       <description></description>
@@ -588,6 +624,15 @@
     </item>
     
     <item>
+      <title>Rxjs</title>
+      <link>https://www.teosoft.it/tags/rxjs/</link>
+      <pubDate>Sat, 16 Jun 2018 13:07:13 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/rxjs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Scikit</title>
       <link>https://www.teosoft.it/tags/scikit/</link>
       <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
@@ -660,6 +705,15 @@
     </item>
     
     <item>
+      <title>Theme</title>
+      <link>https://www.teosoft.it/tags/theme/</link>
+      <pubDate>Sun, 17 Jun 2018 19:21:16 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tools</title>
       <link>https://www.teosoft.it/tags/tools/</link>
       <pubDate>Thu, 29 Mar 2018 15:34:35 +0200</pubDate>
@@ -716,7 +770,7 @@
     <item>
       <title>Visualstudio</title>
       <link>https://www.teosoft.it/tags/visualstudio/</link>
-      <pubDate>Thu, 17 May 2018 11:18:53 +0200</pubDate>
+      <pubDate>Fri, 22 Jun 2018 15:38:00 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/visualstudio/</guid>
       <description></description>
@@ -761,7 +815,7 @@
     <item>
       <title>Webapi</title>
       <link>https://www.teosoft.it/tags/webapi/</link>
-      <pubDate>Fri, 15 Jun 2018 10:59:57 +0200</pubDate>
+      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/webapi/</guid>
       <description></description>

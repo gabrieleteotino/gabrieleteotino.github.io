@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.40" />
+  <meta name="generator" content="Hugo 0.36.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/3-securing/5-token/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -264,25 +264,25 @@ dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk</pre></div>
 
 <p>Prepare the SecurityTokenDescriptor</p>
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="c1">// The key must be stored in a secure configuration
-</span><span class="c1"></span><span class="kt">var</span> <span class="n">key</span> <span class="p">=</span> <span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="s">&#34;super duper secret&#34;</span><span class="p">);</span>
+</span><span class="c1"></span><span class="kt">var</span> <span class="n">key</span> <span class="p">=</span> <span class="nc">System</span><span class="p">.</span><span class="nc">Text</span><span class="p">.</span><span class="nc">Encoding</span><span class="p">.</span><span class="nc">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="s">&#34;super duper secret&#34;</span><span class="p">);</span>
 
 <span class="kt">var</span> <span class="n">tokenDescriptor</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SecurityTokenDescriptor</span>
 <span class="p">{</span>
   <span class="n">Subject</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ClaimsIdentity</span><span class="p">(</span><span class="k">new</span> <span class="n">Claim</span><span class="na">[]</span>
   <span class="p">{</span>
-    <span class="k">new</span> <span class="n">Claim</span><span class="p">(</span><span class="n">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">,</span> <span class="n">userId</span><span class="p">),</span>
-    <span class="k">new</span> <span class="n">Claim</span><span class="p">(</span><span class="n">ClaimTypes</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
+    <span class="k">new</span> <span class="n">Claim</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">,</span> <span class="n">userId</span><span class="p">),</span>
+    <span class="k">new</span> <span class="n">Claim</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
   <span class="p">}),</span>
-  <span class="n">Expires</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="n">AddDays</span><span class="p">(</span><span class="m">1</span><span class="p">),</span>
+  <span class="n">Expires</span> <span class="p">=</span> <span class="nc">DateTime</span><span class="p">.</span><span class="nc">Now</span><span class="p">.</span><span class="n">AddDays</span><span class="p">(</span><span class="m">1</span><span class="p">),</span>
   <span class="n">SigningCredential</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SigningCredential</span><span class="p">(</span>
     <span class="k">new</span> <span class="n">SymmetricSecurityKey</span><span class="p">(</span><span class="n">key</span><span class="p">),</span>
-    <span class="n">SecurityAlgorithms</span><span class="p">.</span><span class="n">HmacSha256Signature</span>
+    <span class="nc">SecurityAlgorithms</span><span class="p">.</span><span class="n">HmacSha256Signature</span>
   <span class="p">)</span>
 <span class="p">}</span></code></pre></div>
 <p>Create a token using a JwtSecurityTokenHandler</p>
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="kt">var</span> <span class="n">tokenHandler</span> <span class="p">=</span> <span class="k">new</span> <span class="n">JwtSecurityTokenHandler</span><span class="p">();</span>
-<span class="kt">var</span> <span class="n">token</span> <span class="p">=</span> <span class="n">tokenHandler</span><span class="p">.</span><span class="n">CreateToken</span><span class="p">(</span><span class="n">tokenDescriptor</span><span class="p">);</span>
-<span class="kt">var</span> <span class="n">tokenString</span> <span class="p">=</span> <span class="n">tokenHandler</span><span class="p">.</span><span class="n">WriteToken</span><span class="p">(</span><span class="n">token</span><span class="p">);</span></code></pre></div>
+<span class="kt">var</span> <span class="n">token</span> <span class="p">=</span> <span class="nc">tokenHandler</span><span class="p">.</span><span class="n">CreateToken</span><span class="p">(</span><span class="n">tokenDescriptor</span><span class="p">);</span>
+<span class="kt">var</span> <span class="n">tokenString</span> <span class="p">=</span> <span class="nc">tokenHandler</span><span class="p">.</span><span class="n">WriteToken</span><span class="p">(</span><span class="n">token</span><span class="p">);</span></code></pre></div>
 <p>Then return a new object with the tokenString</p>
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">return</span> <span class="n">Ok</span><span class="p">(</span><span class="k">new</span> <span class="p">{</span><span class="n">tokenString</span><span class="p">});</span></code></pre></div>
 <p>To validate the returned token string go to <a href="https://jwt.io">jwt.io</a></p>
@@ -362,7 +362,7 @@ dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk</pre></div>
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.40</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>
