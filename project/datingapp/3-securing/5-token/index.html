@@ -273,7 +273,7 @@ dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk</pre></div>
     <span class="k">new</span> <span class="n">Claim</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">,</span> <span class="n">userId</span><span class="p">),</span>
     <span class="k">new</span> <span class="n">Claim</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
   <span class="p">}),</span>
-  <span class="n">Expires</span> <span class="p">=</span> <span class="nc">DateTime</span><span class="p">.</span><span class="nc">Now</span><span class="p">.</span><span class="n">AddDays</span><span class="p">(</span><span class="m">1</span><span class="p">),</span>
+  <span class="n">Expires</span> <span class="p">=</span> <span class="nc">DateTime</span><span class="p">.</span><span class="nc">UtcNow</span><span class="p">.</span><span class="n">AddDays</span><span class="p">(</span><span class="m">1</span><span class="p">),</span>
   <span class="n">SigningCredential</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SigningCredential</span><span class="p">(</span>
     <span class="k">new</span> <span class="n">SymmetricSecurityKey</span><span class="p">(</span><span class="n">key</span><span class="p">),</span>
     <span class="nc">SecurityAlgorithms</span><span class="p">.</span><span class="n">HmacSha256Signature</span>

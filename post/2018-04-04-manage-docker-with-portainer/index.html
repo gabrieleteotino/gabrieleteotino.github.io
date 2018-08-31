@@ -217,7 +217,7 @@ ga('send', 'pageview');
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 1 minutes (195 words)
+  <i class="fa fa-clock-o"></i> 1 minutes (204 words)
   
   
 </span>
@@ -264,7 +264,7 @@ Eventually open the port on the <a href="firewall">Firewall</a></p>
 openssl ecparam -genkey -name secp384r1 -out portainer.key
 openssl req -new -x509 -sha256 -key portainer.key -out portainer.crt -days <span class="m">3650</span></code></pre></div>
 <p>Rerun the container. It is possible to use the standard 443 port so the browser automatically uses https. I choose to leave the 443 free for other services.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker run -d -p <span class="m">9000</span>:9000 -v ~/portainer:/certs -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer --ssl --sslcert /certs/portainer.crt --sslkey /certs/portainer.key</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker run -d --name portainer -p <span class="m">9000</span>:9000 -v ~/portainer:/certs -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer --ssl --sslcert /certs/portainer.crt --sslkey /certs/portainer.key</code></pre></div>
 <h2 id="firewall">Firewall</h2>
 
 <p>Docker automatically opens al the ports mapped for the machine. No ufw rule is necessary.</p>
@@ -275,6 +275,9 @@ openssl req -new -x509 -sha256 -key portainer.key -out portainer.crt -days <span
 
 <p>On the first run it will ask for a new admin password.</p>
 
+<h2 id="start-stop">Start/Stop</h2>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker start portainer
+docker stop portainer</code></pre></div>
 <p>Enjoy.</p>
 
 <p><a href="https://portainer.readthedocs.io/en/stable/index.html">Documentation</a>.</p>

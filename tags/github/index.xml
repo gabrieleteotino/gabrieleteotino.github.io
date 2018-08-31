@@ -6,10 +6,21 @@
     <description>Recent content in Github on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 May 2018 22:03:13 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jul 2018 10:59:45 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git clone a specicific commit</title>
+      <link>https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/</link>
+      <pubDate>Fri, 27 Jul 2018 10:59:45 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/</guid>
+      <description>&lt;p&gt;I need to download a specific version of a project from &lt;em&gt;GitHub&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Github</title>

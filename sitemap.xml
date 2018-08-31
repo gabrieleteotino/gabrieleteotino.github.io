@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/post/2018-08-31-vsts-personal-build-agent-on-docker/</loc>
+    <lastmod>2018-08-31T12:42:21+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/</loc>
+    <lastmod>2018-07-27T10:59:45+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/project/datingapp/10-updating-users/4-persisting-changes-spa/</loc>
     <lastmod>2018-06-30T17:27:16+02:00</lastmod>
   </url>
@@ -587,7 +597,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-06-30T17:27:16+02:00</lastmod>
+    <lastmod>2018-08-31T12:42:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -621,6 +631,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/ci/</loc>
+    <lastmod>2018-08-31T12:42:21+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/categories/cloud/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
     <priority>0</priority>
@@ -628,7 +644,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/cloud/</loc>
-    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
+    <lastmod>2018-08-31T12:42:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -641,6 +657,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/conda/</loc>
     <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/continuous-integration/</loc>
+    <lastmod>2018-08-31T12:42:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -670,7 +692,7 @@
   
   <url>
     <loc>https://www.teosoft.it/categories/dev/</loc>
-    <lastmod>2018-06-30T17:27:16+02:00</lastmod>
+    <lastmod>2018-08-31T12:42:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -700,7 +722,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/docker/</loc>
-    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
+    <lastmod>2018-08-31T12:42:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -742,13 +764,13 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/git/</loc>
-    <lastmod>2018-05-07T15:15:56+02:00</lastmod>
+    <lastmod>2018-07-27T10:59:45+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.teosoft.it/tags/github/</loc>
-    <lastmod>2018-05-30T22:03:13+02:00</lastmod>
+    <lastmod>2018-07-27T10:59:45+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -917,6 +939,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/opensource/</loc>
     <lastmod>2018-03-15T14:54:48+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/ovh/</loc>
+    <lastmod>2018-08-31T12:42:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1108,7 +1136,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/visualstudio/</loc>
-    <lastmod>2018-06-22T15:38:00+02:00</lastmod>
+    <lastmod>2018-08-31T12:42:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1127,6 +1155,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/vscode/</loc>
     <lastmod>2018-06-16T14:27:09+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/vsts/</loc>
+    <lastmod>2018-08-31T12:42:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   

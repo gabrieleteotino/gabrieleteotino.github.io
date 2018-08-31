@@ -6,10 +6,21 @@
     <description>Recent content in Cloud on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Apr 2018 11:40:03 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 31 Aug 2018 12:42:21 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VSTS personal build agent on docekr</title>
+      <link>https://www.teosoft.it/post/2018-08-31-vsts-personal-build-agent-on-docker/</link>
+      <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-08-31-vsts-personal-build-agent-on-docker/</guid>
+      <description>&lt;p&gt;Visual Studio Team Services has a very good build agent: free and with high availability. The only problem is that it is a bit slow because every time you run a build it will start from scratch and download everything. A custom build agent will cache stuff and speed up build times a lot.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Magento and Docker Compose on OVH Vps</title>

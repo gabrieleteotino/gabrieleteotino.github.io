@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Git clone a specicific commit</title>
+      <link>https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/</link>
+      <pubDate>Fri, 27 Jul 2018 10:59:45 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/</guid>
+      <description>&lt;p&gt;I need to download a specific version of a project from &lt;em&gt;GitHub&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Shrink empty lines extension</title>
       <link>https://www.teosoft.it/note/2018-06-22-shrink-empty-lines/</link>
       <pubDate>Fri, 22 Jun 2018 15:38:00 +0200</pubDate>

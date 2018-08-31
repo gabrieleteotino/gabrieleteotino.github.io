@@ -165,9 +165,18 @@
     </item>
     
     <item>
+      <title>Ci</title>
+      <link>https://www.teosoft.it/tags/ci/</link>
+      <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/ci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cloud</title>
       <link>https://www.teosoft.it/tags/cloud/</link>
-      <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
+      <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/cloud/</guid>
       <description></description>
@@ -179,6 +188,15 @@
       <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/conda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration</title>
+      <link>https://www.teosoft.it/tags/continuous-integration/</link>
+      <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/continuous-integration/</guid>
       <description></description>
     </item>
     
@@ -230,7 +248,7 @@
     <item>
       <title>Docker</title>
       <link>https://www.teosoft.it/tags/docker/</link>
-      <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
+      <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/docker/</guid>
       <description></description>
@@ -293,7 +311,7 @@
     <item>
       <title>Git</title>
       <link>https://www.teosoft.it/tags/git/</link>
-      <pubDate>Mon, 07 May 2018 15:15:56 +0200</pubDate>
+      <pubDate>Fri, 27 Jul 2018 10:59:45 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/git/</guid>
       <description></description>
@@ -302,7 +320,7 @@
     <item>
       <title>Github</title>
       <link>https://www.teosoft.it/tags/github/</link>
-      <pubDate>Wed, 30 May 2018 22:03:13 +0200</pubDate>
+      <pubDate>Fri, 27 Jul 2018 10:59:45 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/github/</guid>
       <description></description>
@@ -530,6 +548,15 @@
       <pubDate>Thu, 15 Mar 2018 14:54:48 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/opensource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ovh</title>
+      <link>https://www.teosoft.it/tags/ovh/</link>
+      <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/ovh/</guid>
       <description></description>
     </item>
     
@@ -770,7 +797,7 @@
     <item>
       <title>Visualstudio</title>
       <link>https://www.teosoft.it/tags/visualstudio/</link>
-      <pubDate>Fri, 22 Jun 2018 15:38:00 +0200</pubDate>
+      <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/visualstudio/</guid>
       <description></description>
@@ -800,6 +827,15 @@
       <pubDate>Sat, 16 Jun 2018 14:27:09 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vsts</title>
+      <link>https://www.teosoft.it/tags/vsts/</link>
+      <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/vsts/</guid>
       <description></description>
     </item>
     

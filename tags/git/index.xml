@@ -6,10 +6,21 @@
     <description>Recent content in Git on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 May 2018 15:15:56 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jul 2018 10:59:45 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git clone a specicific commit</title>
+      <link>https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/</link>
+      <pubDate>Fri, 27 Jul 2018 10:59:45 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/</guid>
+      <description>&lt;p&gt;I need to download a specific version of a project from &lt;em&gt;GitHub&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Create a GitHub repo from a local git</title>
@@ -22,6 +33,18 @@
 &lt;p&gt;A shorter path is possible by letting &lt;em&gt;GitHub Desktop&lt;/em&gt; create the repository.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multiple SSH Keys</title>
+      <link>https://www.teosoft.it/post/2018-05-02-multiple-ssh-keys/</link>
+      <pubDate>Wed, 02 May 2018 15:34:57 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-05-02-multiple-ssh-keys/</guid>
+      <description>After generating a new key for my Visual Studio Online code repository I have to tell git which key to use for each connection.
+Create a file in ~/.ssh/config
+Add the following content
+# Uncomment to enable debugging. # Levels are: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3. # LogLevel DEBUG Host vs-ssh.visualstudio.com IdentityFile ~/.ssh/id_rsa_visualstudio Host github.com IdentityFile ~/.ssh/id_rsa_github # tell ssh-agent to not try keys Host * IdentitiesOnly yes</description>
     </item>
     
   </channel>

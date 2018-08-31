@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ovh on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/ovh/</link>
+    <description>Recent content in Ovh on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Aug 2018 12:42:21 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/ovh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VSTS personal build agent on docekr</title>
+      <link>https://www.teosoft.it/post/2018-08-31-vsts-personal-build-agent-on-docker/</link>
+      <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-08-31-vsts-personal-build-agent-on-docker/</guid>
+      <description>&lt;p&gt;Visual Studio Team Services has a very good build agent: free and with high availability. The only problem is that it is a bit slow because every time you run a build it will start from scratch and download everything. A custom build agent will cache stuff and speed up build times a lot.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

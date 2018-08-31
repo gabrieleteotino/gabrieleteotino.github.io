@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>VSTS personal build agent on docekr</title>
+      <link>https://www.teosoft.it/post/2018-08-31-vsts-personal-build-agent-on-docker/</link>
+      <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-08-31-vsts-personal-build-agent-on-docker/</guid>
+      <description>&lt;p&gt;Visual Studio Team Services has a very good build agent: free and with high availability. The only problem is that it is a bit slow because every time you run a build it will start from scratch and download everything. A custom build agent will cache stuff and speed up build times a lot.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Restore xubuntu initramfs</title>
       <link>https://www.teosoft.it/post/2018-06-10-restore-xubuntu-initramfs/</link>
       <pubDate>Sun, 10 Jun 2018 19:20:57 +0200</pubDate>
