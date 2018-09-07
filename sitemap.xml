@@ -23,6 +23,76 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/13-delete-photos/</loc>
+    <lastmod>2018-07-16T11:07:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/12-behaviorsubjet-any-to-any-communication/</loc>
+    <lastmod>2018-07-16T09:41:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/11-photo-in-the-navbar/</loc>
+    <lastmod>2018-07-12T18:07:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/10-main-photo-updated/</loc>
+    <lastmod>2018-07-10T20:59:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/9-cloudinary-transformation/</loc>
+    <lastmod>2018-07-10T20:50:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/8-set-main-photo/</loc>
+    <lastmod>2018-07-09T19:07:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/7-uploader/</loc>
+    <lastmod>2018-07-08T21:43:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/6-photo-upload-component/</loc>
+    <lastmod>2018-07-08T21:04:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/5-testing-the-photos-controller/</loc>
+    <lastmod>2018-07-08T13:03:28+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/4-photos-controller/</loc>
+    <lastmod>2018-07-07T23:15:02+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/3-cloudinary/</loc>
+    <lastmod>2018-07-07T17:37:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/2-user-secrets/</loc>
+    <lastmod>2018-07-07T17:37:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/1-where-to-store-photos/</loc>
+    <lastmod>2018-07-07T17:14:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/11-photo-upload/</loc>
+    <lastmod>2018-07-07T17:03:04+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/project/datingapp/10-updating-users/4-persisting-changes-spa/</loc>
     <lastmod>2018-06-30T17:27:16+02:00</lastmod>
   </url>
@@ -558,7 +628,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/angular/</loc>
-    <lastmod>2018-06-30T17:27:16+02:00</lastmod>
+    <lastmod>2018-07-16T11:07:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -636,7 +706,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/c#/</loc>
-    <lastmod>2018-06-30T17:07:16+02:00</lastmod>
+    <lastmod>2018-07-16T11:07:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -666,6 +736,12 @@
   <url>
     <loc>https://www.teosoft.it/categories/cloud/</loc>
     <lastmod>2018-02-28T11:51:41+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/cloudinary/</loc>
+    <lastmod>2018-07-16T11:07:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -911,7 +987,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/netcore/</loc>
-    <lastmod>2018-06-30T17:07:16+02:00</lastmod>
+    <lastmod>2018-07-16T11:07:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -924,6 +1000,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/ng/</loc>
     <lastmod>2018-05-30T22:03:22+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/ng2-file-upload/</loc>
+    <lastmod>2018-07-08T21:43:10+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1019,7 +1101,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/postman/</loc>
-    <lastmod>2018-06-12T17:41:05+02:00</lastmod>
+    <lastmod>2018-07-16T11:07:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1156,6 +1238,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/underscore/</loc>
+    <lastmod>2018-07-09T19:07:40+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/virtualbox/</loc>
     <lastmod>2018-03-19T09:40:14+01:00</lastmod>
     <priority>0</priority>
@@ -1211,7 +1299,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/webapi/</loc>
-    <lastmod>2018-06-30T17:07:16+02:00</lastmod>
+    <lastmod>2018-07-16T11:07:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -50,7 +50,7 @@
     <item>
       <title>Angular</title>
       <link>https://www.teosoft.it/tags/angular/</link>
-      <pubDate>Sat, 30 Jun 2018 17:27:16 +0200</pubDate>
+      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/angular/</guid>
       <description></description>
@@ -158,7 +158,7 @@
     <item>
       <title>C#</title>
       <link>https://www.teosoft.it/tags/c#/</link>
-      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
+      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/c#/</guid>
       <description></description>
@@ -188,6 +188,15 @@
       <pubDate>Mon, 03 Sep 2018 11:36:11 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloudinary</title>
+      <link>https://www.teosoft.it/tags/cloudinary/</link>
+      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/cloudinary/</guid>
       <description></description>
     </item>
     
@@ -491,7 +500,7 @@
     <item>
       <title>Netcore</title>
       <link>https://www.teosoft.it/tags/netcore/</link>
-      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
+      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/netcore/</guid>
       <description></description>
@@ -503,6 +512,15 @@
       <pubDate>Wed, 30 May 2018 22:03:22 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/ng/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ng2 File Upload</title>
+      <link>https://www.teosoft.it/tags/ng2-file-upload/</link>
+      <pubDate>Sun, 08 Jul 2018 21:43:10 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/ng2-file-upload/</guid>
       <description></description>
     </item>
     
@@ -635,7 +653,7 @@
     <item>
       <title>Postman</title>
       <link>https://www.teosoft.it/tags/postman/</link>
-      <pubDate>Tue, 12 Jun 2018 17:41:05 +0200</pubDate>
+      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/postman/</guid>
       <description></description>
@@ -804,6 +822,15 @@
     </item>
     
     <item>
+      <title>Underscore</title>
+      <link>https://www.teosoft.it/tags/underscore/</link>
+      <pubDate>Mon, 09 Jul 2018 19:07:40 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/underscore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Virtualbox</title>
       <link>https://www.teosoft.it/tags/virtualbox/</link>
       <pubDate>Mon, 19 Mar 2018 09:40:14 +0100</pubDate>
@@ -878,7 +905,7 @@
     <item>
       <title>Webapi</title>
       <link>https://www.teosoft.it/tags/webapi/</link>
-      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
+      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/webapi/</guid>
       <description></description>

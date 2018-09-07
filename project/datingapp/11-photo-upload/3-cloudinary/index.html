@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Cloudinary</title>
+  <meta property="og:title" content="Cloudinary" />
+  <meta name="twitter:title" content="Cloudinary" />
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta name="author" content="Gabriele Teotino"/>
+  <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://www.teosoft.it/project/datingapp/11-photo-upload/3-cloudinary/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bluish capsule" />
+
+  <meta name="generator" content="Hugo 0.36.1" />
+  <link rel="canonical" href="https://www.teosoft.it/project/datingapp/11-photo-upload/3-cloudinary/" />
+  <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.teosoft.it/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://www.teosoft.it/css/highlight.min.css" /><link rel="stylesheet" href="https://www.teosoft.it/css/codeblock.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-24994854-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.teosoft.it/">Bluish capsule</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/post">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Notes" href="/note">Notes</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+              <div class="navlinks-children">
+                
+                  <a href="/project">Projects home</a>
+                
+                  <a href="/project/meccanici">Meccanici</a>
+                
+                  <a href="/project/datingapp">DatingApp</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Reviews" href="/review">Reviews</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Bluish capsule" href="https://www.teosoft.it/">
+            <img class="avatar-img" src="https://www.teosoft.it/img/avatar-icon.png" alt="Bluish capsule" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Bluish capsule</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="project-heading">
+              <h1>Cloudinary</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p></p>
+
+<h2 id="registration-and-secrets">Registration and secrets</h2>
+
+<p>Register a new free account at <a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/sqiocmogqhvi7zmjbmjs">Cloudinary</a>.</p>
+
+<p>Go into the <em>Dashboard</em> and look for</p>
+
+<ul>
+<li>Cloud name</li>
+<li>API Key</li>
+<li>API Secret</li>
+</ul>
+
+<p>Open <strong>appsettings.json</strong> and add the template for the keys</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;CloudinarySettings&#34;</span> <span class="err">:</span> <span class="p">{</span>
+  <span class="nt">&#34;CloudName&#34;</span><span class="p">:</span> <span class="s2">&#34;Set the key in secrets. View README for more info.&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;ApiKey&#34;</span><span class="p">:</span> <span class="s2">&#34;Set the key in secrets. View README for more info.&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;ApiSecret&#34;</span><span class="p">:</span> <span class="s2">&#34;Set the key in secrets. View README for more info.&#34;</span>
+<span class="p">}</span></code></pre></div>
+<p>Using the console create the three key in secret storage.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">dotnet user-secrets <span class="nb">set</span> <span class="s2">&#34;CloudinarySettings:CloudName&#34;</span> <span class="s2">&#34;******&#34;</span>
+dotnet user-secrets <span class="nb">set</span> <span class="s2">&#34;CloudinarySettings:ApiKey&#34;</span> <span class="s2">&#34;******&#34;</span>
+dotnet user-secrets <span class="nb">set</span> <span class="s2">&#34;CloudinarySettings:ApiSecret&#34;</span> <span class="s2">&#34;******&#34;</span></code></pre></div>
+<p>If the <strong>ApiSecret</strong> starts with <code>-</code> or <code>--</code> there is a <a href="https://github.com/aspnet/DotNetTools/issues/309">bug</a> in the command line that will result in a message:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">Unrecognized option <span class="s1">&#39;your ApiSecret value&#39;</span></code></pre></div>
+<p>Workaround: create a file <strong>cloudinarysettings.json</strong> containing your settings.</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+  <span class="nt">&#34;CloudinarySettings&#34;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&#34;CloudName&#34;</span><span class="p">:</span> <span class="s2">&#34;******&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;ApiKey&#34;</span><span class="p">:</span> <span class="s2">&#34;******&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;ApiSecret&#34;</span><span class="p">:</span> <span class="s2">&#34;******&#34;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Pipe the configuration file in secret storage</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cat ./cloudinarysettings.json <span class="p">|</span> dotnet user-secrets set</code></pre></div>
+<p>Remember to put this file in gitignore or in a directory not in source control.</p>
+
+<h2 id="helper-class">Helper class</h2>
+
+<p>Create a new class <strong>Helpers/CloudinarySettings.cs</strong> with properties for the Cloudinary keys.</p>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">CloudinarySettings</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">CloudName</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">ApiKey</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">ApiSecret</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Open <strong>Startup.cs</strong> and add to <strong>ConfigureServices</strong> the configuration for the settings helper so that it is available for injection.</p>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="p">...</span>
+<span class="nc">services</span><span class="p">.</span><span class="n">AddCors</span><span class="p">();</span>
+<span class="nc">services</span><span class="p">.</span><span class="n">Configure</span><span class="p">&lt;</span><span class="n">CloudinarySettings</span><span class="p">&gt;(</span><span class="nc">Configuration</span><span class="p">.</span><span class="n">GetSection</span><span class="p">(</span><span class="s">&#34;CloudinarySettings&#34;</span><span class="p">));</span>
+<span class="nc">services</span><span class="p">.</span><span class="n">AddAutoMapper</span><span class="p">();</span>
+<span class="p">...</span></code></pre></div>
+<h2 id="change-the-photo-class">Change the Photo class</h2>
+
+<p>When we upload a photo to Cloudinary the <a href="https://cloudinary.com/documentation/dotnet_image_upload#server_side_upload">documentation</a> says that the call returns a JSON object. Inside this object we have a key <strong>public_id</strong>. We need to store this key inside our photo object.</p>
+
+<p>Open <strong>Photo.cs</strong> and add a prop for <strong>public_id</strong>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">Photo</span>
+<span class="p">{</span>
+    <span class="p">...</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">PublicId</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Add a new migration.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">dotnet ef migrations add AddedPhotoId</code></pre></div>
+<p>Check the migration code and if everithing is ok apply it to the DB.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">dotnet ef database update</code></pre></div>
+<h2 id="cloudinary-package">Cloudinary package</h2>
+
+<p>CTRL+SHIFT+p Nuget Add Package</p>
+
+<p>Search <em>CloudinaryDotNet</em> and add the latest version (at the time of writing it was 1.3.1).</p>
+
+<p>Add a package for <em>Newtonsoft.Json</em> and add the latest version (11.0.2).</p>
+
+<p>Restore to install the new packages.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">dotnet restore</code></pre></div>
+<p>Now run the application to check that it builds correctly.</p>
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://www.teosoft.it/project/datingapp/11-photo-upload/2-user-secrets/" data-toggle="tooltip" data-placement="top" title="User secrets">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://www.teosoft.it/project/datingapp/11-photo-upload/4-photos-controller/" data-toggle="tooltip" data-placement="top" title="Photos controller">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/gabrieleteotino" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/2085504/deramko" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://www.teosoft.it/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://www.teosoft.it">Gabriele Teotino</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.teosoft.it/">Bluish capsule</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.teosoft.it/js/main.js"></script>
+<script src="https://www.teosoft.it/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://www.teosoft.it/js/load-photoswipe.js"></script>
+
+
+<script>
+  (function() {
+    var cx = '005185449088889757369:5o44h-2knna';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+  </body>
+</html>
+

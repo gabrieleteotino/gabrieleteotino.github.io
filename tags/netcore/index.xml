@@ -6,10 +6,121 @@
     <description>Recent content in Netcore on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Jun 2018 17:07:16 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jul 2018 11:07:05 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/netcore/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Delete photos</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/13-delete-photos/</link>
+      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/13-delete-photos/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Photo in the navbar</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/11-photo-in-the-navbar/</link>
+      <pubDate>Thu, 12 Jul 2018 18:07:43 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/11-photo-in-the-navbar/</guid>
+      <description>&lt;p&gt;Feature: load the main photo in the dropdown of the &lt;strong&gt;nav.component&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cloudinary transformation</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/9-cloudinary-transformation/</link>
+      <pubDate>Tue, 10 Jul 2018 20:50:00 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/9-cloudinary-transformation/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Set main photo</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/8-set-main-photo/</link>
+      <pubDate>Mon, 09 Jul 2018 19:07:40 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/8-set-main-photo/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Uploader</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/7-uploader/</link>
+      <pubDate>Sun, 08 Jul 2018 21:43:10 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/7-uploader/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Photo upload component</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/6-photo-upload-component/</link>
+      <pubDate>Sun, 08 Jul 2018 21:04:47 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/6-photo-upload-component/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Testing the photos controller</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/5-testing-the-photos-controller/</link>
+      <pubDate>Sun, 08 Jul 2018 13:03:28 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/5-testing-the-photos-controller/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Photos controller</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/4-photos-controller/</link>
+      <pubDate>Sat, 07 Jul 2018 23:15:02 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/4-photos-controller/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cloudinary</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/3-cloudinary/</link>
+      <pubDate>Sat, 07 Jul 2018 17:37:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/3-cloudinary/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User secrets</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/2-user-secrets/</link>
+      <pubDate>Sat, 07 Jul 2018 17:37:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/2-user-secrets/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Where to store photos</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/1-where-to-store-photos/</link>
+      <pubDate>Sat, 07 Jul 2018 17:14:45 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/1-where-to-store-photos/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Photo upload</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/</link>
+      <pubDate>Sat, 07 Jul 2018 17:03:04 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/</guid>
+      <description>Give the users the ability to upload their photos.
+ Where to store photos New controller for photos Uploader functionality in SPA Setting the main photo Using Underscore.js Any to any component communication Delete photos Storing configuration keys in a secure way  </description>
+    </item>
     
     <item>
       <title>Persisting changes API</title>
@@ -236,7 +347,7 @@ Extras
       <description>DatingApp is a SPA dating application written in Angular 5 with a webapi backend made in C# using .net core 2.1.
 The application is my opinionated version of this Udemy course
 The course used a previous version of .net core I fixed everything to use 2.1.0-rc1-final. After chapter 5 I also gained enough confidence with Angular to update it to version 6.
- Preparation Skeleton Securing Client authentication Error handling Third party components Routing Extending the API Building the UI Updating users  </description>
+ Preparation Skeleton Securing Client authentication Error handling Third party components Routing Extending the API Building the UI Updating users Photo upload Registration  </description>
     </item>
     
     <item>

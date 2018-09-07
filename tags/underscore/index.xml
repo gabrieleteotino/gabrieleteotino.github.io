@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Underscore on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/underscore/</link>
+    <description>Recent content in Underscore on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Jul 2018 19:07:40 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/underscore/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Set main photo</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/8-set-main-photo/</link>
+      <pubDate>Mon, 09 Jul 2018 19:07:40 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/8-set-main-photo/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

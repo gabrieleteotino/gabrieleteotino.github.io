@@ -54,6 +54,127 @@
     </item>
     
     <item>
+      <title>Delete photos</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/13-delete-photos/</link>
+      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/13-delete-photos/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>BehaviorSubject any to any communication</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/12-behaviorsubjet-any-to-any-communication/</link>
+      <pubDate>Mon, 16 Jul 2018 09:41:50 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/12-behaviorsubjet-any-to-any-communication/</guid>
+      <description>&lt;p&gt;Use a &lt;a href=&#34;http://reactivex.io/rxjs/manual/overview.html#behaviorsubject&#34;&gt;BehaviorSubject&lt;/a&gt; to enable any to any component comunication.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Photo in the navbar</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/11-photo-in-the-navbar/</link>
+      <pubDate>Thu, 12 Jul 2018 18:07:43 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/11-photo-in-the-navbar/</guid>
+      <description>&lt;p&gt;Feature: load the main photo in the dropdown of the &lt;strong&gt;nav.component&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Main photo updated</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/10-main-photo-updated/</link>
+      <pubDate>Tue, 10 Jul 2018 20:59:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/10-main-photo-updated/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cloudinary transformation</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/9-cloudinary-transformation/</link>
+      <pubDate>Tue, 10 Jul 2018 20:50:00 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/9-cloudinary-transformation/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Set main photo</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/8-set-main-photo/</link>
+      <pubDate>Mon, 09 Jul 2018 19:07:40 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/8-set-main-photo/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Uploader</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/7-uploader/</link>
+      <pubDate>Sun, 08 Jul 2018 21:43:10 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/7-uploader/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Photo upload component</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/6-photo-upload-component/</link>
+      <pubDate>Sun, 08 Jul 2018 21:04:47 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/6-photo-upload-component/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Testing the photos controller</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/5-testing-the-photos-controller/</link>
+      <pubDate>Sun, 08 Jul 2018 13:03:28 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/5-testing-the-photos-controller/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Photos controller</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/4-photos-controller/</link>
+      <pubDate>Sat, 07 Jul 2018 23:15:02 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/4-photos-controller/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cloudinary</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/3-cloudinary/</link>
+      <pubDate>Sat, 07 Jul 2018 17:37:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/3-cloudinary/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User secrets</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/2-user-secrets/</link>
+      <pubDate>Sat, 07 Jul 2018 17:37:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/2-user-secrets/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Where to store photos</title>
+      <link>https://www.teosoft.it/project/datingapp/11-photo-upload/1-where-to-store-photos/</link>
+      <pubDate>Sat, 07 Jul 2018 17:14:45 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/11-photo-upload/1-where-to-store-photos/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Persisting changes SPA</title>
       <link>https://www.teosoft.it/project/datingapp/10-updating-users/4-persisting-changes-spa/</link>
       <pubDate>Sat, 30 Jun 2018 17:27:16 +0200</pubDate>
