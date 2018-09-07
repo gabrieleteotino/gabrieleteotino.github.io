@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>VSTS personal build agent on docekr</title>
-  <meta property="og:title" content="VSTS personal build agent on docekr" />
-  <meta name="twitter:title" content="VSTS personal build agent on docekr" />
+  <title>VSTS personal build agent on Docker</title>
+  <meta property="og:title" content="VSTS personal build agent on Docker" />
+  <meta name="twitter:title" content="VSTS personal build agent on Docker" />
   <meta name="description" content="Using a personal build agent running on docker to speed up compilation times">
   <meta property="og:description" content="Using a personal build agent running on docker to speed up compilation times">
   <meta name="twitter:description" content="Using a personal build agent running on docker to speed up compilation times">
@@ -203,7 +203,7 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>VSTS personal build agent on docekr</h1>
+              <h1>VSTS personal build agent on Docker</h1>
                 
                   
                     <h2 class="post-subheading">Using a personal build agent running on docker to speed up compilation times</h2>
@@ -217,7 +217,7 @@ ga('send', 'pageview');
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 2 minutes (355 words)
+  <i class="fa fa-clock-o"></i> 2 minutes (353 words)
   
   
 </span>
@@ -298,7 +298,7 @@ chmod +x run_agent.sh</code></pre></div>
 </span><span class="se"></span>  -e <span class="nv">VSTS_WORK</span><span class="o">=</span><span class="s1">&#39;/var/vsts/$VSTS_AGENT&#39;</span> <span class="se">\
 </span><span class="se"></span>  -v /var/vsts:/var/vsts <span class="se">\
 </span><span class="se"></span>  -it microsoft/vsts-agent:ubuntu-16.04</code></pre></div>
-<p>The image <strong>ubuntu-16.04</strong> has minimal capabilities but uses only 0.5Gb of uncompressed disk space.</p>
+<p>The image <strong>microsoft/vsts-agent:ubuntu-16.04</strong> has minimal capabilities but uses only 0.5Gb of uncompressed disk space.</p>
 
 <p>Run the container</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sh run_agent.sh</code></pre></div>
@@ -312,7 +312,7 @@ chmod +x run_agent.sh</code></pre></div>
 
 <p>Edit a Build Job and change the <em>Agent Pool</em> to <em>Default</em> to use the agent.</p>
 
-<p>Note that the basic agent <strong>ubuntu-16.04</strong> is not able to do much work because no extended capabilities are configured.</p>
+<p>The basic agent <strong>microsoft/vsts-agent:ubuntu-16.04</strong> is not able to do much work because no extended capabilities are configured.</p>
       </article>
 
       
@@ -322,6 +322,10 @@ chmod +x run_agent.sh</code></pre></div>
               <a href="https://www.teosoft.it/post/2018-06-10-restore-xubuntu-initramfs/" data-toggle="tooltip" data-placement="top" title="Restore xubuntu initramfs">&larr; Previous Post</a>
             </li>
           
+          
+            <li class="next">
+              <a href="https://www.teosoft.it/post/2018-09-03-vsts-minimal-docker-build-agent/" data-toggle="tooltip" data-placement="top" title="VSTS minimal docker build agent">Next Post &rarr;</a>
+            </li>
           
         </ul>
       

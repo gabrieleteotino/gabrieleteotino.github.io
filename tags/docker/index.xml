@@ -6,13 +6,24 @@
     <description>Recent content in Docker on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Aug 2018 12:42:21 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 03 Sep 2018 11:36:11 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>VSTS personal build agent on docekr</title>
+      <title>VSTS minimal docker build agent</title>
+      <link>https://www.teosoft.it/post/2018-09-03-vsts-minimal-docker-build-agent/</link>
+      <pubDate>Mon, 03 Sep 2018 11:36:11 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-09-03-vsts-minimal-docker-build-agent/</guid>
+      <description>&lt;p&gt;The official standard image with all the tools is 4Gb compressed and it is really too big for my tiny VPS server. The image includes a lot of tools that I don&amp;rsquo;t use so I will remove those tools and see ho much disk space I can save.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VSTS personal build agent on Docker</title>
       <link>https://www.teosoft.it/post/2018-08-31-vsts-personal-build-agent-on-docker/</link>
       <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
       

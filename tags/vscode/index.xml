@@ -20,5 +20,16 @@
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Using Ansible to setup my machine</title>
+      <link>https://www.teosoft.it/post/2018-06-05-using-ansible-to-setup-my-machine/</link>
+      <pubDate>Tue, 05 Jun 2018 10:55:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-06-05-using-ansible-to-setup-my-machine/</guid>
+      <description>&lt;p&gt;The deployment of the software will be made with &lt;a href=&#34;https://docs.ansible.com/ansible/2.4/ansible-pull.html&#34;&gt;ansible-pull&lt;/a&gt;, without a remote machine. This is a little different from the classic client server deployment used with ansible and is, in a way, simpler.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

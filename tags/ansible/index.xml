@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ansible on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/ansible/</link>
+    <description>Recent content in Ansible on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jun 2018 10:55:56 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Ansible to setup my machine</title>
+      <link>https://www.teosoft.it/post/2018-06-05-using-ansible-to-setup-my-machine/</link>
+      <pubDate>Tue, 05 Jun 2018 10:55:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-06-05-using-ansible-to-setup-my-machine/</guid>
+      <description>&lt;p&gt;The deployment of the software will be made with &lt;a href=&#34;https://docs.ansible.com/ansible/2.4/ansible-pull.html&#34;&gt;ansible-pull&lt;/a&gt;, without a remote machine. This is a little different from the classic client server deployment used with ansible and is, in a way, simpler.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

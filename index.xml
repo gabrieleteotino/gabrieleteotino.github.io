@@ -6,13 +6,33 @@
     <description>Recent content on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Aug 2018 12:42:21 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 03 Sep 2018 11:36:11 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>VSTS personal build agent on docekr</title>
+      <title>VSTS minimal docker build agent</title>
+      <link>https://www.teosoft.it/post/2018-09-03-vsts-minimal-docker-build-agent/</link>
+      <pubDate>Mon, 03 Sep 2018 11:36:11 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-09-03-vsts-minimal-docker-build-agent/</guid>
+      <description>&lt;p&gt;The official standard image with all the tools is 4Gb compressed and it is really too big for my tiny VPS server. The image includes a lot of tools that I don&amp;rsquo;t use so I will remove those tools and see ho much disk space I can save.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nomacs simple image editor</title>
+      <link>https://www.teosoft.it/note/2018-08-31-nomacs-simple-image-editor/</link>
+      <pubDate>Fri, 31 Aug 2018 14:25:13 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-08-31-nomacs-simple-image-editor/</guid>
+      <description>Nomacs is a very lite image editor that features basic image editing and manipulation.</description>
+    </item>
+    
+    <item>
+      <title>VSTS personal build agent on Docker</title>
       <link>https://www.teosoft.it/post/2018-08-31-vsts-personal-build-agent-on-docker/</link>
       <pubDate>Fri, 31 Aug 2018 12:42:21 +0200</pubDate>
       
@@ -380,6 +400,17 @@
       
       <guid>https://www.teosoft.it/project/datingapp/3-securing/1-user-model/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Ansible to setup my machine</title>
+      <link>https://www.teosoft.it/post/2018-06-05-using-ansible-to-setup-my-machine/</link>
+      <pubDate>Tue, 05 Jun 2018 10:55:56 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2018-06-05-using-ansible-to-setup-my-machine/</guid>
+      <description>&lt;p&gt;The deployment of the software will be made with &lt;a href=&#34;https://docs.ansible.com/ansible/2.4/ansible-pull.html&#34;&gt;ansible-pull&lt;/a&gt;, without a remote machine. This is a little different from the classic client server deployment used with ansible and is, in a way, simpler.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
