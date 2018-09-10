@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Registration on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/12-registration/</link>
+    <description>Recent content in Registration on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Jul 2018 14:58:27 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/12-registration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Complete the registration</title>
+      <link>https://www.teosoft.it/project/datingapp/12-registration/4-complete-the-registration/</link>
+      <pubDate>Thu, 19 Jul 2018 13:48:27 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/12-registration/4-complete-the-registration/</guid>
+      <description>&lt;p&gt;In the SPA fix the methods used to post the registration.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Expand the api registration</title>
+      <link>https://www.teosoft.it/project/datingapp/12-registration/3-expand-api-registration/</link>
+      <pubDate>Thu, 19 Jul 2018 09:03:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/12-registration/3-expand-api-registration/</guid>
+      <description>&lt;p&gt;Adapt the webapi to the new registration form.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Expand the register form</title>
+      <link>https://www.teosoft.it/project/datingapp/12-registration/2-expand-the-register-form/</link>
+      <pubDate>Wed, 18 Jul 2018 13:03:35 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/12-registration/2-expand-the-register-form/</guid>
+      <description>&lt;p&gt;Using Angular &lt;a href=&#34;https://angular.io/api/forms/FormBuilder&#34;&gt;FormBuilder&lt;/a&gt; to configure a form.&lt;/p&gt;
+
+&lt;p&gt;The FormBuilder provides syntactic sugar that shortens creating instances of a FormControl, FormGroup, or FormArray. It reduces the amount of boilerplate needed to build complex forms.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reactive forms</title>
+      <link>https://www.teosoft.it/project/datingapp/12-registration/1-reactive-forms/</link>
+      <pubDate>Mon, 16 Jul 2018 15:39:18 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/12-registration/1-reactive-forms/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://angular.io/guide/reactive-forms&#34;&gt;Reactive Forms&lt;/a&gt; is a different philosophy from &lt;em&gt;FormsModule&lt;/em&gt; template-driven technology.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;ReactiveFormsModule&lt;/em&gt; are defined in the component code and the binding with the template is syncronous.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

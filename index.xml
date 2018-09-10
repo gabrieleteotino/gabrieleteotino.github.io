@@ -6,10 +6,19 @@
     <description>Recent content on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Sep 2018 11:36:11 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 10 Sep 2018 17:07:03 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Clean PowerShell history</title>
+      <link>https://www.teosoft.it/note/2018-09-10-clear-powershell-history/</link>
+      <pubDate>Mon, 10 Sep 2018 17:07:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-09-10-clear-powershell-history/</guid>
+      <description>Clear Windows 10 (Server 2016) history &amp;ldquo;feature&amp;rdquo; Remove-Item (Get-PSReadlineOption).HistorySavePath Reset the console buffer ALT+F7 Clear PSReadline&amp;rsquo;s session history [Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory() Clear PowerShell&amp;rsquo;s own history Clear-History  Commands taken from this stackoverflow article</description>
+    </item>
     
     <item>
       <title>VSTS minimal docker build agent</title>
@@ -49,6 +58,54 @@
       
       <guid>https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/</guid>
       <description>&lt;p&gt;I need to download a specific version of a project from &lt;em&gt;GitHub&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Complete the registration</title>
+      <link>https://www.teosoft.it/project/datingapp/12-registration/4-complete-the-registration/</link>
+      <pubDate>Thu, 19 Jul 2018 13:48:27 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/12-registration/4-complete-the-registration/</guid>
+      <description>&lt;p&gt;In the SPA fix the methods used to post the registration.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Expand the api registration</title>
+      <link>https://www.teosoft.it/project/datingapp/12-registration/3-expand-api-registration/</link>
+      <pubDate>Thu, 19 Jul 2018 09:03:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/12-registration/3-expand-api-registration/</guid>
+      <description>&lt;p&gt;Adapt the webapi to the new registration form.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Expand the register form</title>
+      <link>https://www.teosoft.it/project/datingapp/12-registration/2-expand-the-register-form/</link>
+      <pubDate>Wed, 18 Jul 2018 13:03:35 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/12-registration/2-expand-the-register-form/</guid>
+      <description>&lt;p&gt;Using Angular &lt;a href=&#34;https://angular.io/api/forms/FormBuilder&#34;&gt;FormBuilder&lt;/a&gt; to configure a form.&lt;/p&gt;
+
+&lt;p&gt;The FormBuilder provides syntactic sugar that shortens creating instances of a FormControl, FormGroup, or FormArray. It reduces the amount of boilerplate needed to build complex forms.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reactive forms</title>
+      <link>https://www.teosoft.it/project/datingapp/12-registration/1-reactive-forms/</link>
+      <pubDate>Mon, 16 Jul 2018 15:39:18 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/12-registration/1-reactive-forms/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://angular.io/guide/reactive-forms&#34;&gt;Reactive Forms&lt;/a&gt; is a different philosophy from &lt;em&gt;FormsModule&lt;/em&gt; template-driven technology.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;ReactiveFormsModule&lt;/em&gt; are defined in the component code and the binding with the template is syncronous.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

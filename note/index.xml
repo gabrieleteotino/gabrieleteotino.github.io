@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Clean PowerShell history</title>
+      <link>https://www.teosoft.it/note/2018-09-10-clear-powershell-history/</link>
+      <pubDate>Mon, 10 Sep 2018 17:07:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-09-10-clear-powershell-history/</guid>
+      <description>Clear Windows 10 (Server 2016) history &amp;ldquo;feature&amp;rdquo; Remove-Item (Get-PSReadlineOption).HistorySavePath Reset the console buffer ALT+F7 Clear PSReadline&amp;rsquo;s session history [Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory() Clear PowerShell&amp;rsquo;s own history Clear-History  Commands taken from this stackoverflow article</description>
+    </item>
+    
+    <item>
       <title>Nomacs simple image editor</title>
       <link>https://www.teosoft.it/note/2018-08-31-nomacs-simple-image-editor/</link>
       <pubDate>Fri, 31 Aug 2018 14:25:13 +0200</pubDate>

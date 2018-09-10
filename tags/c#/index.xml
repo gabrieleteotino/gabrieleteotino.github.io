@@ -6,10 +6,31 @@
     <description>Recent content in C# on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Jul 2018 11:07:05 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jul 2018 09:03:14 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/c#/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Expand the api registration</title>
+      <link>https://www.teosoft.it/project/datingapp/12-registration/3-expand-api-registration/</link>
+      <pubDate>Thu, 19 Jul 2018 09:03:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/12-registration/3-expand-api-registration/</guid>
+      <description>&lt;p&gt;Adapt the webapi to the new registration form.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Registration</title>
+      <link>https://www.teosoft.it/project/datingapp/12-registration/</link>
+      <pubDate>Mon, 16 Jul 2018 14:58:27 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/12-registration/</guid>
+      <description>Enhance the registration process.
+ Reactive forms Validation Custom validators Validation feedback The Date problem Hooking to the API  </description>
+    </item>
     
     <item>
       <title>Delete photos</title>

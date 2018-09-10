@@ -6,10 +6,21 @@
     <description>Recent content in Postman on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Jul 2018 11:07:05 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jul 2018 09:03:14 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/postman/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Expand the api registration</title>
+      <link>https://www.teosoft.it/project/datingapp/12-registration/3-expand-api-registration/</link>
+      <pubDate>Thu, 19 Jul 2018 09:03:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/12-registration/3-expand-api-registration/</guid>
+      <description>&lt;p&gt;Adapt the webapi to the new registration form.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Delete photos</title>

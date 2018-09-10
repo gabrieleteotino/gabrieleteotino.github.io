@@ -50,7 +50,7 @@
     <item>
       <title>Angular</title>
       <link>https://www.teosoft.it/tags/angular/</link>
-      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
+      <pubDate>Thu, 19 Jul 2018 13:48:27 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/angular/</guid>
       <description></description>
@@ -158,7 +158,7 @@
     <item>
       <title>C#</title>
       <link>https://www.teosoft.it/tags/c#/</link>
-      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
+      <pubDate>Thu, 19 Jul 2018 09:03:14 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/c#/</guid>
       <description></description>
@@ -500,7 +500,7 @@
     <item>
       <title>Netcore</title>
       <link>https://www.teosoft.it/tags/netcore/</link>
-      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
+      <pubDate>Thu, 19 Jul 2018 09:03:14 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/netcore/</guid>
       <description></description>
@@ -539,6 +539,15 @@
       <pubDate>Fri, 22 Jun 2018 11:26:53 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/ngx-bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ngx Datepicker</title>
+      <link>https://www.teosoft.it/tags/ngx-datepicker/</link>
+      <pubDate>Wed, 18 Jul 2018 13:03:35 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/ngx-datepicker/</guid>
       <description></description>
     </item>
     
@@ -653,9 +662,18 @@
     <item>
       <title>Postman</title>
       <link>https://www.teosoft.it/tags/postman/</link>
-      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
+      <pubDate>Thu, 19 Jul 2018 09:03:14 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/postman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Powershell</title>
+      <link>https://www.teosoft.it/tags/powershell/</link>
+      <pubDate>Mon, 10 Sep 2018 17:07:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/powershell/</guid>
       <description></description>
     </item>
     
@@ -905,7 +923,7 @@
     <item>
       <title>Webapi</title>
       <link>https://www.teosoft.it/tags/webapi/</link>
-      <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
+      <pubDate>Thu, 19 Jul 2018 09:03:14 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/webapi/</guid>
       <description></description>

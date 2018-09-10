@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Powershell on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/powershell/</link>
+    <description>Recent content in Powershell on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Sep 2018 17:07:03 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Clean PowerShell history</title>
+      <link>https://www.teosoft.it/note/2018-09-10-clear-powershell-history/</link>
+      <pubDate>Mon, 10 Sep 2018 17:07:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2018-09-10-clear-powershell-history/</guid>
+      <description>Clear Windows 10 (Server 2016) history &amp;ldquo;feature&amp;rdquo; Remove-Item (Get-PSReadlineOption).HistorySavePath Reset the console buffer ALT+F7 Clear PSReadline&amp;rsquo;s session history [Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory() Clear PowerShell&amp;rsquo;s own history Clear-History  Commands taken from this stackoverflow article</description>
+    </item>
+    
+  </channel>
+</rss>
