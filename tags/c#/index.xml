@@ -6,10 +6,78 @@
     <description>Recent content in C# on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Jul 2018 09:03:14 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jul 2018 12:38:59 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/c#/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sorting in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/5-sorting-in-the-api/</link>
+      <pubDate>Wed, 25 Jul 2018 12:38:59 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/5-sorting-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Filtering in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/3-filtering-in-the-api/</link>
+      <pubDate>Tue, 24 Jul 2018 12:27:05 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/3-filtering-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paging in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/1-paging-in-the-api/</link>
+      <pubDate>Fri, 20 Jul 2018 11:18:34 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/1-paging-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paging filtering and sorting</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/</link>
+      <pubDate>Fri, 20 Jul 2018 11:02:54 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/</guid>
+      <description> Paging in the API Paging in the SPA Filtering in the API Filtering in the SPA Sorting in the API Sorting in the SPA  </description>
+    </item>
+    
+    <item>
+      <title>Timezones</title>
+      <link>https://www.teosoft.it/project/datingapp/13-action-filters/3-timezones/</link>
+      <pubDate>Fri, 20 Jul 2018 10:20:31 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/13-action-filters/3-timezones/</guid>
+      <description>&lt;p&gt;View the dates with the correct timezone.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Update user action filter</title>
+      <link>https://www.teosoft.it/project/datingapp/13-action-filters/2-update-user-action-filter/</link>
+      <pubDate>Thu, 19 Jul 2018 16:05:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/13-action-filters/2-update-user-action-filter/</guid>
+      <description>&lt;p&gt;Create an action filter to apply to all the actions of &lt;strong&gt;UserController&lt;/strong&gt; that updates the &lt;strong&gt;LastActive&lt;/strong&gt; property of the current user.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Action filters</title>
+      <link>https://www.teosoft.it/project/datingapp/13-action-filters/</link>
+      <pubDate>Thu, 19 Jul 2018 15:34:13 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/13-action-filters/</guid>
+      <description>Using action filters in asp.net core.
+ Displaying dates in the SPA using pipes Action filters  </description>
+    </item>
     
     <item>
       <title>Expand the api registration</title>
@@ -350,7 +418,7 @@ Extras
       <description>DatingApp is a SPA dating application written in Angular 5 with a webapi backend made in C# using .net core 2.1.
 The application is my opinionated version of this Udemy course
 The course used a previous version of .net core I fixed everything to use 2.1.0-rc1-final. After chapter 5 I also gained enough confidence with Angular to update it to version 6.
- Preparation Skeleton Securing Client authentication Error handling Third party components Routing Extending the API Building the UI Updating users Photo upload Registration  </description>
+ Preparation Skeleton Securing Client authentication Error handling Third party components Routing Extending the API Building the UI Updating users Photo upload Registration Action filters Paging filtering and sorting  </description>
     </item>
     
     <item>

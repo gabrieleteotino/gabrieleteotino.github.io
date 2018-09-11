@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Action filters on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/13-action-filters/</link>
+    <description>Recent content in Action filters on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Jul 2018 15:34:13 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/13-action-filters/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Timezones</title>
+      <link>https://www.teosoft.it/project/datingapp/13-action-filters/3-timezones/</link>
+      <pubDate>Fri, 20 Jul 2018 10:20:31 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/13-action-filters/3-timezones/</guid>
+      <description>&lt;p&gt;View the dates with the correct timezone.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Update user action filter</title>
+      <link>https://www.teosoft.it/project/datingapp/13-action-filters/2-update-user-action-filter/</link>
+      <pubDate>Thu, 19 Jul 2018 16:05:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/13-action-filters/2-update-user-action-filter/</guid>
+      <description>&lt;p&gt;Create an action filter to apply to all the actions of &lt;strong&gt;UserController&lt;/strong&gt; that updates the &lt;strong&gt;LastActive&lt;/strong&gt; property of the current user.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using pipes for dates</title>
+      <link>https://www.teosoft.it/project/datingapp/13-action-filters/1-using-pipes-for-dates/</link>
+      <pubDate>Thu, 19 Jul 2018 15:40:23 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/13-action-filters/1-using-pipes-for-dates/</guid>
+      <description>&lt;p&gt;Formatting the dates in the SPA&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

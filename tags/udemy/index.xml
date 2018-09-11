@@ -20,7 +20,7 @@
       <description>DatingApp is a SPA dating application written in Angular 5 with a webapi backend made in C# using .net core 2.1.
 The application is my opinionated version of this Udemy course
 The course used a previous version of .net core I fixed everything to use 2.1.0-rc1-final. After chapter 5 I also gained enough confidence with Angular to update it to version 6.
- Preparation Skeleton Securing Client authentication Error handling Third party components Routing Extending the API Building the UI Updating users Photo upload Registration  </description>
+ Preparation Skeleton Securing Client authentication Error handling Third party components Routing Extending the API Building the UI Updating users Photo upload Registration Action filters Paging filtering and sorting  </description>
     </item>
     
   </channel>

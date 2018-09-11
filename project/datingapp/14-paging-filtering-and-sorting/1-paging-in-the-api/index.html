@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Paging in the API</title>
+  <meta property="og:title" content="Paging in the API" />
+  <meta name="twitter:title" content="Paging in the API" />
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta name="author" content="Gabriele Teotino"/>
+  <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/1-paging-in-the-api/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bluish capsule" />
+
+  <meta name="generator" content="Hugo 0.36.1" />
+  <link rel="canonical" href="https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/1-paging-in-the-api/" />
+  <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.teosoft.it/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://www.teosoft.it/css/highlight.min.css" /><link rel="stylesheet" href="https://www.teosoft.it/css/codeblock.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-24994854-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.teosoft.it/">Bluish capsule</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/post">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Notes" href="/note">Notes</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+              <div class="navlinks-children">
+                
+                  <a href="/project">Projects home</a>
+                
+                  <a href="/project/meccanici">Meccanici</a>
+                
+                  <a href="/project/datingapp">DatingApp</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Reviews" href="/review">Reviews</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Bluish capsule" href="https://www.teosoft.it/">
+            <img class="avatar-img" src="https://www.teosoft.it/img/avatar-icon.png" alt="Bluish capsule" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Bluish capsule</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="project-heading">
+              <h1>Paging in the API</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p></p>
+
+<h2 id="support-classes">Support classes</h2>
+
+<p>To paginate the data we will pass two parameters via query string to the action.</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">https://localhost:5001/api/users?pageNumber=1<span class="err">&amp;</span>pageSize=5</code></pre></div>
+<p>The method <strong>DatingRepository.GetUsers</strong> returns an <em>IEnumerable</em> but in the code we actually return a <em>List</em> with <em>ToListAsync</em>. This method iterates on all the results in the <em>DbSet</em> and add them to the list.</p>
+
+<p>To substitute this method we will create a new class of type <em>List</em> that will filter the data and also tell the count of user and the count of pages.</p>
+
+<p>Create a new class <strong>PagedList</strong> in the <strong>Helpers</strong> folder</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">PagedList</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;</span> <span class="p">:</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">CurrentPage</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">PageSize</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">TotalPages</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">TotalCount</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="n">PagedList</span><span class="p">(</span><span class="n">List</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;</span> <span class="n">items</span><span class="p">,</span> <span class="kt">int</span> <span class="n">count</span><span class="p">,</span> <span class="kt">int</span> <span class="n">pageNumber</span><span class="p">,</span> <span class="kt">int</span> <span class="n">pageSize</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">TotalCount</span> <span class="p">=</span> <span class="n">count</span><span class="p">;</span>
+        <span class="n">PageSize</span> <span class="p">=</span> <span class="n">pageSize</span><span class="p">;</span>
+        <span class="n">CurrentPage</span> <span class="p">=</span> <span class="n">pageNumber</span><span class="p">;</span>
+        <span class="n">TotalPages</span> <span class="p">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="nc">Math</span><span class="p">.</span><span class="n">Ceiling</span><span class="p">(</span><span class="n">count</span> <span class="p">/</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">pageSize</span><span class="p">);</span>
+
+        <span class="k">this</span><span class="p">.</span><span class="n">AddRange</span><span class="p">(</span><span class="n">items</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">PagedList</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;&gt;</span> <span class="n">CreateAsync</span><span class="p">(</span><span class="n">IQueryable</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;</span> <span class="n">source</span><span class="p">,</span> <span class="kt">int</span> <span class="n">pageNumber</span><span class="p">,</span> <span class="kt">int</span> <span class="n">pageSize</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">var</span> <span class="n">count</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">source</span><span class="p">.</span><span class="n">CountAsync</span><span class="p">();</span>
+        <span class="kt">var</span> <span class="n">items</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">source</span><span class="p">.</span><span class="n">Skip</span><span class="p">((</span><span class="n">pageNumber</span> <span class="p">-</span> <span class="m">1</span><span class="p">)</span> <span class="p">*</span> <span class="n">pageSize</span><span class="p">).</span><span class="n">Take</span><span class="p">(</span><span class="n">pageSize</span><span class="p">).</span><span class="n">ToListAsync</span><span class="p">();</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="n">PagedList</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;(</span><span class="n">items</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="n">pageNumber</span><span class="p">,</span> <span class="n">pageSize</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>The information about the pagination will be returned in a <em>header</em>, so create <strong>Helpers/PaginationHeader.cs</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">PaginationHeader</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">CurrentPage</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">ItemsPerPage</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">TotalItems</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">TotalPages</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="k">public</span> <span class="n">PaginationHeader</span><span class="p">(</span><span class="kt">int</span> <span class="n">currentPage</span><span class="p">,</span> <span class="kt">int</span> <span class="n">itemsPerPage</span><span class="p">,</span> <span class="kt">int</span> <span class="n">totalItems</span><span class="p">,</span> <span class="kt">int</span> <span class="n">totalPages</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">CurrentPage</span> <span class="p">=</span> <span class="n">currentPage</span><span class="p">;</span>
+        <span class="n">ItemsPerPage</span> <span class="p">=</span> <span class="n">itemsPerPage</span><span class="p">;</span>
+        <span class="n">TotalItems</span> <span class="p">=</span> <span class="n">totalItems</span><span class="p">;</span>
+        <span class="n">TotalPages</span> <span class="p">=</span> <span class="n">totalPages</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Add a new extension for the headers in <strong>HttpResponseExtensions.cs</strong>. Note that we instruct the serializer to use camel case (<em>currentPage</em> instead of <em>CurrentPage</em>)</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="n">AddPagination</span><span class="p">(</span><span class="k">this</span> <span class="n">HttpResponse</span> <span class="n">response</span><span class="p">,</span> <span class="kt">int</span> <span class="n">currentPage</span><span class="p">,</span> <span class="kt">int</span> <span class="n">itemsPerPage</span><span class="p">,</span> <span class="kt">int</span> <span class="n">totalItems</span><span class="p">,</span> <span class="kt">int</span> <span class="n">totalPages</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">var</span> <span class="n">paginationHeader</span> <span class="p">=</span> <span class="k">new</span> <span class="n">PaginationHeader</span><span class="p">(</span><span class="n">currentPage</span><span class="p">,</span> <span class="n">itemsPerPage</span><span class="p">,</span> <span class="n">totalItems</span><span class="p">,</span> <span class="n">totalPages</span><span class="p">);</span>
+  <span class="kt">var</span> <span class="n">paginationHeaderSerialized</span> <span class="p">=</span> <span class="nc">JsonConvert</span><span class="p">.</span><span class="n">SerializeObject</span><span class="p">(</span><span class="n">paginationHeader</span><span class="p">,</span> <span class="k">new</span> <span class="n">JsonSerializerSettings</span>
+  <span class="p">{</span>
+      <span class="n">ContractResolver</span> <span class="p">=</span> <span class="k">new</span> <span class="n">CamelCasePropertyNamesContractResolver</span><span class="p">()</span>
+  <span class="p">});</span>
+  <span class="nc">response</span><span class="p">.</span><span class="nc">Headers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s">&#34;Pagination&#34;</span><span class="p">,</span> <span class="n">paginationHeaderSerialized</span><span class="p">);</span>
+  <span class="nc">response</span><span class="p">.</span><span class="nc">Headers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s">&#34;Access-Control-Expose-Headers&#34;</span><span class="p">,</span> <span class="s">&#34;Pagination&#34;</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>When the SPA calls <strong>UsersController.GetUsers</strong> it will pass a parameter of type <strong>UsersController.UserParams</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">UsersController</span> <span class="p">:</span> <span class="n">Controller</span>
+<span class="p">{</span>
+  <span class="c1">// ...
+</span><span class="c1"></span>  <span class="k">public</span> <span class="k">class</span> <span class="nc">UserParams</span>
+  <span class="p">{</span>
+      <span class="k">private</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">MaxPageSize</span> <span class="p">=</span> <span class="m">50</span><span class="p">;</span>
+      <span class="k">public</span> <span class="kt">int</span> <span class="n">PageNumber</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+
+      <span class="k">private</span> <span class="kt">int</span> <span class="n">pageSize</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+      <span class="k">public</span> <span class="kt">int</span> <span class="n">PageSize</span>
+      <span class="p">{</span>
+          <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">pageSize</span><span class="p">;</span> <span class="p">}</span>
+          <span class="k">set</span> <span class="p">{</span> <span class="n">pageSize</span> <span class="p">=</span> <span class="p">(</span><span class="k">value</span> <span class="p">&gt;</span> <span class="n">MaxPageSize</span><span class="p">)</span> <span class="p">?</span> <span class="n">MaxPageSize</span> <span class="p">:</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="c1">// ...
+</span><span class="c1"></span><span class="p">}</span></code></pre></div>
+<h2 id="repository-and-controller">Repository and Controller</h2>
+
+<p>Change the signature of <strong>IDatingRepository</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="n">Task</span><span class="p">&lt;</span><span class="n">PagedList</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;&gt;</span> <span class="n">GetUsers</span><span class="p">(</span><span class="nc">Controllers</span><span class="p">.</span><span class="nc">UsersController</span><span class="p">.</span><span class="n">UserParams</span> <span class="n">paginationParams</span><span class="p">);</span></code></pre></div>
+<p>Update the implementation in <strong>DatingRepository</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">PagedList</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;&gt;</span> <span class="n">GetUsers</span><span class="p">(</span><span class="nc">Controllers</span><span class="p">.</span><span class="nc">UsersController</span><span class="p">.</span><span class="n">UserParams</span> <span class="n">paginationParams</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">users</span> <span class="p">=</span> <span class="nc">_context</span><span class="p">.</span><span class="nc">Users</span><span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="n">p</span> <span class="p">=&gt;</span> <span class="nc">p</span><span class="p">.</span><span class="n">Photos</span><span class="p">);</span>
+    <span class="k">return</span> <span class="k">await</span> <span class="n">PagedList</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;.</span><span class="n">CreateAsync</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="nc">paginationParams</span><span class="p">.</span><span class="n">PageNumber</span><span class="p">,</span> <span class="nc">paginationParams</span><span class="p">.</span><span class="n">PageSize</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>Update the implementation of <strong>UsersController.GetUsers</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="na">[HttpGet]</span>
+<span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">GetUsers</span><span class="p">(</span><span class="na">[FromQuery]</span> <span class="n">UserParams</span> <span class="n">userParams</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">users</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetUsers</span><span class="p">(</span><span class="n">userParams</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">usersVM</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">UserForList</span><span class="p">&gt;&gt;(</span><span class="n">users</span><span class="p">);</span>
+
+    <span class="nc">Response</span><span class="p">.</span><span class="n">AddPagination</span><span class="p">(</span><span class="nc">users</span><span class="p">.</span><span class="n">CurrentPage</span><span class="p">,</span> <span class="nc">users</span><span class="p">.</span><span class="n">PageSize</span><span class="p">,</span> <span class="nc">users</span><span class="p">.</span><span class="n">TotalCount</span><span class="p">,</span> <span class="nc">users</span><span class="p">.</span><span class="n">TotalPages</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">Ok</span><span class="p">(</span><span class="n">usersVM</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<h2 id="test-with-postman">Test with Postman</h2>
+
+<p>Create a new <em>GET</em> request in <em>Postman</em> with the following url</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{url}}/api/users?PageNumber=1<span class="err">&amp;</span>PageSize=3</code></pre></div>
+<p>In the response body we see only the first 3 users. In the <em>Headers</em> tab we find the <strong>Pagination</strong> header (all in a single line, here it is formatted for reading)</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+  <span class="nt">&#34;currentPage&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">&#34;itemsPerPage&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+  <span class="nt">&#34;totalItems&#34;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="nt">&#34;totalPages&#34;</span><span class="p">:</span> <span class="mi">4</span>
+<span class="p">}</span></code></pre></div>
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+          
+            <li class="next">
+              <a href="https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/2-paging-in-the-spa/" data-toggle="tooltip" data-placement="top" title="Paging in the SPA">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/gabrieleteotino" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/2085504/deramko" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://www.teosoft.it/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://www.teosoft.it">Gabriele Teotino</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.teosoft.it/">Bluish capsule</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.teosoft.it/js/main.js"></script>
+<script src="https://www.teosoft.it/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://www.teosoft.it/js/load-photoswipe.js"></script>
+
+
+<script>
+  (function() {
+    var cx = '005185449088889757369:5o44h-2knna';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+  </body>
+</html>
+

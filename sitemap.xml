@@ -28,6 +28,66 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/7-updating-to-httpinterceptor/</loc>
+    <lastmod>2018-07-27T10:47:06+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/6-sorting-in-the-spa/</loc>
+    <lastmod>2018-07-25T13:10:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/5-sorting-in-the-api/</loc>
+    <lastmod>2018-07-25T12:38:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/4-filtering-in-the-spa/</loc>
+    <lastmod>2018-07-25T10:30:35+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/3-filtering-in-the-api/</loc>
+    <lastmod>2018-07-24T12:27:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/2-paging-in-the-spa/</loc>
+    <lastmod>2018-07-23T19:05:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/1-paging-in-the-api/</loc>
+    <lastmod>2018-07-20T11:18:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/</loc>
+    <lastmod>2018-07-20T11:02:54+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/13-action-filters/3-timezones/</loc>
+    <lastmod>2018-07-20T10:20:31+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/13-action-filters/2-update-user-action-filter/</loc>
+    <lastmod>2018-07-19T16:05:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/13-action-filters/1-using-pipes-for-dates/</loc>
+    <lastmod>2018-07-19T15:40:23+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/13-action-filters/</loc>
+    <lastmod>2018-07-19T15:34:13+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/project/datingapp/12-registration/4-complete-the-registration/</loc>
     <lastmod>2018-07-19T13:48:27+02:00</lastmod>
   </url>
@@ -658,7 +718,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/angular/</loc>
-    <lastmod>2018-07-19T13:48:27+02:00</lastmod>
+    <lastmod>2018-07-27T10:47:06+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -736,7 +796,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/c#/</loc>
-    <lastmod>2018-07-19T09:03:14+02:00</lastmod>
+    <lastmod>2018-07-25T12:38:59+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1017,7 +1077,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/netcore/</loc>
-    <lastmod>2018-07-19T09:03:14+02:00</lastmod>
+    <lastmod>2018-07-25T12:38:59+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1047,7 +1107,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/ngx-bootstrap/</loc>
-    <lastmod>2018-06-22T11:26:53+02:00</lastmod>
+    <lastmod>2018-07-25T13:10:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1137,7 +1197,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/postman/</loc>
-    <lastmod>2018-07-19T09:03:14+02:00</lastmod>
+    <lastmod>2018-07-25T12:38:59+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1341,7 +1401,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/webapi/</loc>
-    <lastmod>2018-07-19T09:03:14+02:00</lastmod>
+    <lastmod>2018-07-25T12:38:59+02:00</lastmod>
     <priority>0</priority>
   </url>
   

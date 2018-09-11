@@ -63,6 +63,102 @@
     </item>
     
     <item>
+      <title>Updating to HttpInterceptor</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/7-updating-to-httpinterceptor/</link>
+      <pubDate>Fri, 27 Jul 2018 10:47:06 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/7-updating-to-httpinterceptor/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting in the SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/6-sorting-in-the-spa/</link>
+      <pubDate>Wed, 25 Jul 2018 13:10:46 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/6-sorting-in-the-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/5-sorting-in-the-api/</link>
+      <pubDate>Wed, 25 Jul 2018 12:38:59 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/5-sorting-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Filtering in the SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/4-filtering-in-the-spa/</link>
+      <pubDate>Wed, 25 Jul 2018 10:30:35 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/4-filtering-in-the-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Filtering in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/3-filtering-in-the-api/</link>
+      <pubDate>Tue, 24 Jul 2018 12:27:05 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/3-filtering-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paging in the SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/2-paging-in-the-spa/</link>
+      <pubDate>Mon, 23 Jul 2018 19:05:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/2-paging-in-the-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paging in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/1-paging-in-the-api/</link>
+      <pubDate>Fri, 20 Jul 2018 11:18:34 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/1-paging-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Timezones</title>
+      <link>https://www.teosoft.it/project/datingapp/13-action-filters/3-timezones/</link>
+      <pubDate>Fri, 20 Jul 2018 10:20:31 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/13-action-filters/3-timezones/</guid>
+      <description>&lt;p&gt;View the dates with the correct timezone.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Update user action filter</title>
+      <link>https://www.teosoft.it/project/datingapp/13-action-filters/2-update-user-action-filter/</link>
+      <pubDate>Thu, 19 Jul 2018 16:05:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/13-action-filters/2-update-user-action-filter/</guid>
+      <description>&lt;p&gt;Create an action filter to apply to all the actions of &lt;strong&gt;UserController&lt;/strong&gt; that updates the &lt;strong&gt;LastActive&lt;/strong&gt; property of the current user.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using pipes for dates</title>
+      <link>https://www.teosoft.it/project/datingapp/13-action-filters/1-using-pipes-for-dates/</link>
+      <pubDate>Thu, 19 Jul 2018 15:40:23 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/13-action-filters/1-using-pipes-for-dates/</guid>
+      <description>&lt;p&gt;Formatting the dates in the SPA&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Complete the registration</title>
       <link>https://www.teosoft.it/project/datingapp/12-registration/4-complete-the-registration/</link>
       <pubDate>Thu, 19 Jul 2018 13:48:27 +0200</pubDate>

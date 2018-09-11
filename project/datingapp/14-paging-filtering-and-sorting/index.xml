@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paging filtering and sorting on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/</link>
+    <description>Recent content in Paging filtering and sorting on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Jul 2018 11:02:54 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Updating to HttpInterceptor</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/7-updating-to-httpinterceptor/</link>
+      <pubDate>Fri, 27 Jul 2018 10:47:06 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/7-updating-to-httpinterceptor/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting in the SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/6-sorting-in-the-spa/</link>
+      <pubDate>Wed, 25 Jul 2018 13:10:46 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/6-sorting-in-the-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/5-sorting-in-the-api/</link>
+      <pubDate>Wed, 25 Jul 2018 12:38:59 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/5-sorting-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Filtering in the SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/4-filtering-in-the-spa/</link>
+      <pubDate>Wed, 25 Jul 2018 10:30:35 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/4-filtering-in-the-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Filtering in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/3-filtering-in-the-api/</link>
+      <pubDate>Tue, 24 Jul 2018 12:27:05 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/3-filtering-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paging in the SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/2-paging-in-the-spa/</link>
+      <pubDate>Mon, 23 Jul 2018 19:05:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/2-paging-in-the-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paging in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/1-paging-in-the-api/</link>
+      <pubDate>Fri, 20 Jul 2018 11:18:34 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/14-paging-filtering-and-sorting/1-paging-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
