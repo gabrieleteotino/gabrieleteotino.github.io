@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Likes on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/15-likes/</link>
+    <description>Recent content in Likes on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jul 2018 10:44:19 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/15-likes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Filter users by like in the SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/5-filter-users-by-like-in-the-spa/</link>
+      <pubDate>Wed, 01 Aug 2018 15:01:10 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/5-filter-users-by-like-in-the-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Add like in the SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/4-add-like-in-the-spa/</link>
+      <pubDate>Wed, 01 Aug 2018 13:17:15 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/4-add-like-in-the-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Filter user by Like</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/3-filter-users-by-like/</link>
+      <pubDate>Wed, 01 Aug 2018 09:20:27 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/3-filter-users-by-like/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Like functionality in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/2-like-functionality-in-the-api/</link>
+      <pubDate>Tue, 31 Jul 2018 14:42:59 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/2-like-functionality-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>EF relationships</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/1-ef-relationships/</link>
+      <pubDate>Tue, 31 Jul 2018 10:47:38 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/1-ef-relationships/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Containerize</title>
+  <meta property="og:title" content="Containerize" />
+  <meta name="twitter:title" content="Containerize" />
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta name="author" content="Gabriele Teotino"/>
+  <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://www.teosoft.it/project/datingapp/17-publishing/5-containerize/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bluish capsule" />
+
+  <meta name="generator" content="Hugo 0.36.1" />
+  <link rel="canonical" href="https://www.teosoft.it/project/datingapp/17-publishing/5-containerize/" />
+  <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.teosoft.it/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://www.teosoft.it/css/highlight.min.css" /><link rel="stylesheet" href="https://www.teosoft.it/css/codeblock.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-24994854-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.teosoft.it/">Bluish capsule</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/post">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Notes" href="/note">Notes</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+              <div class="navlinks-children">
+                
+                  <a href="/project">Projects home</a>
+                
+                  <a href="/project/meccanici">Meccanici</a>
+                
+                  <a href="/project/datingapp">DatingApp</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Reviews" href="/review">Reviews</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Bluish capsule" href="https://www.teosoft.it/">
+            <img class="avatar-img" src="https://www.teosoft.it/img/avatar-icon.png" alt="Bluish capsule" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Bluish capsule</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="project-heading">
+              <h1>Containerize</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p></p>
+
+<p>All the files needed to build the container and compose can be found in the <a href="https://github.com/gabrieleteotino/DatingApp.git">DatingApp</a> repository.</p>
+
+<h2 id="install-docker-ce">Install Docker CE</h2>
+
+<p>Official <a href="https://docs.docker.com/install/linux/docker-ce/debian/">installation guide</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt update
+sudo apt-get install <span class="se">\
+</span><span class="se"></span>     apt-transport-https <span class="se">\
+</span><span class="se"></span>     ca-certificates <span class="se">\
+</span><span class="se"></span>     curl <span class="se">\
+</span><span class="se"></span>     gnupg2 <span class="se">\
+</span><span class="se"></span>     software-properties-common
+curl -fsSL https://download.docker.com/linux/debian/gpg <span class="p">|</span> sudo apt-key add -
+sudo add-apt-repository <span class="se">\
+</span><span class="se"></span>  <span class="s2">&#34;deb [arch=amd64] https://download.docker.com/linux/debian \
+</span><span class="s2">  </span><span class="k">$(</span>lsb_release -cs<span class="k">)</span><span class="s2"> \
+</span><span class="s2">  stable&#34;</span>
+sudo apt update
+sudo apt install docker-ce</code></pre></div>
+<p>Verify the installation by running the <strong>hello-world</strong> container</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo docker run hello-world</code></pre></div>
+<p>Configure Docker to be run by a non root user</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo groupadd docker
+sudo usermod -aG docker <span class="nv">$USER</span></code></pre></div>
+<p>Log out and log back in, then test running <strong>hello-world</strong> without sudo (on my machine this step required a full restart)</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker run hello-world</code></pre></div>
+<h2 id="extension">Extension</h2>
+
+<p>There is a good extension for vscode named <em>Docker</em> from <em>peterjausovec.vscode-docker</em></p>
+
+<h2 id="publish-the-application">Publish the application</h2>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> DatingApp.API
+dotnet publish -c Release --output build</code></pre></div>
+<h2 id="dockerfile">Dockerfile</h2>
+
+<p>The image <strong>microsoft/dotnet:runtime</strong> is for running an application in production. There is also an image for building and testing using Docker, but I will not use that here.</p>
+
+<p>In the root folder of <strong>DatingApp.API</strong> create a new file <strong>Dockerfile</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">FROM microsoft/dotnet:2.1-aspnetcore-runtime
+WORKDIR /app
+COPY ./bin/Release/netcoreapp2.1/publish/. ./
+
+ENTRYPOINT <span class="o">[</span><span class="s2">&#34;dotnet&#34;</span>, <span class="s2">&#34;DatingApp.API.dll&#34;</span><span class="o">]</span></code></pre></div>
+<p>Create the image (this will take a few minutes the first time it is run)</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker build -t teo/datingapp:runtime .</code></pre></div>
+<p>Run the image (this step will fail because there is no MySql)</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker run -it --rm -p <span class="m">5001</span>:80 --name datingapp_production teo/datingapp:runtime</code></pre></div>
+<h2 id="install-docker-compose">Install Docker Compose</h2>
+
+<p>To run <strong>DatingApp</strong> we need a database.</p>
+
+<p>To orchestrate two Docker containers, one for dotnet and one for MySql, we use Docker Compose.</p>
+
+<p>On Windows and Osx Compose is already installed with Docker.</p>
+
+<p>Official <a href="https://docs.docker.com/compose/install/">installation guide</a></p>
+
+<p>Check the latest Compose version on the <a href="https://github.com/docker/compose/releases">compose releases</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># Download compose (use the latest version)
+</span><span class="c1"></span>sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-<span class="k">$(</span>uname -s<span class="k">)</span>-<span class="k">$(</span>uname -m<span class="k">)</span> -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose</code></pre></div>
+<p>Test the installation.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker-compose --version</code></pre></div>
+<h2 id="prepare-the-database-script">Prepare the database script</h2>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">export</span> <span class="nv">ASPNETCORE_ENVIRONMENT</span><span class="o">=</span>Production
+dotnet ef migrations script --output <span class="s2">&#34;_MySql_Init_Script/generate_datingapp_db.sql&#34;</span></code></pre></div>
+<h2 id="add-compose-to-datingapp">Add Compose to DatingApp</h2>
+
+<p>Our compose will use a database <a href="https://hub.docker.com/_/mysql/">container</a> using MySql version 5.7 (I had some problems with version 8)</p>
+
+<p>Then configure the environment of the dotnet container to use a connection string to the new db.</p>
+
+<p>Create a file <strong>docker-compose.yml</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">version<span class="p">:</span><span class="w"> </span><span class="s1">&#39;3.0&#39;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>services<span class="p">:</span><span class="w">
+</span><span class="w">  </span>datingdb<span class="p">:</span><span class="w">
+</span><span class="w">    </span>image<span class="p">:</span><span class="w"> </span>mysql<span class="p">:</span><span class="m">5.7</span><span class="w">
+</span><span class="w">    </span>environment<span class="p">:</span><span class="w">
+</span><span class="w">      </span>MYSQL_RANDOM_ROOT_PASSWORD<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">      </span>MYSQL_DATABASE<span class="p">:</span><span class="w"> </span>datingappschema<span class="w">
+</span><span class="w">      </span>MYSQL_USER<span class="p">:</span><span class="w"> </span>datingappuser<span class="w">
+</span><span class="w">      </span>MYSQL_PASSWORD<span class="p">:</span><span class="w"> </span>password<span class="w">
+</span><span class="w">    </span>volumes<span class="p">:</span><span class="w">
+</span><span class="w">      </span>-<span class="w"> </span>dbdata<span class="p">:</span>/var/lib/mysql<span class="w">
+</span><span class="w">      </span>-<span class="w"> </span>./_MySql_Init_Script<span class="p">:</span>/docker-entrypoint-initdb.d<span class="w">
+</span><span class="w">
+</span><span class="w">  </span>datingapp<span class="p">:</span><span class="w">
+</span><span class="w">    </span>depends_on<span class="p">:</span><span class="w">
+</span><span class="w">      </span>-<span class="w"> </span>datingdb<span class="w">
+</span><span class="w">    </span>image<span class="p">:</span><span class="w"> </span>teo/datingapp<span class="p">:</span>runtime<span class="w">
+</span><span class="w">    </span>environment<span class="p">:</span><span class="w">
+</span><span class="w">      </span>-<span class="w"> </span>ASPNETCORE_ENVIRONMENT=Production<span class="w">
+</span><span class="w">      </span>-<span class="w"> </span>ConnectionStrings__DatingDbConnection=Server=datingdb;Database=datingappschema;Uid=datingappuser;Pwd=password;<span class="w">
+</span><span class="w">    </span>env_file<span class="p">:</span><span class="w"> </span>./datingapp.env<span class="w">
+</span><span class="w">    </span>build<span class="p">:</span><span class="w">
+</span><span class="w">      </span>context<span class="p">:</span><span class="w"> </span>.<span class="w">
+</span><span class="w">    </span>ports<span class="p">:</span><span class="w">
+</span><span class="w">      </span>-<span class="w"> </span><span class="s1">&#39;8080:80&#39;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>volumes<span class="p">:</span><span class="w">
+</span><span class="w">  </span>dbdata<span class="p">:</span></code></pre></div>
+<p>Create an evironment file to store secrets parameters</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cp datingapp_example.env datingapp.env</code></pre></div>
+<p>Open <strong>datingapp.env</strong> (it is in gitignore to avoid publishing) and insert the correct values</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># JWT toke secret
+</span><span class="c1"></span><span class="nv">AppSettings__TokenSecret</span><span class="o">=</span><span class="s2">&#34;tokensecretforproduction&#34;</span>
+
+<span class="c1"># Cloudinary
+</span><span class="c1"></span><span class="nv">CloudinarySettings__CloudName</span><span class="o">=</span><span class="s2">&#34;name&#34;</span>
+<span class="nv">CloudinarySettings__ApiKey</span><span class="o">=</span><span class="s2">&#34;key&#34;</span>
+<span class="nv">CloudinarySettings__ApiSecret</span><span class="o">=</span><span class="s2">&#34;secret&#34;</span></code></pre></div>
+<p>Run compose (the first run is a bit slow)</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker-compose up
+<span class="c1"># to force rebuild
+</span><span class="c1"></span>docker-compose up --build</code></pre></div>
+<p>Test the application.</p>
+
+<p>Stop compose</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker-compose down
+<span class="c1"># Stop and remove all volumes
+</span><span class="c1"></span>docker-compose down -v</code></pre></div>
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://www.teosoft.it/project/datingapp/17-publishing/4-configuring-environment/" data-toggle="tooltip" data-placement="top" title="Configuring environment">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/gabrieleteotino" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/2085504/deramko" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://www.teosoft.it/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://www.teosoft.it">Gabriele Teotino</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.teosoft.it/">Bluish capsule</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.teosoft.it/js/main.js"></script>
+<script src="https://www.teosoft.it/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://www.teosoft.it/js/load-photoswipe.js"></script>
+
+
+<script>
+  (function() {
+    var cx = '005185449088889757369:5o44h-2knna';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+  </body>
+</html>
+

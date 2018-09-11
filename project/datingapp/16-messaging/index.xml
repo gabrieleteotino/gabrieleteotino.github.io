@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Messaging on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/16-messaging/</link>
+    <description>Recent content in Messaging on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Aug 2018 11:22:44 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/16-messaging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mark message as read</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/7-mark-message-as-read/</link>
+      <pubDate>Mon, 06 Aug 2018 15:39:30 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/7-mark-message-as-read/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Delete messages SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/6-delete-messages-spa/</link>
+      <pubDate>Mon, 06 Aug 2018 15:07:46 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/6-delete-messages-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Delete messages API</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/6-delete-messages-api/</link>
+      <pubDate>Mon, 06 Aug 2018 14:38:45 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/6-delete-messages-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Send message</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/5-send-message/</link>
+      <pubDate>Mon, 06 Aug 2018 12:26:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/5-send-message/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Message thread</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/4-message-thread/</link>
+      <pubDate>Mon, 06 Aug 2018 09:52:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/4-message-thread/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Message component</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/3-message-component/</link>
+      <pubDate>Fri, 03 Aug 2018 12:45:53 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/3-message-component/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Message api</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/2-message-api/</link>
+      <pubDate>Thu, 02 Aug 2018 13:57:37 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/2-message-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Message entity</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/1-message-entity/</link>
+      <pubDate>Thu, 02 Aug 2018 11:24:33 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/1-message-entity/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

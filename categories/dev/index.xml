@@ -34,6 +34,196 @@
     </item>
     
     <item>
+      <title>Containerize</title>
+      <link>https://www.teosoft.it/project/datingapp/17-publishing/5-containerize/</link>
+      <pubDate>Fri, 10 Aug 2018 10:33:17 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/17-publishing/5-containerize/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuring environment</title>
+      <link>https://www.teosoft.it/project/datingapp/17-publishing/4-configuring-environment/</link>
+      <pubDate>Tue, 07 Aug 2018 15:12:55 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/17-publishing/4-configuring-environment/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using MySql</title>
+      <link>https://www.teosoft.it/project/datingapp/17-publishing/3-using-mysql/</link>
+      <pubDate>Tue, 07 Aug 2018 14:12:55 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/17-publishing/3-using-mysql/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NG production Build</title>
+      <link>https://www.teosoft.it/project/datingapp/17-publishing/2-ng-production-build/</link>
+      <pubDate>Tue, 07 Aug 2018 13:48:29 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/17-publishing/2-ng-production-build/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NG Build and Kestrel</title>
+      <link>https://www.teosoft.it/project/datingapp/17-publishing/1-ng-build-and-kestrel/</link>
+      <pubDate>Tue, 07 Aug 2018 11:16:12 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/17-publishing/1-ng-build-and-kestrel/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Publishing</title>
+      <link>https://www.teosoft.it/project/datingapp/17-publishing/</link>
+      <pubDate>Tue, 07 Aug 2018 11:12:43 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/17-publishing/</guid>
+      <description> Using NG Build Running from Kestrel Ahead of Time Compilation and Production Build Swapping the DB to MySQL Publishing to IIS Publishing to Linux Creating a Docker image Using Docker Compose  </description>
+    </item>
+    
+    <item>
+      <title>Mark message as read</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/7-mark-message-as-read/</link>
+      <pubDate>Mon, 06 Aug 2018 15:39:30 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/7-mark-message-as-read/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Delete messages SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/6-delete-messages-spa/</link>
+      <pubDate>Mon, 06 Aug 2018 15:07:46 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/6-delete-messages-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Delete messages API</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/6-delete-messages-api/</link>
+      <pubDate>Mon, 06 Aug 2018 14:38:45 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/6-delete-messages-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Send message</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/5-send-message/</link>
+      <pubDate>Mon, 06 Aug 2018 12:26:03 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/5-send-message/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Message thread</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/4-message-thread/</link>
+      <pubDate>Mon, 06 Aug 2018 09:52:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/4-message-thread/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Message component</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/3-message-component/</link>
+      <pubDate>Fri, 03 Aug 2018 12:45:53 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/3-message-component/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Message api</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/2-message-api/</link>
+      <pubDate>Thu, 02 Aug 2018 13:57:37 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/2-message-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Message entity</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/1-message-entity/</link>
+      <pubDate>Thu, 02 Aug 2018 11:24:33 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/1-message-entity/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Messaging</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/</link>
+      <pubDate>Thu, 02 Aug 2018 11:22:44 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/</guid>
+      <description>Send messages between users
+ Message entity CRUD Inbox, Outbox, Unread Messages Chat Mark as Read Deleting Messages  </description>
+    </item>
+    
+    <item>
+      <title>Filter users by like in the SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/5-filter-users-by-like-in-the-spa/</link>
+      <pubDate>Wed, 01 Aug 2018 15:01:10 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/5-filter-users-by-like-in-the-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Add like in the SPA</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/4-add-like-in-the-spa/</link>
+      <pubDate>Wed, 01 Aug 2018 13:17:15 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/4-add-like-in-the-spa/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Filter user by Like</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/3-filter-users-by-like/</link>
+      <pubDate>Wed, 01 Aug 2018 09:20:27 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/3-filter-users-by-like/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Like functionality in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/2-like-functionality-in-the-api/</link>
+      <pubDate>Tue, 31 Jul 2018 14:42:59 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/2-like-functionality-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>EF relationships</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/1-ef-relationships/</link>
+      <pubDate>Tue, 31 Jul 2018 10:47:38 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/1-ef-relationships/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Likes</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/</link>
+      <pubDate>Tue, 31 Jul 2018 10:44:19 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/</guid>
+      <description> Defining relationships in EF Using the Fluent API Adding the Likes functionality  </description>
+    </item>
+    
+    <item>
       <title>Git clone a specicific commit</title>
       <link>https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/</link>
       <pubDate>Fri, 27 Jul 2018 10:59:45 +0200</pubDate>
@@ -790,7 +980,7 @@ Extras
       <description>DatingApp is a SPA dating application written in Angular 5 with a webapi backend made in C# using .net core 2.1.
 The application is my opinionated version of this Udemy course
 The course used a previous version of .net core I fixed everything to use 2.1.0-rc1-final. After chapter 5 I also gained enough confidence with Angular to update it to version 6.
- Preparation Skeleton Securing Client authentication Error handling Third party components Routing Extending the API Building the UI Updating users Photo upload Registration Action filters Paging filtering and sorting  </description>
+ Preparation Skeleton Securing Client authentication Error handling Third party components Routing Extending the API Building the UI Updating users Photo upload Registration Action filters Paging filtering and sorting Likes Messaging Publishing  </description>
     </item>
     
     <item>

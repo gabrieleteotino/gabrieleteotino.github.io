@@ -23,6 +23,111 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/project/datingapp/17-publishing/5-containerize/</loc>
+    <lastmod>2018-08-10T10:33:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/17-publishing/4-configuring-environment/</loc>
+    <lastmod>2018-08-07T15:12:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/17-publishing/3-using-mysql/</loc>
+    <lastmod>2018-08-07T14:12:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/17-publishing/2-ng-production-build/</loc>
+    <lastmod>2018-08-07T13:48:29+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/17-publishing/1-ng-build-and-kestrel/</loc>
+    <lastmod>2018-08-07T11:16:12+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/17-publishing/</loc>
+    <lastmod>2018-08-07T11:12:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/16-messaging/7-mark-message-as-read/</loc>
+    <lastmod>2018-08-06T15:39:30+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/16-messaging/6-delete-messages-spa/</loc>
+    <lastmod>2018-08-06T15:07:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/16-messaging/6-delete-messages-api/</loc>
+    <lastmod>2018-08-06T14:38:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/16-messaging/5-send-message/</loc>
+    <lastmod>2018-08-06T12:26:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/16-messaging/4-message-thread/</loc>
+    <lastmod>2018-08-06T09:52:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/16-messaging/3-message-component/</loc>
+    <lastmod>2018-08-03T12:45:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/16-messaging/2-message-api/</loc>
+    <lastmod>2018-08-02T13:57:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/16-messaging/1-message-entity/</loc>
+    <lastmod>2018-08-02T11:24:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/16-messaging/</loc>
+    <lastmod>2018-08-02T11:22:44+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/15-likes/5-filter-users-by-like-in-the-spa/</loc>
+    <lastmod>2018-08-01T15:01:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/15-likes/4-add-like-in-the-spa/</loc>
+    <lastmod>2018-08-01T13:17:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/15-likes/3-filter-users-by-like/</loc>
+    <lastmod>2018-08-01T09:20:27+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/15-likes/2-like-functionality-in-the-api/</loc>
+    <lastmod>2018-07-31T14:42:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/15-likes/1-ef-relationships/</loc>
+    <lastmod>2018-07-31T10:47:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/datingapp/15-likes/</loc>
+    <lastmod>2018-07-31T10:44:19+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/</loc>
     <lastmod>2018-07-27T10:59:45+02:00</lastmod>
   </url>
@@ -718,7 +823,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/angular/</loc>
-    <lastmod>2018-07-27T10:47:06+02:00</lastmod>
+    <lastmod>2018-08-10T10:33:17+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -796,7 +901,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/c#/</loc>
-    <lastmod>2018-07-25T12:38:59+02:00</lastmod>
+    <lastmod>2018-08-10T10:33:17+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -838,6 +943,12 @@
   <url>
     <loc>https://www.teosoft.it/categories/command-line/</loc>
     <lastmod>2018-09-10T17:07:03+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/compose/</loc>
+    <lastmod>2018-08-10T10:33:17+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -915,13 +1026,19 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/ef/</loc>
-    <lastmod>2018-06-30T17:07:16+02:00</lastmod>
+    <lastmod>2018-08-02T11:24:33+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.teosoft.it/tags/encryption/</loc>
     <lastmod>2018-03-19T09:40:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/entity-framework/</loc>
+    <lastmod>2018-08-02T11:24:33+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1077,7 +1194,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/netcore/</loc>
-    <lastmod>2018-07-25T12:38:59+02:00</lastmod>
+    <lastmod>2018-08-10T10:33:17+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1107,7 +1224,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/ngx-bootstrap/</loc>
-    <lastmod>2018-07-25T13:10:46+02:00</lastmod>
+    <lastmod>2018-08-06T09:52:24+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1197,7 +1314,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/postman/</loc>
-    <lastmod>2018-07-25T12:38:59+02:00</lastmod>
+    <lastmod>2018-08-02T13:57:37+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1401,7 +1518,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/webapi/</loc>
-    <lastmod>2018-07-25T12:38:59+02:00</lastmod>
+    <lastmod>2018-08-10T10:33:17+02:00</lastmod>
     <priority>0</priority>
   </url>
   

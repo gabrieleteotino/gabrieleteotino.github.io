@@ -6,10 +6,28 @@
     <description>Recent content in Postman on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Jul 2018 12:38:59 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 02 Aug 2018 13:57:37 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/postman/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Message api</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/2-message-api/</link>
+      <pubDate>Thu, 02 Aug 2018 13:57:37 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/2-message-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Like functionality in the API</title>
+      <link>https://www.teosoft.it/project/datingapp/15-likes/2-like-functionality-in-the-api/</link>
+      <pubDate>Tue, 31 Jul 2018 14:42:59 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/15-likes/2-like-functionality-in-the-api/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Sorting in the API</title>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publishing on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/datingapp/17-publishing/</link>
+    <description>Recent content in Publishing on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Aug 2018 11:12:43 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/datingapp/17-publishing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Containerize</title>
+      <link>https://www.teosoft.it/project/datingapp/17-publishing/5-containerize/</link>
+      <pubDate>Fri, 10 Aug 2018 10:33:17 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/17-publishing/5-containerize/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuring environment</title>
+      <link>https://www.teosoft.it/project/datingapp/17-publishing/4-configuring-environment/</link>
+      <pubDate>Tue, 07 Aug 2018 15:12:55 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/17-publishing/4-configuring-environment/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using MySql</title>
+      <link>https://www.teosoft.it/project/datingapp/17-publishing/3-using-mysql/</link>
+      <pubDate>Tue, 07 Aug 2018 14:12:55 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/17-publishing/3-using-mysql/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NG production Build</title>
+      <link>https://www.teosoft.it/project/datingapp/17-publishing/2-ng-production-build/</link>
+      <pubDate>Tue, 07 Aug 2018 13:48:29 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/17-publishing/2-ng-production-build/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NG Build and Kestrel</title>
+      <link>https://www.teosoft.it/project/datingapp/17-publishing/1-ng-build-and-kestrel/</link>
+      <pubDate>Tue, 07 Aug 2018 11:16:12 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/17-publishing/1-ng-build-and-kestrel/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

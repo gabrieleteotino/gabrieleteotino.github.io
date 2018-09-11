@@ -50,7 +50,7 @@
     <item>
       <title>Angular</title>
       <link>https://www.teosoft.it/tags/angular/</link>
-      <pubDate>Fri, 27 Jul 2018 10:47:06 +0200</pubDate>
+      <pubDate>Fri, 10 Aug 2018 10:33:17 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/angular/</guid>
       <description></description>
@@ -158,7 +158,7 @@
     <item>
       <title>C#</title>
       <link>https://www.teosoft.it/tags/c#/</link>
-      <pubDate>Wed, 25 Jul 2018 12:38:59 +0200</pubDate>
+      <pubDate>Fri, 10 Aug 2018 10:33:17 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/c#/</guid>
       <description></description>
@@ -197,6 +197,15 @@
       <pubDate>Mon, 16 Jul 2018 11:07:05 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/cloudinary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compose</title>
+      <link>https://www.teosoft.it/tags/compose/</link>
+      <pubDate>Fri, 10 Aug 2018 10:33:17 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/compose/</guid>
       <description></description>
     </item>
     
@@ -275,7 +284,7 @@
     <item>
       <title>Ef</title>
       <link>https://www.teosoft.it/tags/ef/</link>
-      <pubDate>Sat, 30 Jun 2018 17:07:16 +0200</pubDate>
+      <pubDate>Thu, 02 Aug 2018 11:24:33 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/ef/</guid>
       <description></description>
@@ -287,6 +296,15 @@
       <pubDate>Mon, 19 Mar 2018 09:40:14 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/encryption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Entity Framework</title>
+      <link>https://www.teosoft.it/tags/entity-framework/</link>
+      <pubDate>Thu, 02 Aug 2018 11:24:33 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/entity-framework/</guid>
       <description></description>
     </item>
     
@@ -500,7 +518,7 @@
     <item>
       <title>Netcore</title>
       <link>https://www.teosoft.it/tags/netcore/</link>
-      <pubDate>Wed, 25 Jul 2018 12:38:59 +0200</pubDate>
+      <pubDate>Fri, 10 Aug 2018 10:33:17 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/netcore/</guid>
       <description></description>
@@ -536,7 +554,7 @@
     <item>
       <title>Ngx Bootstrap</title>
       <link>https://www.teosoft.it/tags/ngx-bootstrap/</link>
-      <pubDate>Wed, 25 Jul 2018 13:10:46 +0200</pubDate>
+      <pubDate>Mon, 06 Aug 2018 09:52:24 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/ngx-bootstrap/</guid>
       <description></description>
@@ -662,7 +680,7 @@
     <item>
       <title>Postman</title>
       <link>https://www.teosoft.it/tags/postman/</link>
-      <pubDate>Wed, 25 Jul 2018 12:38:59 +0200</pubDate>
+      <pubDate>Thu, 02 Aug 2018 13:57:37 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/postman/</guid>
       <description></description>
@@ -923,7 +941,7 @@
     <item>
       <title>Webapi</title>
       <link>https://www.teosoft.it/tags/webapi/</link>
-      <pubDate>Wed, 25 Jul 2018 12:38:59 +0200</pubDate>
+      <pubDate>Fri, 10 Aug 2018 10:33:17 +0200</pubDate>
       
       <guid>https://www.teosoft.it/tags/webapi/</guid>
       <description></description>

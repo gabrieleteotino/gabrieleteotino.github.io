@@ -6,10 +6,19 @@
     <description>Recent content in Ngx Bootstrap on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Jul 2018 13:10:46 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 06 Aug 2018 09:52:24 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/ngx-bootstrap/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Message thread</title>
+      <link>https://www.teosoft.it/project/datingapp/16-messaging/4-message-thread/</link>
+      <pubDate>Mon, 06 Aug 2018 09:52:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/datingapp/16-messaging/4-message-thread/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Sorting in the SPA</title>
