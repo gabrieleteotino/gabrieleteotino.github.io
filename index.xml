@@ -6,10 +6,149 @@
     <description>Recent content on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Sep 2018 17:07:03 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 02 Oct 2018 17:27:55 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Resume service</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/4-resume/3-resume-service/</link>
+      <pubDate>Tue, 02 Oct 2018 17:27:55 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/4-resume/3-resume-service/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resume model</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/4-resume/2-resume-model/</link>
+      <pubDate>Tue, 02 Oct 2018 17:23:46 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/4-resume/2-resume-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firebase Storage</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/4-resume/1-firebase-storage/</link>
+      <pubDate>Tue, 02 Oct 2018 17:21:55 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/4-resume/1-firebase-storage/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Job components</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/3-job/5-job-components/</link>
+      <pubDate>Tue, 25 Sep 2018 11:13:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/3-job/5-job-components/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Job service</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/3-job/4-job-service/</link>
+      <pubDate>Tue, 18 Sep 2018 14:56:10 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/3-job/4-job-service/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Job model</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/3-job/3-job-model/</link>
+      <pubDate>Tue, 18 Sep 2018 14:56:00 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/3-job/3-job-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Auth Guard</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/3-job/2-auth-guard/</link>
+      <pubDate>Tue, 18 Sep 2018 14:45:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/3-job/2-auth-guard/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Auth service</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/3-job/1-auth-service/</link>
+      <pubDate>Tue, 18 Sep 2018 13:57:19 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/3-job/1-auth-service/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firestore security</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/2-securing/2-firestore-security/</link>
+      <pubDate>Fri, 14 Sep 2018 15:31:27 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/2-securing/2-firestore-security/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firebase authentication</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/2-securing/1-firebase-authentication/</link>
+      <pubDate>Fri, 14 Sep 2018 14:20:48 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/2-securing/1-firebase-authentication/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Material</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/5-material/</link>
+      <pubDate>Fri, 14 Sep 2018 11:10:33 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/5-material/</guid>
+      <description>Install Use npm to install material, cdk and animations.
+@angular/material contains the material components.
+@angular/cdk has predefined behaviour for components, like overlay for menus and popups, table behaviour and others.
+@angular/animations contains animation (what else?) and it will use Web Animations API if supported by the browser or fallback to css.
+npm install @angular/material @angular/cdk @angular/animations --save Configure Create a new file src/app/material.module.ts where we will centralize all material related imports</description>
+    </item>
+    
+    <item>
+      <title>Angular</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/3-angular/</link>
+      <pubDate>Thu, 13 Sep 2018 16:03:33 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/3-angular/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>angularfire2</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/4-angularfire2/</link>
+      <pubDate>Thu, 13 Sep 2018 16:03:33 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/4-angularfire2/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firebase</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/2-firebase/</link>
+      <pubDate>Thu, 13 Sep 2018 15:52:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/2-firebase/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/1-github/</link>
+      <pubDate>Thu, 13 Sep 2018 15:45:07 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/1-github/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Clean PowerShell history</title>

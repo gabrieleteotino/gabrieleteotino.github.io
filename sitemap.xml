@@ -3,6 +3,106 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/4-resume/3-resume-service/</loc>
+    <lastmod>2018-10-02T17:27:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/4-resume/2-resume-model/</loc>
+    <lastmod>2018-10-02T17:23:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/4-resume/1-firebase-storage/</loc>
+    <lastmod>2018-10-02T17:21:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/4-resume/</loc>
+    <lastmod>2018-09-26T10:14:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/3-job/5-job-components/</loc>
+    <lastmod>2018-09-25T11:13:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/3-job/4-job-service/</loc>
+    <lastmod>2018-09-18T14:56:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/3-job/3-job-model/</loc>
+    <lastmod>2018-09-18T14:56:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/3-job/2-auth-guard/</loc>
+    <lastmod>2018-09-18T14:45:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/3-job/1-auth-service/</loc>
+    <lastmod>2018-09-18T13:57:19+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/3-job/</loc>
+    <lastmod>2018-09-17T11:19:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/2-securing/2-firestore-security/</loc>
+    <lastmod>2018-09-14T15:31:27+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/2-securing/1-firebase-authentication/</loc>
+    <lastmod>2018-09-14T14:20:48+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/1-skeleton/5-material/</loc>
+    <lastmod>2018-09-14T11:10:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/2-securing/</loc>
+    <lastmod>2018-09-14T10:42:52+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/1-skeleton/3-angular/</loc>
+    <lastmod>2018-09-13T16:03:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/1-skeleton/4-angularfire2/</loc>
+    <lastmod>2018-09-13T16:03:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/1-skeleton/2-firebase/</loc>
+    <lastmod>2018-09-13T15:52:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/1-skeleton/1-github/</loc>
+    <lastmod>2018-09-13T15:45:07+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/1-skeleton/</loc>
+    <lastmod>2018-09-13T15:43:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/jobsearchlog/</loc>
+    <lastmod>2018-09-13T13:39:24+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/note/2018-09-10-clear-powershell-history/</loc>
     <lastmod>2018-09-10T17:07:03+02:00</lastmod>
   </url>
@@ -823,7 +923,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/angular/</loc>
-    <lastmod>2018-08-10T10:33:17+02:00</lastmod>
+    <lastmod>2018-10-02T17:27:55+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -883,7 +983,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-09-10T17:07:03+02:00</lastmod>
+    <lastmod>2018-10-02T17:27:55+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -996,7 +1096,7 @@
   
   <url>
     <loc>https://www.teosoft.it/categories/dev/</loc>
-    <lastmod>2018-09-03T11:36:11+02:00</lastmod>
+    <lastmod>2018-10-02T17:27:55+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1055,6 +1155,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/firebase/</loc>
+    <lastmod>2018-10-02T17:27:55+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/ghostscript/</loc>
     <lastmod>2018-06-21T11:00:27+02:00</lastmod>
     <priority>0</priority>
@@ -1074,7 +1180,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/github/</loc>
-    <lastmod>2018-07-27T10:59:45+02:00</lastmod>
+    <lastmod>2018-09-13T15:45:07+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1183,6 +1289,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/mac/</loc>
     <lastmod>2018-08-31T14:25:13+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/material/</loc>
+    <lastmod>2018-09-26T10:14:37+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1435,6 +1547,12 @@
   <url>
     <loc>https://www.teosoft.it/categories/tools/</loc>
     <lastmod>2018-08-31T14:25:13+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/typescript/</loc>
+    <lastmod>2018-10-02T17:27:55+02:00</lastmod>
     <priority>0</priority>
   </url>
   

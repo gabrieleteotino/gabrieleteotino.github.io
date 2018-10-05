@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skeleton on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/</link>
+    <description>Recent content in Skeleton on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Sep 2018 15:43:59 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/jobsearchlog/1-skeleton/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Material</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/5-material/</link>
+      <pubDate>Fri, 14 Sep 2018 11:10:33 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/5-material/</guid>
+      <description>Install Use npm to install material, cdk and animations.
+@angular/material contains the material components.
+@angular/cdk has predefined behaviour for components, like overlay for menus and popups, table behaviour and others.
+@angular/animations contains animation (what else?) and it will use Web Animations API if supported by the browser or fallback to css.
+npm install @angular/material @angular/cdk @angular/animations --save Configure Create a new file src/app/material.module.ts where we will centralize all material related imports</description>
+    </item>
+    
+    <item>
+      <title>Angular</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/3-angular/</link>
+      <pubDate>Thu, 13 Sep 2018 16:03:33 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/3-angular/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>angularfire2</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/4-angularfire2/</link>
+      <pubDate>Thu, 13 Sep 2018 16:03:33 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/4-angularfire2/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firebase</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/2-firebase/</link>
+      <pubDate>Thu, 13 Sep 2018 15:52:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/2-firebase/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/1-github/</link>
+      <pubDate>Thu, 13 Sep 2018 15:45:07 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/1-github/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

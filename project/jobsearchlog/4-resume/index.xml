@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resume on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/jobsearchlog/4-resume/</link>
+    <description>Recent content in Resume on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Sep 2018 10:14:37 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/jobsearchlog/4-resume/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Resume service</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/4-resume/3-resume-service/</link>
+      <pubDate>Tue, 02 Oct 2018 17:27:55 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/4-resume/3-resume-service/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resume model</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/4-resume/2-resume-model/</link>
+      <pubDate>Tue, 02 Oct 2018 17:23:46 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/4-resume/2-resume-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firebase Storage</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/4-resume/1-firebase-storage/</link>
+      <pubDate>Tue, 02 Oct 2018 17:21:55 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/4-resume/1-firebase-storage/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

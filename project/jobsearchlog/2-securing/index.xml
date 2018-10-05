@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Securing on Bluish capsule</title>
+    <link>https://www.teosoft.it/project/jobsearchlog/2-securing/</link>
+    <description>Recent content in Securing on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Sep 2018 10:42:52 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/project/jobsearchlog/2-securing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Firestore security</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/2-securing/2-firestore-security/</link>
+      <pubDate>Fri, 14 Sep 2018 15:31:27 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/2-securing/2-firestore-security/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firebase authentication</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/2-securing/1-firebase-authentication/</link>
+      <pubDate>Fri, 14 Sep 2018 14:20:48 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/2-securing/1-firebase-authentication/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

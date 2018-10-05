@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firebase on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/firebase/</link>
+    <description>Recent content in Firebase on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Oct 2018 17:27:55 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Resume service</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/4-resume/3-resume-service/</link>
+      <pubDate>Tue, 02 Oct 2018 17:27:55 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/4-resume/3-resume-service/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resume model</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/4-resume/2-resume-model/</link>
+      <pubDate>Tue, 02 Oct 2018 17:23:46 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/4-resume/2-resume-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firebase Storage</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/4-resume/1-firebase-storage/</link>
+      <pubDate>Tue, 02 Oct 2018 17:21:55 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/4-resume/1-firebase-storage/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/4-resume/</link>
+      <pubDate>Wed, 26 Sep 2018 10:14:37 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/4-resume/</guid>
+      <description>Resume is a firestore entity linked to a storage file
+ Resume model Resume service Resume component Resumes storage upload  </description>
+    </item>
+    
+    <item>
+      <title>Job components</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/3-job/5-job-components/</link>
+      <pubDate>Tue, 25 Sep 2018 11:13:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/3-job/5-job-components/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Job service</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/3-job/4-job-service/</link>
+      <pubDate>Tue, 18 Sep 2018 14:56:10 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/3-job/4-job-service/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Job model</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/3-job/3-job-model/</link>
+      <pubDate>Tue, 18 Sep 2018 14:56:00 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/3-job/3-job-model/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Auth Guard</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/3-job/2-auth-guard/</link>
+      <pubDate>Tue, 18 Sep 2018 14:45:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/3-job/2-auth-guard/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Auth service</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/3-job/1-auth-service/</link>
+      <pubDate>Tue, 18 Sep 2018 13:57:19 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/3-job/1-auth-service/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Job</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/3-job/</link>
+      <pubDate>Mon, 17 Sep 2018 11:19:10 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/3-job/</guid>
+      <description>The Job is the central entity of the application
+ Job model Job service JobList component JobDetail component  </description>
+    </item>
+    
+    <item>
+      <title>Firestore security</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/2-securing/2-firestore-security/</link>
+      <pubDate>Fri, 14 Sep 2018 15:31:27 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/2-securing/2-firestore-security/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firebase authentication</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/2-securing/1-firebase-authentication/</link>
+      <pubDate>Fri, 14 Sep 2018 14:20:48 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/2-securing/1-firebase-authentication/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Securing</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/2-securing/</link>
+      <pubDate>Fri, 14 Sep 2018 10:42:52 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/2-securing/</guid>
+      <description>Authentication system
+ user login firebase permission  </description>
+    </item>
+    
+    <item>
+      <title>angularfire2</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/4-angularfire2/</link>
+      <pubDate>Thu, 13 Sep 2018 16:03:33 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/4-angularfire2/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firebase</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/2-firebase/</link>
+      <pubDate>Thu, 13 Sep 2018 15:52:14 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/2-firebase/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Skeleton</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/1-skeleton/</link>
+      <pubDate>Thu, 13 Sep 2018 15:43:59 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/1-skeleton/</guid>
+      <description>Create a simple skeleton with minimal components to test the basic pieces
+ github repository firebase project angular SPA material components  </description>
+    </item>
+    
+    <item>
+      <title>JobSearchLog</title>
+      <link>https://www.teosoft.it/project/jobsearchlog/</link>
+      <pubDate>Thu, 13 Sep 2018 13:39:24 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/project/jobsearchlog/</guid>
+      <description>JobSearchLog is a SPA application written in Angular 6 with a material interface using Google Firebase as a backend.
+The application can track job applications, interviews, multiple copy of the resume and cover letters and all the stuff that is usually done when searching for a new job.
+ Skeleton Securing Job Resume  </description>
+    </item>
+    
+  </channel>
+</rss>

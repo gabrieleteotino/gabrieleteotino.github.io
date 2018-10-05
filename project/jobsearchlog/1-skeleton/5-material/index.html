@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Material</title>
+  <meta property="og:title" content="Material" />
+  <meta name="twitter:title" content="Material" />
+  <meta name="description" content="Install Use npm to install material, cdk and animations.
+@angular/material contains the material components.
+@angular/cdk has predefined behaviour for components, like overlay for menus and popups, table behaviour and others.
+@angular/animations contains animation (what else?) and it will use Web Animations API if supported by the browser or fallback to css.
+npm install @angular/material @angular/cdk @angular/animations --save Configure Create a new file src/app/material.module.ts where we will centralize all material related imports">
+  <meta property="og:description" content="Install Use npm to install material, cdk and animations.
+@angular/material contains the material components.
+@angular/cdk has predefined behaviour for components, like overlay for menus and popups, table behaviour and others.
+@angular/animations contains animation (what else?) and it will use Web Animations API if supported by the browser or fallback to css.
+npm install @angular/material @angular/cdk @angular/animations --save Configure Create a new file src/app/material.module.ts where we will centralize all material related imports">
+  <meta name="twitter:description" content="Install Use npm to install material, cdk and animations.
+@angular/material contains the material components.
+@angular/cdk has predefined behaviour for components, like overlay for menus and popups, …">
+  <meta name="author" content="Gabriele Teotino"/>
+  <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://www.teosoft.it/project/jobsearchlog/1-skeleton/5-material/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bluish capsule" />
+
+  <meta name="generator" content="Hugo 0.36.1" />
+  <link rel="canonical" href="https://www.teosoft.it/project/jobsearchlog/1-skeleton/5-material/" />
+  <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.teosoft.it/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://www.teosoft.it/css/highlight.min.css" /><link rel="stylesheet" href="https://www.teosoft.it/css/codeblock.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-24994854-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.teosoft.it/">Bluish capsule</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/post">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Notes" href="/note">Notes</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+              <div class="navlinks-children">
+                
+                  <a href="/project">Projects home</a>
+                
+                  <a href="/project/meccanici">Meccanici</a>
+                
+                  <a href="/project/datingapp">DatingApp</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Reviews" href="/review">Reviews</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Bluish capsule" href="https://www.teosoft.it/">
+            <img class="avatar-img" src="https://www.teosoft.it/img/avatar-icon.png" alt="Bluish capsule" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Bluish capsule</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="project-heading">
+              <h1>Material</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<!-- more -->
+
+<h2 id="install">Install</h2>
+
+<p>Use npm to install material, cdk and animations.</p>
+
+<p><strong>@angular/material</strong> contains the material components.</p>
+
+<p><strong>@angular/cdk</strong> has predefined behaviour for components, like overlay for menus and popups, table behaviour and others.</p>
+
+<p><strong>@angular/animations</strong> contains animation (what else?) and it will use Web Animations API if supported by the browser or fallback to css.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">npm install @angular/material @angular/cdk @angular/animations --save</code></pre></div>
+<h2 id="configure">Configure</h2>
+
+<p>Create a new file <strong>src/app/material.module.ts</strong> where we will centralize all material related imports</p>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="p">{</span><span class="nx">NgModule</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+
+<span class="kd">@NgModule</span><span class="p">({</span>
+  <span class="nx">imports</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">exports</span><span class="o">:</span> <span class="p">[]</span>
+<span class="p">})</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">MaterialModule</span> <span class="p">{}</span></code></pre></div>
+<p>Open <strong>app.module.ts</strong> and import animations and <strong>MaterialModule</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="p">...</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">BrowserAnimationsModule</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@angular/platform-browser/animations&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">MaterialModule</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./material.module&#39;</span><span class="p">;</span>
+<span class="p">...</span>
+<span class="nx">imports</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">...</span>
+    <span class="nx">BrowserAnimationsModule</span><span class="p">,</span>
+    <span class="nx">MaterialModule</span>
+    <span class="p">...</span></code></pre></div>
+<p>Add one of the four predefined themes</p>
+
+<ul>
+<li>deeppurple-amber.css</li>
+<li>indigo-pink.css</li>
+<li>pink-bluegrey.css</li>
+<li>purple-green.css</li>
+</ul>
+
+<p>Open <strong>styles.css</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* You can add global styles to this file, and also import other style files */</span>
+<span class="p">@</span><span class="k">import</span> <span class="s1">&#39;~@angular/material/prebuilt-themes/deeppurple-amber.css&#39;</span><span class="p">;</span></code></pre></div>
+<p>Add Material Icons, open <strong>index.html</strong> and add the font</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fonts.googleapis.com/icon?family=Material+Icons&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p"></span><span class="p">&gt;</span></code></pre></div>
+<p>Test the application</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ng serve</code></pre></div>
+<h2 id="navigation-and-list-test">Navigation and list test</h2>
+
+<p>Open <strong>material.module.ts</strong> and imports for some components</p>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="p">{</span> <span class="nx">NgModule</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span>
+  <span class="nx">MatSidenavModule</span><span class="p">,</span>
+  <span class="nx">MatToolbarModule</span><span class="p">,</span>
+  <span class="nx">MatIconModule</span><span class="p">,</span>
+  <span class="nx">MatListModule</span>
+<span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@angular/material&#39;</span><span class="p">;</span>
+
+<span class="kd">@NgModule</span><span class="p">({</span>
+  <span class="nx">imports</span><span class="o">:</span> <span class="p">[</span><span class="nx">MatSidenavModule</span><span class="p">,</span> <span class="nx">MatToolbarModule</span><span class="p">,</span> <span class="nx">MatIconModule</span><span class="p">,</span> <span class="nx">MatListModule</span><span class="p">],</span>
+  <span class="nx">exports</span><span class="o">:</span> <span class="p">[</span><span class="nx">MatSidenavModule</span><span class="p">,</span> <span class="nx">MatToolbarModule</span><span class="p">,</span> <span class="nx">MatIconModule</span><span class="p">,</span> <span class="nx">MatListModule</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">MaterialModule</span> <span class="p">{}</span></code></pre></div>
+<p>Open <strong>app.component.html</strong> and add a toolbar and change the list of items loaded from Firebase</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">mat-toolbar</span> <span class="na">color</span><span class="o">=</span><span class="s">&#34;primary&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">mat-toolbar-row</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span><span class="p"></span><span class="p">&gt;</span>JobSearchLog<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toolbar-spacer&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">mat-icon</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toolbar-icon&#34;</span><span class="p"></span><span class="p">&gt;</span>mail_outline<span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-icon</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">mat-icon</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toolbar-icon&#34;</span><span class="p"></span><span class="p">&gt;</span>account_box<span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-icon</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-toolbar-row</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-toolbar</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">mat-list</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">mat-list-item</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let item of items | async&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">mat-icon</span> <span class="na">matListIcon</span><span class="p"></span><span class="p">&gt;</span>done<span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-icon</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">matLine</span><span class="p"></span><span class="p">&gt;</span> {{item.name}} <span class="p">&lt;</span><span class="p">/</span><span class="nt">h3</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-list-item</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-list</span><span class="p">&gt;</span></code></pre></div>
+<p>Open <strong>app.component.css</strong> and add some styling</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">toolbar-icon</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">toolbar-spacer</span> <span class="p">{</span>
+  <span class="k">flex</span><span class="p">:</span> <span class="mi">1</span> <span class="mi">1</span> <span class="kc">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">mat-list-icon</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.54</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<p>Test the application.</p>
+
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://www.teosoft.it/project/jobsearchlog/1-skeleton/3-angular/" data-toggle="tooltip" data-placement="top" title="Angular">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/gabrieleteotino" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/2085504/deramko" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://www.teosoft.it/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://www.teosoft.it">Gabriele Teotino</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.teosoft.it/">Bluish capsule</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.teosoft.it/js/main.js"></script>
+<script src="https://www.teosoft.it/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://www.teosoft.it/js/load-photoswipe.js"></script>
+
+
+<script>
+  (function() {
+    var cx = '005185449088889757369:5o44h-2knna';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+  </body>
+</html>
+
