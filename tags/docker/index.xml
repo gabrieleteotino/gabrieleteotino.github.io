@@ -6,10 +6,21 @@
     <description>Recent content in Docker on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Sep 2018 11:36:11 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 05 Feb 2019 13:01:25 +0100</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nextcloud using docker on ovh vps</title>
+      <link>https://www.teosoft.it/post/2019-02-05-nextcloud-using-docker-on-ovh-vps/</link>
+      <pubDate>Tue, 05 Feb 2019 13:01:25 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2019-02-05-nextcloud-using-docker-on-ovh-vps/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://nextcloud.com/&#34;&gt;Nextcloud&lt;/a&gt; is a private cloud service platform. I plan to use it for personal and family usage, just to move some of my personal data away from third parties.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>VSTS minimal docker build agent</title>

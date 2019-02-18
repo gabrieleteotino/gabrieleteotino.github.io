@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/project/ngrx-in-depth/1-introduction/</loc>
+    <lastmod>2019-02-15T15:05:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/project/ngrx-in-depth/</loc>
+    <lastmod>2019-02-15T14:41:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/post/2019-02-05-nextcloud-using-docker-on-ovh-vps/</loc>
+    <lastmod>2019-02-05T13:01:25+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/project/jobsearchlog/4-resume/3-resume-service/</loc>
     <lastmod>2018-10-02T17:27:55+02:00</lastmod>
   </url>
@@ -923,7 +938,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/angular/</loc>
-    <lastmod>2018-10-02T17:27:55+02:00</lastmod>
+    <lastmod>2019-02-15T15:05:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -983,7 +998,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2018-10-02T17:27:55+02:00</lastmod>
+    <lastmod>2019-02-05T13:01:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1024,13 +1039,13 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/cloud/</loc>
-    <lastmod>2018-09-03T11:36:11+02:00</lastmod>
+    <lastmod>2019-02-05T13:01:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.teosoft.it/categories/cloud/</loc>
-    <lastmod>2018-02-28T11:51:41+01:00</lastmod>
+    <lastmod>2019-02-05T13:01:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1084,7 +1099,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/debian/</loc>
-    <lastmod>2018-04-06T11:40:03+02:00</lastmod>
+    <lastmod>2019-02-05T13:01:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1096,7 +1111,7 @@
   
   <url>
     <loc>https://www.teosoft.it/categories/dev/</loc>
-    <lastmod>2018-10-02T17:27:55+02:00</lastmod>
+    <lastmod>2019-02-15T15:05:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1120,7 +1135,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/docker/</loc>
-    <lastmod>2018-09-03T11:36:11+02:00</lastmod>
+    <lastmod>2019-02-05T13:01:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1270,7 +1285,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/linux/</loc>
-    <lastmod>2018-08-31T14:25:13+02:00</lastmod>
+    <lastmod>2019-02-05T13:01:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1317,6 +1332,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/nextcloud/</loc>
+    <lastmod>2019-02-05T13:01:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/ng/</loc>
     <lastmod>2018-05-30T22:03:22+02:00</lastmod>
     <priority>0</priority>
@@ -1331,6 +1352,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/nginx/</loc>
     <lastmod>2018-03-13T10:46:21+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/ngrx/</loc>
+    <lastmod>2019-02-15T15:05:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1385,6 +1412,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/opensource/</loc>
     <lastmod>2018-03-15T14:54:48+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/ovh/</loc>
+    <lastmod>2019-02-05T13:01:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1552,7 +1585,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/typescript/</loc>
-    <lastmod>2018-10-02T17:27:55+02:00</lastmod>
+    <lastmod>2019-02-15T15:05:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   

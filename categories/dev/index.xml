@@ -6,10 +6,34 @@
     <description>Recent content in Dev on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Oct 2018 17:27:55 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 15 Feb 2019 15:05:11 +0100</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/categories/dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://www.teosoft.it/project/ngrx-in-depth/1-introduction/</link>
+      <pubDate>Fri, 15 Feb 2019 15:05:11 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/project/ngrx-in-depth/1-introduction/</guid>
+      <description>Clone the cource code
+cd dev git clone https://github.com/angular-university/angular-ngrx-course.git cd angular-ngrx-course/ The material for the lessons is available in different branches (git branch -a)
+ 1-auth 1-auth-finished 2-entity 2-entity-finished 3-lessons 3-lessons-finished  Select the appropriate branch
+git checkout -b 1-auth origin/1-auth Install the dependencies and start the local express server
+npm install npm run server Then in a new console
+npm start Finally open Chrome and navigate to http://localhost:4200/</description>
+    </item>
+    
+    <item>
+      <title>NgRx in depth</title>
+      <link>https://www.teosoft.it/project/ngrx-in-depth/</link>
+      <pubDate>Fri, 15 Feb 2019 14:41:18 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/project/ngrx-in-depth/</guid>
+      <description>Notes and code snippets for the course NgRx In Depth
+ Introduction Store in detail Side Effects Management Store freeze Entity and Effects Pagination  </description>
+    </item>
     
     <item>
       <title>Resume service</title>

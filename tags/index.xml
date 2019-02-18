@@ -50,7 +50,7 @@
     <item>
       <title>Angular</title>
       <link>https://www.teosoft.it/tags/angular/</link>
-      <pubDate>Tue, 02 Oct 2018 17:27:55 +0200</pubDate>
+      <pubDate>Fri, 15 Feb 2019 15:05:11 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/angular/</guid>
       <description></description>
@@ -185,7 +185,7 @@
     <item>
       <title>Cloud</title>
       <link>https://www.teosoft.it/tags/cloud/</link>
-      <pubDate>Mon, 03 Sep 2018 11:36:11 +0200</pubDate>
+      <pubDate>Tue, 05 Feb 2019 13:01:25 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/cloud/</guid>
       <description></description>
@@ -248,7 +248,7 @@
     <item>
       <title>Debian</title>
       <link>https://www.teosoft.it/tags/debian/</link>
-      <pubDate>Fri, 06 Apr 2018 11:40:03 +0200</pubDate>
+      <pubDate>Tue, 05 Feb 2019 13:01:25 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/debian/</guid>
       <description></description>
@@ -275,7 +275,7 @@
     <item>
       <title>Docker</title>
       <link>https://www.teosoft.it/tags/docker/</link>
-      <pubDate>Mon, 03 Sep 2018 11:36:11 +0200</pubDate>
+      <pubDate>Tue, 05 Feb 2019 13:01:25 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/docker/</guid>
       <description></description>
@@ -491,7 +491,7 @@
     <item>
       <title>Linux</title>
       <link>https://www.teosoft.it/tags/linux/</link>
-      <pubDate>Fri, 31 Aug 2018 14:25:13 +0200</pubDate>
+      <pubDate>Tue, 05 Feb 2019 13:01:25 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/linux/</guid>
       <description></description>
@@ -543,6 +543,15 @@
     </item>
     
     <item>
+      <title>Nextcloud</title>
+      <link>https://www.teosoft.it/tags/nextcloud/</link>
+      <pubDate>Tue, 05 Feb 2019 13:01:25 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/nextcloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ng</title>
       <link>https://www.teosoft.it/tags/ng/</link>
       <pubDate>Wed, 30 May 2018 22:03:22 +0200</pubDate>
@@ -566,6 +575,15 @@
       <pubDate>Tue, 13 Mar 2018 10:46:21 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ngrx</title>
+      <link>https://www.teosoft.it/tags/ngrx/</link>
+      <pubDate>Fri, 15 Feb 2019 15:05:11 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/ngrx/</guid>
       <description></description>
     </item>
     
@@ -647,6 +665,15 @@
       <pubDate>Thu, 15 Mar 2018 14:54:48 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/opensource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ovh</title>
+      <link>https://www.teosoft.it/tags/ovh/</link>
+      <pubDate>Tue, 05 Feb 2019 13:01:25 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/tags/ovh/</guid>
       <description></description>
     </item>
     
@@ -851,7 +878,7 @@
     <item>
       <title>Typescript</title>
       <link>https://www.teosoft.it/tags/typescript/</link>
-      <pubDate>Tue, 02 Oct 2018 17:27:55 +0200</pubDate>
+      <pubDate>Fri, 15 Feb 2019 15:05:11 +0100</pubDate>
       
       <guid>https://www.teosoft.it/tags/typescript/</guid>
       <description></description>
