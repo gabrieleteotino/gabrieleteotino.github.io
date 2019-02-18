@@ -218,6 +218,46 @@ ga('send', 'pageview');
         <div class="posts-list">
           
             <article class="post-preview">
+              <a href="https://www.teosoft.it/post/2018-02-23-ssh-keys-for-github/">
+                <h2 class="post-title">SSH Keys for Github</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    How to authenticate to github using SSH keys
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on February 23, 2018
+              </p>
+              <div class="post-entry">
+                
+                  <p>The complete instruction on <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Github</a></p>
+
+<p>Create a key in the default location without any passphrase (or add one if you like). Then add it to the ssh-agent.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;gabriele@teosoft.it&#34;</span>
+ssh-add ~/.ssh/id_rsa</code></pre></div>
+<p>Copy the key into the clipboard</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cat ~/.ssh/id_rsa.pub</code></pre></div>
+<p>Go into your profile and select <a href="https://github.com/settings/keys">SSH and GPG keys</a>, click <strong>Add SSH key</strong>, add a description and paste the key.</p>
+
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://www.teosoft.it//tags/ssh/">ssh</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/github/">github</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="https://www.teosoft.it/post/2018-02-21-hugo-configure-a-site-part-1/">
                 <h2 class="post-title">Configure a site using Hugo - part 1</h2>
 

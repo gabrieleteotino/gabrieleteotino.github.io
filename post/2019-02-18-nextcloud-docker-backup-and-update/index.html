@@ -5,23 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Nextcloud using docker on ovh vps</title>
-  <meta property="og:title" content="Nextcloud using docker on ovh vps" />
-  <meta name="twitter:title" content="Nextcloud using docker on ovh vps" />
-  <meta name="description" content="Installing Nexctcloud personal cloud server using docker on a virtual private server hosted by OVH">
-  <meta property="og:description" content="Installing Nexctcloud personal cloud server using docker on a virtual private server hosted by OVH">
-  <meta name="twitter:description" content="Installing Nexctcloud personal cloud server using docker on a virtual private server hosted by OVH">
+  <title>Nextcloud using docker backup and update</title>
+  <meta property="og:title" content="Nextcloud using docker backup and update" />
+  <meta name="twitter:title" content="Nextcloud using docker backup and update" />
+  <meta name="description" content="Backup and update a Nexctcloud personal cloud server using docker">
+  <meta property="og:description" content="Backup and update a Nexctcloud personal cloud server using docker">
+  <meta name="twitter:description" content="Backup and update a Nexctcloud personal cloud server using docker">
   <meta name="author" content="Gabriele Teotino"/>
   <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://www.teosoft.it/post/2019-02-05-nextcloud-using-docker-on-ovh-vps/" />
+  <meta property="og:url" content="https://www.teosoft.it/post/2019-02-18-nextcloud-docker-backup-and-update/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
   <meta name="generator" content="Hugo 0.36.1" />
-  <link rel="canonical" href="https://www.teosoft.it/post/2019-02-05-nextcloud-using-docker-on-ovh-vps/" />
+  <link rel="canonical" href="https://www.teosoft.it/post/2019-02-18-nextcloud-docker-backup-and-update/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -207,21 +207,21 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Nextcloud using docker on ovh vps</h1>
+              <h1>Nextcloud using docker backup and update</h1>
                 
                   
-                    <h2 class="post-subheading">Installing Nexctcloud personal cloud server using docker on a virtual private server hosted by OVH</h2>
+                    <h2 class="post-subheading">Backup and update a Nexctcloud personal cloud server using docker</h2>
                   
                 
                 
                   <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on February 5, 2019
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on February 18, 2019
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 2 minutes (365 words)
+  <i class="fa fa-clock-o"></i> 2 minutes (298 words)
   
   
 </span>
@@ -241,84 +241,70 @@ ga('send', 'pageview');
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p><a href="https://nextcloud.com/">Nextcloud</a> is a private cloud service platform. I plan to use it for personal and family usage, just to move some of my personal data away from third parties.</p>
+        <p>Backup and update an instance of Nextcloud installed via docker compose.</p>
 
 <p></p>
 
-<p>Official build for docker <a href="https://github.com/nextcloud/docker">source</a> and <a href="https://hub.docker.com/_/nextcloud/">dockerhub</a>.</p>
+<h2 id="backup">Backup</h2>
 
-<p>There is a good starting example in github (the postgres version has an open bug and the workaround is not worth my time).</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">mkdir nextcloud
-<span class="nb">cd</span> nextcloud
-mkdir git
-<span class="nb">cd</span> git
-git clone https://github.com/nextcloud/docker.git
-cp docker/.examples/docker-compose/with-nginx-proxy/mariadb/apache/* ../ -r
-<span class="nb">cd</span> ..</code></pre></div>
-<p>Now in the folder <em>~/nextcloud</em> we have the git clone and the directory. It is possible to remove the git folder.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">rm -r git</code></pre></div>
-<p>Edit <strong>db.env</strong> and put a new strong password for the database user</p>
-
-<p>Edit <strong>docker-compose.yml</strong> and</p>
+<p>The volumes for my Nextcloud installation are</p>
 
 <ul>
-<li>add a strong password for <em>MYSQL_ROOT_PASSWORD=</em></li>
-<li>insert your nextcloud domain behind <em>VIRTUAL_HOST=</em> and <em>LETSENCRYPT_HOST=</em> (yes the same cloud.domain.tld in both fields)</li>
-<li>enter a valid email behind <em>LETSENCRYPT_EMAIL=</em></li>
+<li>nextcloud_db (242Mb)</li>
+<li>nextcloud_nextcloud (222Mb)</li>
+<li>nextcloud_certs</li>
+<li>nextcloud_html</li>
+<li>nextcloud_vhost.d</li>
 </ul>
 
-<p>Build the images</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker-compose build --pull</code></pre></div>
-<p>Run</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker-compose up -d</code></pre></div>
-<p>Open the browser to the address specified in <em>VIRTUAL_HOST=</em> and create an admin user.</p>
+<p>The Nextcloud instance is just installed and there is almost no user data.</p>
 
-<h2 id="post-install">Post install</h2>
+<p>To backup we need to stop the server and leave all the volumes</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> ~/nextcloud
+docker-compose down</code></pre></div>
+<p>Now the volumes are all <em>unused</em>.</p>
 
-<h3 id="bigint-fix">Bigint fix</h3>
+<p>The generic template to backup a volume is</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker run --rm <span class="se">\
+</span><span class="se"></span>  --volume <span class="o">[</span>DOCKER_COMPOSE_PREFIX<span class="o">]</span>_<span class="o">[</span>VOLUME_NAME<span class="o">]</span>:/<span class="o">[</span>TEMPORARY_DIRECTORY_TO_STORE_VOLUME_DATA<span class="o">]</span> <span class="se">\
+</span><span class="se"></span>  --volume <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/<span class="o">[</span>TEMPORARY_DIRECTORY_TO_STORE_BACKUP_FILE<span class="o">]</span> <span class="se">\
+</span><span class="se"></span>  ubuntu <span class="se">\
+</span><span class="se"></span>  tar cvf /<span class="o">[</span>TEMPORARY_DIRECTORY_TO_STORE_BACKUP_FILE<span class="o">]</span>/<span class="o">[</span>BACKUP_FILENAME<span class="o">]</span>.tar /<span class="o">[</span>TEMPORARY_DIRECTORY_TO_STORE_VOLUME_DATA<span class="o">]</span></code></pre></div>
+<p>Prepare a folder to store the backups</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> ~/nextcloud
+mkdir backup
+<span class="nb">cd</span> backup</code></pre></div>
+<p>Archieve the data in compressed format</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker run --rm --volume nextcloud_db:/db --volume <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup ubuntu tar cvfz /backup/db.tar.gz /db
+docker run --rm --volume nextcloud_nextcloud:/nextcloud --volume <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup ubuntu tar cvfz /backup/nextcloud.tar.gz /nextcloud
+docker run --rm --volume nextcloud_certs:/certs --volume <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup ubuntu tar cvfz /backup/certs.tar.gz /certs
+docker run --rm --volume nextcloud_html:/html --volume <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup ubuntu tar cvfz /backup/html.tar.gz /html
+docker run --rm --volume nextcloud_vhost.d:/vhostd --volume <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup ubuntu tar cvfz /backup/vhostd.tar.gz /vhostd</code></pre></div>
+<p>Archieve the data in uncompressed format</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker run --rm --volume nextcloud_db:/db --volume <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup ubuntu tar cvf /backup/db.tar /db
+docker run --rm --volume nextcloud_nextcloud:/nextcloud --volume <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup ubuntu tar cvf /backup/nextcloud.tar /nextcloud
+docker run --rm --volume nextcloud_certs:/certs --volume <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup ubuntu tar cvf /backup/certs.tar /certs
+docker run --rm --volume nextcloud_html:/html --volume <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup ubuntu tar cvf /backup/html.tar /html
+docker run --rm --volume nextcloud_vhost.d:/vhostd --volume <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup ubuntu tar cvf /backup/vhostd.tar /vhostd</code></pre></div>
+<h2 id="restore">Restore</h2>
 
-<p>I used portainer to execute a update command (<a href="https://docs.nextcloud.com/server/15/admin_manual/configuration_database/bigint_identifiers.html">bigint identifiers</a>).</p>
+<p>To restore the data create a volume in a new container then restore the content. These are only the schema commands to rebuild and restore a volume.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker run -v /dbdata --name dbstore2 ubuntu /bin/bash
+docker run --rm --volumes-from dbstore2 -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup ubuntu bash -c <span class="s2">&#34;cd /dbdata &amp;&amp; tar xvf /backup/backup.tar --strip 1&#34;</span></code></pre></div>
+<h2 id="upgrade-nextcloud">Upgrade Nextcloud</h2>
 
-<p>In portainer select the container <strong>nextcloud_app_1</strong> (or whatever the name/number is for your installation) click on <strong>&gt;_</strong> to execute a console command</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">command: php occ db:convert-filecache-bigint
-user: www-data</code></pre></div>
-<p>Execution may take some time and I really don&rsquo;t understand why this was not alredy the default.</p>
-
-<h3 id="email-smtp">Email SMTP</h3>
-
-<p>I registered a free Mailgun account without any domain. Before you can use the SMTP go into the default domain that mailgun generated and scroll down to <strong>Authorized Recipients</strong> and add the email address for your administrator and for your users. This can be done for up to 5 email. Eventually you can subscribe to the pay as you go plan that is also free.</p>
-
-<p>Mailgun will send a mail to each authorized recipient, open the message and follow the instruction to enable the address.</p>
-
-<p>From Nextcloud administration in the section <em>basic settings</em></p>
-
-<ul>
-<li>Send mode: SMTP</li>
-<li>Encryption: STARTTLS</li>
-<li>From address: postmaster</li>
-<li>@: sandboxceXXXXXXXXXXXXXXXXX</li>
-<li>Authentication method: Login</li>
-<li>Authentication required: yes</li>
-<li>Server address: smtp.mailgun.org</li>
-<li>Port: 2525</li>
-<li>Credential: postmaster@sandboxceXXXXXXXXXXXXXXXXX.mailgun.org</li>
-<li>Password</li>
-</ul>
-
-<p>Click the button to send a test mail and if all is good a mail will arrive in a few seconds.</p>
+<p>Easy: let compose do the work</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">docker-compose pull
+docker-compose up -d</code></pre></div>
       </article>
 
       
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://www.teosoft.it/post/2018-09-03-vsts-minimal-docker-build-agent/" data-toggle="tooltip" data-placement="top" title="VSTS minimal docker build agent">&larr; Previous Post</a>
+              <a href="https://www.teosoft.it/post/2019-02-05-nextcloud-using-docker-on-ovh-vps/" data-toggle="tooltip" data-placement="top" title="Nextcloud using docker on ovh vps">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://www.teosoft.it/post/2019-02-18-nextcloud-docker-backup-and-update/" data-toggle="tooltip" data-placement="top" title="Nextcloud using docker backup and update">Next Post &rarr;</a>
-            </li>
           
         </ul>
       
