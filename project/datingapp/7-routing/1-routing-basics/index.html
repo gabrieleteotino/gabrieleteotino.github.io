@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/7-routing/1-routing-basics/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -263,16 +267,16 @@ ga('send', 'pageview');
 <span class="p">],</span></code></pre></div>
 <p>Open <strong>nav.component.html</strong> and fix the links using the snippet <em>a-routerLink</em></p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">...
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar-brand&#34;</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">home</span><span class="err">&#39;]&#34;</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;router-link-active&#34;</span> <span class="p"></span><span class="p">&gt;</span>Dating App<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar-brand&#34;</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">home</span><span class="err">&#39;]&#34;</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;router-link-active&#34;</span> <span class="p">&gt;</span>Dating App<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 ...
-<span class="p">&lt;</span><span class="nt">li</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">members</span><span class="err">&#39;]&#34;</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;router-link-active&#34;</span> <span class="p"></span><span class="p">&gt;</span>Matches<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">li</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">lists</span><span class="err">&#39;]&#34;</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;router-link-active&#34;</span> <span class="p"></span><span class="p">&gt;</span>List<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">li</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">messages</span><span class="err">&#39;]&#34;</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;router-link-active&#34;</span> <span class="p"></span><span class="p">&gt;</span>Messages<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">members</span><span class="err">&#39;]&#34;</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;router-link-active&#34;</span> <span class="p">&gt;</span>Matches<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">lists</span><span class="err">&#39;]&#34;</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;router-link-active&#34;</span> <span class="p">&gt;</span>List<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">messages</span><span class="err">&#39;]&#34;</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;router-link-active&#34;</span> <span class="p">&gt;</span>Messages<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 ...</code></pre></div>
 <p>Open <strong>app.component.html</strong> and remove the <strong>app-home</strong> tag and add the <strong>router-outlet</strong>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">app-nav</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">app-nav</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">app-nav</span><span class="p">&gt;&lt;/</span><span class="nt">app-nav</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">router-outlet</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">router-outlet</span><span class="p">&gt;</span></code></pre></div>
+<span class="p">&lt;</span><span class="nt">router-outlet</span><span class="p">&gt;&lt;/</span><span class="nt">router-outlet</span><span class="p">&gt;</span></code></pre></div>
 <p>Test the navigation, all the nav items should work and invalid paths should redirect to home.</p>
 
 <h2 id="routerlinkactive">RouterLinkActive</h2>
@@ -281,11 +285,11 @@ ga('send', 'pageview');
 
 <p>Change <strong>nav.component.html</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">...
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar-brand&#34;</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">home</span><span class="err">&#39;]&#34;</span><span class="p"></span><span class="p">&gt;</span>Dating App<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar-brand&#34;</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">home</span><span class="err">&#39;]&#34;</span><span class="p">&gt;</span>Dating App<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 ...
-<span class="p">&lt;</span><span class="nt">li</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;active&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">members</span><span class="err">&#39;]&#34;</span><span class="p"></span><span class="p">&gt;</span>Matches<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">li</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;active&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">lists</span><span class="err">&#39;]&#34;</span><span class="p"></span><span class="p">&gt;</span>List<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">li</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;active&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">messages</span><span class="err">&#39;]&#34;</span><span class="p"></span><span class="p">&gt;</span>Messages<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;active&#34;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">members</span><span class="err">&#39;]&#34;</span><span class="p">&gt;</span>Matches<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;active&#34;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">lists</span><span class="err">&#39;]&#34;</span><span class="p">&gt;</span>List<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">routerLinkActive</span><span class="o">=</span><span class="s">&#34;active&#34;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">messages</span><span class="err">&#39;]&#34;</span><span class="p">&gt;</span>Messages<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 ...</code></pre></div>
       </article>
 
@@ -359,7 +363,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

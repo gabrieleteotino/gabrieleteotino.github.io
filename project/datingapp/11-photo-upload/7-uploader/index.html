@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/11-photo-upload/7-uploader/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -250,61 +254,61 @@ ga('send', 'pageview');
 
 <p>Open <strong>photo-editor.component.html</strong> and below the existing code add the following. Note: this is a slightly modified version of the official exaple.</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">...
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p"></span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-3&#34;</span><span class="p"></span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h3</span><span class="p"></span><span class="p">&gt;</span>Add Photos<span class="p">&lt;</span><span class="p">/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-3&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Add Photos<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
 
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">ng2FileDrop</span> <span class="err">[</span><span class="na">ngClass</span><span class="err">]=&#34;{&#39;</span><span class="na">nv-file-over</span><span class="err">&#39;</span><span class="na">:</span> <span class="na">hasBaseDropZoneOver</span><span class="err">}&#34;</span> <span class="err">(</span><span class="na">fileOver</span><span class="err">)=&#34;</span><span class="na">fileOverBase</span><span class="err">($</span><span class="na">event</span><span class="err">)&#34;</span> <span class="err">[</span><span class="na">uploader</span><span class="err">]=&#34;</span><span class="na">uploader</span><span class="err">&#34;</span>
-      <span class="na">class</span><span class="o">=</span><span class="s">&#34;well my-drop-zone&#34;</span><span class="p"></span><span class="p">&gt;</span>
+      <span class="na">class</span><span class="o">=</span><span class="s">&#34;well my-drop-zone&#34;</span><span class="p">&gt;</span>
       Drop Photos Here
-    <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
     Multiple
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span> <span class="na">ng2FileSelect</span> <span class="err">[</span><span class="na">uploader</span><span class="err">]=&#34;</span><span class="na">uploader</span><span class="err">&#34;</span> <span class="na">multiple</span> <span class="p">/</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">br</span><span class="p">/</span><span class="p">&gt;</span> Single
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span> <span class="na">ng2FileSelect</span> <span class="err">[</span><span class="na">uploader</span><span class="err">]=&#34;</span><span class="na">uploader</span><span class="err">&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span> <span class="na">ng2FileSelect</span> <span class="err">[</span><span class="na">uploader</span><span class="err">]=&#34;</span><span class="na">uploader</span><span class="err">&#34;</span> <span class="na">multiple</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> Single
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span> <span class="na">ng2FileSelect</span> <span class="err">[</span><span class="na">uploader</span><span class="err">]=&#34;</span><span class="na">uploader</span><span class="err">&#34;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-9&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;margin-bottom: 40px&#34;</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;uploader?.queue?.length&#34;</span><span class="p"></span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h3</span><span class="p"></span><span class="p">&gt;</span>Upload queue<span class="p">&lt;</span><span class="p">/</span><span class="nt">h3</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>Queue length: {{ uploader?.queue?.length }}<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-9&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;margin-bottom: 40px&#34;</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;uploader?.queue?.length&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Upload queue<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Queue length: {{ uploader?.queue?.length }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 
-    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;table&#34;</span><span class="p"></span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">thead</span><span class="p"></span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">tr</span><span class="p"></span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">th</span><span class="p"></span><span class="p">&gt;</span>Name<span class="p">&lt;</span><span class="p">/</span><span class="nt">th</span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">th</span><span class="p"></span><span class="p">&gt;</span>Size<span class="p">&lt;</span><span class="p">/</span><span class="nt">th</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="p">/</span><span class="nt">tr</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="p">/</span><span class="nt">thead</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">tbody</span><span class="p"></span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">tr</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let item of uploader.queue&#34;</span><span class="p"></span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">td</span><span class="p"></span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">strong</span><span class="p"></span><span class="p">&gt;</span>{{ item?.file?.name }}<span class="p">&lt;</span><span class="p">/</span><span class="nt">strong</span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="p">/</span><span class="nt">td</span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">td</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;uploader.isHTML5&#34;</span> <span class="na">nowrap</span><span class="p"></span><span class="p">&gt;</span>{{ item?.file?.size/1024/1024 | number:&#39;.2&#39; }} MB<span class="p">&lt;</span><span class="p">/</span><span class="nt">td</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="p">/</span><span class="nt">tr</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="p">/</span><span class="nt">tbody</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="p">/</span><span class="nt">table</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;table&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Size<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">tr</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let item of uploader.queue&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>{{ item?.file?.name }}<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">td</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;uploader.isHTML5&#34;</span> <span class="na">nowrap</span><span class="p">&gt;</span>{{ item?.file?.size/1024/1024 | number:&#39;.2&#39; }} MB<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 
-    <span class="p">&lt;</span><span class="nt">div</span><span class="p"></span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">div</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
         Queue progress:
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;progress&#34;</span><span class="p"></span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;progress-bar&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;progressbar&#34;</span> <span class="err">[</span><span class="na">ngStyle</span><span class="err">]=&#34;{</span> <span class="err">&#39;</span><span class="na">width</span><span class="err">&#39;</span><span class="na">:</span> <span class="na">uploader</span><span class="err">.</span><span class="na">progress</span> <span class="err">+</span> <span class="err">&#39;%&#39;</span> <span class="err">}&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-success btn-s&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">uploader</span><span class="err">.</span><span class="na">uploadAll</span><span class="err">()&#34;</span> <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#34;!</span><span class="na">uploader</span><span class="err">.</span><span class="na">getNotUploadedItems</span><span class="err">().</span><span class="na">length</span><span class="err">&#34;</span><span class="p"></span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;glyphicon glyphicon-upload&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span> Upload
-      <span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-warning btn-s&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">uploader</span><span class="err">.</span><span class="na">cancelAll</span><span class="err">()&#34;</span> <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#34;!</span><span class="na">uploader</span><span class="err">.</span><span class="na">isUploading</span><span class="err">&#34;</span><span class="p"></span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;glyphicon glyphicon-ban-circle&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span> Cancel
-      <span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-danger btn-s&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">uploader</span><span class="err">.</span><span class="na">clearQueue</span><span class="err">()&#34;</span> <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#34;!</span><span class="na">uploader</span><span class="err">.</span><span class="na">queue</span><span class="err">.</span><span class="na">length</span><span class="err">&#34;</span><span class="p"></span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;glyphicon glyphicon-trash&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span> Remove
-      <span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;progress&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;progress-bar&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;progressbar&#34;</span> <span class="err">[</span><span class="na">ngStyle</span><span class="err">]=&#34;{</span> <span class="err">&#39;</span><span class="na">width</span><span class="err">&#39;</span><span class="na">:</span> <span class="na">uploader</span><span class="err">.</span><span class="na">progress</span> <span class="err">+</span> <span class="err">&#39;%&#39;</span> <span class="err">}&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-success btn-s&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">uploader</span><span class="err">.</span><span class="na">uploadAll</span><span class="err">()&#34;</span> <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#34;!</span><span class="na">uploader</span><span class="err">.</span><span class="na">getNotUploadedItems</span><span class="err">().</span><span class="na">length</span><span class="err">&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;glyphicon glyphicon-upload&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> Upload
+      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-warning btn-s&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">uploader</span><span class="err">.</span><span class="na">cancelAll</span><span class="err">()&#34;</span> <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#34;!</span><span class="na">uploader</span><span class="err">.</span><span class="na">isUploading</span><span class="err">&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;glyphicon glyphicon-ban-circle&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> Cancel
+      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-danger btn-s&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">uploader</span><span class="err">.</span><span class="na">clearQueue</span><span class="err">()&#34;</span> <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#34;!</span><span class="na">uploader</span><span class="err">.</span><span class="na">queue</span><span class="err">.</span><span class="na">length</span><span class="err">&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;glyphicon glyphicon-trash&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> Remove
+      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <p>Add to the <em>css</em></p>
 <div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* Default class applied to drop zones on over */</span>
 <span class="p">.</span><span class="nc">nv-file-over</span> <span class="p">{</span>
@@ -415,7 +419,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

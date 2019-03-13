@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scp on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/scp/</link>
+    <description>Recent content in Scp on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Feb 2019 13:23:01 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/scp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Download files using scp</title>
+      <link>https://www.teosoft.it/note/2019-02-20-download-files-using-scp/</link>
+      <pubDate>Wed, 20 Feb 2019 13:23:01 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2019-02-20-download-files-using-scp/</guid>
+      <description>scp -P 2222 gabriele@ipaddress:/home/gabriele/*.tar.gz /home/zap/nexcloud-backup/*</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,39 @@
     <description>Recent content in Linux on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Feb 2019 14:35:40 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2019 17:30:08 +0100</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Init git submodules</title>
+      <link>https://www.teosoft.it/note/2019-03-13-init-git-submodules/</link>
+      <pubDate>Wed, 13 Mar 2019 17:30:08 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2019-03-13-init-git-submodules/</guid>
+      <description>git submodule update --init --recursive git submodule update --recursive git submodule update --recursive --remote</description>
+    </item>
+    
+    <item>
+      <title>KeeCloud on Keepass2 to sync with Dropbox using Ubuntu</title>
+      <link>https://www.teosoft.it/post/2019-03-13-keecloud-keepass2-sync-with-dropbox-using-ubuntu/</link>
+      <pubDate>Wed, 13 Mar 2019 16:32:20 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2019-03-13-keecloud-keepass2-sync-with-dropbox-using-ubuntu/</guid>
+      <description>&lt;p&gt;Installation and configuration of Keecloud a Keepass2 plugin that can open and synchronize a file from Dropbox.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Download files using scp</title>
+      <link>https://www.teosoft.it/note/2019-02-20-download-files-using-scp/</link>
+      <pubDate>Wed, 20 Feb 2019 13:23:01 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2019-02-20-download-files-using-scp/</guid>
+      <description>scp -P 2222 gabriele@ipaddress:/home/gabriele/*.tar.gz /home/zap/nexcloud-backup/*</description>
+    </item>
     
     <item>
       <title>Nextcloud using docker backup and update</title>

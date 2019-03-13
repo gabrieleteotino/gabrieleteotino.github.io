@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/8-extending-the-api/1-extending-the-user-model/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -299,9 +303,9 @@ dotnet ef database update</code></pre></div>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">dotnet ef migrations add ExtendedUserClass</code></pre></div>
 <p>Now if we look at the migration code we see that the <strong>Photos</strong> table has a not nullable <strong>UserId</strong> and a <em>cascade delete</em>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="p">...</span>
-<span class="n">UserId</span> <span class="p">=</span> <span class="nc">table</span><span class="p">.</span><span class="n">Column</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;(</span><span class="n">nullable</span><span class="p">:</span> <span class="k">false</span><span class="p">)</span>
+<span class="n">UserId</span> <span class="p">=</span> <span class="n">table</span><span class="p">.</span><span class="n">Column</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;(</span><span class="n">nullable</span><span class="p">:</span> <span class="k">false</span><span class="p">)</span>
 <span class="p">...</span>
-<span class="n">onDelete</span><span class="p">:</span> <span class="nc">ReferentialAction</span><span class="p">.</span><span class="n">Cascade</span><span class="p">);</span></code></pre></div>
+<span class="n">onDelete</span><span class="p">:</span> <span class="n">ReferentialAction</span><span class="p">.</span><span class="n">Cascade</span><span class="p">);</span></code></pre></div>
 <p>Apply the migration</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">dotnet ef database update</code></pre></div>
 <p>Using <em>DB browser for SQLite</em> check the structure of the database.</p>
@@ -377,7 +381,7 @@ dotnet ef database update</code></pre></div>
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

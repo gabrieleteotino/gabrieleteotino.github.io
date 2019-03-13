@@ -26,7 +26,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/13-action-filters/2-update-user-action-filter/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -87,12 +87,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -255,21 +259,21 @@ ga('send', 'pageview');
         <span class="p">{</span>
             <span class="kt">var</span> <span class="n">actionExecutedContext</span> <span class="p">=</span> <span class="k">await</span> <span class="n">next</span><span class="p">();</span>
 
-            <span class="kt">int</span> <span class="n">userId</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="nc">actionExecutedContext</span><span class="p">.</span><span class="nc">HttpContext</span><span class="p">.</span><span class="nc">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span>
-            <span class="kt">var</span> <span class="n">repo</span> <span class="p">=</span> <span class="nc">actionExecutedContext</span><span class="p">.</span><span class="nc">HttpContext</span><span class="p">.</span><span class="nc">RequestServices</span><span class="p">.</span><span class="n">GetService</span><span class="p">&lt;</span><span class="n">IDatingRepository</span><span class="p">&gt;();</span>
+            <span class="kt">int</span> <span class="n">userId</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">actionExecutedContext</span><span class="p">.</span><span class="n">HttpContext</span><span class="p">.</span><span class="n">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="n">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span>
+            <span class="kt">var</span> <span class="n">repo</span> <span class="p">=</span> <span class="n">actionExecutedContext</span><span class="p">.</span><span class="n">HttpContext</span><span class="p">.</span><span class="n">RequestServices</span><span class="p">.</span><span class="n">GetService</span><span class="p">&lt;</span><span class="n">IDatingRepository</span><span class="p">&gt;();</span>
 
-            <span class="kt">var</span> <span class="n">currentUser</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="n">userId</span><span class="p">);</span>
+            <span class="kt">var</span> <span class="n">currentUser</span> <span class="p">=</span> <span class="k">await</span> <span class="n">repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="n">userId</span><span class="p">);</span>
 
-            <span class="nc">currentUser</span><span class="p">.</span><span class="n">LastActive</span> <span class="p">=</span> <span class="nc">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
+            <span class="n">currentUser</span><span class="p">.</span><span class="n">LastActive</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
 
-            <span class="k">await</span> <span class="nc">repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">();</span>
+            <span class="k">await</span> <span class="n">repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">();</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 <h2 id="registration-and-usage">Registration and usage</h2>
 
 <p>Register the filter in <strong>Startup.ConfigureServices</strong> as a <em>ServiceFilter</em> for <em>Dependency Injection</em></p>
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="nc">services</span><span class="p">.</span><span class="n">AddScoped</span><span class="p">&lt;</span><span class="nc">Controllers</span><span class="p">.</span><span class="nc">Filters</span><span class="p">.</span><span class="n">LogUserActivity</span><span class="p">&gt;();</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="n">services</span><span class="p">.</span><span class="n">AddScoped</span><span class="p">&lt;</span><span class="n">Controllers</span><span class="p">.</span><span class="n">Filters</span><span class="p">.</span><span class="n">LogUserActivity</span><span class="p">&gt;();</span></code></pre></div>
 <p>Add the filter at the class level in <strong>UserController</strong> so that all the actions will call the filter.</p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="na">[ServiceFilter(typeof(Filters.LogUserActivity))]
 </span><span class="na">[Authorize]
@@ -351,7 +355,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

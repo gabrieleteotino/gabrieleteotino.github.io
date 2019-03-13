@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/note/" />
   <link rel="alternate" href="https://www.teosoft.it/note/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -216,6 +220,72 @@ ga('send', 'pageview');
           </div>
         
         <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://www.teosoft.it/note/2018-05-23-duplicator-a-wordpress-plugin-for-site-migration/">
+                <h2 class="post-title">Duplicator a Wordpress plugin for site migration</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on May 23, 2018
+              </p>
+              <div class="post-entry">
+                
+                  <p>Wordpress migration to a new host and a new domain is tricky!</p>
+
+<p>To move a problematic site I used <a href="https://wordpress.org/plugins/duplicator/">Duplicator</a> a plugin that did all the heavy lifting of changing the configuration settings, fix the db serialized strings, apply some legacy conversion to the queries and other stuff.</p>
+
+<p>Without the plugin a manual migration was almost impossible.</p>
+
+<p>Kudos to the authors.</p>
+
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://www.teosoft.it//tags/wordpress/">wordpress</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/plugin/">plugin</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://www.teosoft.it/note/2018-05-17-web-essentials-for-visual-studio/">
+                <h2 class="post-title">Web Essentials for Visual Studio</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on May 17, 2018
+              </p>
+              <div class="post-entry">
+                
+                  <p><a href="http://vswebessentials.com/">Web Essentials for Visual Studio</a> is fantastic collection of plugins for visual studio. The name is right: it is essential to have.</p>
+
+<p></p>
+                  <a href="https://www.teosoft.it/note/2018-05-17-web-essentials-for-visual-studio/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://www.teosoft.it//tags/visualstudio/">visualstudio</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/dev/">dev</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
           
             <article class="post-preview">
               <a href="https://www.teosoft.it/note/2018-04-06-curl/">
@@ -463,35 +533,6 @@ sudo apt-get autoremove</code></pre></div>
 
             </article>
           
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/note/2018-02-28-ansible/">
-                <h2 class="post-title">Ansible</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on February 28, 2018
-              </p>
-              <div class="post-entry">
-                
-                  <p><a href="https://www.ansible.com">Ansible</a> is a tool to deploy and manage devops.</p>
-
-<p></p>
-                  <a href="https://www.teosoft.it/note/2018-02-28-ansible/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/devops/">devops</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
         </div>
         
           <ul class="pager main-pager">
@@ -500,6 +541,10 @@ sudo apt-get autoremove</code></pre></div>
                 <a href="/note/page/1/">&larr; Newer Posts</a>
               </li>
             
+            
+              <li class="next">
+                <a href="/note/page/3/">Older Posts &rarr;</a>
+              </li>
             
           </ul>
         
@@ -559,7 +604,7 @@ sudo apt-get autoremove</code></pre></div>
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

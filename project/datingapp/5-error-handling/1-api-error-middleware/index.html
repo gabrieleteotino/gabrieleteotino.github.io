@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/5-error-handling/1-api-error-middleware/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -229,13 +233,13 @@ ga('send', 'pageview');
 
 <p>In <strong>Startup.cs</strong> method <strong>Configure</strong> there is a useful configuration for the development environment:</p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="p">...</span>
-<span class="k">if</span> <span class="p">(</span><span class="nc">env</span><span class="p">.</span><span class="n">IsDevelopment</span><span class="p">())</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">env</span><span class="p">.</span><span class="n">IsDevelopment</span><span class="p">())</span>
 <span class="p">{</span>
-    <span class="nc">app</span><span class="p">.</span><span class="n">UseDeveloperExceptionPage</span><span class="p">();</span>
+    <span class="n">app</span><span class="p">.</span><span class="n">UseDeveloperExceptionPage</span><span class="p">();</span>
 <span class="p">}</span>
 <span class="k">else</span>
 <span class="p">{</span>
-    <span class="nc">app</span><span class="p">.</span><span class="n">UseHsts</span><span class="p">();</span>
+    <span class="n">app</span><span class="p">.</span><span class="n">UseHsts</span><span class="p">();</span>
 <span class="p">}</span>
 <span class="p">...</span></code></pre></div>
 <p>When an unhandled exception is raised a custom page is generate with the stack trace and all the headers and cookies for that request. This page exposes a lot of information so the default is to show it only in development.</p>
@@ -248,16 +252,16 @@ ga('send', 'pageview');
 
 <p>In this code we use an extension to the <em>Response</em> class <strong>AddApplicationError</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="p">...</span>
-<span class="nc">app</span><span class="p">.</span><span class="n">UseExceptionHandler</span><span class="p">(</span><span class="n">builder</span> <span class="p">=&gt;</span>
+<span class="n">app</span><span class="p">.</span><span class="n">UseExceptionHandler</span><span class="p">(</span><span class="n">builder</span> <span class="p">=&gt;</span>
 <span class="p">{</span>
-    <span class="nc">builder</span><span class="p">.</span><span class="n">Run</span><span class="p">(</span><span class="k">async</span> <span class="n">context</span> <span class="p">=&gt;</span> <span class="p">{</span>
-        <span class="nc">context</span><span class="p">.</span><span class="nc">Response</span><span class="p">.</span><span class="n">StatusCode</span> <span class="p">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="nc">HttpStatusCode</span><span class="p">.</span><span class="n">InternalServerError</span><span class="p">;</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">Run</span><span class="p">(</span><span class="k">async</span> <span class="n">context</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="n">context</span><span class="p">.</span><span class="n">Response</span><span class="p">.</span><span class="n">StatusCode</span> <span class="p">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">HttpStatusCode</span><span class="p">.</span><span class="n">InternalServerError</span><span class="p">;</span>
 
-        <span class="kt">var</span> <span class="n">exceptionFeature</span> <span class="p">=</span> <span class="nc">context</span><span class="p">.</span><span class="nc">Features</span><span class="p">.</span><span class="n">Get</span><span class="p">&lt;</span><span class="n">IExceptionHandlerFeature</span><span class="p">&gt;();</span>
+        <span class="kt">var</span> <span class="n">exceptionFeature</span> <span class="p">=</span> <span class="n">context</span><span class="p">.</span><span class="n">Features</span><span class="p">.</span><span class="n">Get</span><span class="p">&lt;</span><span class="n">IExceptionHandlerFeature</span><span class="p">&gt;();</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">exceptionFeature</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
         <span class="p">{</span>
-            <span class="nc">context</span><span class="p">.</span><span class="nc">Response</span><span class="p">.</span><span class="n">AddApplicationError</span><span class="p">(</span><span class="nc">exceptionFeature</span><span class="p">.</span><span class="nc">Error</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
-            <span class="k">await</span> <span class="nc">context</span><span class="p">.</span><span class="nc">Response</span><span class="p">.</span><span class="n">WriteAsync</span><span class="p">(</span><span class="nc">exceptionFeature</span><span class="p">.</span><span class="nc">Error</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+            <span class="n">context</span><span class="p">.</span><span class="n">Response</span><span class="p">.</span><span class="n">AddApplicationError</span><span class="p">(</span><span class="n">exceptionFeature</span><span class="p">.</span><span class="n">Error</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+            <span class="k">await</span> <span class="n">context</span><span class="p">.</span><span class="n">Response</span><span class="p">.</span><span class="n">WriteAsync</span><span class="p">(</span><span class="n">exceptionFeature</span><span class="p">.</span><span class="n">Error</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
         <span class="p">}</span>
     <span class="p">});</span>
 <span class="p">});</span>
@@ -271,9 +275,9 @@ ga('send', 'pageview');
 <span class="p">{</span>
     <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="n">AddApplicationError</span><span class="p">(</span><span class="k">this</span> <span class="n">HttpResponse</span> <span class="n">response</span><span class="p">,</span> <span class="kt">string</span> <span class="n">message</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="nc">response</span><span class="p">.</span><span class="nc">Headers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s">&#34;Application-Error&#34;</span><span class="p">,</span> <span class="n">message</span><span class="p">);</span>
-        <span class="nc">response</span><span class="p">.</span><span class="nc">Headers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s">&#34;Access-Control-Expose-Headers&#34;</span><span class="p">,</span> <span class="s">&#34;Application-Error&#34;</span><span class="p">);</span>
-        <span class="nc">response</span><span class="p">.</span><span class="nc">Headers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s">&#34;Access-Control-Allow-Origin&#34;</span><span class="p">,</span> <span class="s">&#34;*&#34;</span><span class="p">);</span>
+        <span class="n">response</span><span class="p">.</span><span class="n">Headers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s">&#34;Application-Error&#34;</span><span class="p">,</span> <span class="n">message</span><span class="p">);</span>
+        <span class="n">response</span><span class="p">.</span><span class="n">Headers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s">&#34;Access-Control-Expose-Headers&#34;</span><span class="p">,</span> <span class="s">&#34;Application-Error&#34;</span><span class="p">);</span>
+        <span class="n">response</span><span class="p">.</span><span class="n">Headers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s">&#34;Access-Control-Allow-Origin&#34;</span><span class="p">,</span> <span class="s">&#34;*&#34;</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 <p>Add the <em>using</em> in <strong>Startup.cs</strong>.</p>
@@ -312,7 +316,7 @@ ga('send', 'pageview');
 
         <span class="c1">// Convert username to lowercase to avoid multiple user with similar names like &#34;John&#34; and &#34;john&#34;
 </span><span class="c1"></span>        <span class="c1">// Use invariant to avoid conflicts for users from different cultures
-</span><span class="c1"></span>        <span class="k">this</span><span class="p">.</span><span class="n">Value</span> <span class="p">=</span> <span class="nc">username</span><span class="p">.</span><span class="n">ToLowerInvariant</span><span class="p">();</span>
+</span><span class="c1"></span>        <span class="k">this</span><span class="p">.</span><span class="n">Value</span> <span class="p">=</span> <span class="n">username</span><span class="p">.</span><span class="n">ToLowerInvariant</span><span class="p">();</span>
     <span class="p">}</span>
 
     <span class="k">public</span> <span class="k">static</span> <span class="k">implicit</span> <span class="k">operator</span> <span class="kt">string</span><span class="p">(</span><span class="n">Username</span> <span class="k">value</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="k">value</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
@@ -328,12 +332,12 @@ ga('send', 'pageview');
 
     <span class="k">public</span> <span class="kt">bool</span> <span class="n">Equals</span><span class="p">(</span><span class="n">Username</span> <span class="n">other</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="k">return</span> <span class="n">other</span> <span class="p">!=</span> <span class="k">null</span> <span class="p">&amp;&amp;</span> <span class="n">Value</span> <span class="p">==</span> <span class="nc">other</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
+        <span class="k">return</span> <span class="n">other</span> <span class="p">!=</span> <span class="k">null</span> <span class="p">&amp;&amp;</span> <span class="n">Value</span> <span class="p">==</span> <span class="n">other</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
     <span class="p">}</span>
 
     <span class="k">public</span> <span class="kt">bool</span> <span class="n">Equals</span><span class="p">(</span><span class="kt">string</span> <span class="n">other</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">Value</span> <span class="p">==</span> <span class="n">other</span><span class="p">;</span>
 
-    <span class="k">public</span> <span class="k">override</span> <span class="kt">int</span> <span class="n">GetHashCode</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="nc">Value</span><span class="p">.</span><span class="n">GetHashCode</span><span class="p">();</span>
+    <span class="k">public</span> <span class="k">override</span> <span class="kt">int</span> <span class="n">GetHashCode</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="n">Value</span><span class="p">.</span><span class="n">GetHashCode</span><span class="p">();</span>
 
     <span class="k">public</span> <span class="k">override</span> <span class="kt">string</span> <span class="n">ToString</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="n">Value</span><span class="p">;</span>
 
@@ -342,7 +346,7 @@ ga('send', 'pageview');
         <span class="k">if</span> <span class="p">(</span><span class="n">ReferenceEquals</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span> <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
         <span class="k">if</span> <span class="p">(((</span><span class="kt">object</span><span class="p">)</span><span class="n">a</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span> <span class="p">||</span> <span class="p">((</span><span class="kt">object</span><span class="p">)</span><span class="n">b</span> <span class="p">==</span> <span class="k">null</span><span class="p">))</span> <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
 
-        <span class="k">return</span> <span class="nc">a</span><span class="p">.</span><span class="n">Value</span> <span class="p">==</span> <span class="nc">b</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
+        <span class="k">return</span> <span class="n">a</span><span class="p">.</span><span class="n">Value</span> <span class="p">==</span> <span class="n">b</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
     <span class="p">}</span>
 
     <span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="k">operator</span> <span class="p">!=(</span><span class="n">Username</span> <span class="n">a</span><span class="p">,</span> <span class="n">Username</span> <span class="n">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">!(</span><span class="n">a</span> <span class="p">==</span> <span class="n">b</span><span class="p">);</span>
@@ -420,7 +424,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

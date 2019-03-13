@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/note/2019-03-13-init-git-submodules/</loc>
+    <lastmod>2019-03-13T17:30:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/post/2019-03-13-keecloud-keepass2-sync-with-dropbox-using-ubuntu/</loc>
+    <lastmod>2019-03-13T16:32:20+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/note/2019-02-20-download-files-using-scp/</loc>
+    <lastmod>2019-02-20T13:23:01+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/post/2019-02-18-nextcloud-docker-backup-and-update/</loc>
     <lastmod>2019-02-18T14:35:40+01:00</lastmod>
   </url>
@@ -1003,7 +1018,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2019-02-18T14:35:40+01:00</lastmod>
+    <lastmod>2019-03-13T17:30:08+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1043,13 +1058,13 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/cloud/</loc>
+    <loc>https://www.teosoft.it/tags/cloud/</loc>
     <lastmod>2019-02-18T14:35:40+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/cloud/</loc>
+    <loc>https://www.teosoft.it/categories/cloud/</loc>
     <lastmod>2019-02-18T14:35:40+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1062,7 +1077,7 @@
   
   <url>
     <loc>https://www.teosoft.it/categories/command-line/</loc>
-    <lastmod>2018-09-10T17:07:03+02:00</lastmod>
+    <lastmod>2019-03-13T17:30:08+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1109,14 +1124,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/dev/</loc>
-    <lastmod>2019-02-15T15:05:11+01:00</lastmod>
+    <loc>https://www.teosoft.it/tags/dev/</loc>
+    <lastmod>2018-05-17T11:18:53+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/dev/</loc>
-    <lastmod>2018-05-17T11:18:53+02:00</lastmod>
+    <loc>https://www.teosoft.it/categories/dev/</loc>
+    <lastmod>2019-02-15T15:05:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1127,20 +1142,26 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/devops/</loc>
-    <lastmod>2018-06-05T10:55:56+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.teosoft.it/tags/devops/</loc>
     <lastmod>2018-02-28T15:27:34+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/categories/devops/</loc>
+    <lastmod>2018-06-05T10:55:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/docker/</loc>
     <lastmod>2019-02-18T14:35:40+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/dropbox/</loc>
+    <lastmod>2019-03-13T16:32:20+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1194,7 +1215,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/git/</loc>
-    <lastmod>2018-07-27T10:59:45+02:00</lastmod>
+    <lastmod>2019-03-13T17:30:08+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1277,6 +1298,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/keepass/</loc>
+    <lastmod>2019-03-13T16:32:20+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/kestrel/</loc>
     <lastmod>2018-03-13T10:46:21+01:00</lastmod>
     <priority>0</priority>
@@ -1289,14 +1316,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/linux/</loc>
-    <lastmod>2018-04-23T11:24:30+02:00</lastmod>
+    <loc>https://www.teosoft.it/tags/linux/</loc>
+    <lastmod>2019-03-13T17:30:08+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/linux/</loc>
-    <lastmod>2019-02-18T14:35:40+01:00</lastmod>
+    <loc>https://www.teosoft.it/categories/linux/</loc>
+    <lastmod>2019-03-13T16:32:20+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1517,6 +1544,12 @@
   </url>
   
   <url>
+    <loc>https://www.teosoft.it/tags/scp/</loc>
+    <lastmod>2019-02-20T13:23:01+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/tags/security/</loc>
     <lastmod>2018-04-06T11:40:03+02:00</lastmod>
     <priority>0</priority>
@@ -1577,14 +1610,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/tools/</loc>
-    <lastmod>2018-08-31T14:25:13+02:00</lastmod>
+    <loc>https://www.teosoft.it/tags/tools/</loc>
+    <lastmod>2018-03-29T15:34:35+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/tools/</loc>
-    <lastmod>2018-03-29T15:34:35+02:00</lastmod>
+    <loc>https://www.teosoft.it/categories/tools/</loc>
+    <lastmod>2018-08-31T14:25:13+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1596,7 +1629,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/ubuntu/</loc>
-    <lastmod>2018-06-05T10:55:56+02:00</lastmod>
+    <lastmod>2019-03-13T16:32:20+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1661,14 +1694,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/web/</loc>
-    <lastmod>2018-05-23T18:05:59+02:00</lastmod>
+    <loc>https://www.teosoft.it/tags/web/</loc>
+    <lastmod>2018-05-30T11:06:11+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/web/</loc>
-    <lastmod>2018-05-30T11:06:11+02:00</lastmod>
+    <loc>https://www.teosoft.it/categories/web/</loc>
+    <lastmod>2018-05-23T18:05:59+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1679,14 +1712,14 @@
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/categories/webdev/</loc>
-    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
+    <loc>https://www.teosoft.it/tags/webdev/</loc>
+    <lastmod>2018-06-22T14:52:12+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.teosoft.it/tags/webdev/</loc>
-    <lastmod>2018-06-22T14:52:12+02:00</lastmod>
+    <loc>https://www.teosoft.it/categories/webdev/</loc>
+    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   

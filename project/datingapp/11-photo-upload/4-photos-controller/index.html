@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/11-photo-upload/4-photos-controller/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -248,9 +252,9 @@ We also create a new <strong>Account</strong> and a new <strong>Cloudinary</stro
 
     <span class="c1">// Initialize Cloudinary
 </span><span class="c1"></span>    <span class="n">Account</span> <span class="n">account</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Account</span><span class="p">(</span>
-        <span class="nc">cloudinarySettings</span><span class="p">.</span><span class="nc">Value</span><span class="p">.</span><span class="n">CloudName</span><span class="p">,</span>
-        <span class="nc">cloudinarySettings</span><span class="p">.</span><span class="nc">Value</span><span class="p">.</span><span class="n">ApiKey</span><span class="p">,</span>
-        <span class="nc">cloudinarySettings</span><span class="p">.</span><span class="nc">Value</span><span class="p">.</span><span class="n">ApiSecret</span>
+        <span class="n">cloudinarySettings</span><span class="p">.</span><span class="n">Value</span><span class="p">.</span><span class="n">CloudName</span><span class="p">,</span>
+        <span class="n">cloudinarySettings</span><span class="p">.</span><span class="n">Value</span><span class="p">.</span><span class="n">ApiKey</span><span class="p">,</span>
+        <span class="n">cloudinarySettings</span><span class="p">.</span><span class="n">Value</span><span class="p">.</span><span class="n">ApiSecret</span>
     <span class="p">);</span>
 
     <span class="n">_cloudinary</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Cloudinary</span><span class="p">(</span><span class="n">account</span><span class="p">);</span>
@@ -266,66 +270,66 @@ We also create a new <strong>Account</strong> and a new <strong>Cloudinary</stro
 
     <span class="k">public</span> <span class="n">PhotoForCreation</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="n">Created</span> <span class="p">=</span> <span class="nc">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">Created</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 <p>Now we can create a new <em>POST</em> method <strong>AddPhotoForUser</strong>. Note that this method still needs a mapping configuration and have a TODO for the return value.</p>
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="na">[HttpPost]</span>
 <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">AddPhotoForUser</span><span class="p">(</span><span class="kt">int</span> <span class="n">userId</span><span class="p">,</span> <span class="n">PhotoForCreation</span> <span class="n">photoDto</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="kt">var</span> <span class="n">user</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="n">userId</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">user</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="n">userId</span><span class="p">);</span>
 
     <span class="k">if</span> <span class="p">(</span><span class="n">user</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">BadRequest</span><span class="p">(</span><span class="s">&#34;Could not find user&#34;</span><span class="p">);</span>
     <span class="p">}</span>
 
-    <span class="kt">var</span> <span class="n">currentUserId</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="nc">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">currentUserId</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="n">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span>
 
     <span class="c1">// Only the current user can upload it&#39;s photos
-</span><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="nc">user</span><span class="p">.</span><span class="n">Id</span> <span class="p">!=</span> <span class="n">currentUserId</span><span class="p">)</span>
+</span><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="n">Id</span> <span class="p">!=</span> <span class="n">currentUserId</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">Unauthorized</span><span class="p">();</span>
     <span class="p">}</span>
 
-    <span class="kt">var</span> <span class="n">file</span> <span class="p">=</span> <span class="nc">photoDto</span><span class="p">.</span><span class="n">File</span><span class="p">;</span>
+    <span class="kt">var</span> <span class="n">file</span> <span class="p">=</span> <span class="n">photoDto</span><span class="p">.</span><span class="n">File</span><span class="p">;</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="nc">file</span><span class="p">.</span><span class="n">Length</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">file</span><span class="p">.</span><span class="n">Length</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="kt">var</span> <span class="n">uploadResult</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ImageUploadResult</span><span class="p">();</span>
 
-        <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">stream</span> <span class="p">=</span> <span class="nc">file</span><span class="p">.</span><span class="n">OpenReadStream</span><span class="p">())</span>
+        <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">stream</span> <span class="p">=</span> <span class="n">file</span><span class="p">.</span><span class="n">OpenReadStream</span><span class="p">())</span>
         <span class="p">{</span>
             <span class="kt">var</span> <span class="n">uploadParams</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ImageUploadParams</span><span class="p">()</span>
             <span class="p">{</span>
-                <span class="n">File</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileDescription</span><span class="p">(</span><span class="nc">file</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">stream</span><span class="p">)</span>
+                <span class="n">File</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileDescription</span><span class="p">(</span><span class="n">file</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">stream</span><span class="p">)</span>
             <span class="p">};</span>
-            <span class="n">uploadResult</span> <span class="p">=</span> <span class="nc">_cloudinary</span><span class="p">.</span><span class="n">Upload</span><span class="p">(</span><span class="n">uploadParams</span><span class="p">);</span>
+            <span class="n">uploadResult</span> <span class="p">=</span> <span class="n">_cloudinary</span><span class="p">.</span><span class="n">Upload</span><span class="p">(</span><span class="n">uploadParams</span><span class="p">);</span>
         <span class="p">}</span>
 
         <span class="c1">// Check if the upload was fine
-</span><span class="c1"></span>        <span class="k">if</span><span class="p">(</span><span class="nc">uploadResult</span><span class="p">.</span><span class="n">Error</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+</span><span class="c1"></span>        <span class="k">if</span><span class="p">(</span><span class="n">uploadResult</span><span class="p">.</span><span class="n">Error</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
         <span class="p">{</span>
-            <span class="k">return</span> <span class="n">BadRequest</span><span class="p">(</span><span class="s">&#34;Unable to upload photo.\n&#34;</span> <span class="p">+</span> <span class="nc">uploadResult</span><span class="p">.</span><span class="nc">Error</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+            <span class="k">return</span> <span class="n">BadRequest</span><span class="p">(</span><span class="s">&#34;Unable to upload photo.\n&#34;</span> <span class="p">+</span> <span class="n">uploadResult</span><span class="p">.</span><span class="n">Error</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
         <span class="p">}</span>
 
         <span class="c1">// Save the results back in the DTO
-</span><span class="c1"></span>        <span class="nc">photoDto</span><span class="p">.</span><span class="n">Url</span> <span class="p">=</span> <span class="nc">uploadResult</span><span class="p">.</span><span class="nc">Uri</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
-        <span class="nc">photoDto</span><span class="p">.</span><span class="n">PublicId</span> <span class="p">=</span> <span class="nc">uploadResult</span><span class="p">.</span><span class="n">PublicId</span><span class="p">;</span>
+</span><span class="c1"></span>        <span class="n">photoDto</span><span class="p">.</span><span class="n">Url</span> <span class="p">=</span> <span class="n">uploadResult</span><span class="p">.</span><span class="n">Uri</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
+        <span class="n">photoDto</span><span class="p">.</span><span class="n">PublicId</span> <span class="p">=</span> <span class="n">uploadResult</span><span class="p">.</span><span class="n">PublicId</span><span class="p">;</span>
 
         <span class="c1">// Map the dto to a Photo model
-</span><span class="c1"></span>        <span class="kt">var</span> <span class="n">photo</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">Photo</span><span class="p">&gt;(</span><span class="n">photoDto</span><span class="p">);</span>
-        <span class="nc">photo</span><span class="p">.</span><span class="n">User</span> <span class="p">=</span> <span class="n">user</span><span class="p">;</span>
+</span><span class="c1"></span>        <span class="kt">var</span> <span class="n">photo</span> <span class="p">=</span> <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">Photo</span><span class="p">&gt;(</span><span class="n">photoDto</span><span class="p">);</span>
+        <span class="n">photo</span><span class="p">.</span><span class="n">User</span> <span class="p">=</span> <span class="n">user</span><span class="p">;</span>
 
         <span class="c1">// Check if the photo has to be the main photo for the user
-</span><span class="c1"></span>        <span class="k">if</span> <span class="p">(!</span><span class="nc">user</span><span class="p">.</span><span class="nc">Photos</span><span class="p">.</span><span class="n">Any</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="nc">x</span><span class="p">.</span><span class="n">IsMain</span><span class="p">))</span>
+</span><span class="c1"></span>        <span class="k">if</span> <span class="p">(!</span><span class="n">user</span><span class="p">.</span><span class="n">Photos</span><span class="p">.</span><span class="n">Any</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">IsMain</span><span class="p">))</span>
         <span class="p">{</span>
-            <span class="nc">photo</span><span class="p">.</span><span class="n">IsMain</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+            <span class="n">photo</span><span class="p">.</span><span class="n">IsMain</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
         <span class="p">}</span>
 
-        <span class="nc">user</span><span class="p">.</span><span class="nc">Photos</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">photo</span><span class="p">);</span>
+        <span class="n">user</span><span class="p">.</span><span class="n">Photos</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">photo</span><span class="p">);</span>
 
-        <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
         <span class="p">{</span>
             <span class="c1">// TODO this Ok is just a temporary solution, we should return a CreatedAtRoute
 </span><span class="c1"></span>            <span class="k">return</span> <span class="n">Ok</span><span class="p">();</span>
@@ -340,7 +344,7 @@ We also create a new <strong>Account</strong> and a new <strong>Cloudinary</stro
 <p>And a concrete implementation in <strong>DatingRepository</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">Photo</span><span class="p">&gt;</span> <span class="n">GetPhoto</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">return</span> <span class="k">await</span> <span class="nc">_context</span><span class="p">.</span><span class="nc">Photos</span><span class="p">.</span><span class="n">FirstOrDefaultAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="nc">x</span><span class="p">.</span><span class="n">Id</span> <span class="p">==</span> <span class="n">id</span><span class="p">);</span>
+    <span class="k">return</span> <span class="k">await</span> <span class="n">_context</span><span class="p">.</span><span class="n">Photos</span><span class="p">.</span><span class="n">FirstOrDefaultAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Id</span> <span class="p">==</span> <span class="n">id</span><span class="p">);</span>
 <span class="p">}</span></code></pre></div>
 <p>Create a new DTO <strong>PhotoForReturn</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">class</span> <span class="nc">PhotoForReturn</span>
@@ -360,18 +364,18 @@ We also create a new <strong>Account</strong> and a new <strong>Cloudinary</stro
 <p>Now we have all the pieces for the <em>GET</em> method in the controller</p>
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="na">[HttpGet(&#34;{id}&#34;, Name=&#34;GetPhoto&#34;)]</span>
 <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">GetPhoto</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">var</span> <span class="n">photoFromRepo</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetPhoto</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">photoFromRepo</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetPhoto</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
 
-    <span class="kt">var</span> <span class="n">photoForReturn</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">PhotoForReturn</span><span class="p">&gt;(</span><span class="n">photoFromRepo</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">photoForReturn</span> <span class="p">=</span> <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">PhotoForReturn</span><span class="p">&gt;(</span><span class="n">photoFromRepo</span><span class="p">);</span>
 
     <span class="k">return</span> <span class="n">Ok</span><span class="p">(</span><span class="n">photoForReturn</span><span class="p">);</span>
 <span class="p">}</span></code></pre></div>
 <p>Let&rsquo;s fix the <em>return</em> for <strong>AddPhotoForUser</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="p">...</span>
-<span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
+<span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
 <span class="p">{</span>
-    <span class="kt">var</span> <span class="n">photoForReturn</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">PhotoForReturn</span><span class="p">&gt;(</span><span class="n">photo</span><span class="p">);</span>
-    <span class="k">return</span> <span class="n">CreatedAtRoute</span><span class="p">(</span><span class="s">&#34;GetPhoto&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="p">{</span> <span class="n">id</span> <span class="p">=</span> <span class="nc">photo</span><span class="p">.</span><span class="n">Id</span> <span class="p">},</span> <span class="n">photoForReturn</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">photoForReturn</span> <span class="p">=</span> <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">PhotoForReturn</span><span class="p">&gt;(</span><span class="n">photo</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">CreatedAtRoute</span><span class="p">(</span><span class="s">&#34;GetPhoto&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="p">{</span> <span class="n">id</span> <span class="p">=</span> <span class="n">photo</span><span class="p">.</span><span class="n">Id</span> <span class="p">},</span> <span class="n">photoForReturn</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="p">...</span></code></pre></div>
       </article>
@@ -450,7 +454,7 @@ We also create a new <strong>Account</strong> and a new <strong>Cloudinary</stro
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

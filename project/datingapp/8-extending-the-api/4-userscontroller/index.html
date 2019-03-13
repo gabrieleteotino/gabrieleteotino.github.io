@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/8-extending-the-api/4-userscontroller/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -245,7 +249,7 @@ ga('send', 'pageview');
 </span><span class="na">    [HttpGet]</span>
     <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">GetUsers</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="kt">var</span> <span class="n">users</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetUsers</span><span class="p">();</span>
+        <span class="kt">var</span> <span class="n">users</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetUsers</span><span class="p">();</span>
 
         <span class="k">return</span> <span class="n">Ok</span><span class="p">(</span><span class="n">users</span><span class="p">);</span>
     <span class="p">}</span><span class="na">
@@ -253,7 +257,7 @@ ga('send', 'pageview');
 </span><span class="na">    [HttpGet(&#34;{id}&#34;)]</span>
     <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">GetUser</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="kt">var</span> <span class="n">user</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+        <span class="kt">var</span> <span class="n">user</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
 
         <span class="k">return</span> <span class="n">Ok</span><span class="p">(</span><span class="n">user</span><span class="p">);</span>
     <span class="p">}</span>
@@ -308,7 +312,7 @@ ga('send', 'pageview');
 <p>Vscode will ask to restore packages, click <em>restore</em>.</p>
 
 <p>In <strong>Startup.ConfigureServices</strong> register the service for DI.</p>
-<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="nc">services</span><span class="p">.</span><span class="n">AddAutoMapper</span><span class="p">();</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">services</span><span class="p">.</span><span class="n">AddAutoMapper</span><span class="p">();</span></code></pre></div>
 <p>Now inject in the constructor of <strong>UserController</strong>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="n">UsersController</span><span class="p">(</span><span class="n">IDatingRepository</span> <span class="n">repo</span><span class="p">,</span> <span class="n">IMapper</span> <span class="n">mapper</span><span class="p">)</span>
 <span class="p">{</span>
@@ -319,8 +323,8 @@ ga('send', 'pageview');
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="na">[HttpGet]</span>
 <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">GetUsers</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="kt">var</span> <span class="n">users</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetUsers</span><span class="p">();</span>
-    <span class="kt">var</span> <span class="n">usersVM</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">UserForList</span><span class="p">&gt;&gt;(</span><span class="n">users</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">users</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetUsers</span><span class="p">();</span>
+    <span class="kt">var</span> <span class="n">usersVM</span> <span class="p">=</span> <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">UserForList</span><span class="p">&gt;&gt;(</span><span class="n">users</span><span class="p">);</span>
 
     <span class="k">return</span> <span class="n">Ok</span><span class="p">(</span><span class="n">usersVM</span><span class="p">);</span>
 <span class="p">}</span><span class="na">
@@ -328,8 +332,8 @@ ga('send', 'pageview');
 </span><span class="na">[HttpGet(&#34;{id}&#34;)]</span>
 <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">GetUser</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="kt">var</span> <span class="n">user</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
-    <span class="kt">var</span> <span class="n">userVM</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">UserForDetail</span><span class="p">&gt;(</span><span class="n">user</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">user</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">userVM</span> <span class="p">=</span> <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">UserForDetail</span><span class="p">&gt;(</span><span class="n">user</span><span class="p">);</span>
 
     <span class="k">return</span> <span class="n">Ok</span><span class="p">(</span><span class="n">userVM</span><span class="p">);</span>
 <span class="p">}</span></code></pre></div>
@@ -340,9 +344,9 @@ ga('send', 'pageview');
 <span class="p">{</span>
     <span class="k">public</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">CalculateAge</span><span class="p">(</span><span class="k">this</span> <span class="n">DateTime</span> <span class="n">birthDate</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="kt">var</span> <span class="n">age</span> <span class="p">=</span> <span class="nc">DateTime</span><span class="p">.</span><span class="nc">Today</span><span class="p">.</span><span class="n">Year</span> <span class="p">-</span> <span class="nc">birthDate</span><span class="p">.</span><span class="n">Year</span><span class="p">;</span>
+        <span class="kt">var</span> <span class="n">age</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Today</span><span class="p">.</span><span class="n">Year</span> <span class="p">-</span> <span class="n">birthDate</span><span class="p">.</span><span class="n">Year</span><span class="p">;</span>
         <span class="c1">// Correct if the birthday for this year is in the future
-</span><span class="c1"></span>        <span class="k">if</span><span class="p">(</span><span class="nc">birthDate</span><span class="p">.</span><span class="n">AddYears</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="p">&gt;</span> <span class="nc">DateTime</span><span class="p">.</span><span class="n">Today</span><span class="p">)</span> <span class="n">age</span><span class="p">--;</span>
+</span><span class="c1"></span>        <span class="k">if</span><span class="p">(</span><span class="n">birthDate</span><span class="p">.</span><span class="n">AddYears</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="p">&gt;</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Today</span><span class="p">)</span> <span class="n">age</span><span class="p">--;</span>
 
         <span class="k">return</span> <span class="n">age</span><span class="p">;</span>
     <span class="p">}</span>
@@ -357,13 +361,13 @@ ga('send', 'pageview');
         <span class="n">CreateMap</span><span class="p">&lt;</span><span class="n">Photo</span><span class="p">,</span> <span class="n">PhotoForUser</span><span class="p">&gt;();</span>
 
         <span class="n">CreateMap</span><span class="p">&lt;</span><span class="n">User</span><span class="p">,</span> <span class="n">UserForList</span><span class="p">&gt;()</span>
-            <span class="p">.</span><span class="n">ForMember</span><span class="p">(</span><span class="n">dest</span> <span class="p">=&gt;</span> <span class="nc">dest</span><span class="p">.</span><span class="n">Age</span><span class="p">,</span> <span class="n">opt</span> <span class="p">=&gt;</span> <span class="nc">opt</span><span class="p">.</span><span class="n">MapFrom</span><span class="p">(</span><span class="n">src</span> <span class="p">=&gt;</span> <span class="nc">src</span><span class="p">.</span><span class="nc">DateOfBirth</span><span class="p">.</span><span class="n">CalculateAge</span><span class="p">()))</span>
-            <span class="p">.</span><span class="n">ForMember</span><span class="p">(</span><span class="n">dest</span> <span class="p">=&gt;</span> <span class="nc">dest</span><span class="p">.</span><span class="n">ProfilePhotoUrl</span><span class="p">,</span> <span class="n">opt</span> <span class="p">=&gt;</span> <span class="nc">opt</span><span class="p">.</span><span class="n">MapFrom</span><span class="p">(</span><span class="n">src</span> <span class="p">=&gt;</span> <span class="nc">src</span><span class="p">.</span><span class="nc">Photos</span><span class="p">.</span><span class="n">FirstOrDefault</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="nc">x</span><span class="p">.</span><span class="n">IsMain</span><span class="p">).</span><span class="n">Url</span><span class="p">))</span>
+            <span class="p">.</span><span class="n">ForMember</span><span class="p">(</span><span class="n">dest</span> <span class="p">=&gt;</span> <span class="n">dest</span><span class="p">.</span><span class="n">Age</span><span class="p">,</span> <span class="n">opt</span> <span class="p">=&gt;</span> <span class="n">opt</span><span class="p">.</span><span class="n">MapFrom</span><span class="p">(</span><span class="n">src</span> <span class="p">=&gt;</span> <span class="n">src</span><span class="p">.</span><span class="n">DateOfBirth</span><span class="p">.</span><span class="n">CalculateAge</span><span class="p">()))</span>
+            <span class="p">.</span><span class="n">ForMember</span><span class="p">(</span><span class="n">dest</span> <span class="p">=&gt;</span> <span class="n">dest</span><span class="p">.</span><span class="n">ProfilePhotoUrl</span><span class="p">,</span> <span class="n">opt</span> <span class="p">=&gt;</span> <span class="n">opt</span><span class="p">.</span><span class="n">MapFrom</span><span class="p">(</span><span class="n">src</span> <span class="p">=&gt;</span> <span class="n">src</span><span class="p">.</span><span class="n">Photos</span><span class="p">.</span><span class="n">FirstOrDefault</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">IsMain</span><span class="p">).</span><span class="n">Url</span><span class="p">))</span>
         <span class="p">;</span>
 
         <span class="n">CreateMap</span><span class="p">&lt;</span><span class="n">User</span><span class="p">,</span> <span class="n">UserForDetail</span><span class="p">&gt;()</span>
-            <span class="p">.</span><span class="n">ForMember</span><span class="p">(</span><span class="n">dest</span> <span class="p">=&gt;</span> <span class="nc">dest</span><span class="p">.</span><span class="n">Age</span><span class="p">,</span> <span class="n">opt</span> <span class="p">=&gt;</span> <span class="nc">opt</span><span class="p">.</span><span class="n">MapFrom</span><span class="p">(</span><span class="n">src</span> <span class="p">=&gt;</span> <span class="nc">src</span><span class="p">.</span><span class="nc">DateOfBirth</span><span class="p">.</span><span class="n">CalculateAge</span><span class="p">()))</span>
-            <span class="p">.</span><span class="n">ForMember</span><span class="p">(</span><span class="n">dest</span> <span class="p">=&gt;</span> <span class="nc">dest</span><span class="p">.</span><span class="n">ProfilePhotoUrl</span><span class="p">,</span> <span class="n">opt</span> <span class="p">=&gt;</span> <span class="nc">opt</span><span class="p">.</span><span class="n">MapFrom</span><span class="p">(</span><span class="n">src</span> <span class="p">=&gt;</span> <span class="nc">src</span><span class="p">.</span><span class="nc">Photos</span><span class="p">.</span><span class="n">FirstOrDefault</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="nc">x</span><span class="p">.</span><span class="n">IsMain</span><span class="p">).</span><span class="n">Url</span><span class="p">))</span>
+            <span class="p">.</span><span class="n">ForMember</span><span class="p">(</span><span class="n">dest</span> <span class="p">=&gt;</span> <span class="n">dest</span><span class="p">.</span><span class="n">Age</span><span class="p">,</span> <span class="n">opt</span> <span class="p">=&gt;</span> <span class="n">opt</span><span class="p">.</span><span class="n">MapFrom</span><span class="p">(</span><span class="n">src</span> <span class="p">=&gt;</span> <span class="n">src</span><span class="p">.</span><span class="n">DateOfBirth</span><span class="p">.</span><span class="n">CalculateAge</span><span class="p">()))</span>
+            <span class="p">.</span><span class="n">ForMember</span><span class="p">(</span><span class="n">dest</span> <span class="p">=&gt;</span> <span class="n">dest</span><span class="p">.</span><span class="n">ProfilePhotoUrl</span><span class="p">,</span> <span class="n">opt</span> <span class="p">=&gt;</span> <span class="n">opt</span><span class="p">.</span><span class="n">MapFrom</span><span class="p">(</span><span class="n">src</span> <span class="p">=&gt;</span> <span class="n">src</span><span class="p">.</span><span class="n">Photos</span><span class="p">.</span><span class="n">FirstOrDefault</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">IsMain</span><span class="p">).</span><span class="n">Url</span><span class="p">))</span>
         <span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
@@ -384,15 +388,15 @@ ga('send', 'pageview');
 <span class="p">{</span>
     <span class="k">if</span><span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="n">IsNullOrWhiteSpace</span><span class="p">(</span><span class="n">username</span><span class="p">))</span> <span class="k">return</span> <span class="k">null</span><span class="p">;</span>
 
-    <span class="kt">var</span> <span class="n">user</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_context</span><span class="p">.</span><span class="n">Users</span>
-      <span class="p">.</span><span class="n">FirstOrDefaultAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="nc">x</span><span class="p">.</span><span class="n">Username</span> <span class="p">==</span> <span class="nc">username</span><span class="p">.</span><span class="n">ToLowerInvariant</span><span class="p">());</span>
+    <span class="kt">var</span> <span class="n">user</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_context</span><span class="p">.</span><span class="n">Users</span>
+      <span class="p">.</span><span class="n">FirstOrDefaultAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Username</span> <span class="p">==</span> <span class="n">username</span><span class="p">.</span><span class="n">ToLowerInvariant</span><span class="p">());</span>
 <span class="p">...</span>
 <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="kt">bool</span><span class="p">&gt;</span> <span class="n">UserExists</span><span class="p">(</span><span class="kt">string</span> <span class="n">username</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="k">if</span><span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="n">IsNullOrWhiteSpace</span><span class="p">(</span><span class="n">username</span><span class="p">))</span> <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
 
-    <span class="k">return</span> <span class="k">await</span> <span class="nc">_context</span><span class="p">.</span><span class="n">Users</span>
-      <span class="p">.</span><span class="n">AnyAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="nc">x</span><span class="p">.</span><span class="n">Username</span> <span class="p">==</span> <span class="nc">username</span><span class="p">.</span><span class="n">ToLowerInvariant</span><span class="p">());</span>
+    <span class="k">return</span> <span class="k">await</span> <span class="n">_context</span><span class="p">.</span><span class="n">Users</span>
+      <span class="p">.</span><span class="n">AnyAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Username</span> <span class="p">==</span> <span class="n">username</span><span class="p">.</span><span class="n">ToLowerInvariant</span><span class="p">());</span>
 <span class="p">}</span>
 <span class="p">...</span></code></pre></div>
       </article>
@@ -467,7 +471,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

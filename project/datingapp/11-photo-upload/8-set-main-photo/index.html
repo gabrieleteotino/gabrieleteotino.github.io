@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/11-photo-upload/8-set-main-photo/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -232,32 +236,32 @@ ga('send', 'pageview');
 <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">SetMainPhoto</span><span class="p">(</span><span class="kt">int</span> <span class="n">userId</span><span class="p">,</span> <span class="kt">int</span> <span class="n">id</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="c1">// Only the current user can set it&#39;s main photo
-</span><span class="c1"></span>    <span class="kt">var</span> <span class="n">currentUserId</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="nc">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span>
+</span><span class="c1"></span>    <span class="kt">var</span> <span class="n">currentUserId</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="n">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">userId</span> <span class="p">!=</span> <span class="n">currentUserId</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">Unauthorized</span><span class="p">();</span>
     <span class="p">}</span>
 
-    <span class="kt">var</span> <span class="n">photoToSet</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetPhoto</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">photoToSet</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetPhoto</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">photoToSet</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">NotFound</span><span class="p">(</span><span class="s">$&#34;The photo {id} does not exists.&#34;</span><span class="p">);</span>
     <span class="p">}</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="nc">photoToSet</span><span class="p">.</span><span class="n">IsMain</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">photoToSet</span><span class="p">.</span><span class="n">IsMain</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">BadRequest</span><span class="p">(</span><span class="s">&#34;This is already the main photo&#34;</span><span class="p">);</span>
     <span class="p">}</span>
 
-    <span class="kt">var</span> <span class="n">currentMainPhoto</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetMainPhotoForUser</span><span class="p">(</span><span class="n">userId</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">currentMainPhoto</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetMainPhotoForUser</span><span class="p">(</span><span class="n">userId</span><span class="p">);</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">currentMainPhoto</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="nc">currentMainPhoto</span><span class="p">.</span><span class="n">IsMain</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+        <span class="n">currentMainPhoto</span><span class="p">.</span><span class="n">IsMain</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="nc">photoToSet</span><span class="p">.</span><span class="n">IsMain</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+    <span class="n">photoToSet</span><span class="p">.</span><span class="n">IsMain</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">NoContent</span><span class="p">();</span>
     <span class="p">}</span>
@@ -267,7 +271,7 @@ ga('send', 'pageview');
 <p>We also need to implement a simple <strong>GetMainPhotoForUser</strong> in the repository</p>
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">Photo</span><span class="p">&gt;</span> <span class="n">GetMainPhotoForUser</span><span class="p">(</span><span class="kt">int</span> <span class="n">userId</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">return</span> <span class="k">await</span> <span class="nc">_context</span><span class="p">.</span><span class="nc">Photos</span><span class="p">.</span><span class="n">FirstOrDefaultAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="nc">x</span><span class="p">.</span><span class="n">UserId</span> <span class="p">==</span> <span class="n">userId</span> <span class="p">&amp;&amp;</span> <span class="nc">x</span><span class="p">.</span><span class="n">IsMain</span><span class="p">);</span>
+    <span class="k">return</span> <span class="k">await</span> <span class="n">_context</span><span class="p">.</span><span class="n">Photos</span><span class="p">.</span><span class="n">FirstOrDefaultAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">UserId</span> <span class="p">==</span> <span class="n">userId</span> <span class="p">&amp;&amp;</span> <span class="n">x</span><span class="p">.</span><span class="n">IsMain</span><span class="p">);</span>
 <span class="p">}</span></code></pre></div>
 <h2 id="test-with-postman">Test with postman</h2>
 
@@ -304,7 +308,7 @@ ga('send', 'pageview');
 <span class="p">}</span></code></pre></div>
 <p>Open <strong>photo-editor.component.html</strong> and change the <strong>Main</strong> button.</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-xs&#34;</span> <span class="err">[</span><span class="na">ngClass</span><span class="err">]=&#34;</span><span class="na">photo</span><span class="err">.</span><span class="na">isMain</span> <span class="err">?</span> <span class="err">&#39;</span><span class="na">btn-default</span> <span class="na">active</span><span class="err">&#39;</span> <span class="na">:</span> <span class="err">&#39;</span><span class="na">btn-primary</span><span class="err">&#39;&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">setMainPhoto</span><span class="err">(</span><span class="na">photo</span><span class="err">)&#34;</span>
-        <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#34;</span><span class="na">photo</span><span class="err">.</span><span class="na">isMain</span><span class="err">&#34;</span><span class="p"></span><span class="p">&gt;</span>Main<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span></code></pre></div>
+        <span class="err">[</span><span class="na">disabled</span><span class="err">]=&#34;</span><span class="na">photo</span><span class="err">.</span><span class="na">isMain</span><span class="err">&#34;</span><span class="p">&gt;</span>Main<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span></code></pre></div>
 <p>Now the buttons change the main photos but still don&rsquo;t reflect the changes in the rest of the components.</p>
 
 <h2 id="underscore">Underscore</h2>
@@ -411,7 +415,7 @@ npm install @types/underscore --save-dev</code></pre></div>
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

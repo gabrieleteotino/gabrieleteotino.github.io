@@ -30,7 +30,7 @@ npm install @angular/material @angular/cdk @angular/animations --save Configure 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/jobsearchlog/1-skeleton/5-material/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -91,12 +91,16 @@ npm install @angular/material @angular/cdk @angular/animations --save Configure 
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -280,7 +284,7 @@ ga('send', 'pageview');
 <div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* You can add global styles to this file, and also import other style files */</span>
 <span class="p">@</span><span class="k">import</span> <span class="s1">&#39;~@angular/material/prebuilt-themes/deeppurple-amber.css&#39;</span><span class="p">;</span></code></pre></div>
 <p>Add Material Icons, open <strong>index.html</strong> and add the font</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fonts.googleapis.com/icon?family=Material+Icons&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p"></span><span class="p">&gt;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fonts.googleapis.com/icon?family=Material+Icons&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p">&gt;</span></code></pre></div>
 <p>Test the application</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ng serve</code></pre></div>
 <h2 id="navigation-and-list-test">Navigation and list test</h2>
@@ -300,21 +304,21 @@ ga('send', 'pageview');
 <span class="p">})</span>
 <span class="kr">export</span> <span class="kr">class</span> <span class="nx">MaterialModule</span> <span class="p">{}</span></code></pre></div>
 <p>Open <strong>app.component.html</strong> and add a toolbar and change the list of items loaded from Firebase</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">mat-toolbar</span> <span class="na">color</span><span class="o">=</span><span class="s">&#34;primary&#34;</span><span class="p"></span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">mat-toolbar-row</span><span class="p"></span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">span</span><span class="p"></span><span class="p">&gt;</span>JobSearchLog<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toolbar-spacer&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">mat-icon</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toolbar-icon&#34;</span><span class="p"></span><span class="p">&gt;</span>mail_outline<span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-icon</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">mat-icon</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toolbar-icon&#34;</span><span class="p"></span><span class="p">&gt;</span>account_box<span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-icon</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-toolbar-row</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-toolbar</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">mat-toolbar</span> <span class="na">color</span><span class="o">=</span><span class="s">&#34;primary&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">mat-toolbar-row</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>JobSearchLog<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toolbar-spacer&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">mat-icon</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toolbar-icon&#34;</span><span class="p">&gt;</span>mail_outline<span class="p">&lt;/</span><span class="nt">mat-icon</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">mat-icon</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toolbar-icon&#34;</span><span class="p">&gt;</span>account_box<span class="p">&lt;/</span><span class="nt">mat-icon</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">mat-toolbar-row</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">mat-toolbar</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">mat-list</span><span class="p"></span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">mat-list-item</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let item of items | async&#34;</span><span class="p"></span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">mat-icon</span> <span class="na">matListIcon</span><span class="p"></span><span class="p">&gt;</span>done<span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-icon</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">matLine</span><span class="p"></span><span class="p">&gt;</span> {{item.name}} <span class="p">&lt;</span><span class="p">/</span><span class="nt">h3</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-list-item</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">mat-list</span><span class="p">&gt;</span></code></pre></div>
+<span class="p">&lt;</span><span class="nt">mat-list</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">mat-list-item</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let item of items | async&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">mat-icon</span> <span class="na">matListIcon</span><span class="p">&gt;</span>done<span class="p">&lt;/</span><span class="nt">mat-icon</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">matLine</span><span class="p">&gt;</span> {{item.name}} <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">mat-list-item</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">mat-list</span><span class="p">&gt;</span></code></pre></div>
 <p>Open <strong>app.component.css</strong> and add some styling</p>
 <div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">toolbar-icon</span> <span class="p">{</span>
   <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
@@ -401,7 +405,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

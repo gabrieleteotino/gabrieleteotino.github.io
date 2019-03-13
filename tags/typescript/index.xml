@@ -32,7 +32,7 @@ npm start Finally open Chrome and navigate to http://localhost:4200/</descriptio
       
       <guid>https://www.teosoft.it/project/ngrx-in-depth/</guid>
       <description>Notes and code snippets for the course NgRx In Depth
- Introduction Store in detail Side Effects Management Store freeze Entity and Effects Pagination  </description>
+ Introduction Store in detail Entity and Effects Pagination  </description>
     </item>
     
     <item>

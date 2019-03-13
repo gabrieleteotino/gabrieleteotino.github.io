@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/15-likes/5-filter-users-by-like-in-the-spa/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -315,32 +319,32 @@ ga('send', 'pageview');
   <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 <p>Add the markup in <strong>lists.component.html</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-center mt-3&#34;</span><span class="p"></span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">h2</span><span class="p"></span><span class="p">&gt;</span>{{likesParam === &#39;Likers&#39; ? &#39;Members who like me&#39; : &#39;Members who I\&#39;ve Liked&#39;}} : {{pagination.totalItems}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">h2</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-center mt-3&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>{{likesParam === &#39;Likers&#39; ? &#39;Members who like me&#39; : &#39;Members who I\&#39;ve Liked&#39;}} : {{pagination.totalItems}}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container mt-3&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container mt-3&#34;</span><span class="p">&gt;</span>
 
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p"></span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group&#34;</span><span class="p"></span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#34;</span><span class="na">likesParam</span><span class="err">&#34;</span> <span class="na">btnRadio</span><span class="o">=</span><span class="s">&#34;Likers&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">loadUsers</span><span class="err">()&#34;</span><span class="p"></span><span class="p">&gt;</span>Members who like me<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#34;</span><span class="na">likesParam</span><span class="err">&#34;</span> <span class="na">btnRadio</span><span class="o">=</span><span class="s">&#34;Likees&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">loadUsers</span><span class="err">()&#34;</span><span class="p"></span><span class="p">&gt;</span>Members who I like<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#34;</span><span class="na">likesParam</span><span class="err">&#34;</span> <span class="na">btnRadio</span><span class="o">=</span><span class="s">&#34;Likers&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">loadUsers</span><span class="err">()&#34;</span><span class="p">&gt;</span>Members who like me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#34;</span><span class="na">likesParam</span><span class="err">&#34;</span> <span class="na">btnRadio</span><span class="o">=</span><span class="s">&#34;Likees&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">loadUsers</span><span class="err">()&#34;</span><span class="p">&gt;</span>Members who I like<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-  <span class="p">&lt;</span><span class="nt">br</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
 
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p"></span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let user of users&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-sm-6 col-md-4 col-lg-4 col-xl-2&#34;</span><span class="p"></span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">app-member-card</span> <span class="err">[</span><span class="na">user</span><span class="err">]=&#34;</span><span class="na">user</span><span class="err">&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">app-member-card</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let user of users&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-sm-6 col-md-4 col-lg-4 col-xl-2&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">app-member-card</span> <span class="err">[</span><span class="na">user</span><span class="err">]=&#34;</span><span class="na">user</span><span class="err">&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">app-member-card</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex justify-content-center&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">pagination</span> <span class="err">[</span><span class="na">boundaryLinks</span><span class="err">]=&#34;</span><span class="na">true</span><span class="err">&#34;</span> <span class="err">[</span><span class="na">totalItems</span><span class="err">]=&#34;</span><span class="na">pagination</span><span class="err">.</span><span class="na">totalItems</span><span class="err">&#34;</span> <span class="err">[</span><span class="na">itemsPerPage</span><span class="err">]=&#34;</span><span class="na">pagination</span><span class="err">.</span><span class="na">itemsPerPage</span><span class="err">&#34;</span> <span class="err">[(</span><span class="na">ngModel</span><span class="err">)]=&#34;</span><span class="na">pagination</span><span class="err">.</span><span class="na">currentPage</span><span class="err">&#34;</span>
-    <span class="err">(</span><span class="na">pageChanged</span><span class="err">)=&#34;</span><span class="na">pageChanged</span><span class="err">($</span><span class="na">event</span><span class="err">)&#34;</span> <span class="na">previousText</span><span class="o">=</span><span class="s">&#34;&amp;lsaquo;&#34;</span> <span class="na">nextText</span><span class="o">=</span><span class="s">&#34;&amp;rsaquo;&#34;</span> <span class="na">firstText</span><span class="o">=</span><span class="s">&#34;&amp;laquo;&#34;</span> <span class="na">lastText</span><span class="o">=</span><span class="s">&#34;&amp;raquo;&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">pagination</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+    <span class="err">(</span><span class="na">pageChanged</span><span class="err">)=&#34;</span><span class="na">pageChanged</span><span class="err">($</span><span class="na">event</span><span class="err">)&#34;</span> <span class="na">previousText</span><span class="o">=</span><span class="s">&#34;&amp;lsaquo;&#34;</span> <span class="na">nextText</span><span class="o">=</span><span class="s">&#34;&amp;rsaquo;&#34;</span> <span class="na">firstText</span><span class="o">=</span><span class="s">&#34;&amp;laquo;&#34;</span> <span class="na">lastText</span><span class="o">=</span><span class="s">&#34;&amp;raquo;&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">pagination</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <p>Note that in the application API the <strong>Gender</strong> is automatically added if not specified in the <strong>UserParams</strong>. In the Members page we can filter for both genders and add a like to anyone. But in this page only likes received from the opposite gender are considered.</p>
       </article>
 
@@ -414,7 +418,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

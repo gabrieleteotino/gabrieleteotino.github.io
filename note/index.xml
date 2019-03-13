@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Init git submodules</title>
+      <link>https://www.teosoft.it/note/2019-03-13-init-git-submodules/</link>
+      <pubDate>Wed, 13 Mar 2019 17:30:08 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2019-03-13-init-git-submodules/</guid>
+      <description>git submodule update --init --recursive git submodule update --recursive git submodule update --recursive --remote</description>
+    </item>
+    
+    <item>
+      <title>Download files using scp</title>
+      <link>https://www.teosoft.it/note/2019-02-20-download-files-using-scp/</link>
+      <pubDate>Wed, 20 Feb 2019 13:23:01 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2019-02-20-download-files-using-scp/</guid>
+      <description>scp -P 2222 gabriele@ipaddress:/home/gabriele/*.tar.gz /home/zap/nexcloud-backup/*</description>
+    </item>
+    
+    <item>
       <title>Clean PowerShell history</title>
       <link>https://www.teosoft.it/note/2018-09-10-clear-powershell-history/</link>
       <pubDate>Mon, 10 Sep 2018 17:07:03 +0200</pubDate>

@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/10-updating-users/3-persisting-changes-api/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -250,15 +254,15 @@ ga('send', 'pageview');
 </span><span class="c1"></span><span class="na">[HttpPut(&#34;{id}&#34;)]</span>
 <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">UpdateUser</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">,</span><span class="na"> [FromBody]</span> <span class="n">UserForUpdate</span> <span class="n">userForUpdate</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(!</span><span class="nc">ModelState</span><span class="p">.</span><span class="n">IsValid</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(!</span><span class="n">ModelState</span><span class="p">.</span><span class="n">IsValid</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">BadRequest</span><span class="p">(</span><span class="n">ModelState</span><span class="p">);</span>
     <span class="p">}</span>
 
     <span class="c1">// User is a ClaimsPrincipal defined in ControllerBase, we search for the first identity that has an id (NameIdentifier)
-</span><span class="c1"></span>    <span class="kt">var</span> <span class="n">currentUserId</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="nc">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span>
+</span><span class="c1"></span>    <span class="kt">var</span> <span class="n">currentUserId</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="n">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">);</span>
 
-    <span class="kt">var</span> <span class="n">userFromRepo</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">userFromRepo</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
 
     <span class="k">if</span> <span class="p">(</span><span class="n">userFromRepo</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
     <span class="p">{</span>
@@ -266,14 +270,14 @@ ga('send', 'pageview');
     <span class="p">}</span>
 
     <span class="c1">// Only the current user can change its profile
-</span><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="nc">userFromRepo</span><span class="p">.</span><span class="n">Id</span> <span class="p">!=</span> <span class="n">currentUserId</span><span class="p">)</span>
+</span><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="n">userFromRepo</span><span class="p">.</span><span class="n">Id</span> <span class="p">!=</span> <span class="n">currentUserId</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">Unauthorized</span><span class="p">();</span>
     <span class="p">}</span>
 
-    <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">(</span><span class="n">userForUpdate</span><span class="p">,</span> <span class="n">userFromRepo</span><span class="p">);</span>
+    <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">(</span><span class="n">userForUpdate</span><span class="p">,</span> <span class="n">userFromRepo</span><span class="p">);</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
     <span class="p">{</span>
         <span class="c1">// With PUT the response should be a 204 when everything is ok
 </span><span class="c1"></span>        <span class="k">return</span> <span class="n">NoContent</span><span class="p">();</span>
@@ -361,7 +365,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

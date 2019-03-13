@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/post/" />
   <link rel="alternate" href="https://www.teosoft.it/post/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -216,6 +220,53 @@ ga('send', 'pageview');
           </div>
         
         <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://www.teosoft.it/post/2018-05-11-data-analysis-with-scikit-learn-and-pandas/">
+                <h2 class="post-title">Data analysis with scikit learn and pandas</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Using scikit learn to data mine a small dataset of clinical exams.
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on May 7, 2018
+              </p>
+              <div class="post-entry">
+                
+                  Download Miniconda 64bit version with python 3.6.
+Installation Install Miniconda using the current user (no sudo)
+cd ~/Downloads/ bash Miniconda3-latest-Linux-x86_64.sh # reload env (or restart terminal) source ~/.bashrc This toolset is my only use for anaconda, so everithing is installed in the default environment.
+Install all the tools.
+# this will also install numpy conda install scikit-learn conda install ipython conda install matplotlib # this will also install pandas conda install seaborn conda install jupyter Workspace Create a folder for notebooks and data files, then start ipython.
+                  <a href="https://www.teosoft.it/post/2018-05-11-data-analysis-with-scikit-learn-and-pandas/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://www.teosoft.it//tags/anaconda/">anaconda</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/conda/">conda</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/pandas/">pandas</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/scikit/">scikit</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/scikit-learn/">scikit learn</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/svm/">svm</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/numpy/">numpy</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
           
             <article class="post-preview">
               <a href="https://www.teosoft.it/post/2018-05-04-svg-to-multisize-ico/">
@@ -615,41 +666,6 @@ Host *
 
             </article>
           
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/post/2018-03-29-linux-screen/">
-                <h2 class="post-title">Linux screen</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Using screen command to mantain a remote session open between ssh sessions for long running tasks with multiple shell windows
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on March 29, 2018
-              </p>
-              <div class="post-entry">
-                
-                  <p>Install and run</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">apt install screen
-screen</code></pre></div>
-                  <a href="https://www.teosoft.it/post/2018-03-29-linux-screen/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/debian/">debian</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/tools/">tools</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
         </div>
         
           <ul class="pager main-pager">
@@ -721,7 +737,7 @@ screen</code></pre></div>
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

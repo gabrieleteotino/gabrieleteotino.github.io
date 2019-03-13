@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/3-securing/2-repository/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -242,19 +246,19 @@ ga('send', 'pageview');
 <p>To register a user we need a private method to hash a plaintext password.</p>
 
 <p>We use the <em>Hash Based Message Authentication Code</em> class <strong>System.Security.Cryptography.HMACSHA512</strong>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">using</span><span class="p">(</span><span class="kt">var</span> <span class="n">hmac</span> <span class="p">=</span> <span class="k">new</span> <span class="nc">System</span><span class="p">.</span><span class="nc">Security</span><span class="p">.</span><span class="nc">Cryptography</span><span class="p">.</span><span class="n">HMACSHA512</span><span class="p">()</span> <span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">using</span><span class="p">(</span><span class="kt">var</span> <span class="n">hmac</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Security</span><span class="p">.</span><span class="n">Cryptography</span><span class="p">.</span><span class="n">HMACSHA512</span><span class="p">()</span> <span class="p">)</span>
 <span class="p">{</span>
-  <span class="n">passwordSalt</span> <span class="p">=</span> <span class="nc">hmac</span><span class="p">.</span><span class="n">Key</span><span class="p">;</span>
-  <span class="n">passwordHash</span> <span class="p">=</span> <span class="nc">hmac</span><span class="p">.</span><span class="n">ComputeHash</span><span class="p">(</span><span class="nc">System</span><span class="p">.</span><span class="nc">Text</span><span class="p">.</span><span class="nc">Encoding</span><span class="p">.</span><span class="nc">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">password</span><span class="p">));</span>
+  <span class="n">passwordSalt</span> <span class="p">=</span> <span class="n">hmac</span><span class="p">.</span><span class="n">Key</span><span class="p">;</span>
+  <span class="n">passwordHash</span> <span class="p">=</span> <span class="n">hmac</span><span class="p">.</span><span class="n">ComputeHash</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">password</span><span class="p">));</span>
 <span class="p">}</span></code></pre></div>
 <p>To Login a user we need another private method to check that password, passwordHash and passwordSalt match. Again we use <strong>HMACSHA512</strong>, then compare byte to byte the two hashes.</p>
-<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">hmac</span> <span class="p">=</span> <span class="k">new</span> <span class="nc">System</span><span class="p">.</span><span class="nc">Security</span><span class="p">.</span><span class="nc">Cryptography</span><span class="p">.</span><span class="n">HMACSHA512</span><span class="p">(</span><span class="n">passwordSalt</span><span class="p">))</span>
+<div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">hmac</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Security</span><span class="p">.</span><span class="n">Cryptography</span><span class="p">.</span><span class="n">HMACSHA512</span><span class="p">(</span><span class="n">passwordSalt</span><span class="p">))</span>
 <span class="p">{</span>
-    <span class="kt">byte</span><span class="na">[]</span> <span class="n">computedHash</span> <span class="p">=</span> <span class="nc">hmac</span><span class="p">.</span><span class="n">ComputeHash</span><span class="p">(</span><span class="nc">System</span><span class="p">.</span><span class="nc">Text</span><span class="p">.</span><span class="nc">Encoding</span><span class="p">.</span><span class="nc">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">password</span><span class="p">));</span>
+    <span class="kt">byte</span><span class="na">[]</span> <span class="n">computedHash</span> <span class="p">=</span> <span class="n">hmac</span><span class="p">.</span><span class="n">ComputeHash</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">password</span><span class="p">));</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="nc">passwordHash</span><span class="p">.</span><span class="n">Length</span> <span class="p">!=</span> <span class="nc">computedHash</span><span class="p">.</span><span class="n">Length</span><span class="p">)</span> <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">passwordHash</span><span class="p">.</span><span class="n">Length</span> <span class="p">!=</span> <span class="n">computedHash</span><span class="p">.</span><span class="n">Length</span><span class="p">)</span> <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
 
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="nc">computedHash</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">computedHash</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
     <span class="p">{</span>
         <span class="k">if</span><span class="p">(</span><span class="n">passwordHash</span><span class="na">[i]</span> <span class="p">!=</span> <span class="n">computedHash</span><span class="na">[i]</span><span class="p">)</span> <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
     <span class="p">}</span>
@@ -280,9 +284,9 @@ ga('send', 'pageview');
 
         <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;</span> <span class="n">Login</span><span class="p">(</span><span class="kt">string</span> <span class="n">username</span><span class="p">,</span> <span class="kt">string</span> <span class="n">password</span><span class="p">)</span>
         <span class="p">{</span>
-            <span class="kt">var</span> <span class="n">user</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_context</span><span class="p">.</span><span class="nc">Users</span><span class="p">.</span><span class="n">FirstOrDefaultAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="nc">x</span><span class="p">.</span><span class="n">Username</span> <span class="p">==</span> <span class="n">username</span><span class="p">);</span>
+            <span class="kt">var</span> <span class="n">user</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_context</span><span class="p">.</span><span class="n">Users</span><span class="p">.</span><span class="n">FirstOrDefaultAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Username</span> <span class="p">==</span> <span class="n">username</span><span class="p">);</span>
 
-            <span class="kt">bool</span> <span class="n">isPasswordValid</span> <span class="p">=</span> <span class="n">CheckPasswordHash</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="nc">user</span><span class="p">.</span><span class="n">PasswordHash</span><span class="p">,</span> <span class="nc">user</span><span class="p">.</span><span class="n">PasswordSalt</span><span class="p">);</span>
+            <span class="kt">bool</span> <span class="n">isPasswordValid</span> <span class="p">=</span> <span class="n">CheckPasswordHash</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">user</span><span class="p">.</span><span class="n">PasswordHash</span><span class="p">,</span> <span class="n">user</span><span class="p">.</span><span class="n">PasswordSalt</span><span class="p">);</span>
 
             <span class="k">if</span> <span class="p">(</span><span class="n">isPasswordValid</span><span class="p">)</span>
             <span class="p">{</span>
@@ -299,24 +303,24 @@ ga('send', 'pageview');
             <span class="c1">// The password must be a not empty string
 </span><span class="c1"></span>            <span class="k">if</span> <span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="n">IsNullOrWhiteSpace</span><span class="p">(</span><span class="n">password</span><span class="p">))</span> <span class="k">return</span> <span class="k">null</span><span class="p">;</span>
 
-            <span class="p">(</span><span class="nc">user</span><span class="p">.</span><span class="n">PasswordHash</span><span class="p">,</span> <span class="nc">user</span><span class="p">.</span><span class="n">PasswordSalt</span><span class="p">)</span> <span class="p">=</span> <span class="n">ComputeHashSalt</span><span class="p">(</span><span class="n">password</span><span class="p">);</span>
-            <span class="k">await</span> <span class="nc">_context</span><span class="p">.</span><span class="nc">Users</span><span class="p">.</span><span class="n">AddAsync</span><span class="p">(</span><span class="n">user</span><span class="p">);</span>
-            <span class="k">await</span> <span class="nc">_context</span><span class="p">.</span><span class="n">SaveChangesAsync</span><span class="p">();</span>
+            <span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="n">PasswordHash</span><span class="p">,</span> <span class="n">user</span><span class="p">.</span><span class="n">PasswordSalt</span><span class="p">)</span> <span class="p">=</span> <span class="n">ComputeHashSalt</span><span class="p">(</span><span class="n">password</span><span class="p">);</span>
+            <span class="k">await</span> <span class="n">_context</span><span class="p">.</span><span class="n">Users</span><span class="p">.</span><span class="n">AddAsync</span><span class="p">(</span><span class="n">user</span><span class="p">);</span>
+            <span class="k">await</span> <span class="n">_context</span><span class="p">.</span><span class="n">SaveChangesAsync</span><span class="p">();</span>
 
             <span class="k">return</span> <span class="n">user</span><span class="p">;</span>
         <span class="p">}</span>
 
         <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="kt">bool</span><span class="p">&gt;</span> <span class="n">UserExists</span><span class="p">(</span><span class="kt">string</span> <span class="n">username</span><span class="p">)</span>
         <span class="p">{</span>
-            <span class="k">return</span> <span class="k">await</span> <span class="nc">_context</span><span class="p">.</span><span class="nc">Users</span><span class="p">.</span><span class="n">AnyAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="nc">x</span><span class="p">.</span><span class="n">Username</span> <span class="p">==</span> <span class="n">username</span><span class="p">);</span>
+            <span class="k">return</span> <span class="k">await</span> <span class="n">_context</span><span class="p">.</span><span class="n">Users</span><span class="p">.</span><span class="n">AnyAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Username</span> <span class="p">==</span> <span class="n">username</span><span class="p">);</span>
         <span class="p">}</span>
 
         <span class="k">private</span> <span class="p">(</span><span class="kt">byte</span><span class="na">[]</span> <span class="n">passwordHash</span><span class="p">,</span> <span class="kt">byte</span><span class="na">[]</span> <span class="n">passwordSalt</span><span class="p">)</span> <span class="n">ComputeHashSalt</span><span class="p">(</span><span class="kt">string</span> <span class="n">password</span><span class="p">)</span>
         <span class="p">{</span>
-            <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">hmac</span> <span class="p">=</span> <span class="k">new</span> <span class="nc">System</span><span class="p">.</span><span class="nc">Security</span><span class="p">.</span><span class="nc">Cryptography</span><span class="p">.</span><span class="n">HMACSHA512</span><span class="p">())</span>
+            <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">hmac</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Security</span><span class="p">.</span><span class="n">Cryptography</span><span class="p">.</span><span class="n">HMACSHA512</span><span class="p">())</span>
             <span class="p">{</span>
-                <span class="kt">byte</span><span class="na">[]</span> <span class="n">passwordSalt</span> <span class="p">=</span> <span class="nc">hmac</span><span class="p">.</span><span class="n">Key</span><span class="p">;</span>
-                <span class="kt">byte</span><span class="na">[]</span> <span class="n">passwordHash</span> <span class="p">=</span> <span class="nc">hmac</span><span class="p">.</span><span class="n">ComputeHash</span><span class="p">(</span><span class="nc">System</span><span class="p">.</span><span class="nc">Text</span><span class="p">.</span><span class="nc">Encoding</span><span class="p">.</span><span class="nc">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">password</span><span class="p">));</span>
+                <span class="kt">byte</span><span class="na">[]</span> <span class="n">passwordSalt</span> <span class="p">=</span> <span class="n">hmac</span><span class="p">.</span><span class="n">Key</span><span class="p">;</span>
+                <span class="kt">byte</span><span class="na">[]</span> <span class="n">passwordHash</span> <span class="p">=</span> <span class="n">hmac</span><span class="p">.</span><span class="n">ComputeHash</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">password</span><span class="p">));</span>
 
                 <span class="k">return</span> <span class="p">(</span><span class="n">passwordHash</span><span class="p">:</span> <span class="n">passwordHash</span><span class="p">,</span> <span class="n">passwordSalt</span><span class="p">:</span> <span class="n">passwordSalt</span><span class="p">);</span>
             <span class="p">}</span>
@@ -324,13 +328,13 @@ ga('send', 'pageview');
 
         <span class="k">private</span> <span class="kt">bool</span> <span class="n">CheckPasswordHash</span><span class="p">(</span><span class="kt">string</span> <span class="n">password</span><span class="p">,</span> <span class="kt">byte</span><span class="na">[]</span> <span class="n">passwordHash</span><span class="p">,</span> <span class="kt">byte</span><span class="na">[]</span> <span class="n">passwordSalt</span><span class="p">)</span>
         <span class="p">{</span>
-            <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">hmac</span> <span class="p">=</span> <span class="k">new</span> <span class="nc">System</span><span class="p">.</span><span class="nc">Security</span><span class="p">.</span><span class="nc">Cryptography</span><span class="p">.</span><span class="n">HMACSHA512</span><span class="p">(</span><span class="n">passwordSalt</span><span class="p">))</span>
+            <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">hmac</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Security</span><span class="p">.</span><span class="n">Cryptography</span><span class="p">.</span><span class="n">HMACSHA512</span><span class="p">(</span><span class="n">passwordSalt</span><span class="p">))</span>
             <span class="p">{</span>
-                <span class="kt">byte</span><span class="na">[]</span> <span class="n">computedHash</span> <span class="p">=</span> <span class="nc">hmac</span><span class="p">.</span><span class="n">ComputeHash</span><span class="p">(</span><span class="nc">System</span><span class="p">.</span><span class="nc">Text</span><span class="p">.</span><span class="nc">Encoding</span><span class="p">.</span><span class="nc">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">password</span><span class="p">));</span>
+                <span class="kt">byte</span><span class="na">[]</span> <span class="n">computedHash</span> <span class="p">=</span> <span class="n">hmac</span><span class="p">.</span><span class="n">ComputeHash</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">password</span><span class="p">));</span>
 
-                <span class="k">if</span> <span class="p">(</span><span class="nc">passwordHash</span><span class="p">.</span><span class="n">Length</span> <span class="p">!=</span> <span class="nc">computedHash</span><span class="p">.</span><span class="n">Length</span><span class="p">)</span> <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">passwordHash</span><span class="p">.</span><span class="n">Length</span> <span class="p">!=</span> <span class="n">computedHash</span><span class="p">.</span><span class="n">Length</span><span class="p">)</span> <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
 
-                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="nc">computedHash</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">computedHash</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
                 <span class="p">{</span>
                     <span class="k">if</span><span class="p">(</span><span class="n">passwordHash</span><span class="na">[i]</span> <span class="p">!=</span> <span class="n">computedHash</span><span class="na">[i]</span><span class="p">)</span> <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
                 <span class="p">}</span>
@@ -350,7 +354,7 @@ ga('send', 'pageview');
 <div class="highlight"><pre class="chroma"><code class="language-c#" data-lang="c#"><span class="k">public</span> <span class="k">void</span> <span class="n">ConfigureServices</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="p">...</span>
-  <span class="nc">services</span><span class="p">.</span><span class="n">AddScoped</span><span class="p">&lt;</span><span class="n">IAuthRepository</span><span class="p">,</span> <span class="n">AuthRepository</span><span class="p">&gt;();</span>
+  <span class="n">services</span><span class="p">.</span><span class="n">AddScoped</span><span class="p">&lt;</span><span class="n">IAuthRepository</span><span class="p">,</span> <span class="n">AuthRepository</span><span class="p">&gt;();</span>
   <span class="p">...</span>
 <span class="p">}</span></code></pre></div>
       </article>
@@ -429,7 +433,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

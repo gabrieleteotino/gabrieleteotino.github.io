@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>KeeCloud on Keepass2 to sync with Dropbox using Ubuntu</title>
+      <link>https://www.teosoft.it/post/2019-03-13-keecloud-keepass2-sync-with-dropbox-using-ubuntu/</link>
+      <pubDate>Wed, 13 Mar 2019 16:32:20 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2019-03-13-keecloud-keepass2-sync-with-dropbox-using-ubuntu/</guid>
+      <description>&lt;p&gt;Installation and configuration of Keecloud a Keepass2 plugin that can open and synchronize a file from Dropbox.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Nextcloud using docker backup and update</title>
       <link>https://www.teosoft.it/post/2019-02-18-nextcloud-docker-backup-and-update/</link>
       <pubDate>Mon, 18 Feb 2019 14:35:40 +0100</pubDate>

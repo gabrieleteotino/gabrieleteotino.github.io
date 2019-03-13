@@ -26,7 +26,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/12-registration/3-expand-api-registration/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -87,12 +87,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -268,8 +272,8 @@ ga('send', 'pageview');
 
     <span class="k">public</span> <span class="n">UserForRegistration</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="n">Created</span> <span class="p">=</span> <span class="nc">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="n">LastActive</span> <span class="p">=</span> <span class="nc">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">Created</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">LastActive</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 <p>Open <strong>AutoMapperProfiles.cs</strong> and add a new profile. All the property names match, so no additional configuration is needed.</p>
@@ -278,15 +282,15 @@ ga('send', 'pageview');
 
 <p>Open <strong>AuthController.cs</strong> and add a mapping.</p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="c1">//var userToCreate = new Models.User { Username = userForRegistration.Username };
-</span><span class="c1"></span><span class="kt">var</span> <span class="n">userToCreate</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;(</span><span class="n">userForRegistration</span><span class="p">);</span>
-<span class="kt">var</span> <span class="n">createdUser</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">Register</span><span class="p">(</span><span class="n">userToCreate</span><span class="p">,</span> <span class="nc">userForRegistration</span><span class="p">.</span><span class="n">Password</span><span class="p">);</span></code></pre></div>
+</span><span class="c1"></span><span class="kt">var</span> <span class="n">userToCreate</span> <span class="p">=</span> <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">User</span><span class="p">&gt;(</span><span class="n">userForRegistration</span><span class="p">);</span>
+<span class="kt">var</span> <span class="n">createdUser</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">Register</span><span class="p">(</span><span class="n">userToCreate</span><span class="p">,</span> <span class="n">userForRegistration</span><span class="p">.</span><span class="n">Password</span><span class="p">);</span></code></pre></div>
 <p>To remove the <em>201</em> and substitute it with a <em>CreatedAtRoute</em> open <strong>UsersController.cs</strong> and add a name to the route of <strong>GetUser</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="o">[</span><span class="n">HttpGet</span><span class="o">(</span><span class="s">&#34;{id}&#34;</span><span class="o">,</span> <span class="n">Name</span><span class="o">=</span><span class="s">&#34;GetUser&#34;</span><span class="o">)]</span>
 <span class="kd">public</span> <span class="n">async</span> <span class="n">Task</span><span class="o">&lt;</span><span class="n">IActionResult</span><span class="o">&gt;</span> <span class="nf">GetUser</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">)</span></code></pre></div>
 <p>Back in <strong>AuthController.cs</strong> change the <em>return</em></p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="c1">//return StatusCode(201);
-</span><span class="c1"></span><span class="kt">var</span> <span class="n">userToReturn</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">UserForDetail</span><span class="p">&gt;(</span><span class="n">createdUser</span><span class="p">);</span>
-<span class="k">return</span> <span class="n">CreatedAtRoute</span><span class="p">(</span><span class="s">&#34;GetUser&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="p">{</span> <span class="n">id</span> <span class="p">=</span> <span class="nc">userToReturn</span><span class="p">.</span><span class="n">Id</span> <span class="p">},</span> <span class="n">userToReturn</span><span class="p">);</span></code></pre></div>
+</span><span class="c1"></span><span class="kt">var</span> <span class="n">userToReturn</span> <span class="p">=</span> <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">UserForDetail</span><span class="p">&gt;(</span><span class="n">createdUser</span><span class="p">);</span>
+<span class="k">return</span> <span class="n">CreatedAtRoute</span><span class="p">(</span><span class="s">&#34;GetUser&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="p">{</span> <span class="n">id</span> <span class="p">=</span> <span class="n">userToReturn</span><span class="p">.</span><span class="n">Id</span> <span class="p">},</span> <span class="n">userToReturn</span><span class="p">);</span></code></pre></div>
 <h2 id="test-with-postman">Test with Postman</h2>
 
 <p>Open Postman and edit the old <em>POST</em> used to create a user (or add a new one).</p>
@@ -398,7 +402,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

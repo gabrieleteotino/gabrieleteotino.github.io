@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/16-messaging/4-message-thread/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -252,73 +256,73 @@ ga('send', 'pageview');
   <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 <p>Add some simple rendering so that we can test the component</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let message of messages&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let message of messages&#34;</span><span class="p">&gt;</span>
   {{message.content}}
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre></div>
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre></div>
 <p>Use the new component in <strong>member-detail.component.html</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">tab</span> <span class="na">heading</span><span class="o">=</span><span class="s">&#34;Messages&#34;</span><span class="p"></span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">app-member-messages</span> <span class="err">[</span><span class="na">recipientId</span><span class="err">]=&#34;</span><span class="na">user</span><span class="err">.</span><span class="na">id</span><span class="err">&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">app-member-messages</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">tab</span><span class="p">&gt;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">tab</span> <span class="na">heading</span><span class="o">=</span><span class="s">&#34;Messages&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">app-member-messages</span> <span class="err">[</span><span class="na">recipientId</span><span class="err">]=&#34;</span><span class="na">user</span><span class="err">.</span><span class="na">id</span><span class="err">&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">app-member-messages</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">tab</span><span class="p">&gt;</span></code></pre></div>
 <p>Test the application.</p>
 
 <h2 id="template">Template</h2>
 
 <p>Remove the test code in <strong>member-messages.component.html</strong> and add the new template</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;card&#34;</span><span class="p"></span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;card-body&#34;</span><span class="p"></span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;messages?.length === 0&#34;</span><span class="p"></span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>No messages yet... say hi using the message box below<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;card&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;card-body&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;messages?.length === 0&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>No messages yet... say hi using the message box below<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;chat&#34;</span><span class="p"></span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">li</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let message of messages&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;chat&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let message of messages&#34;</span><span class="p">&gt;</span>
         <span class="c">&lt;!-- to them --&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;message.senderId == recipientId&#34;</span><span class="p"></span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;chat-img float-left&#34;</span><span class="p"></span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{message.senderPhotoUrl}}&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;{{message.senderKnownAs}}&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span><span class="p"></span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;chat-body&#34;</span><span class="p"></span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;header&#34;</span><span class="p"></span><span class="p">&gt;</span>
-              <span class="p">&lt;</span><span class="nt">strong</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;primary-font&#34;</span><span class="p"></span><span class="p">&gt;</span>{{message.senderKnownAs}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">strong</span><span class="p">&gt;</span>
-              <span class="p">&lt;</span><span class="nt">small</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted float-right&#34;</span><span class="p"></span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fa fa-clock&#34;</span><span class="p"></span><span class="p">&gt;</span>{{message.sentDate | timeAgo}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-              <span class="p">&lt;</span><span class="p">/</span><span class="nt">small</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>{{message.content}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;message.senderId == recipientId&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;chat-img float-left&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{message.senderPhotoUrl}}&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;{{message.senderKnownAs}}&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;chat-body&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;header&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">strong</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;primary-font&#34;</span><span class="p">&gt;</span>{{message.senderKnownAs}}<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">small</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted float-right&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fa fa-clock&#34;</span><span class="p">&gt;</span>{{message.sentDate | timeAgo}}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{message.content}}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
         <span class="c">&lt;!-- to me --&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;message.senderId != recipientId&#34;</span><span class="p"></span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;chat-img float-right&#34;</span><span class="p"></span><span class="p">&gt;</span>
-              <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{message.senderPhotoUrl}}&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;{{message.senderKnownAs}}&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span><span class="p"></span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;chat-body&#34;</span><span class="p"></span><span class="p">&gt;</span>
-              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;header&#34;</span><span class="p"></span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">small</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p"></span><span class="p">&gt;</span>
-                  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fa fa-clock&#34;</span><span class="p"></span><span class="p">&gt;</span>{{message.sentDate | timeAgo}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-                  <span class="p">&lt;</span><span class="nt">span</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;!message.isRead&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-danger&#34;</span><span class="p"></span><span class="p">&gt;</span>(unread)<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-                  <span class="p">&lt;</span><span class="nt">span</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;message.isRead&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-success&#34;</span><span class="p"></span><span class="p">&gt;</span>(read {{message.readDate | timeAgo}})<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="p">/</span><span class="nt">small</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">strong</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;primary-font float-right&#34;</span><span class="p"></span><span class="p">&gt;</span>{{message.senderKnownAs}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">strong</span><span class="p">&gt;</span>
-              <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>{{message.content}}<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="p">/</span><span class="nt">ul</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;card-footer&#34;</span><span class="p"></span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p"></span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group&#34;</span><span class="p"></span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control input-sm&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;send a private message&#34;</span><span class="p"></span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group-append&#34;</span><span class="p"></span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p"></span><span class="p">&gt;</span>Send<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="p">/</span><span class="nt">form</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">card</span> <span class="p">{</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;message.senderId != recipientId&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;chat-img float-right&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{message.senderPhotoUrl}}&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;{{message.senderKnownAs}}&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;chat-body&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;header&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">small</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fa fa-clock&#34;</span><span class="p">&gt;</span>{{message.sentDate | timeAgo}}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">span</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;!message.isRead&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-danger&#34;</span><span class="p">&gt;</span>(unread)<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">span</span> <span class="err">*</span><span class="na">ngIf</span><span class="o">=</span><span class="s">&#34;message.isRead&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-success&#34;</span><span class="p">&gt;</span>(read {{message.readDate | timeAgo}})<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">strong</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;primary-font float-right&#34;</span><span class="p">&gt;</span>{{message.senderKnownAs}}<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{message.content}}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;card-footer&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control input-sm&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;send a private message&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group-append&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;</span>Send<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">card</span> <span class="p">{</span>
   <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -350,7 +354,7 @@ ga('send', 'pageview');
 <p>Valor-soft <a href="https://valor-software.com/ngx-bootstrap/#/tabs#tabs-manual-select">example</a>.</p>
 
 <p>Open <strong>members-detail.component.html</strong> and add a template reference to the <em>tabset</em></p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">tabset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;member-tabset&#34;</span> <span class="err">#</span><span class="na">memberTabs</span><span class="p"></span><span class="p">&gt;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">tabset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;member-tabset&#34;</span> <span class="err">#</span><span class="na">memberTabs</span><span class="p">&gt;</span></code></pre></div>
 <p>Add a <em>ViewChild</em> variable in <strong>members-detail.component.ts</strong> and a method to activate a tab by id</p>
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kd">@ViewChild</span><span class="p">(</span><span class="s1">&#39;memberTabs&#39;</span><span class="p">)</span> <span class="nx">memberTabs</span>: <span class="kt">TabsetComponent</span><span class="p">;</span>
 <span class="c1">// ...
@@ -360,14 +364,14 @@ ga('send', 'pageview');
   <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 <p>Back in the html change the <em>Message</em> button code to open the <em>Messages</em> tab</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-success w-100&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">selectTab</span><span class="err">(</span><span class="na">3</span><span class="err">)&#34;</span><span class="p"></span><span class="p">&gt;</span>Message<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-success w-100&#34;</span> <span class="err">(</span><span class="na">click</span><span class="err">)=&#34;</span><span class="na">selectTab</span><span class="err">(</span><span class="na">3</span><span class="err">)&#34;</span><span class="p">&gt;</span>Message<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="query-parameters">Query parameters</h2>
 
 <p>Feature: when the user clicks a message in his inbox then the profile component is opened and the tab messages is activated.</p>
 
 <p>Open <strong>messages.component.html</strong> and add a query string parameter to the <em>routerLink</em> of each message</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">tr</span> <span class="err">*</span><span class="na">ngFor</span><span class="o">=</span><span class="s">&#34;let message of messages&#34;</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">members</span><span class="err">&#39;,</span>
-        <span class="na">messageContainer </span><span class="o">=</span><span class="s">=</span> <span class="err">&#39;</span><span class="na">Outbox</span><span class="err">&#39;</span> <span class="err">?</span> <span class="na">message</span><span class="err">.</span><span class="na">recipientId</span> <span class="na">:</span> <span class="na">message</span><span class="err">.</span><span class="na">senderId</span><span class="err">]&#34;</span> <span class="err">[</span><span class="na">queryParams</span><span class="err">]=&#34;{</span><span class="na">tab:</span> <span class="na">3</span><span class="err">}&#34;</span><span class="p"></span><span class="p">&gt;</span></code></pre></div>
+        <span class="na">messageContainer </span><span class="o">=</span><span class="s">=</span> <span class="err">&#39;</span><span class="na">Outbox</span><span class="err">&#39;</span> <span class="err">?</span> <span class="na">message</span><span class="err">.</span><span class="na">recipientId</span> <span class="na">:</span> <span class="na">message</span><span class="err">.</span><span class="na">senderId</span><span class="err">]&#34;</span> <span class="err">[</span><span class="na">queryParams</span><span class="err">]=&#34;{</span><span class="na">tab:</span> <span class="na">3</span><span class="err">}&#34;</span><span class="p">&gt;</span></code></pre></div>
 <p>Back in <strong>members-detail.component.ts</strong> subscribe to the query parameter from the route in <strong>ngOnInit</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">this</span><span class="p">.</span><span class="nx">route</span><span class="p">.</span><span class="nx">queryParams</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">params</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="kr">const</span> <span class="nx">tabId</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">params</span><span class="p">[</span><span class="s1">&#39;tab&#39;</span><span class="p">]</span> <span class="o">||</span> <span class="mi">0</span><span class="p">);</span>
@@ -377,11 +381,11 @@ ga('send', 'pageview');
   <span class="p">}</span>
 <span class="p">});</span></code></pre></div>
 <p>Add the <em>queryParams</em> and <em>routerLink</em> in <strong>member-card.component.html</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-inline-item&#34;</span><span class="p"></span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-responsive&#34;</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">members</span><span class="err">/&#39;,</span> <span class="na">user</span><span class="err">.</span><span class="na">id</span><span class="err">]&#34;</span> <span class="err">[</span><span class="na">queryParams</span><span class="err">]=&#34;{</span><span class="na">tab:</span> <span class="na">3</span><span class="err">}&#34;</span><span class="p"></span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fa fa-envelope&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">i</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-inline-item&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-responsive&#34;</span> <span class="err">[</span><span class="na">routerLink</span><span class="err">]=&#34;[&#39;/</span><span class="na">members</span><span class="err">/&#39;,</span> <span class="na">user</span><span class="err">.</span><span class="na">id</span><span class="err">]&#34;</span> <span class="err">[</span><span class="na">queryParams</span><span class="err">]=&#34;{</span><span class="na">tab:</span> <span class="na">3</span><span class="err">}&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fa fa-envelope&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span></code></pre></div>
       </article>
 
       
@@ -458,7 +462,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

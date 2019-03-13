@@ -6,10 +6,21 @@
     <description>Recent content in Linux on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Apr 2018 11:24:30 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2019 16:32:20 +0100</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>KeeCloud on Keepass2 to sync with Dropbox using Ubuntu</title>
+      <link>https://www.teosoft.it/post/2019-03-13-keecloud-keepass2-sync-with-dropbox-using-ubuntu/</link>
+      <pubDate>Wed, 13 Mar 2019 16:32:20 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2019-03-13-keecloud-keepass2-sync-with-dropbox-using-ubuntu/</guid>
+      <description>&lt;p&gt;Installation and configuration of Keecloud a Keepass2 plugin that can open and synchronize a file from Dropbox.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Installing Xubuntu on Ezbook S3</title>

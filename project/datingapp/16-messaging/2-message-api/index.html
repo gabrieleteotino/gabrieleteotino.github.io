@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/16-messaging/2-message-api/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -232,7 +236,7 @@ ga('send', 'pageview');
 <p>Implement in <strong>DatingRepository</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">Message</span><span class="p">&gt;</span> <span class="n">GetMessage</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">return</span> <span class="k">await</span> <span class="nc">_context</span><span class="p">.</span><span class="nc">Messages</span><span class="p">.</span><span class="n">FirstOrDefaultAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="nc">x</span><span class="p">.</span><span class="n">Id</span> <span class="p">==</span> <span class="n">id</span><span class="p">);</span>
+    <span class="k">return</span> <span class="k">await</span> <span class="n">_context</span><span class="p">.</span><span class="n">Messages</span><span class="p">.</span><span class="n">FirstOrDefaultAsync</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Id</span> <span class="p">==</span> <span class="n">id</span><span class="p">);</span>
 <span class="p">}</span></code></pre></div>
 <h2 id="controller">Controller</h2>
 
@@ -257,15 +261,15 @@ ga('send', 'pageview');
 </span><span class="na">
 </span><span class="na">        [HttpGet(&#34;{id}&#34;, Name=&#34;GetMessage&#34;)]</span>
         <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">GetMessage</span><span class="p">(</span><span class="kt">int</span> <span class="n">userId</span><span class="p">,</span> <span class="kt">int</span> <span class="n">id</span><span class="p">)</span> <span class="p">{</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">userId</span> <span class="p">!=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="nc">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">))</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">userId</span> <span class="p">!=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="n">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">))</span>
                 <span class="k">return</span> <span class="n">Unauthorized</span><span class="p">();</span>
 
-            <span class="kt">var</span> <span class="n">messageFromRepo</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetMessage</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+            <span class="kt">var</span> <span class="n">messageFromRepo</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetMessage</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
 
             <span class="k">if</span><span class="p">(</span><span class="n">messageFromRepo</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
                 <span class="k">return</span> <span class="n">NotFound</span><span class="p">();</span>
 
-            <span class="k">if</span><span class="p">(</span><span class="nc">messageFromRepo</span><span class="p">.</span><span class="n">SenderId</span> <span class="p">!=</span> <span class="n">userId</span> <span class="p">&amp;&amp;</span> <span class="nc">messageFromRepo</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">!=</span> <span class="n">userId</span><span class="p">)</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">messageFromRepo</span><span class="p">.</span><span class="n">SenderId</span> <span class="p">!=</span> <span class="n">userId</span> <span class="p">&amp;&amp;</span> <span class="n">messageFromRepo</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">!=</span> <span class="n">userId</span><span class="p">)</span>
                 <span class="k">return</span> <span class="n">Unauthorized</span><span class="p">();</span>
 
             <span class="k">return</span> <span class="n">Ok</span><span class="p">(</span><span class="n">messageFromRepo</span><span class="p">);</span>
@@ -294,28 +298,28 @@ ga('send', 'pageview');
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="na">[HttpPost]</span>
 <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">CreateMessage</span><span class="p">(</span><span class="kt">int</span> <span class="n">userId</span><span class="p">,</span> <span class="n">MessageForCreation</span> <span class="n">messageForCreation</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">userId</span> <span class="p">!=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="nc">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">))</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">userId</span> <span class="p">!=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="n">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">))</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">Unauthorized</span><span class="p">();</span>
     <span class="p">}</span>
 
-    <span class="kt">var</span> <span class="n">recipient</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="nc">messageForCreation</span><span class="p">.</span><span class="n">RecipientId</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">recipient</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetUser</span><span class="p">(</span><span class="n">messageForCreation</span><span class="p">.</span><span class="n">RecipientId</span><span class="p">);</span>
 
     <span class="k">if</span> <span class="p">(</span><span class="n">recipient</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">NotFound</span><span class="p">();</span>
     <span class="p">}</span>
 
-    <span class="kt">var</span> <span class="n">message</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">Message</span><span class="p">&gt;(</span><span class="n">messageForCreation</span><span class="p">);</span>
-    <span class="nc">message</span><span class="p">.</span><span class="n">SentDate</span> <span class="p">=</span> <span class="nc">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
-    <span class="nc">message</span><span class="p">.</span><span class="n">SenderId</span> <span class="p">=</span> <span class="n">userId</span><span class="p">;</span>
+    <span class="kt">var</span> <span class="n">message</span> <span class="p">=</span> <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">Message</span><span class="p">&gt;(</span><span class="n">messageForCreation</span><span class="p">);</span>
+    <span class="n">message</span><span class="p">.</span><span class="n">SentDate</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
+    <span class="n">message</span><span class="p">.</span><span class="n">SenderId</span> <span class="p">=</span> <span class="n">userId</span><span class="p">;</span>
 
-    <span class="nc">_repo</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+    <span class="n">_repo</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
     <span class="p">{</span>
-        <span class="kt">var</span> <span class="n">messageToReturn</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">MessageForCreated</span><span class="p">&gt;(</span><span class="n">message</span><span class="p">);</span>
-        <span class="k">return</span> <span class="n">CreatedAtRoute</span><span class="p">(</span><span class="s">&#34;GetMessage&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="p">{</span> <span class="n">id</span> <span class="p">=</span> <span class="nc">message</span><span class="p">.</span><span class="n">Id</span> <span class="p">},</span> <span class="n">messageToReturn</span><span class="p">);</span>
+        <span class="kt">var</span> <span class="n">messageToReturn</span> <span class="p">=</span> <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">MessageForCreated</span><span class="p">&gt;(</span><span class="n">message</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">CreatedAtRoute</span><span class="p">(</span><span class="s">&#34;GetMessage&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="p">{</span> <span class="n">id</span> <span class="p">=</span> <span class="n">message</span><span class="p">.</span><span class="n">Id</span> <span class="p">},</span> <span class="n">messageToReturn</span><span class="p">);</span>
     <span class="p">}</span>
 
     <span class="k">throw</span> <span class="k">new</span> <span class="n">Exception</span><span class="p">(</span><span class="s">&#34;Creation failed on save&#34;</span><span class="p">);</span>
@@ -352,26 +356,26 @@ ga('send', 'pageview');
 <p>Implement in <strong>DatingRepository</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">PagedList</span><span class="p">&lt;</span><span class="n">Message</span><span class="p">&gt;&gt;</span> <span class="n">GetMessagesForUser</span><span class="p">(</span><span class="n">MessageParams</span> <span class="n">messageParams</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="kt">var</span> <span class="n">messages</span> <span class="p">=</span> <span class="nc">_context</span><span class="p">.</span><span class="n">Messages</span>
-        <span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="nc">m</span><span class="p">.</span><span class="n">Sender</span><span class="p">).</span><span class="n">ThenInclude</span><span class="p">(</span><span class="n">u</span> <span class="p">=&gt;</span> <span class="nc">u</span><span class="p">.</span><span class="n">Photos</span><span class="p">)</span>
-        <span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="nc">m</span><span class="p">.</span><span class="n">Recipient</span><span class="p">).</span><span class="n">ThenInclude</span><span class="p">(</span><span class="n">u</span> <span class="p">=&gt;</span> <span class="nc">u</span><span class="p">.</span><span class="n">Photos</span><span class="p">)</span>
+    <span class="kt">var</span> <span class="n">messages</span> <span class="p">=</span> <span class="n">_context</span><span class="p">.</span><span class="n">Messages</span>
+        <span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="n">m</span><span class="p">.</span><span class="n">Sender</span><span class="p">).</span><span class="n">ThenInclude</span><span class="p">(</span><span class="n">u</span> <span class="p">=&gt;</span> <span class="n">u</span><span class="p">.</span><span class="n">Photos</span><span class="p">)</span>
+        <span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="n">m</span><span class="p">.</span><span class="n">Recipient</span><span class="p">).</span><span class="n">ThenInclude</span><span class="p">(</span><span class="n">u</span> <span class="p">=&gt;</span> <span class="n">u</span><span class="p">.</span><span class="n">Photos</span><span class="p">)</span>
         <span class="p">.</span><span class="n">AsQueryable</span><span class="p">();</span>
 
-    <span class="k">switch</span><span class="p">(</span><span class="nc">messageParams</span><span class="p">.</span><span class="n">MessageContainer</span><span class="p">)</span>
+    <span class="k">switch</span><span class="p">(</span><span class="n">messageParams</span><span class="p">.</span><span class="n">MessageContainer</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">case</span> <span class="s">&#34;Inbox&#34;</span><span class="p">:</span>
-            <span class="n">messages</span> <span class="p">=</span> <span class="nc">messages</span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="nc">m</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">==</span> <span class="nc">messageParams</span><span class="p">.</span><span class="n">UserId</span><span class="p">);</span>
+            <span class="n">messages</span> <span class="p">=</span> <span class="n">messages</span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="n">m</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">==</span> <span class="n">messageParams</span><span class="p">.</span><span class="n">UserId</span><span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
         <span class="k">case</span> <span class="s">&#34;Outbox&#34;</span><span class="p">:</span>
-            <span class="n">messages</span> <span class="p">=</span> <span class="nc">messages</span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="nc">m</span><span class="p">.</span><span class="n">SenderId</span> <span class="p">==</span> <span class="nc">messageParams</span><span class="p">.</span><span class="n">UserId</span><span class="p">);</span>
+            <span class="n">messages</span> <span class="p">=</span> <span class="n">messages</span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="n">m</span><span class="p">.</span><span class="n">SenderId</span> <span class="p">==</span> <span class="n">messageParams</span><span class="p">.</span><span class="n">UserId</span><span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
         <span class="k">default</span><span class="p">:</span> <span class="c1">//&#34;Unread&#34;
-</span><span class="c1"></span>            <span class="n">messages</span> <span class="p">=</span> <span class="nc">messages</span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="nc">m</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">==</span> <span class="nc">messageParams</span><span class="p">.</span><span class="n">UserId</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="nc">m</span><span class="p">.</span><span class="n">IsRead</span><span class="p">);</span>
+</span><span class="c1"></span>            <span class="n">messages</span> <span class="p">=</span> <span class="n">messages</span><span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="n">m</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">==</span> <span class="n">messageParams</span><span class="p">.</span><span class="n">UserId</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="n">m</span><span class="p">.</span><span class="n">IsRead</span><span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="n">messages</span> <span class="p">=</span> <span class="nc">messages</span><span class="p">.</span><span class="n">OrderByDescending</span><span class="p">(</span><span class="n">m</span><span class="p">=&gt;</span><span class="nc">m</span><span class="p">.</span><span class="n">SentDate</span><span class="p">);</span>
-    <span class="k">return</span> <span class="k">await</span> <span class="n">PagedList</span><span class="p">&lt;</span><span class="n">Message</span><span class="p">&gt;.</span><span class="n">CreateAsync</span><span class="p">(</span><span class="n">messages</span><span class="p">,</span> <span class="nc">messageParams</span><span class="p">.</span><span class="n">PageNumber</span><span class="p">,</span> <span class="nc">messageParams</span><span class="p">.</span><span class="n">PageSize</span><span class="p">);</span>
+    <span class="n">messages</span> <span class="p">=</span> <span class="n">messages</span><span class="p">.</span><span class="n">OrderByDescending</span><span class="p">(</span><span class="n">m</span><span class="p">=&gt;</span><span class="n">m</span><span class="p">.</span><span class="n">SentDate</span><span class="p">);</span>
+    <span class="k">return</span> <span class="k">await</span> <span class="n">PagedList</span><span class="p">&lt;</span><span class="n">Message</span><span class="p">&gt;.</span><span class="n">CreateAsync</span><span class="p">(</span><span class="n">messages</span><span class="p">,</span> <span class="n">messageParams</span><span class="p">.</span><span class="n">PageNumber</span><span class="p">,</span> <span class="n">messageParams</span><span class="p">.</span><span class="n">PageSize</span><span class="p">);</span>
 <span class="p">}</span></code></pre></div>
 <p>Create a new DTO <strong>MessageForList</strong> very similar to the original <strong>Message</strong> class. Note that Automapper recognizes properties like <strong>SenderKnownAs</strong> as  <strong>Sender.KnownAs</strong> in the source object (good boy automapper, good boy!)</p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">MessageForList</span>
@@ -394,18 +398,18 @@ ga('send', 'pageview');
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="na">[HttpGet]</span>
 <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">GetMessagesForUser</span><span class="p">(</span><span class="kt">int</span> <span class="n">userId</span><span class="p">,</span><span class="na"> [FromQuery]</span><span class="n">MessageParams</span> <span class="n">messageParams</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">userId</span> <span class="p">!=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="nc">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">))</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">userId</span> <span class="p">!=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="n">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">))</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">Unauthorized</span><span class="p">();</span>
     <span class="p">}</span>
 
-    <span class="nc">messageParams</span><span class="p">.</span><span class="n">UserId</span> <span class="p">=</span> <span class="n">userId</span><span class="p">;</span>
+    <span class="n">messageParams</span><span class="p">.</span><span class="n">UserId</span> <span class="p">=</span> <span class="n">userId</span><span class="p">;</span>
 
-    <span class="kt">var</span> <span class="n">messagesFromRepo</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetMessagesForUser</span><span class="p">(</span><span class="n">messageParams</span><span class="p">);</span>
-    <span class="kt">var</span> <span class="n">messages</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">MessageForList</span><span class="p">&gt;&gt;(</span><span class="n">messagesFromRepo</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">messagesFromRepo</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetMessagesForUser</span><span class="p">(</span><span class="n">messageParams</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">messages</span> <span class="p">=</span> <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">MessageForList</span><span class="p">&gt;&gt;(</span><span class="n">messagesFromRepo</span><span class="p">);</span>
 
-    <span class="nc">Response</span><span class="p">.</span><span class="n">AddPagination</span><span class="p">(</span><span class="nc">messagesFromRepo</span><span class="p">.</span><span class="n">CurrentPage</span><span class="p">,</span> <span class="nc">messagesFromRepo</span><span class="p">.</span><span class="n">PageSize</span><span class="p">,</span>
-        <span class="nc">messagesFromRepo</span><span class="p">.</span><span class="n">TotalCount</span><span class="p">,</span> <span class="nc">messagesFromRepo</span><span class="p">.</span><span class="n">TotalPages</span><span class="p">);</span>
+    <span class="n">Response</span><span class="p">.</span><span class="n">AddPagination</span><span class="p">(</span><span class="n">messagesFromRepo</span><span class="p">.</span><span class="n">CurrentPage</span><span class="p">,</span> <span class="n">messagesFromRepo</span><span class="p">.</span><span class="n">PageSize</span><span class="p">,</span>
+        <span class="n">messagesFromRepo</span><span class="p">.</span><span class="n">TotalCount</span><span class="p">,</span> <span class="n">messagesFromRepo</span><span class="p">.</span><span class="n">TotalPages</span><span class="p">);</span>
 
     <span class="k">return</span> <span class="n">Ok</span><span class="p">(</span><span class="n">messages</span><span class="p">);</span>
 <span class="p">}</span></code></pre></div>
@@ -420,27 +424,27 @@ ga('send', 'pageview');
 <p>Implement in <strong>DatingRepository</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">Message</span><span class="p">&gt;&gt;</span> <span class="n">GetMessageThread</span><span class="p">(</span><span class="kt">int</span> <span class="n">userId</span><span class="p">,</span> <span class="kt">int</span> <span class="n">otherUserId</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="kt">var</span> <span class="n">messages</span> <span class="p">=</span> <span class="nc">_context</span><span class="p">.</span><span class="n">Messages</span>
-        <span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="nc">m</span><span class="p">.</span><span class="n">Sender</span><span class="p">).</span><span class="n">ThenInclude</span><span class="p">(</span><span class="n">u</span> <span class="p">=&gt;</span> <span class="nc">u</span><span class="p">.</span><span class="n">Photos</span><span class="p">)</span>
-        <span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="nc">m</span><span class="p">.</span><span class="n">Recipient</span><span class="p">).</span><span class="n">ThenInclude</span><span class="p">(</span><span class="n">u</span> <span class="p">=&gt;</span> <span class="nc">u</span><span class="p">.</span><span class="n">Photos</span><span class="p">)</span>
+    <span class="kt">var</span> <span class="n">messages</span> <span class="p">=</span> <span class="n">_context</span><span class="p">.</span><span class="n">Messages</span>
+        <span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="n">m</span><span class="p">.</span><span class="n">Sender</span><span class="p">).</span><span class="n">ThenInclude</span><span class="p">(</span><span class="n">u</span> <span class="p">=&gt;</span> <span class="n">u</span><span class="p">.</span><span class="n">Photos</span><span class="p">)</span>
+        <span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="n">m</span><span class="p">.</span><span class="n">Recipient</span><span class="p">).</span><span class="n">ThenInclude</span><span class="p">(</span><span class="n">u</span> <span class="p">=&gt;</span> <span class="n">u</span><span class="p">.</span><span class="n">Photos</span><span class="p">)</span>
         <span class="p">.</span><span class="n">Where</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span>
-            <span class="p">(</span><span class="nc">m</span><span class="p">.</span><span class="n">SenderId</span> <span class="p">==</span> <span class="n">userId</span> <span class="p">&amp;&amp;</span> <span class="nc">m</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">==</span> <span class="n">otherUserId</span><span class="p">)</span>
-            <span class="p">||</span> <span class="p">(</span><span class="nc">m</span><span class="p">.</span><span class="n">SenderId</span> <span class="p">==</span> <span class="n">otherUserId</span> <span class="p">&amp;&amp;</span> <span class="nc">m</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">==</span> <span class="n">userId</span><span class="p">))</span>
-        <span class="p">.</span><span class="n">OrderByDescending</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="nc">m</span><span class="p">.</span><span class="n">SentDate</span><span class="p">);</span>
+            <span class="p">(</span><span class="n">m</span><span class="p">.</span><span class="n">SenderId</span> <span class="p">==</span> <span class="n">userId</span> <span class="p">&amp;&amp;</span> <span class="n">m</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">==</span> <span class="n">otherUserId</span><span class="p">)</span>
+            <span class="p">||</span> <span class="p">(</span><span class="n">m</span><span class="p">.</span><span class="n">SenderId</span> <span class="p">==</span> <span class="n">otherUserId</span> <span class="p">&amp;&amp;</span> <span class="n">m</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">==</span> <span class="n">userId</span><span class="p">))</span>
+        <span class="p">.</span><span class="n">OrderByDescending</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="n">m</span><span class="p">.</span><span class="n">SentDate</span><span class="p">);</span>
 
-    <span class="k">return</span> <span class="k">await</span> <span class="nc">messages</span><span class="p">.</span><span class="n">ToListAsync</span><span class="p">();</span>
+    <span class="k">return</span> <span class="k">await</span> <span class="n">messages</span><span class="p">.</span><span class="n">ToListAsync</span><span class="p">();</span>
 <span class="p">}</span></code></pre></div>
 <p>Add a new method in <strong>MessagesController</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="na">[HttpGet(&#34;thread/{otherUserId}&#34;)]</span>
 <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">GetMessageThread</span><span class="p">(</span><span class="kt">int</span> <span class="n">userId</span><span class="p">,</span> <span class="kt">int</span> <span class="n">otherUserId</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">userId</span> <span class="p">!=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="nc">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">))</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">userId</span> <span class="p">!=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="n">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">))</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">Unauthorized</span><span class="p">();</span>
     <span class="p">}</span>
 
-    <span class="kt">var</span> <span class="n">messagesFromRepo</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetMessageThread</span><span class="p">(</span><span class="n">userId</span><span class="p">,</span> <span class="n">otherUserId</span><span class="p">);</span>
-    <span class="kt">var</span> <span class="n">messages</span> <span class="p">=</span> <span class="nc">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">MessageForList</span><span class="p">&gt;&gt;(</span><span class="n">messagesFromRepo</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">messagesFromRepo</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetMessageThread</span><span class="p">(</span><span class="n">userId</span><span class="p">,</span> <span class="n">otherUserId</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">messages</span> <span class="p">=</span> <span class="n">_mapper</span><span class="p">.</span><span class="n">Map</span><span class="p">&lt;</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">MessageForList</span><span class="p">&gt;&gt;(</span><span class="n">messagesFromRepo</span><span class="p">);</span>
 
     <span class="k">return</span> <span class="n">Ok</span><span class="p">(</span><span class="n">messages</span><span class="p">);</span>
 <span class="p">}</span></code></pre></div>
@@ -524,7 +528,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

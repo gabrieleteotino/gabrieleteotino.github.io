@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/16-messaging/7-mark-message-as-read/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -231,25 +235,25 @@ ga('send', 'pageview');
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="n">HttpPost</span><span class="p">(</span><span class="s">&#34;{id}/read&#34;</span><span class="p">)]</span>
 <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">IActionResult</span><span class="p">&gt;</span> <span class="n">MarkMessageAsRead</span><span class="p">(</span><span class="kt">int</span> <span class="n">userId</span><span class="p">,</span> <span class="kt">int</span> <span class="n">id</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">userId</span> <span class="p">!=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="nc">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="nc">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">))</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">userId</span> <span class="p">!=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">User</span><span class="p">.</span><span class="n">FindFirst</span><span class="p">(</span><span class="n">ClaimTypes</span><span class="p">.</span><span class="n">NameIdentifier</span><span class="p">).</span><span class="n">Value</span><span class="p">))</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">Unauthorized</span><span class="p">();</span>
     <span class="p">}</span>
 
-    <span class="kt">var</span> <span class="n">messageToRead</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">GetMessage</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nc">messageToRead</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">!=</span> <span class="n">userId</span><span class="p">)</span>
+    <span class="kt">var</span> <span class="n">messageToRead</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">GetMessage</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">messageToRead</span><span class="p">.</span><span class="n">RecipientId</span> <span class="p">!=</span> <span class="n">userId</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">Unauthorized</span><span class="p">();</span>
     <span class="p">}</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nc">messageToRead</span><span class="p">.</span><span class="n">IsRead</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">messageToRead</span><span class="p">.</span><span class="n">IsRead</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">BadRequest</span><span class="p">(</span><span class="s">&#34;Message is already marked as read&#34;</span><span class="p">);</span>
     <span class="p">}</span>
 
-    <span class="nc">messageToRead</span><span class="p">.</span><span class="n">IsRead</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
-    <span class="nc">messageToRead</span><span class="p">.</span><span class="n">ReadDate</span> <span class="p">=</span> <span class="nc">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
+    <span class="n">messageToRead</span><span class="p">.</span><span class="n">IsRead</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+    <span class="n">messageToRead</span><span class="p">.</span><span class="n">ReadDate</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">SaveAll</span><span class="p">())</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="n">NoContent</span><span class="p">();</span>
     <span class="p">}</span>
@@ -353,7 +357,7 @@ ga('send', 'pageview');
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/3-securing/3-controller/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,12 +81,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -257,14 +261,14 @@ ga('send', 'pageview');
 </span><span class="c1"></span>
     <span class="c1">// Convert username to lowercase to avoid multiple user with similar names like &#34;John&#34; and &#34;john&#34;
 </span><span class="c1"></span>    <span class="c1">// Use invariant to avoid conflicts for users from different cultures
-</span><span class="c1"></span>    <span class="nc">userForRegistration</span><span class="p">.</span><span class="n">Username</span> <span class="p">=</span> <span class="nc">userForRegistration</span><span class="p">.</span><span class="nc">Username</span><span class="p">.</span><span class="n">ToLowerInvariant</span><span class="p">();</span>
+</span><span class="c1"></span>    <span class="n">userForRegistration</span><span class="p">.</span><span class="n">Username</span> <span class="p">=</span> <span class="n">userForRegistration</span><span class="p">.</span><span class="n">Username</span><span class="p">.</span><span class="n">ToLowerInvariant</span><span class="p">();</span>
 
-    <span class="k">if</span><span class="p">(</span><span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">UserExists</span><span class="p">(</span><span class="nc">userForRegistration</span><span class="p">.</span><span class="n">Username</span><span class="p">)){</span>
+    <span class="k">if</span><span class="p">(</span><span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">UserExists</span><span class="p">(</span><span class="n">userForRegistration</span><span class="p">.</span><span class="n">Username</span><span class="p">)){</span>
         <span class="k">return</span> <span class="n">BadRequest</span><span class="p">(</span><span class="s">&#34;Username already in use&#34;</span><span class="p">);</span>
     <span class="p">}</span>
 
-    <span class="kt">var</span> <span class="n">userToCreate</span> <span class="p">=</span> <span class="k">new</span> <span class="nc">Models</span><span class="p">.</span><span class="n">User</span><span class="p">{</span> <span class="n">Username</span> <span class="p">=</span> <span class="nc">userForRegistration</span><span class="p">.</span><span class="n">Username</span> <span class="p">};</span>
-    <span class="kt">var</span> <span class="n">createdUser</span> <span class="p">=</span> <span class="k">await</span> <span class="nc">_repo</span><span class="p">.</span><span class="n">Register</span><span class="p">(</span><span class="n">userToCreate</span><span class="p">,</span> <span class="nc">userForRegistration</span><span class="p">.</span><span class="n">Password</span><span class="p">);</span>
+    <span class="kt">var</span> <span class="n">userToCreate</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Models</span><span class="p">.</span><span class="n">User</span><span class="p">{</span> <span class="n">Username</span> <span class="p">=</span> <span class="n">userForRegistration</span><span class="p">.</span><span class="n">Username</span> <span class="p">};</span>
+    <span class="kt">var</span> <span class="n">createdUser</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_repo</span><span class="p">.</span><span class="n">Register</span><span class="p">(</span><span class="n">userToCreate</span><span class="p">,</span> <span class="n">userForRegistration</span><span class="p">.</span><span class="n">Password</span><span class="p">);</span>
 
     <span class="c1">// TODO this 201 is just a temporary solution, we should return a path to the new entity
 </span><span class="c1"></span>    <span class="k">return</span> <span class="n">StatusCode</span><span class="p">(</span><span class="m">201</span><span class="p">);</span>
@@ -366,7 +370,7 @@ In the new popup select the <em>dotnet exec</em> for the DatingApp.API, be sure 
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

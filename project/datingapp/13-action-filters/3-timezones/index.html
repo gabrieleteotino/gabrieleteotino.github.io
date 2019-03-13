@@ -26,7 +26,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.47.1" />
   <link rel="canonical" href="https://www.teosoft.it/project/datingapp/13-action-filters/3-timezones/" />
   <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -87,12 +87,16 @@
     </div>
 </div>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-24994854-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-24994854-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -244,10 +248,10 @@ ga('send', 'pageview');
 <p>The only problem is that <em>Newtonsoft</em> serializer default configuration sends the dates without any timezone information.</p>
 
 <p>Change the serializer settings in mvc configuration in <strong>Startup.ConfigureServices</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="nc">services</span><span class="p">.</span><span class="n">AddMvc</span><span class="p">()</span>
-  <span class="p">.</span><span class="n">SetCompatibilityVersion</span><span class="p">(</span><span class="nc">CompatibilityVersion</span><span class="p">.</span><span class="n">Version_2_1</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="n">services</span><span class="p">.</span><span class="n">AddMvc</span><span class="p">()</span>
+  <span class="p">.</span><span class="n">SetCompatibilityVersion</span><span class="p">(</span><span class="n">CompatibilityVersion</span><span class="p">.</span><span class="n">Version_2_1</span><span class="p">)</span>
   <span class="p">.</span><span class="n">AddJsonOptions</span><span class="p">(</span><span class="n">options</span> <span class="p">=&gt;</span> <span class="p">{</span>
-      <span class="nc">options</span><span class="p">.</span><span class="nc">SerializerSettings</span><span class="p">.</span><span class="n">DateTimeZoneHandling</span> <span class="p">=</span> <span class="nc">Newtonsoft</span><span class="p">.</span><span class="nc">Json</span><span class="p">.</span><span class="nc">DateTimeZoneHandling</span><span class="p">.</span><span class="n">Utc</span><span class="p">;</span>
+      <span class="n">options</span><span class="p">.</span><span class="n">SerializerSettings</span><span class="p">.</span><span class="n">DateTimeZoneHandling</span> <span class="p">=</span> <span class="n">Newtonsoft</span><span class="p">.</span><span class="n">Json</span><span class="p">.</span><span class="n">DateTimeZoneHandling</span><span class="p">.</span><span class="n">Utc</span><span class="p">;</span>
   <span class="p">});</span></code></pre></div>
 <p>Look at how the dates are sent in json before and after the change</p>
 <div class="highlight"><pre class="chroma">Before
@@ -328,7 +332,7 @@ After
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.36.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>
