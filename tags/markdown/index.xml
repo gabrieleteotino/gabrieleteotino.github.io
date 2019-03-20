@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Theme on Bluish capsule</title>
-    <link>https://www.teosoft.it/tags/theme/</link>
-    <description>Recent content in Theme on Bluish capsule</description>
+    <title>Markdown on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/markdown/</link>
+    <description>Recent content in Markdown on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 Mar 2019 12:55:52 +0100</lastBuildDate>
     
-	<atom:link href="https://www.teosoft.it/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.teosoft.it/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,17 +18,6 @@
       
       <guid>https://www.teosoft.it/post/2019-03-18-documenting-a-project-using-hugo/</guid>
       <description>&lt;p&gt;With the static generator &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and the nice theme &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn&#34;&gt;hugo-theme-learn&lt;/a&gt; we can easily build a skeleton for a documentation site.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bootswatch</title>
-      <link>https://www.teosoft.it/project/datingapp/6-third-party-components/4-bootswatch/</link>
-      <pubDate>Sun, 17 Jun 2018 19:21:16 +0200</pubDate>
-      
-      <guid>https://www.teosoft.it/project/datingapp/6-third-party-components/4-bootswatch/</guid>
-      <description>&lt;p&gt;Free themes for Bootstrap&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

@@ -17,7 +17,7 @@
       <pubDate>Fri, 15 Feb 2019 15:05:11 +0100</pubDate>
       
       <guid>https://www.teosoft.it/project/ngrx-in-depth/1-introduction/</guid>
-      <description>Clone the cource code
+      <description>Clone the source code
 cd dev git clone https://github.com/angular-university/angular-ngrx-course.git cd angular-ngrx-course/ The material for the lessons is available in different branches (git branch -a)
  1-auth 1-auth-finished 2-entity 2-entity-finished 3-lessons 3-lessons-finished  Select the appropriate branch
 git checkout -b 1-auth origin/1-auth Install the dependencies and start the local express server
