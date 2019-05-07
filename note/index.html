@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
-  <meta name="generator" content="Hugo 0.47.1" />
+  <meta name="generator" content="Hugo 0.40.1" />
   <link rel="canonical" href="https://www.teosoft.it/note/" />
   <link rel="alternate" href="https://www.teosoft.it/note/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -81,16 +81,12 @@
     </div>
 </div>
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-24994854-1', 'auto');
-	
-	ga('send', 'pageview');
-}
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-24994854-1', 'auto');
+ga('send', 'pageview');
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -220,6 +216,41 @@ if (!doNotTrack) {
           </div>
         
         <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://www.teosoft.it/note/2019-05-07-combination-with-sum/">
+                <h2 class="post-title">Combinations with sum</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on May 7, 2019
+              </p>
+              <div class="post-entry">
+                
+                  <p>To find all the possible combination for a given sector in a killer sudoku or in a &ldquo;between 1 and 9&rdquo; sudoku.</p>
+
+<p>Find all combinations for a between 1 and 9 that sums to 18 with 3 cells</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">from itertools import combinations
+print <span class="o">[</span>c <span class="k">for</span> c in combinations<span class="o">([</span><span class="m">2</span>,3,4,5,6,7,8<span class="o">]</span>, <span class="m">3</span><span class="o">)</span> <span class="k">if</span> sum<span class="o">(</span>c<span class="o">)</span> <span class="o">==</span> <span class="m">18</span><span class="o">]</span></code></pre></div>
+<p>Find all combinations in a killer for a sum of 22 in 3 cells</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">from itertools import combinations
+print <span class="o">[</span>c <span class="k">for</span> c in combinations<span class="o">([</span><span class="m">1</span>,2,3,4,5,6,7,8,9<span class="o">]</span>, <span class="m">3</span><span class="o">)</span> <span class="k">if</span> sum<span class="o">(</span>c<span class="o">)</span> <span class="o">==</span> <span class="m">22</span><span class="o">]</span></code></pre></div>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://www.teosoft.it//tags/python/">python</a>&nbsp;
+                  
+                    #<a href="https://www.teosoft.it//tags/sudoku/">sudoku</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
           
             <article class="post-preview">
               <a href="https://www.teosoft.it/note/2019-03-13-init-git-submodules/">
@@ -354,11 +385,11 @@ git submodule update --recursive --remote</code></pre></div>
           
             <article class="post-preview">
               <a href="https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/">
-                <h2 class="post-title">Git clone a specicific commit</h2>
+                <h2 class="post-title">Git clone a specific commit</h2>
 
                 
                   <h3 class="post-subtitle">
-                    Downloading a specicific commit from github
+                    Downloading a specific commit from github
                   </h3>
                 
               </a>
@@ -527,49 +558,6 @@ git submodule update --recursive --remote</code></pre></div>
 
             </article>
           
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/note/2018-05-30-postman-api-ide/">
-                <h2 class="post-title">Postman API IDE</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Postman is THE api development environment
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on May 30, 2018
-              </p>
-              <div class="post-entry">
-                
-                  <p>Postman is the most complete toolchain for API development</p>
-
-<ul>
-<li>The most-used REST client worldwide</li>
-<li>Designed from the ground up to support the API developer</li>
-<li>Intuitive user interface to send requests, save responses, add tests, and create workflows</li>
-</ul>
-
-<p></p>
-                  <a href="https://www.teosoft.it/note/2018-05-30-postman-api-ide/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/api/">api</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/web/">web</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/rest/">rest</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
-          
         </div>
         
           <ul class="pager main-pager">
@@ -637,7 +625,7 @@ git submodule update --recursive --remote</code></pre></div>
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.47.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

@@ -6,10 +6,22 @@
     <description>Recent content on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Mar 2019 12:55:52 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 07 May 2019 15:39:30 +0200</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Combinations with sum</title>
+      <link>https://www.teosoft.it/note/2019-05-07-combination-with-sum/</link>
+      <pubDate>Tue, 07 May 2019 15:39:30 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2019-05-07-combination-with-sum/</guid>
+      <description>To find all the possible combination for a given sector in a killer sudoku or in a &amp;ldquo;between 1 and 9&amp;rdquo; sudoku.
+Find all combinations for a between 1 and 9 that sums to 18 with 3 cells
+from itertools import combinations print [c for c in combinations([2,3,4,5,6,7,8], 3) if sum(c) == 18] Find all combinations in a killer for a sum of 22 in 3 cells
+from itertools import combinations print [c for c in combinations([1,2,3,4,5,6,7,8,9], 3) if sum(c) == 22]</description>
+    </item>
     
     <item>
       <title>Documenting a project using hugo</title>
@@ -415,7 +427,7 @@ npm install @angular/material @angular/cdk @angular/animations --save Configure 
     </item>
     
     <item>
-      <title>Git clone a specicific commit</title>
+      <title>Git clone a specific commit</title>
       <link>https://www.teosoft.it/note/2018-07-27-git-clone-a-specific-commit/</link>
       <pubDate>Fri, 27 Jul 2018 10:59:45 +0200</pubDate>
       
@@ -1225,7 +1237,7 @@ Install all the tools.
       <description>After generating a new key for my Visual Studio Online code repository I have to tell git which key to use for each connection.
 Create a file in ~/.ssh/config
 Add the following content
-# Uncomment to enable debugging. # Levels are: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3. # LogLevel DEBUG Host vs-ssh.visualstudio.com IdentityFile ~/.ssh/id_rsa_visualstudio Host github.com IdentityFile ~/.ssh/id_rsa_github # tell ssh-agent to not try keys Host * IdentitiesOnly yes</description>
+# Uncomment to enable debugging. # Levels are: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3. # LogLevel DEBUG Host ssh.dev.azure.com IdentityFile ~/.ssh/id_rsa_visualstudio Host vs-ssh.visualstudio.com IdentityFile ~/.ssh/id_rsa_visualstudio Host github.com IdentityFile ~/.ssh/id_rsa_github # tell ssh-agent to not try keys Host * IdentitiesOnly yes</description>
     </item>
     
     <item>

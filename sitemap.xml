@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/note/2019-05-07-combination-with-sum/</loc>
+    <lastmod>2019-05-07T15:39:30+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/post/2019-03-18-documenting-a-project-using-hugo/</loc>
     <lastmod>2019-03-18T12:55:52+01:00</lastmod>
   </url>
@@ -1023,7 +1028,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2019-03-18T12:55:52+01:00</lastmod>
+    <lastmod>2019-05-07T15:39:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1136,7 +1141,7 @@
   
   <url>
     <loc>https://www.teosoft.it/categories/dev/</loc>
-    <lastmod>2019-02-15T15:05:11+01:00</lastmod>
+    <lastmod>2019-05-07T15:39:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1520,7 +1525,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/python/</loc>
-    <lastmod>2018-02-28T11:51:41+01:00</lastmod>
+    <lastmod>2019-05-07T15:39:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1587,6 +1592,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/strecth/</loc>
     <lastmod>2018-03-13T10:46:21+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/sudoku/</loc>
+    <lastmod>2019-05-07T15:39:30+02:00</lastmod>
     <priority>0</priority>
   </url>
   

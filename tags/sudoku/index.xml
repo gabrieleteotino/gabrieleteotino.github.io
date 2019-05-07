@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sudoku on Bluish capsule</title>
+    <link>https://www.teosoft.it/tags/sudoku/</link>
+    <description>Recent content in Sudoku on Bluish capsule</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 May 2019 15:39:30 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.teosoft.it/tags/sudoku/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Combinations with sum</title>
+      <link>https://www.teosoft.it/note/2019-05-07-combination-with-sum/</link>
+      <pubDate>Tue, 07 May 2019 15:39:30 +0200</pubDate>
+      
+      <guid>https://www.teosoft.it/note/2019-05-07-combination-with-sum/</guid>
+      <description>To find all the possible combination for a given sector in a killer sudoku or in a &amp;ldquo;between 1 and 9&amp;rdquo; sudoku.
+Find all combinations for a between 1 and 9 that sums to 18 with 3 cells
+from itertools import combinations print [c for c in combinations([2,3,4,5,6,7,8], 3) if sum(c) == 18] Find all combinations in a killer for a sum of 22 in 3 cells
+from itertools import combinations print [c for c in combinations([1,2,3,4,5,6,7,8,9], 3) if sum(c) == 22]</description>
+    </item>
+    
+  </channel>
+</rss>
