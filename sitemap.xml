@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.teosoft.it/post/2019-03-18-documenting-a-project-using-hugo/</loc>
+    <lastmod>2019-03-18T12:55:52+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.teosoft.it/note/2019-03-13-init-git-submodules/</loc>
     <lastmod>2019-03-13T17:30:08+01:00</lastmod>
   </url>
@@ -1018,7 +1023,7 @@
   
   <url>
     <loc>https://www.teosoft.it/</loc>
-    <lastmod>2019-03-13T17:30:08+01:00</lastmod>
+    <lastmod>2019-03-18T12:55:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1137,7 +1142,7 @@
   
   <url>
     <loc>https://www.teosoft.it/categories/development/</loc>
-    <lastmod>2018-05-02T15:34:57+02:00</lastmod>
+    <lastmod>2019-03-18T12:55:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1245,7 +1250,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/hugo/</loc>
-    <lastmod>2018-03-12T13:43:50+01:00</lastmod>
+    <lastmod>2019-03-18T12:55:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1336,6 +1341,12 @@
   <url>
     <loc>https://www.teosoft.it/tags/mac/</loc>
     <lastmod>2018-08-31T14:25:13+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.teosoft.it/tags/markdown/</loc>
+    <lastmod>2019-03-18T12:55:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1605,7 +1616,7 @@
   
   <url>
     <loc>https://www.teosoft.it/tags/theme/</loc>
-    <lastmod>2018-06-17T19:21:16+02:00</lastmod>
+    <lastmod>2019-03-18T12:55:52+01:00</lastmod>
     <priority>0</priority>
   </url>
   

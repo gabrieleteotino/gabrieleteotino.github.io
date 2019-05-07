@@ -5,21 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Ngrx</title>
-  <meta property="og:title" content="Ngrx" />
-  <meta name="twitter:title" content="Ngrx" />
+  <title>Documenting a project using hugo</title>
+  <meta property="og:title" content="Documenting a project using hugo" />
+  <meta name="twitter:title" content="Documenting a project using hugo" />
+  <meta name="description" content="Use hugo and hugo-theme-learn to document a project with markdown">
+  <meta property="og:description" content="Use hugo and hugo-theme-learn to document a project with markdown">
+  <meta name="twitter:description" content="Use hugo and hugo-theme-learn to document a project with markdown">
   <meta name="author" content="Gabriele Teotino"/>
   <link href='https://www.teosoft.it/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://www.teosoft.it/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://www.teosoft.it/tags/ngrx/" />
+  <meta property="og:url" content="https://www.teosoft.it/post/2019-03-18-documenting-a-project-using-hugo/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Bluish capsule" />
 
   <meta name="generator" content="Hugo 0.47.1" />
-  <link rel="canonical" href="https://www.teosoft.it/tags/ngrx/" />
-  <link rel="alternate" href="https://www.teosoft.it/tags/ngrx/index.xml" type="application/rss+xml" title="Bluish capsule">
+  <link rel="canonical" href="https://www.teosoft.it/post/2019-03-18-documenting-a-project-using-hugo/" />
+  <link rel="alternate" href="https://www.teosoft.it/index.xml" type="application/rss+xml" title="Bluish capsule">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -191,14 +194,44 @@ if (!doNotTrack) {
 
 
     
+  
+  
+  
+
+
+
+
+  
+
   <header class="header-section ">
+    
     <div class="intro-header no-img">
+      
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
-              <h1>#Ngrx</h1>
-              <hr class="small">
+            <div class="post-heading">
+              <h1>Documenting a project using hugo</h1>
+                
+                  
+                    <h2 class="post-subheading">Use hugo and hugo-theme-learn to document a project with markdown</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on March 18, 2019
+  
+  
+  &nbsp;|&nbsp;
+  <i class="fa fa-clock-o"></i> 1 minutes (212 words)
+  
+  
+</span>
+
+
+                
             </div>
           </div>
         </div>
@@ -206,109 +239,81 @@ if (!doNotTrack) {
     </div>
   </header>
 
+
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="posts-list">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>With the static generator <a href="https://gohugo.io/">Hugo</a> and the nice theme <a href="https://github.com/matcornic/hugo-theme-learn">hugo-theme-learn</a> we can easily build a skeleton for a documentation site.</p>
+
+<p></p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Download and install <strong>Hugo</strong>, the official <a href="https://gohugo.io/getting-started/installing/">guide</a> is a good starting point. There are also a few articles: <em>Configure a site using Hugo</em> <a href="/post/2018-02-21-hugo-configure-a-site-part-1/">part1</a>, <a href="/post/2018-02-23-hugo-configure-a-site-part-2/">part2</a> and <a href="/post/2018-02-26-hugo-configure-a-site-part-3/">part3</a></p>
+
+<p>Create a new site and clone the theme</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo new site CCWeb
+<span class="nb">cd</span> CCWeb
+<span class="nb">cd</span> themes
+git clone https://github.com/matcornic/hugo-theme-learn.git</code></pre></div>
+<p>Open the site configuration <em>config.toml</em></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nv">baseURL</span> <span class="o">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
+<span class="nv">languageCode</span> <span class="o">=</span> <span class="s2">&#34;it-it&#34;</span>
+<span class="nv">title</span> <span class="o">=</span> <span class="s2">&#34;CCWeb&#34;</span>
+<span class="nv">theme</span> <span class="o">=</span> <span class="s2">&#34;hugo-theme-learn&#34;</span>
+
+<span class="c1"># For search functionality
+</span><span class="c1"></span><span class="o">[</span>outputs<span class="o">]</span>
+<span class="nv">home</span> <span class="o">=</span> <span class="o">[</span> <span class="s2">&#34;HTML&#34;</span>, <span class="s2">&#34;RSS&#34;</span>, <span class="s2">&#34;JSON&#34;</span><span class="o">]</span></code></pre></div>
+<p>Browse the site skeleton</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo server -D</code></pre></div>
+<h2 id="chapters-and-content">Chapters and content</h2>
+
+<p>Create a new chapter using the theme provided archetype</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo new --kind chapter architettura/_index.md</code></pre></div>
+<p>Open the created file <strong>content/architettura/_index.md</strong> and change the chapter name, title and description.
+Change also the <strong>pre</strong> attribute in the page metadata.</p>
+
+<p>Add content pages to the chapter</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo new architettura/tecnologie.md
+<span class="c1"># alternative
+</span><span class="c1"></span>hugo new architettura/tecnologie/_index.md</code></pre></div>
+<h2 id="style">Style</h2>
+
+<h3 id="logo">Logo</h3>
+
+<p>Create a new folder <strong>CCWeb/static/images</strong> and paste the logo image there.</p>
+
+<p>Override the theme default by creating a new file <strong>CCWeb/layouts/partials/logo.html</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;logo&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/images/logo.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;CCWeb logo&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span></code></pre></div>
+<h3 id="favicon">Favicon</h3>
+
+<p>Drop a 32x32 <strong>favicon.png</strong> into <strong>CCWeb/static/images</strong> and the job is complete.</p>
+
+<p>To customize the favicon behaviour override the theme default by creating a new file <strong>CCWeb/layouts/partials/favicon.html</strong></p>
+      </article>
+
+      
+        <ul class="pager blog-pager">
           
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/project/ngrx-in-depth/1-introduction/">
-                <h2 class="post-title">Introduction</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on February 15, 2019
-              </p>
-              <div class="post-entry">
-                
-                  <p>Clone the source code</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> dev
-git clone https://github.com/angular-university/angular-ngrx-course.git
-<span class="nb">cd</span> angular-ngrx-course/</code></pre></div>
-<p>The material for the lessons is available in different branches (<em>git branch -a</em>)</p>
-
-<ul>
-<li>1-auth</li>
-<li>1-auth-finished</li>
-<li>2-entity</li>
-<li>2-entity-finished</li>
-<li>3-lessons</li>
-<li>3-lessons-finished</li>
-</ul>
-
-<p>Select the appropriate branch</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git checkout -b <span class="m">1</span>-auth origin/1-auth</code></pre></div>
-<p>Install the dependencies and start the local express server</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">npm install
-npm run server</code></pre></div>
-<p>Then in a new console</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">npm start</code></pre></div>
-<p>Finally open <strong>Chrome</strong> and navigate to <a href="http://localhost:4200/">http://localhost:4200/</a></p>
-
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/angular/">angular</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/typescript/">typescript</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/ngrx/">ngrx</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
+            <li class="previous">
+              <a href="https://www.teosoft.it/post/2019-03-13-keecloud-keepass2-sync-with-dropbox-using-ubuntu/" data-toggle="tooltip" data-placement="top" title="KeeCloud on Keepass2 to sync with Dropbox using Ubuntu">&larr; Previous Post</a>
+            </li>
           
-            <article class="post-preview">
-              <a href="https://www.teosoft.it/project/ngrx-in-depth/">
-                <h2 class="post-title">NgRx in depth</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                Posted on February 15, 2019
-              </p>
-              <div class="post-entry">
-                
-                  <p>Notes and code snippets for the course <a href="https://www.udemy.com/ngrx-course">NgRx In Depth</a></p>
-
-<ol>
-<li><a href="1-introduction">Introduction</a></li>
-<li><a href="2-store-in-detail">Store in detail</a></li>
-<li><a href="3-entity-and-effects">Entity and Effects</a></li>
-<li><a href="4-pagination">Pagination</a></li>
-</ol>
-
-                
-              </div>
-
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.teosoft.it//tags/angular/">angular</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/typescript/">typescript</a>&nbsp;
-                  
-                    #<a href="https://www.teosoft.it//tags/ngrx/">ngrx</a>&nbsp;
-                  
-                </span>
-              
-
-            </article>
           
-        </div>
-        
-      </div>
+        </ul>
+      
+
+
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
@@ -335,7 +340,7 @@ npm run server</code></pre></div>
           
           <li>
             
-            <a href="https://www.teosoft.it/tags/ngrx/index.xml" title="RSS">
+            <a href="https://www.teosoft.it/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>

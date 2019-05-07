@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Documenting a project using hugo</title>
+      <link>https://www.teosoft.it/post/2019-03-18-documenting-a-project-using-hugo/</link>
+      <pubDate>Mon, 18 Mar 2019 12:55:52 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2019-03-18-documenting-a-project-using-hugo/</guid>
+      <description>&lt;p&gt;With the static generator &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and the nice theme &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn&#34;&gt;hugo-theme-learn&lt;/a&gt; we can easily build a skeleton for a documentation site.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>KeeCloud on Keepass2 to sync with Dropbox using Ubuntu</title>
       <link>https://www.teosoft.it/post/2019-03-13-keecloud-keepass2-sync-with-dropbox-using-ubuntu/</link>
       <pubDate>Wed, 13 Mar 2019 16:32:20 +0100</pubDate>

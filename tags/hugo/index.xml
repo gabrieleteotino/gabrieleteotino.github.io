@@ -6,10 +6,21 @@
     <description>Recent content in Hugo on Bluish capsule</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Mar 2018 13:43:50 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 18 Mar 2019 12:55:52 +0100</lastBuildDate>
     
 	<atom:link href="https://www.teosoft.it/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Documenting a project using hugo</title>
+      <link>https://www.teosoft.it/post/2019-03-18-documenting-a-project-using-hugo/</link>
+      <pubDate>Mon, 18 Mar 2019 12:55:52 +0100</pubDate>
+      
+      <guid>https://www.teosoft.it/post/2019-03-18-documenting-a-project-using-hugo/</guid>
+      <description>&lt;p&gt;With the static generator &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and the nice theme &lt;a href=&#34;https://github.com/matcornic/hugo-theme-learn&#34;&gt;hugo-theme-learn&lt;/a&gt; we can easily build a skeleton for a documentation site.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo on Kindle Fire Hd</title>
